@@ -78,6 +78,16 @@ a {
     }
 }
 
+hr { 
+    display: block;
+    margin-top: 5em;
+    margin-bottom: -2em;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    border-style: inset;
+    border-width: 1px;
+}
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba($font-color, 0.3);
@@ -105,7 +115,7 @@ a {
         }
     }
     a {
-        color: $navbar-color;
+        color: #fff; /*$navbar-color;*/
         @if $header-text-shadow{
             text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
         }
@@ -234,6 +244,7 @@ a {
 .content-section {
     margin-top: 100px;
     padding-top: 100px;
+    background-color: #f7f7f7;
     @media(min-width:767px) {
         margin-top: 125px;
         padding-top: 125px;
@@ -325,7 +336,9 @@ ul.social-buttons li a {
     }
 }
 
-footer {
+.site-footer {
+    background-color: #000;
+    color: #fff;
     padding: 50px 0;
     text-align: center;
     p {

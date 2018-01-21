@@ -5,7 +5,7 @@ title: Modifying the Contact
 category: tech
 tags: [ 'tutorial' ]
 ---
-
+\\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \\]
 The contact part of the index page is consisted of two elements:
 
 <ol>
