@@ -3,7 +3,7 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://le4ker.github.io"
+url: "https://buzz-beater.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -12,7 +12,7 @@ url: "https://le4ker.github.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /personal-jekyll-theme
+baseurl: /
 
 # Google tracking id
 
@@ -29,18 +29,20 @@ force-https: True
 #############
 
 lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+author: "Baoxiong jia"
+title: "Baoxiong Jia (Under Construction)"
+description: "Website of Baoxiong Jia, contains information and ideas"
+keywords: "Baoxiong Jia, blog, computer science, artificial intelligence, computer vision"
+
+# Title icon on the tabs
 favicon: "/img/favicon.ico"
 
 ################
 # Header layout #
 ################
-
+# Header icon on the upper-left corner
 black-favicon: "/img/black-lab-glass.ico"
-
+# the background for selfie
 background-img: "../img/intro-bg.jpg"
 
 ##############################
@@ -146,7 +148,7 @@ timeline-img: "/img/timeline/default.png"
 # Contact #
 ###########
 
-email: "your@email.here"
+email: "jerryjiabx@gmail.com"
 
 ################
 # Author Blurb #
@@ -185,9 +187,9 @@ err-404-img: "/img/labtocat.png"
 # GPG on Keybase #
 ##################
 
-keybase-username: johnsmith
-keybase-in-social: True
-keybase-in-footer: True
+#keybase-username: johnsmith
+#keybase-in-social: True
+#keybase-in-footer: True
 
 ################################################################################
 
