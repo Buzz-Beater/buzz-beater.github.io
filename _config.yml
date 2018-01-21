@@ -10,11 +10,11 @@ permalink:      pretty
 
 # Server
 source:         "."
-destination:    ./_gh_pages
+destination:    ./
 host:           0.0.0.0
 port:           9001
 baseurl:        ""
-url:            "https://getbootstrap.com"
+url:            "https://buzz-beater.github.io"
 encoding:       UTF-8
 exclude:
   - .git/
