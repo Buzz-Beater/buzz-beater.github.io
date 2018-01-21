@@ -48,7 +48,7 @@ background-img: "../img/intro-bg.jpg"
 ##############################
 # Dynamic Text on the Header #
 ##############################
-
+me-img: "/img/jetpacktocat.png"
 dynamic-typing: True
 shuffle: True # Shuffle the lines.
 loop: True
@@ -59,8 +59,6 @@ delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "The lower you fall, the higher you'll fly."
   - text: "Where’s your will to be weird?"
-
-me-img: "/img/jetpacktocat.png"
 
 # To use facebook profile pic comment the previous line and uncomment the following
 # line, and replace 'user_id' with your facebook user id.
