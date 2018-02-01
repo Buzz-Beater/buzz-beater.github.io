@@ -70,11 +70,11 @@ export default function upgradeMathBlocks() {
       if (katexJSLoaded && katexCSSLoaded) {
         changeContent(mathBlocks);
       } else {
-        window.loadJSDeferred(document.getElementById('_katexJS').href, () => {
+        loadJSDeferred(document.getElementById('_katexJS').href, () => {
           katexJSLoaded = true;
           if (katexJSLoaded && katexCSSLoaded) upgradeMathBlocks();
         });
-        window.loadCSS(document.getElementById('_katexCSS').href).onload = () => {
+        loadCSS(document.getElementById('_katexCSS').href).onload = () => {
           katexCSSLoaded = true;
           if (katexJSLoaded && katexCSSLoaded) upgradeMathBlocks();
         };

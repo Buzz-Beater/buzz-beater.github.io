@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en"><!--
+ __  __                __                                     __
+/\ \/\ \              /\ \             __                    /\ \
+\ \ \_\ \   __  __    \_\ \      __   /\_\      __       ___ \ \ \/'\
+ \ \  _  \ /\ \/\ \   /'_` \   /'__`\ \/\ \   /'__`\    /'___\\ \ , <
+  \ \ \ \ \\ \ \_\ \ /\ \L\ \ /\  __/  \ \ \ /\ \L\.\_ /\ \__/ \ \ \\`\
+   \ \_\ \_\\/`____ \\ \___,_\\ \____\ _\ \ \\ \__/.\_\\ \____\ \ \_\ \_\
+    \/_/\/_/ `/___/> \\/__,_ / \/____//\ \_\ \\/__/\/_/ \/____/  \/_/\/_/
+                /\___/                \ \____/
+                \/__/                  \/___/
+
+Powered by Hydejack v7.4.1 <https://qwtel.com/hydejack/>
+-->
+
+
+
+
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+  
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>基于GO的状态机 | 人月神话</title>
+<meta property="og:title" content="基于GO的状态机" />
+<meta name="author" content="Bo Yang" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Amazon 状态语言" />
+<meta property="og:description" content="Amazon 状态语言" />
+<link rel="canonical" href="http://localhost:4000/2017/01/13/statemachine/" />
+<meta property="og:url" content="http://localhost:4000/2017/01/13/statemachine/" />
+<meta property="og:site_name" content="人月神话" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-01-13T00:00:00+08:00" />
+<script type="application/ld+json">
+{"name":null,"description":"Amazon 状态语言","author":{"@type":"Person","name":"Bo Yang"},"@type":"BlogPosting","url":"http://localhost:4000/2017/01/13/statemachine/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/icons/icon.png"},"name":"Bo Yang"},"image":null,"headline":"基于GO的状态机","dateModified":"2017-01-13T00:00:00+08:00","datePublished":"2017-01-13T00:00:00+08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/01/13/statemachine/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  
+
+  
+    <meta name="keywords" content="">
+  
+
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="人月神话">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<meta name="application-name" content="人月神话">
+<meta name="msapplication-config" content="/assets/ieconfig.xml">
+
+
+<meta name="theme-color" content="#4fb1ba">
+
+
+<meta name="generator" content="Hydejack v7.4.1" />
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="人月神话" />
+
+
+
+<link rel="alternate" href="http://localhost:4000/2017/01/13/statemachine/" hreflang="en">
+
+<link rel="shortcut icon" href="/assets/icons/favicon.ico">
+<link rel="apple-touch-icon" href="/assets/icons/icon.png">
+
+<link rel="manifest" href="/assets/manifest.json">
+
+
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+
+
+
+<link id="_katexJS"  rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.js">
+<link id="_katexCSS" rel="dns-prefetch" href="/assets/bower_components/katex/dist/katex.min.css">
+
+<script>
+  function stdOnEnd(n,e){n.onload=function(){this.onerror=this.onload=null,e(null,n)},n.onerror=function(){this.onerror=this.onload=null,e(new Error("Failed to load "+this.src),n)}}function ieOnEnd(n,e){n.onreadystatechange=function(){"complete"!=this.readyState&&"loaded"!=this.readyState||(this.onreadystatechange=null,e(null,n))}}window.setRelStylesheet=function(n){function e(){this.rel="stylesheet"}var o=document.getElementById(n);o.addEventListener?o.addEventListener("load",e,!1):o.onload=e},window._loaded=!1,window.loadJSDeferred=function(n,e){function o(){window._loaded=!0;var o=document.createElement("script");o.src=n,e&&(("onload"in o?stdOnEnd:ieOnEnd)(o,e),o.onload||stdOnEnd(o,e));var t=document.scripts[0];t.parentNode.insertBefore(o,t)}window._loaded?o():window.addEventListener?window.addEventListener("load",o,!1):window.onload=o};
+!function(a){"use strict";var b=function(b,c,d){function e(a){return h.body?a():void setTimeout(function(){e(a)})}function f(){i.addEventListener&&i.removeEventListener("load",f),i.media=d||"all"}var g,h=a.document,i=h.createElement("link");if(c)g=c;else{var j=(h.body||h.getElementsByTagName("head")[0]).childNodes;g=j[j.length-1]}var k=h.styleSheets;i.rel="stylesheet",i.href=b,i.media="only x",e(function(){g.parentNode.insertBefore(i,c?g:g.nextSibling)});var l=function(a){for(var b=i.href,c=k.length;c--;)if(k[c].href===b)return a();setTimeout(function(){l(a)})};return i.addEventListener&&i.addEventListener("load",f),i.onloadcssdefined=l,l(f),i};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(b){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+
+  window._noPushState = true;
+  window._noDrawer = false;
+</script>
+
+<!--[if gt IE 8]><!---->
+
+
+<script>
+  WebFontConfig = {
+    
+    google: {
+      families: ['Roboto+Slab:700','Noto+Sans:400,400i,700,700i']
+    },
+    
+
+    custom: {
+      families: ['icomoon'],
+      urls: ['/assets/icomoon/style.css']
+    }
+  };
+  (function(d) {
+    var wf = d.createElement('script'), s = d.scripts[0];
+    wf.src = "/assets/bower_components/webfontloader/webfontloader.js";
+    s.parentNode.insertBefore(wf, s);
+  }(document));
+</script>
+<!--<![endif]-->
+
+<noscript>
+  
+  
+
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:700%7CNoto+Sans:400,400i,700,700i">
+    <style>
+      html { font-family: Noto Sans, Helvetica, Arial, sans-serif }
+      h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .heading { font-family: Roboto Slab, Helvetica, Arial, sans-serif }
+    </style>
+  
+
+  <link rel="stylesheet" href="/assets/icomoon/style.css">
+</noscript>
+
+<!--[if gt IE 8]><!---->
+
+
+
+  <link rel="stylesheet" href="/assets/css/hydejack-7.4.1.css">
+
+
+
+<style id="_pageStyle">
+
+.content a:not(.btn){color:#4fb1ba;border-color:rgba(79,177,186,0.2)}.content a:not(.btn):hover{border-color:#4fb1ba}:focus{outline-color:#4fb1ba}.btn-primary{color:#fff;background-color:#4fb1ba;border-color:#4fb1ba}.btn-primary:focus,.btn-primary.focus{box-shadow:0 0 0 3px rgba(79,177,186,0.5)}.btn-primary:hover,.btn-primary.hover{color:#fff;background-color:#409ba3;border-color:#409ba3}.btn-primary:disabled,.btn-primary.disabled{color:#fff;background-color:#4fb1ba;border-color:#4fb1ba}.btn-primary:active,.btn-primary.active{color:#fff;background-color:#409ba3;border-color:#409ba3}::selection{color:#fff;background:#4fb1ba}::-moz-selection{color:#fff;background:#4fb1ba}
+
+</style>
+
+<!--<![endif]-->
+
+
+
+
+</head>
+
+<body>
+  <div class="navbar fixed-top">
+  <div class="content">
+    <div class="nav-btn-bar">
+      <span class="sr-only">Jump to:</span>
+      <a id="_menu" class="nav-btn no-hover" href="#_navigation">
+        <span class="sr-only">Navigation</span>
+        <span class="icon-menu"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<hy-push-state>
+  <main
+    id="_main"
+    class="content fade-in layout-post"
+    role="main"
+    data-color="#4fb1ba"
+    data-theme-color=""
+    
+      data-image="/assets/img/sidebar-bg.jpg
+"
+      data-overlay
+    
+    >
+    
+
+
+<article id="post-2017-01-13-statemachine" class="page post" role="article">
+  <header>
+    <h1 class="post-title">
+      
+        基于GO的状态机
+      
+    </h1>
+
+    <p class="post-date heading">
+      
+      <time datetime="2017-01-13T00:00:00+08:00">13 Jan 2017</time>
+      
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+on <span>Statemachine</span>
+
+    </p>
+
+    
+
+
+
+  <div class="hr pb0"></div>
+
+
+  </header>
+
+  
+    <h2 id="amazon-状态语言">Amazon 状态语言</h2>
+
+<blockquote>
+  <p>https://states-language.net/spec.html</p>
+</blockquote>
+
+<h3 id="hello-world">Hello World</h3>
+
+<p>状态机测行为由状态来控制，在这里使用JSON object来表示。下面我们来看一个例子</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">{</span>
+    <span class="s">"Comment"</span><span class="o">:</span> <span class="s">"A simple minimal example of the States language"</span><span class="o">,</span>
+    <span class="s">"StartAt"</span><span class="o">:</span> <span class="s">"Hello World"</span><span class="o">,</span>
+    <span class="s">"States"</span><span class="o">:</span> <span class="o">{</span>
+    <span class="s">"Hello World"</span><span class="o">:</span> <span class="o">{</span> 
+      <span class="s">"Type"</span><span class="o">:</span> <span class="s">"Task"</span><span class="o">,</span>
+      <span class="s">"Resource"</span><span class="o">:</span> <span class="s">"arn:aws:lambda:us-east-1:123456789012:function:HelloWorld"</span><span class="o">,</span>
+      <span class="s">"End"</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="o">}</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+<p>顶这个例子中，我们可以看到，顶层的状态对象是”States”。同时还有终止状态End。其他的终止状态还包括
+Succeed，Fail以及End。如果这个state的状态不是终止状态，那它会去寻找下一个next的field。并且这是一个
+Task的state，所以状态机会去尝试执行它（这个例子中的task resource是一个lambda语言）。</p>
+
+<h3 id="重要关键字">重要关键字</h3>
+
+<p>States: 状态集合，顶层field。</p>
+
+<p>StartAt: 状态机开始的那个状态.</p>
+
+
+  
+</article>
+
+
+<hr class="dingbat related" />
+
+
+
+
+  
+     
+
+
+  <aside class="about related mt4 mb4" role="complementary">
+    
+    
+
+<div class="author mt4">
+  
+
+  
+    
+  
+
+  
+
+  
+  <img
+    src="/assets/img/me.jpg
+"
+    class="avatar"
+    alt="Bo Yang"
+    srcset="/assets/img/me.jpg
+ 1x"
+    
+    
+  />
+
+
+  
+
+  
+  
+  <h2  class="page-title hr">
+    About
+  </h2>
+
+  <p>Hi，我是杨波（Bo Yang），是一位爱好学习各类计算机技术的开发者，欢迎大家来到人月神话博客，这是一个非专业的技术分享博客。</p>
+
+<p>一个好的创作工具却能给书写增加很多乐趣，比如一支精巧的LAMY的钢笔，或者是一门优雅的文字编辑标记语言。
+一次偶然的机会，突然迷上了markdown，觉得这真的是一种简单却又充满书写乐趣，而且表现力十足的神器，就如同
+markdown语言的理念一样。</p>
+
+<blockquote>
+  <p>Markdown 让你专注于文字而不是排版。</p>
+</blockquote>
+
+<p>于是就萌生了一个创造这个博客的想法，以表达对markdown语言，乃至对技术的致敬。</p>
+
+<p>当然，你也可以通过左上角的二维码关注我的微信公众号，定期会推送技术分享干货小文章。</p>
+
+
+  <div class="sidebar-social">
+    <span class="sr-only">Social:</span>
+<ul>
+  
+    
+    
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/UCSBGauchos" title="GitHub" class="no-mark-external">
+    <span class="icon-github"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:byang918@163.com" title="Email" class="no-mark-external">
+    <span class="icon-mail"></span>
+    <span class="sr-only">Email</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://www.facebook.com/bo.yang.3576" title="Facebook" class="no-mark-external">
+    <span class="icon-facebook"></span>
+    <span class="sr-only">Facebook</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://www.linkedin.com/in/bo-yang-50a62a56/" title="LinkedIn" class="no-mark-external">
+    <span class="icon-linkedin2"></span>
+    <span class="sr-only">LinkedIn</span>
+  </a>
+</li>
+
+  
+</ul>
+
+  </div>
+</div>
+
+  </aside>
+
+
+  
+
+  
+    
+
+
+
+
+  
+
+  
+    
+
+
+
+
+
+  
+
+  
+    
+
+<aside class="related mb4" role="complementary">
+  <h2 class="hr">Random Posts</h2>
+
+  
+
+  <ul class="related-posts">
+    
+      
+
+
+<li>
+  <a href="/2017/12/15/Kafka-Elasticsearch-Sink/" class="h4 flip-title">
+    <span>浅淡使用Kafka连接Elasticsearch的注意事项</span>
+  </a>
+  <time class="heading faded fine" datetime="2017-12-15T00:00:00+08:00">15 Dec 2017</time>
+</li>
+
+    
+      
+
+
+<li>
+  <a href="/2017/12/06/JAVA-terms/" class="h4 flip-title">
+    <span>JAVA基础：并发，JVM和常见关键字解析</span>
+  </a>
+  <time class="heading faded fine" datetime="2017-12-06T00:00:00+08:00">06 Dec 2017</time>
+</li>
+
+    
+      
+
+
+<li>
+  <a href="/2017/12/20/spring/" class="h4 flip-title">
+    <span>Spring入门</span>
+  </a>
+  <time class="heading faded fine" datetime="2017-12-20T00:00:00+08:00">20 Dec 2017</time>
+</li>
+
+    
+  </ul>
+</aside>
+
+  
+
+
+    
+
+<aside class="comments related" role="complementary">
+  <h2 class="hr">Comments</h2>
+
+  <div id="disqus_thread"></div>
+
+  <script>
+    !function(s,i){function d(d){var t=s.pageYOffset||i.body.scrollTop;s.DISQUS&&!s._disqusThis&&!s._disqusFirst&&t+s.innerHeight>=s._disqusThreadOffsetTop&&(s._disqusThis=!0,s.DISQUS.reset({reload:!0,config:e}))}var e=function(){this.page.title="基于GO的状态机",this.page.identifier="/2017/01/13/statemachine",this.page.url="http://localhost:4000/2017/01/13/statemachine/"};s._disqusFirst=void 0===s._disqusFirst||s._disqusFirst,s._disqusLoading=void 0!==s._disqusLoading&&s._disqusLoading,s._disqusThis=!1,s._disqusThreadOffsetTop=i.getElementById("disqus_thread").offsetTop,s._disqusLoading?s._disqusFirst=!1:(s._disqusLoading=!0,loadJSDeferred("//boyang918.disqus.com/embed.js"),s.addEventListener?s.addEventListener("scroll",d,{passive:!0}):s.onscroll=d)}(window,document);
+
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</aside>
+
+
+    <footer role="contentinfo">
+  <hr/>
+  
+  <p><small class="copyright">© 2017. Bo Yang All rights reserved.
+</small></p>
+  
+  
+  <hr class="sr-only"/>
+</footer>
+
+  </main>
+  <hy-drawer>
+  <header id="_sidebar" class="sidebar" role="banner">
+    
+    <div class="sidebar-bg sidebar-overlay" style="background-color:#4fb1ba;background-image:url(/assets/img/sidebar-bg.jpg
+)"></div>
+
+    <div class="sidebar-sticky">
+      <div class="sidebar-about">
+        <h2 class="h1"><a href="/">人月神话</a></h2>
+        
+        
+          <p class="fine">
+            分享算法，编程语言特性, 大数据，各类大数据技术（Hadoop, Kafka, Spark, Elasticsearch, etc.），微服务架构等相关技术，讨论欢迎在每篇文章下方留言，获通过下列任意联系方式联系到我。
+
+          </p>
+        
+      </div>
+
+      <nav class="sidebar-nav heading" role="navigation">
+        <span class="sr-only">Navigation:</span>
+<ul>
+  
+  
+  
+  
+    
+      <li>
+        <a
+          id="_navigation"
+          href="/blog/"
+          class="sidebar-nav-item"
+          
+          >
+          Blog
+        </a>
+      </li>
+    
+  
+</ul>
+
+      </nav>
+
+      
+
+      <div class="sidebar-social">
+        <span class="sr-only">Social:</span>
+<ul>
+  
+    
+    
+  
+
+  
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://github.com/UCSBGauchos" title="GitHub" class="no-mark-external">
+    <span class="icon-github"></span>
+    <span class="sr-only">GitHub</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:byang918@163.com" title="Email" class="no-mark-external">
+    <span class="icon-mail"></span>
+    <span class="sr-only">Email</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://www.facebook.com/bo.yang.3576" title="Facebook" class="no-mark-external">
+    <span class="icon-facebook"></span>
+    <span class="sr-only">Facebook</span>
+  </a>
+</li>
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="https://www.linkedin.com/in/bo-yang-50a62a56/" title="LinkedIn" class="no-mark-external">
+    <span class="icon-linkedin2"></span>
+    <span class="sr-only">LinkedIn</span>
+  </a>
+</li>
+
+  
+</ul>
+
+      </div>
+    </div>
+  </header>
+</hy-drawer>
+
+</hy-push-state>
+
+
+  
+
+  <!--[if gt IE 9]><!---->
+  
+  <script>loadJSDeferred('/assets/js/hydejack-7.4.1.js');</script>
+  
+  <!--<![endif]-->
+
+
+
+  
+<hr class="sr-only"/>
+<h2 class="sr-only">Templates (for web app):</h2>
+
+<template id="_animation-template">
+  <div class="animation-main fixed-top">
+    <div class="content">
+      <div class="page"></div>
+    </div>
+  </div>
+</template>
+
+<template id="_loading-template">
+  <div class="loading">
+    <span class="sr-only">Loading…</span>
+    <span class="icon-cog"></span>
+  </div>
+</template>
+
+<template id="_error-template">
+  <div class="page">
+    <h1 class="page-title">Error</h1>
+    
+    
+    <p class="lead">
+      Sorry, an error occurred while loading <a class="this-link" href=""></a>.
+
+    </p>
+  </div>
+</template>
+
+<template id="_back-template">
+  <a id="_back" class="back nav-btn no-hover">
+    <span class="sr-only">Back</span>
+    <span class="icon-arrow-left2"></span>
+  </a>
+</template>
+
+
+
+</body>
+</html>

@@ -4,7 +4,7 @@
 # IMPORTANT: Set the URL of your site.
 # Set to https://<username>.github.io when hosting on GitHub Pages
 # (unless you are using a custom domain).
-url:                   https://buzz-beater.github.io
+url:                   http://boyang918.com
 
 # IMPORTANT: Set The "base URL" of your site.
 #
@@ -15,23 +15,23 @@ url:                   https://buzz-beater.github.io
 # When using GitHub Pages, set to '' when hosting a user- or organization page,
 # i.e. when the name of the repository looks like <username>.github.io.
 # Otherwise, set to /<name of repository> (with leading /, but without the < >).
-baseurl:               '/'
+baseurl:               ''
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
 lang:                  en
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 Baoxiong Jia
+title:                 人月神话
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Personal website of Baoxiong Jia. Mainly used for publishing notes on topics like Artificial Intelligence, especially Computer Vision, Reinforcement Learning and Multi-agent Systems.
+  Personal Technlogy Blog
 
 # A shorter description for the sidebar.
 tagline:               >
-  Researcher, Programmer, Dreamer
+  分享算法，编程语言特性, 大数据，各类大数据技术（Hadoop, Kafka, Spark, Elasticsearch, etc.），微服务架构等相关技术，讨论欢迎在每篇文章下方留言，获通过下列任意联系方式联系到我。
 
 # A list of keywords for your blog
 keywords:              []
@@ -42,28 +42,21 @@ logo:                  /assets/icons/icon.png
 # This should be the same author as first entry in `_data/authors.yml`.
 # Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
 author:
-  name:                Baoxiong Jia
-  email:               jerryjiabx@gmail.com
+  name:                Bo Yang
+  email:               byang918@163.com
+  picture:             /asserts/img/me.jpg
   # Used by `jekyll-seo-tag`:
   # twitter:             <username>
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2018. All rights reserved.
-
-# Add links to the footer.
-# Typically you'll want to link to your impress, cookies or privacy policy, etc.
-# legal:
-#   - title:             Impress
-#     href:              /impress/
-#   - title:             Cookies Policy
-#     href:              /cookies-policy/
+copyright:             © 2017. Bo Yang All rights reserved.
 
 # Format of the permalinks
 permalink:             pretty
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              5
-paginate_path:         /my_blog/page-:num/
+paginate_path:         /blog/page-:num/
 
 
 # Customizaton
@@ -92,7 +85,7 @@ font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.
-# disqus:                <disqus_shortname>
+disqus:               boyang918
 
 # Setting a tinyletter username will enable the newsletter subscription box.
 # tinyletter:            <tinyletter_username>
@@ -103,7 +96,7 @@ font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 
 hydejack:
   # Configure the order of complementary content on blog posts
-  post_addons:         [newsletter, related]
+  post_addons:         [about, newsletter, related, random]
 
   # Configure the order of complementary content on project pages
   project_addons:      [about, newsletter, other]
@@ -115,7 +108,7 @@ hydejack:
   no_mark_external:    false
 
   # Set to `true` if third party plugins fail to work with dynamically loaded pages
-  no_push_state:       false
+  no_push_state:       true
 
   # Set to `true` if you want to disable the drawer
   no_drawer:           false
@@ -143,24 +136,9 @@ hydejack:
   # When enabled, no user-related data will be stored until the user gives consent.
   cookies_banner:      false
 
-# ===============================
-defaults:
-  - scope:
-      path: about.md
-    values:
-      menu: true
-      order: 2
-  - scope:
-      path: posts.md
-    values:
-      menu: true
-      order: 3
-  - scope:
-      path: publications.md
-    values:
-      menu: true
-      order: 2
-  
+  # Set to `true` if you would like to add a "Powered by Hydejack" link in the footer.
+  advertise:           false
+
 
 # Collections
 # ========================================================================================
