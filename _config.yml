@@ -31,7 +31,7 @@ description:           >
 
 # A shorter description for the sidebar.
 tagline:               >
-  Buzz-Beater
+  Researcher, Programmer, Dreamer
 
 # A list of keywords for your blog
 keywords:              []
@@ -63,7 +63,7 @@ permalink:             pretty
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              5
-paginate_path:         /blog/page-:num/
+paginate_path:         /page-:num/
 
 
 # Customizaton

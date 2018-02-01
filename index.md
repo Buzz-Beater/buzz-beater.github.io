@@ -1,8 +1,8 @@
 ---
 layout: welcome
-title: From Author
+title: Welcome
 description: >
-  人月神话博客，欢迎页
+  Baoxiong Jia's Website
 hide_description: true
 content_separator: <!--more-->
 ---
