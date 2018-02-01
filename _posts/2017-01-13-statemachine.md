@@ -1,37 +1,20 @@
 ---
 layout: post
-title: 基于GO的状态机
-tags: [statemachine]
+title: What's Jekyll?
+tags: [hyde]
 comments: true
 ---
 
-## Amazon 状态语言
+[Jekyll](https://jekyllrb.com) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From [the project's readme](https://github.com/mojombo/jekyll/blob/master/README.markdown):
 
-> https://states-language.net/spec.html
+**NOTE**: This post is outdated and only included for legacy reasons.
+See the [Documentation][docs]{:.heading.flip-title} for up-to-date instructions.
+{:.message}
 
-### Hello World
+  > Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.
 
-状态机测行为由状态来控制，在这里使用JSON object来表示。下面我们来看一个例子
-~~~java
-{
-    "Comment": "A simple minimal example of the States language",
-    "StartAt": "Hello World",
-    "States": {
-    "Hello World": { 
-      "Type": "Task",
-      "Resource": "arn:aws:lambda:us-east-1:123456789012:function:HelloWorld",
-      "End": true
-    }
-  }
-}
-~~~
-顶这个例子中，我们可以看到，顶层的状态对象是"States"。同时还有终止状态End。其他的终止状态还包括
-Succeed，Fail以及End。如果这个state的状态不是终止状态，那它会去寻找下一个next的field。并且这是一个
-Task的state，所以状态机会去尝试执行它（这个例子中的task resource是一个lambda语言）。
+It's an immensely useful tool and one we encourage you to use here with Hyde.
 
-### 重要关键字
+Find out more by [visiting the project on GitHub](https://github.com/mojombo/jekyll).
 
-States: 状态集合，顶层field。
-
-StartAt: 状态机开始的那个状态.
-
+[docs]: ../docs/7.5.0/index.md
