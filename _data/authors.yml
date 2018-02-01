@@ -2,40 +2,35 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              Bo Yang
-  email:             byang918@163.com
+  name:              Baoxiong Jia
+  email:             jerryjiabx@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Hi，我是杨波（Bo Yang），是一位爱好学习各类计算机技术的开发者，欢迎大家来到人月神话博客，这是一个非专业的技术分享博客。
-    
-    一个好的创作工具却能给书写增加很多乐趣，比如一支精巧的LAMY的钢笔，或者是一门优雅的文字编辑标记语言。
-    一次偶然的机会，突然迷上了markdown，觉得这真的是一种简单却又充满书写乐趣，而且表现力十足的神器，就如同
-    markdown语言的理念一样。
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-    > Markdown 让你专注于文字而不是排版。
-
-    于是就萌生了一个创造这个博客的想法，以表达对markdown语言，乃至对技术的致敬。
-
-    当然，你也可以通过左上角的二维码关注我的微信公众号，定期会推送技术分享干货小文章。
-
+    Open `_data/authors.yml` to edit this text.
 
   # This photo will be used in the about section
   picture:
-    path:            /assets/img/me.jpg
+    path:            https://placehold.it/128x128
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            /assets/img/me.jpg
+      1x:            https://placehold.it/128x128
+      2x:            https://placehold.it/256x256
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    github:            https://github.com/UCSBGauchos
-    email:             mailto:byang918@163.com
+    twitter:         <username>
+    github:          Buzz-Beater
+    email:           mailto:jerryjiabx@gmail.com
     # rss:             https://<url>/feed.xml
-    facebook:          https://www.facebook.com/bo.yang.3576
+    # facebook:        <username>
     # google:          <number>
     # vk:              <username>
     # youtube:         <string_string_string>
@@ -62,28 +57,28 @@ author1:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    linkedin:          https://www.linkedin.com/in/bo-yang-50a62a56/
+    # linkedin:        <firstname-lastname-string>
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
-    # download:        https://github.com/qwtel/hydejack/archive/v6.6.1.zip
+    # download:        https://github.com/qwtel/hydejack-starter-kit/archive/v7.5.0.zip
 
 # Another author (optional)
-author2:
-  name:              <firtname> <lastname>
-  email:             <mail@domain.tld>
-  about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+# author2:
+ # name:              <firtname> <lastname>
+ # email:             <mail@domain.tld>
+ # about:             |
+ #   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+ #   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+ #   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-    Open `_data/authors.yml` to edit this text.
-  picture:           https://placehold.it/128x128
-  twitter:           <username>
-  github:            <username>
-  accent_color:      '#268bd2'
-  accent_image:
-    background:      '#202020'
-    overlay:         false
+   # Open `_data/authors.yml` to edit this text.
+ # picture:           https://placehold.it/128x128
+ # twitter:           <username>
+ # github:            <username>
+ # accent_color:      '#268bd2'
+ # accent_image:
+ #   background:      '#202020'
+ #   overlay:         false
