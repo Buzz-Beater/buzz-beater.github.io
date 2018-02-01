@@ -65,7 +65,6 @@ import { animate, empty, getResolvablePromise, hasFeatures, isSafari, isFirefoxI
   from './common';
 import CrossFader from './cross-fader';
 import upgradeMathBlocks from './katex';
-import loadDisqus from './disqus';
 import setupFLIP from './flip';
 
 // ## Constants
@@ -124,11 +123,15 @@ const assign = ::Object.assign;
 // ## Functions
 // Takes a heading and adds a "#" link for permalinks:
 function upgradeHeading(h) {
-  const template = document.getElementById('_permalink-template');
-  const df = document.importNode(template.content, true);
-  const a = df.querySelector('.permalink');
-  a.href = `#${h.id}`;
-  h.appendChild(df);
+  const hash = `#${h.id}`;
+  const a = document.createElement('a');
+  const span = document.createElement('span');
+  span.textContent = 'Permalink';
+  span.classList.add('sr-only');
+  a.appendChild(span);
+  a.href = hash;
+  a.classList.add('permalink');
+  h.appendChild(a);
 }
 
 // Like subscribe, but we log errors to the console, but continue as if it never happend.
@@ -296,7 +299,7 @@ if (!window._noPushState && hasFeatures(REQUIREMENTS) && !isFirefoxIOS) {
     // * Add the `active` class to the active entry in the sidebar (currently not in use)
     // * If we are going to animate the content, make some preparations.
     ::tap(({ type, main }) => {
-      if (!window._isDesktop && window._drawer && window._drawer.opened) {
+      if (!window._isDesktop && window._drawer.opened) {
         window._drawer.close();
       }
 
@@ -405,7 +408,6 @@ if (!window._noPushState && hasFeatures(REQUIREMENTS) && !isFirefoxIOS) {
   // so we don't want to start until after the animation.
   fadeIn$
     ::tap(upgradeMathBlocks)
-    ::tap(loadDisqus)
 
     // Finally, after some debounce time, send a `pageview` to Google Analytics (if applicable).
     ::filter(() => !!window.ga)

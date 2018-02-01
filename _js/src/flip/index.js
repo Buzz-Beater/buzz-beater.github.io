@@ -23,14 +23,16 @@ import { merge } from 'rxjs/observable/merge';
 import { filter } from 'rxjs/operator/filter';
 
 import setupFLIPTitle from './title';
+import setupFLIPProject from './project';
 
-const FLIP_TYPES = ['title'];
+const FLIP_TYPES = ['title', 'projects'];
 
 export default function setupFLIP(start$, ready$, fadeIn$, options) {
   const other$ = start$::filter(({ flipType }) => !FLIP_TYPES.includes(flipType));
 
   return Observable::merge(
     setupFLIPTitle(start$, ready$, fadeIn$, options),
+    setupFLIPProject(start$, ready$, fadeIn$, options),
     other$,
   );
 }

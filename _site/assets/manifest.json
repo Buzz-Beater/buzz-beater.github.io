@@ -1,8 +1,8 @@
 {
   "lang": "en",
-  "name": "Baoxiong Jia",
-  "short_name": "Baoxiong Jia",
-  "description": "Personal website of Baoxiong Jia. Mainly used for publishing notes on topics like Artificial Intelligence, especially Computer Vision, Reinforcement Learning and Multi-agent Systems.",
+  "name": "人月神话",
+  "short_name": "人月神话",
+  "description": "Personal Technlogy Blog",
   "start_url": "/?utm_source=homescreen",
   "theme_color": "#4fb1ba",
   "background_color": "#fff",
