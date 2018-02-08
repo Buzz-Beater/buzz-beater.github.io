@@ -27,16 +27,16 @@
 .avatar {
   
   float: right;
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 100%;
   margin-left: .5rem;
   
 //   position: relative; 
 //   z-index: 1; 
   @media screen and (min-width: $break-point-1) {
-    width: 7rem;
-    height: 7rem;
+    width: 11rem;
+    height: 21rem;
   }
   
 }

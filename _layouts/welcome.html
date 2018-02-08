@@ -7,7 +7,6 @@ layout: about
 {% assign content_split = content | split:separator %}
 
 {{ content_split[0] }}
-
 <section>
 {% if page.selected_projects %}
   <h2 id="selected-projects">{{ strings.welcome.selected_projects | default:"Selected Projects" }}</h2>

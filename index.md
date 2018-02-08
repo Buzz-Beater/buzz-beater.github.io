@@ -1,8 +1,7 @@
 ---
 layout: welcome
-title: Welcome
 description: >
-  Baoxiong Jia's Website
+  Welcome
 hide_description: true
 content_separator: <!--more-->
 ---

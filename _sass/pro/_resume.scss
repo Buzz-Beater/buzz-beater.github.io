@@ -22,6 +22,7 @@
     margin-top: 0;
     font-family: unset!important;
     font-weight: $font-weight-bold;
+    width: 100%;
   }
 
   .bc {
@@ -109,9 +110,34 @@
   }
 
   $pad: 2.5rem;
+  
+  .education {
+
+    width: 100%;
+
+    background: #fff;
+
+    boder-collapse: collapse;
+    border-style: hidden;
+
+    .education-img {
+      border-style: hidden;
+      width: 20%;
+    }
+    .education-info {
+      border-style: hidden;
+      width: 80%;
+    }
+  }
+
+  .school-avatar {
+    width: 100vw;
+    height: 100vw;
+  }
 
   .columns {
     margin-left: -$pad;
+    width: 120%;
 
     &::after {
       @include clearfix();
@@ -127,20 +153,21 @@
     float: left;
     padding-left: $pad;
     width: 100%;
+
+    .column-3-5 {
+      width: 100%;
+    }
   }
 
   @media screen and (min-width: $break-point-2) {
-    .column-3-5 { width: 60% }
-    .column-2-5 { width: 40% }
+    .column-3-5 { width: 100% }
   }
 
   @media screen and (min-width: $break-point-3) {
     .column-3-5 { width: 100% }
-    .column-2-5 { width: 100% }
   }
 
   @media screen and (min-width: 73.5em) {
-    .column-3-5 { width: 60% }
-    .column-2-5 { width: 40% }
+    .column-3-5 { width: 100% }
   }
 }

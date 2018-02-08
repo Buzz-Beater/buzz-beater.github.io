@@ -8,26 +8,26 @@ author1:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    I'm Baoxiong Jia, a senior year undergraduate student in Peking University. I'm currently in the integrated BS/MS program held by the PKU/UCLA. 
-    
+    Hi! I'm Baoxiong, a senior undergraduate in the [Computer Science Department](http://eecs.pku.edu.cn/EN/) at Peking Univeristy. I'm currently enrolled in the integrated BS/MS program held by PKU and UCLA. I'm also doing research on computer vision at [Center for Vision, Cognition, Learning, and Autonomy (VCLA)](http://vcla.stat.ucla.edu/) advised by [Prof. Song-chun Zhu](http://www.stat.ucla.edu/~sczhu/).
+    My research interests lie in computer vision and cognitive science, especially human action understanding and intention prediction in multi-agent scenarios.
 
   # This photo will be used in the about section
   picture:
-    path:            https://placehold.it/128x128
+    path:            /assests/img/pretentious-bg.jpg
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            https://placehold.it/128x128
-      2x:            https://placehold.it/256x256
+      1x:            /assets/img/pretentious-bg.jpg
+      2x:            /assets/img/pretentious-bg.jpg
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         <username>
-    github:          Buzz-Beater
+    #twitter:         <username>
     email:           mailto:jerryjiabx@gmail.com
+    github:          Buzz-Beater
     # rss:             https://<url>/feed.xml
-    # facebook:        <username>
+    facebook:        baoxiongjia.buzzbeater
     # google:          <number>
     # vk:              <username>
     # youtube:         <string_string_string>
@@ -54,7 +54,7 @@ author1:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    # linkedin:        <firstname-lastname-string>
+    linkedin:        baoxiong-jia-2b6094122
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
