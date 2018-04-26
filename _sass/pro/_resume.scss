@@ -112,7 +112,7 @@
   $pad: 2.5rem;
   
   .education {
-
+    margin-left: $pad / 8;
     width: 100%;
 
     background: #fff;
@@ -136,8 +136,7 @@
   }
 
   .columns {
-    margin-left: -$pad;
-    width: 120%;
+    width: 100%;
 
     &::after {
       @include clearfix();
@@ -160,14 +159,14 @@
   }
 
   @media screen and (min-width: $break-point-2) {
-    .column-3-5 { width: 100% }
+    .columns { width: 100% }
   }
 
   @media screen and (min-width: $break-point-3) {
-    .column-3-5 { width: 100% }
+    .columns { width: 100% }
   }
 
   @media screen and (min-width: 73.5em) {
-    .column-3-5 { width: 100% }
+    .columns { width: 100% }
   }
 }

@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-03-01T19:34:02-08:00</updated><id>http://localhost:4000/</id><title type="html">Baoxiong Jia @ Peking University</title><subtitle></subtitle><author><name>Baoxiong Jia</name><email>jerryjiabx@gmail.com</email></author><entry><title type="html">From AlphaGo to AlphaGo Zero</title><link href="http://localhost:4000/2018/01/31/AlphaGo/" rel="alternate" type="text/html" title="From AlphaGo to AlphaGo Zero" /><published>2018-01-31T00:00:00-08:00</published><updated>2018-01-31T00:00:00-08:00</updated><id>http://localhost:4000/2018/01/31/AlphaGo</id><content type="html" xml:base="http://localhost:4000/2018/01/31/AlphaGo/">&lt;p&gt;Text can be &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, or &lt;del&gt;strikethrough&lt;/del&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en" /><updated>2018-04-26T14:44:58-07:00</updated><id>http://localhost:4000/</id><title type="html">Baoxiong Jia @ Peking University</title><subtitle></subtitle><author><name>Baoxiong Jia</name><email>jerryjiabx@gmail.com</email></author><entry><title type="html">From AlphaGo to AlphaGo Zero</title><link href="http://localhost:4000/2018/01/31/IRL/" rel="alternate" type="text/html" title="From AlphaGo to AlphaGo Zero" /><published>2018-01-31T00:00:00-08:00</published><updated>2018-01-31T00:00:00-08:00</updated><id>http://localhost:4000/2018/01/31/IRL</id><content type="html" xml:base="http://localhost:4000/2018/01/31/IRL/">&lt;p&gt;Text can be &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, or &lt;del&gt;strikethrough&lt;/del&gt;.&lt;/p&gt;
+
+&lt;pre class=&quot;MathJax_Preview&quot;&gt;&lt;code&gt;\begin{aligned}
+Q(a) = {\rm arg}\max_a{E[R_t|A_t = a]}
+\end{aligned}&lt;/code&gt;&lt;/pre&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{aligned}
+Q(a) = {\rm arg}\max_a{E[R_t|A_t = a]}
+\end{aligned}&lt;/script&gt;
 
 &lt;p&gt;&lt;a href=&quot;/posts_/&quot;&gt;Link to another page&lt;/a&gt;.&lt;/p&gt;
 
@@ -697,7 +704,125 @@ so that your posts remain compatible with other Jekyll themes.&lt;/p&gt;
                  \vdots \\
                  y_n
                \end{array}\right)
-\end{aligned} %]]&gt;&lt;/script&gt;</content><author><name>Baoxiong Jia</name><email>jerryjiabx@gmail.com</email></author><category term="Reinforcement Learning" /><summary type="html">Text can be bold, italic, or strikethrough.</summary></entry><entry><title type="html">Hydejack’s New Design</title><link href="http://localhost:4000/2017/11/17/hydejacks-new-design/" rel="alternate" type="text/html" title="Hydejack's New Design" /><published>2017-11-17T00:00:00-08:00</published><updated>2017-11-17T00:00:00-08:00</updated><id>http://localhost:4000/2017/11/17/hydejacks-new-design</id><content type="html" xml:base="http://localhost:4000/2017/11/17/hydejacks-new-design/">&lt;p&gt;While v7 brings an &lt;a href=&quot;//CHANGELOG/#v700&quot;&gt;insane amount of new stuff&lt;/a&gt;, the most notable change is the new background image.
+\end{aligned} %]]&gt;&lt;/script&gt;</content><author><name>Baoxiong Jia</name><email>jerryjiabx@gmail.com</email></author><category term="Reinforcement Learning" /><summary type="html">Text can be bold, italic, or strikethrough.</summary></entry><entry><title type="html">Inverse Reinforcement Learning</title><link href="http://localhost:4000/2018/01/31/AlphaGo/" rel="alternate" type="text/html" title="Inverse Reinforcement Learning" /><published>2018-01-31T00:00:00-08:00</published><updated>2018-01-31T00:00:00-08:00</updated><id>http://localhost:4000/2018/01/31/AlphaGo</id><content type="html" xml:base="http://localhost:4000/2018/01/31/AlphaGo/">&lt;p&gt;Inverse reinforcement learning (IRL) is the problem of extracting a reward function given observed, optimal behavior.&lt;/p&gt;
+
+&lt;p&gt;The motivation of forming up such a problem comes from two key observations&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;(1) In examining animal and human behavior, the reward function is often unknown, especially in the case of multi-attribute reward functions (which is the common situation).&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;(2) When building up a intelligent agent, designers may have only a very rough idea of what the reward function should be like for the agent to behave successfully in some certain domain.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As commonly used in other learning frameworks, one source of information can be obtained by imitating the behavior of some “expert” agents. However, it is believed that compared to learning the policies (actions &lt;code class=&quot;MathJax_Preview&quot;&gt;a_t&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;a_t&lt;/script&gt;, current state &lt;code class=&quot;MathJax_Preview&quot;&gt;s_t&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;s_t&lt;/script&gt; and next state &lt;code class=&quot;MathJax_Preview&quot;&gt;s_{t+1}&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;s_{t+1}&lt;/script&gt;), the underlying reward function is a more robust definition of the task. Thus comes the idea of inverse reinforcement learning, that is, treats the observed “expert” actions as optimal behaviors to learn the underlying reward function in different tasks. Inverse optimal control or inverse optimal planning are also used to address this specific problem.&lt;/p&gt;
+
+&lt;h2 id=&quot;formulation&quot;&gt;Formulation&lt;/h2&gt;
+
+&lt;h3 id=&quot;1-markov-decision-process-mdp&quot;&gt;1. Markov Decision Process (MDP)&lt;/h3&gt;
+&lt;p&gt;A (finite) MDP is a tuple &lt;code class=&quot;MathJax_Preview&quot;&gt;(S,\ A,\ T,\ \gamma,\ R,\ D)&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;(S,\ A,\ T,\ \gamma,\ R,\ D)&lt;/script&gt;, where&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;MathJax_Preview&quot;&gt;S&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;S&lt;/script&gt; is a finite set of &lt;code class=&quot;MathJax_Preview&quot;&gt;N&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;N&lt;/script&gt; &lt;strong&gt;states&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;MathJax_Preview&quot;&gt;A = \{a_1, ..., a_k\}&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;A = \{a_1, ..., a_k\}&lt;/script&gt; is a set of &lt;code class=&quot;MathJax_Preview&quot;&gt;k&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;k&lt;/script&gt; &lt;strong&gt;actions&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;MathJax_Preview&quot;&gt;T(s'\| s, a) = T(S_{t+1} = s' \| S_t = s, A_t = a)&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;T(s'\| s, a) = T(S_{t+1} = s' \| S_t = s, A_t = a)&lt;/script&gt; is a &lt;strong&gt;state transition probabilities&lt;/strong&gt; upon taking action &lt;code class=&quot;MathJax_Preview&quot;&gt;a&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;a&lt;/script&gt; in state &lt;code class=&quot;MathJax_Preview&quot;&gt;s&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;MathJax_Preview&quot;&gt;R: S\to\mathbb{R}&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;R: S\to\mathbb{R}&lt;/script&gt; is the &lt;strong&gt;reinforcement&lt;/strong&gt; function or the &lt;strong&gt;reward function&lt;/strong&gt;.&lt;/p&gt;
+
+    &lt;p&gt;Normally we can define &lt;code class=&quot;MathJax_Preview&quot;&gt;R = R(s,a) = \mathbb{E}[R_{t+1}\|S_t=s, A_t=a]&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;R = R(s,a) = \mathbb{E}[R_{t+1}\|S_t=s, A_t=a]&lt;/script&gt; or &lt;code class=&quot;MathJax_Preview&quot;&gt;R = R(s) = \mathbb{E}_a[R(s, a)]&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;R = R(s) = \mathbb{E}_a[R(s, a)]&lt;/script&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;MathJax_Preview&quot;&gt;\gamma \in [0, 1)&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;\gamma \in [0, 1)&lt;/script&gt; which is the discount factor for taking future events into account.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;MathJax_Preview&quot;&gt;D&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;D&lt;/script&gt; indicates the initial distribution for starting state $s_0$&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;2-policy-value-function-and-q-function&quot;&gt;2. Policy, Value Function and Q-function&lt;/h4&gt;
+&lt;p&gt;A &lt;strong&gt;policy&lt;/strong&gt; &lt;code class=&quot;MathJax_Preview&quot;&gt;\pi: S \to A&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;\pi: S \to A&lt;/script&gt; is a mapping from state space to action space, which is the basic guide of the decision making process. It is often defined as
+&lt;code class=&quot;MathJax_Preview&quot;&gt;\pi(a\|s) = Pr(A_t = a \| S_t = s)&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;\pi(a\|s) = Pr(A_t = a \| S_t = s)&lt;/script&gt;
+With policy &lt;code class=&quot;MathJax_Preview&quot;&gt;\pi&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;\pi&lt;/script&gt;, the &lt;strong&gt;value function&lt;/strong&gt; &lt;code class=&quot;MathJax_Preview&quot;&gt;V^{\pi}(s)&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;V^{\pi}(s)&lt;/script&gt; can be defined as
+&lt;code class=&quot;MathJax_Preview&quot;&gt;\begin{aligned}
+V^{\pi}(s_t) &amp;amp; = \mathbb{E}_{(s_t, s_{t+1}, ...)}[G_t\ |\ S_t = s_t]\\
+&amp;amp; = \mathbb{E}_{(s_t, s_{t+1}, ...)}[R(s_t) + \gamma R(s_{t+1}) + \gamma^2R(s_{t+2}) + ... | \pi]
+\end{aligned}&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{aligned}
+V^{\pi}(s_t) &amp; = \mathbb{E}_{(s_t, s_{t+1}, ...)}[G_t\ |\ S_t = s_t]\\
+&amp; = \mathbb{E}_{(s_t, s_{t+1}, ...)}[R(s_t) + \gamma R(s_{t+1}) + \gamma^2R(s_{t+2}) + ... | \pi]
+\end{aligned} %]]&gt;&lt;/script&gt;
+where &lt;code class=&quot;MathJax_Preview&quot;&gt;G_t = \sum_{k = 0}^{\infty} \gamma^kR(s_{t+k})&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;G_t = \sum_{k = 0}^{\infty} \gamma^kR(s_{t+k})&lt;/script&gt; is the discounted reward from time &lt;code class=&quot;MathJax_Preview&quot;&gt;t&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;t&lt;/script&gt;.
+We can also define the &lt;strong&gt;Q-function&lt;/strong&gt; as follows
+&lt;code class=&quot;MathJax_Preview&quot;&gt;\begin{aligned}
+Q^{\pi}(s_t, a_t) &amp;amp; = \mathbb{E}_{s_{t+1} \sim T(s_{t+1} | s_t, a_t)}[G_t | S_t = s_t, A_t = a_t]\\
+&amp;amp; = R(s_t, a_t) + \gamma\mathbb{E}_{s_{t+1}\sim T(s_{t+1}|s_t, a_t)}[V^{\pi}(s_{t+1})]
+\end{aligned}&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{aligned}
+Q^{\pi}(s_t, a_t) &amp; = \mathbb{E}_{s_{t+1} \sim T(s_{t+1} | s_t, a_t)}[G_t | S_t = s_t, A_t = a_t]\\
+&amp; = R(s_t, a_t) + \gamma\mathbb{E}_{s_{t+1}\sim T(s_{t+1}|s_t, a_t)}[V^{\pi}(s_{t+1})]
+\end{aligned} %]]&gt;&lt;/script&gt;
+While &lt;strong&gt;value function&lt;/strong&gt; tries to evaluate the value of a state &lt;code class=&quot;MathJax_Preview&quot;&gt;s&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt;, the &lt;strong&gt;Q-function&lt;/strong&gt; tries to evaluate the value of certain action given a starting state &lt;code class=&quot;MathJax_Preview&quot;&gt;s&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;s&lt;/script&gt; (use action &lt;code class=&quot;MathJax_Preview&quot;&gt;a&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;a&lt;/script&gt; in this step and take action according to policy &lt;code class=&quot;MathJax_Preview&quot;&gt;\pi&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;\pi&lt;/script&gt; in future steps). This two functions are related in the form shown below:
+&lt;code class=&quot;MathJax_Preview&quot;&gt;V^{\pi}(s_t) = \sum_{a_t}\pi(a_t|s_t)Q^{\pi}(s_t, a_t)&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;V^{\pi}(s_t) = \sum_{a_t}\pi(a_t|s_t)Q^{\pi}(s_t, a_t)&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;strong&gt;optimal value function&lt;/strong&gt; and &lt;strong&gt;optimal Q-function&lt;/strong&gt; can thus be defined as
+&lt;code class=&quot;MathJax_Preview&quot;&gt;\begin{aligned}
+    V^{*}(s)\ &amp;amp; = sup_{\pi}\ V^{\pi}(s)\\
+    Q^{*}(s, a)\ &amp;amp; = sup_{\pi}\ Q^{\pi}(s,a)
+\end{aligned}&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{aligned}
+    V^{*}(s)\ &amp; = sup_{\pi}\ V^{\pi}(s)\\
+    Q^{*}(s, a)\ &amp; = sup_{\pi}\ Q^{\pi}(s,a)
+\end{aligned} %]]&gt;&lt;/script&gt;
+In the standard reinforcement learning problem, the goal is to find the &lt;strong&gt;optimal policy&lt;/strong&gt; $\pi^&lt;em&gt;$ such that $V^{\pi^{&lt;/em&gt;}}(s)$ is maximized for all $s\in S$.&lt;/p&gt;
+
+&lt;h4 id=&quot;3-bellman-equations-and-bellman-optimality&quot;&gt;3. Bellman Equations and Bellman Optimality&lt;/h4&gt;
+&lt;p&gt;In fact, we can have more precise definitions for both the &lt;strong&gt;value function&lt;/strong&gt; and the &lt;strong&gt;Q-function&lt;/strong&gt;. First, in the &lt;strong&gt;value function&lt;/strong&gt;, we can use $V^{\pi}(s_{t+1})$ to substitute the infinite series:
+$$
+\begin{aligned}
+V^{\pi}(s_t) &amp;amp; = \mathbb{E}&lt;em&gt;{(s_t, s&lt;/em&gt;{t+1}, …)}[R(s_t) + \gamma R(s_{t+1}) + \gamma^2R(s_{t+2}) + … | \pi] \&lt;/p&gt;
+
+&lt;p&gt;&amp;amp; = \sum_{a_t\in A} \pi(a_t|s_t)\left(R(s_t, a_t) + \gamma \sum_{s_{t+1}\in S}T(s_{t+1}|s_t, a_t)V^{\pi}(s_{t+1})\right) &lt;br /&gt;
+&amp;amp; = R(s_t) + \gamma \sum_{a_t\in A}\sum_{s_{t+1}\in S}T(s_{t+1}|s_t, a_t)\pi(a_t|s_t)V^{\pi}(s_{t+1})&lt;br /&gt;
+&amp;amp; = \mathbb{E}&lt;em&gt;{(s_t, s&lt;/em&gt;{t+1}, …)} [R(s_t) + \gamma V^{\pi}(s_{t+1})]
+\end{aligned}
+&lt;code class=&quot;MathJax_Preview&quot;&gt;Similarly, for **Q-function** we have&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;Similarly, for **Q-function** we have&lt;/script&gt;
+\begin{aligned}
+Q^{\pi}(s_t, a_t)\ &amp;amp; = R(s_t, a_t) + \mathbb{E}&lt;em&gt;{s&lt;/em&gt;{t+1}\sim T(s_{t+1}|s_t, a_t)}[V^{\pi}(s_{t+1})]&lt;br /&gt;
+&amp;amp; = R(s_t, a_t) + \mathbb{E}&lt;em&gt;{s&lt;/em&gt;{t+1}\sim T(s_{t+1}|s_t, a_t)}[R(s_{t+1}) + V^{\pi}(s_{t+2})]&lt;br /&gt;
+&amp;amp; = R(s_t, a_t) + \gamma \sum_{s_{t+1}\in S}T(s_{t+1}|s_t, a_t)\sum_{a_{t+1}\in A}\pi(a_{t+1}| s_{t+1})Q^{\pi}(s_{t+1}, a_{t+1})&lt;br /&gt;
+&amp;amp; = \mathbb{E}&lt;em&gt;{s&lt;/em&gt;{t+1}\sim T(s_{t+1}|s_t, a_t)}[R(s_t, a_t) + \gamma Q^{\pi}(s_{t+1}, a_{t+1})]
+\end{aligned}
+$$&lt;/p&gt;
+
+&lt;p&gt;To find the optimal policy $\pi^*$, we can either maximize over &lt;strong&gt;value function&lt;/strong&gt; or &lt;strong&gt;Q-function&lt;/strong&gt;
+&lt;code class=&quot;MathJax_Preview&quot;&gt;\begin{aligned}
+V^*(s_t) &amp;amp; = \max_{a}{R(s_t, a) + \gamma\sum_{s_{t+1}\in S}T(s_{t+1} | s_t, a)V^{*}(s_{t+1})}\\
+&amp;amp; = \max_{a} Q^*(s_t, a)
+\end{aligned}&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{aligned}
+V^*(s_t) &amp; = \max_{a}{R(s_t, a) + \gamma\sum_{s_{t+1}\in S}T(s_{t+1} | s_t, a)V^{*}(s_{t+1})}\\
+&amp; = \max_{a} Q^*(s_t, a)
+\end{aligned} %]]&gt;&lt;/script&gt;
+The optimal policy can be acquired through
+&lt;code class=&quot;MathJax_Preview&quot;&gt;\begin{aligned}
+  \pi(a|s) = \begin{cases}
+      1, &amp;amp; \text{if}\ a={\rm arg}\max Q^*(s, a) \\
+      0, &amp;amp; \text{otherwise}
+    \end{cases}
+\end{aligned}&lt;/code&gt;&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\begin{aligned}
+  \pi(a|s) = \begin{cases}
+      1, &amp; \text{if}\ a={\rm arg}\max Q^*(s, a) \\
+      0, &amp; \text{otherwise}
+    \end{cases}
+\end{aligned} %]]&gt;&lt;/script&gt;&lt;/p&gt;</content><author><name>Baoxiong Jia</name><email>jerryjiabx@gmail.com</email></author><category term="Reinforcement Learning" /><summary type="html">Inverse reinforcement learning (IRL) is the problem of extracting a reward function given observed, optimal behavior.</summary></entry><entry><title type="html">Hydejack’s New Design</title><link href="http://localhost:4000/2017/11/17/hydejacks-new-design/" rel="alternate" type="text/html" title="Hydejack's New Design" /><published>2017-11-17T00:00:00-08:00</published><updated>2017-11-17T00:00:00-08:00</updated><id>http://localhost:4000/2017/11/17/hydejacks-new-design</id><content type="html" xml:base="http://localhost:4000/2017/11/17/hydejacks-new-design/">&lt;p&gt;While v7 brings an &lt;a href=&quot;//CHANGELOG/#v700&quot;&gt;insane amount of new stuff&lt;/a&gt;, the most notable change is the new background image.
 It is no longer &lt;em&gt;anti-selling&lt;/em&gt; the theme.
 The old image was a blurred version of Napoleon Bonaparte, which was just… weird. I could tell the story of how this came to be,
 but I’d rather show you the new and improved background image.&lt;/p&gt;
@@ -1185,42 +1310,4 @@ They will appear in the listed order.&lt;/p&gt;
     &lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;sidebar_tags&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;mytag&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;othertag&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Baoxiong Jia</name><email>jerryjiabx@gmail.com</email></author><category term="hydejack" /><summary type="html">Features Unlike Hyde, it’s very opinionated about how you are going to use it. Features include: Touch-enabled sidebar / drawer for mobile, including fallback when JS is disabled. Github Pages compatible tag support based on this post. Customizable link color and sidebar image, per-site, per-tag and per-post. Optional author section at the bottom of each post. Optional comment section powered by Disqus. Layout for posts grouped by year Wide array of social media icons on sidebar. Math blocks via KaTeX.</summary></entry><entry><title type="html">Introducing Hyde</title><link href="http://localhost:4000/2013/12/28/introducing-hyde/" rel="alternate" type="text/html" title="Introducing Hyde" /><published>2013-12-28T00:00:00-08:00</published><updated>2013-12-28T00:00:00-08:00</updated><id>http://localhost:4000/2013/12/28/introducing-hyde</id><content type="html" xml:base="http://localhost:4000/2013/12/28/introducing-hyde/">&lt;p&gt;Hyde is a brazen two-column &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that pairs a prominent sidebar with uncomplicated content. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
-
-&lt;p class=&quot;message&quot;&gt;&lt;strong&gt;NOTE&lt;/strong&gt;: This post is outdated and only included for legacy reasons.
-See the &lt;a href=&quot;/docs/7.5.0/&quot;&gt;Documentation&lt;/a&gt; for up-to-date instructions.&lt;/p&gt;
-
-&lt;h3 id=&quot;built-on-poole&quot;&gt;Built on Poole&lt;/h3&gt;
-
-&lt;p&gt;Poole is the Jekyll Butler, serving as an upstanding and effective foundation for Jekyll themes by &lt;a href=&quot;https://twitter.com/mdo&quot;&gt;@mdo&lt;/a&gt;. Poole, and every theme built on it (like Hyde here) includes the following:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Complete Jekyll setup included (layouts, config, &lt;a href=&quot;/404&quot;&gt;404&lt;/a&gt;, &lt;a href=&quot;/feed.xml&quot; class=&quot;external&quot;&gt;RSS feed&lt;/a&gt;, posts, and &lt;a href=&quot;/about/&quot;&gt;example page&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;Mobile friendly design and development&lt;/li&gt;
-  &lt;li&gt;Easily scalable text and component sizing with &lt;code class=&quot;highlighter-rouge&quot;&gt;rem&lt;/code&gt; units in the CSS&lt;/li&gt;
-  &lt;li&gt;Support for a wide gamut of HTML elements&lt;/li&gt;
-  &lt;li&gt;Related posts (time-based, because Jekyll) below each post&lt;/li&gt;
-  &lt;li&gt;Syntax highlighting, courtesy Pygments (the Python-based code snippet highlighter)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;hyde-features&quot;&gt;Hyde features&lt;/h3&gt;
-
-&lt;p&gt;In addition to the features of Poole, Hyde adds the following:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Sidebar includes support for textual modules and a dynamically generated navigation with active link support&lt;/li&gt;
-  &lt;li&gt;Two orientations for content and sidebar, default (left sidebar) and &lt;a href=&quot;https://github.com/poole/lanyon#reverse-layout&quot;&gt;reverse&lt;/a&gt; (right sidebar), available via &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; classes&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/poole/hyde#themes&quot;&gt;Eight optional color schemes&lt;/a&gt;, available via &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;body&amp;gt;&lt;/code&gt; classes&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/poole/hyde#readme&quot;&gt;Head to the readme&lt;/a&gt; to learn more.&lt;/p&gt;
-
-&lt;h3 id=&quot;browser-support&quot;&gt;Browser support&lt;/h3&gt;
-
-&lt;p&gt;Hyde is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.&lt;/p&gt;
-
-&lt;h3 id=&quot;download&quot;&gt;Download&lt;/h3&gt;
-
-&lt;p&gt;Hyde is developed on and hosted with GitHub. Head to the &lt;a href=&quot;https://github.com/poole/hyde&quot;&gt;GitHub repository&lt;/a&gt; for downloads, bug reports, and features requests.&lt;/p&gt;
-
-&lt;p&gt;Thanks!&lt;/p&gt;</content><author><name>Baoxiong Jia</name><email>jerryjiabx@gmail.com</email></author><category term="hyde" /><summary type="html">Hyde is a brazen two-column Jekyll theme that pairs a prominent sidebar with uncomplicated content. It’s based on Poole, the Jekyll butler.</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>Baoxiong Jia</name><email>jerryjiabx@gmail.com</email></author><category term="hydejack" /><summary type="html">Features Unlike Hyde, it’s very opinionated about how you are going to use it. Features include: Touch-enabled sidebar / drawer for mobile, including fallback when JS is disabled. Github Pages compatible tag support based on this post. Customizable link color and sidebar image, per-site, per-tag and per-post. Optional author section at the bottom of each post. Optional comment section powered by Disqus. Layout for posts grouped by year Wide array of social media icons on sidebar. Math blocks via KaTeX.</summary></entry></feed>

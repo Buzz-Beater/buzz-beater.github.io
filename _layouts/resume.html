@@ -30,9 +30,11 @@ layout: base
   </header>
 
   {% if basics.summary.size > 0 %}
+  <div class="about-paragraph" style="text-align: justify">
     <p class="note p-note" property="description">
       {{ basics.summary | markdownify | replace:'<p>','' | replace:'</p>','' }}
     </p>
+  </div>
   {% endif %}
 
   {% include message.html text=page.description hide=page.hide_description alt="" %}
@@ -138,9 +140,7 @@ layout: base
       </dl>
     {% endif %}
   </div>
-
   <div class="columns">
-    <div class="column column-3-5">
       {% if resume.work.size > 0 %}
         <section>
         <h2 id="work" class="h3 faded hr">
@@ -360,9 +360,6 @@ layout: base
         {% endfor %}
         </section>
       {% endif %}
-    </div>
-
-    <div class="column column-2-5">
       {% if resume.languages.size > 0 %}
         <section>
         <h2 id="languages" class="h3 faded hr">
@@ -487,6 +484,5 @@ layout: base
         </dl>
         </section>
       {% endif %}
-    </div>
   </div>
 </article>

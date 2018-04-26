@@ -15,9 +15,9 @@ layout: base
   {% endif %}
 
   <h1 class="page-title hr">Welcome</h1>
-
+  <div class="about-paragraph" style="text-align: justify">
   {{ author.about | markdownify }}
-
+  </div>
   {% include message.html text=page.description hide=page.hide_description alt="" %}
 
   {{ content }}

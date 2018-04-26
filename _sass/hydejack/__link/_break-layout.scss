@@ -26,6 +26,7 @@
 
 
 pre, table:not(.highlight), .katex-display, .break-layout  {
+  margin-right: 5em;
   @media screen {
     position: relative;
     width: calc(100vw - .5rem);

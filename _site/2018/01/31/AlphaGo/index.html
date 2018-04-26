@@ -24,8 +24,8 @@ Powered by Hydejack v7.4.1 <https://qwtel.com/hydejack/>
 
   
 <!-- Begin Jekyll SEO tag v2.3.0 -->
-<title>From AlphaGo to AlphaGo Zero | Baoxiong Jia @ Peking University</title>
-<meta property="og:title" content="From AlphaGo to AlphaGo Zero" />
+<title>Inverse Reinforcement Learning | Baoxiong Jia @ Peking University</title>
+<meta property="og:title" content="Inverse Reinforcement Learning" />
 <meta name="author" content="Baoxiong Jia" />
 <meta property="og:locale" content="en" />
 <link rel="canonical" href="http://localhost:4000/2018/01/31/AlphaGo/" />
@@ -34,7 +34,7 @@ Powered by Hydejack v7.4.1 <https://qwtel.com/hydejack/>
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-01-31T00:00:00-08:00" />
 <script type="application/ld+json">
-{"headline":"From AlphaGo to AlphaGo Zero","dateModified":"2018-01-31T00:00:00-08:00","datePublished":"2018-01-31T00:00:00-08:00","sameAs":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/01/31/AlphaGo/"},"image":null,"author":{"@type":"Person","name":"Baoxiong Jia"},"description":null,"name":null,"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/icons/icon.png"},"name":"Baoxiong Jia"},"@type":"BlogPosting","url":"http://localhost:4000/2018/01/31/AlphaGo/","@context":"http://schema.org"}</script>
+{"headline":"Inverse Reinforcement Learning","dateModified":"2018-01-31T00:00:00-08:00","datePublished":"2018-01-31T00:00:00-08:00","sameAs":null,"image":null,"author":{"@type":"Person","name":"Baoxiong Jia"},"description":null,"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2018/01/31/AlphaGo/"},"name":null,"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/icons/icon.png"},"name":"Baoxiong Jia"},"@type":"BlogPosting","url":"http://localhost:4000/2018/01/31/AlphaGo/","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -180,11 +180,11 @@ Powered by Hydejack v7.4.1 <https://qwtel.com/hydejack/>
     
 
 
-<article id="post-2018-01-31-AlphaGo" class="page post" role="article">
+<article id="post-2018-01-31-AlphaGo" class="page post" role="article" style="text-align: justify">
   <header>
     <h1 class="post-title">
       
-        From AlphaGo to AlphaGo Zero
+        Inverse Reinforcement Learning
       
     </h1>
 
@@ -231,706 +231,125 @@ on <span>Reinforcement learning</span>
   </header>
 
   
-    <p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
+    <p>Inverse reinforcement learning (IRL) is the problem of extracting a reward function given observed, optimal behavior.</p>
 
-<p><a href="/posts_/">Link to another page</a>.</p>
-
-<p>There should be whitespace between paragraphs.</p>
-
-<p>There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.</p>
-
-<h1 id="header-1">Header 1</h1>
-
-<p>This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.</p>
-
-<h2 id="header-2">Header 2</h2>
-
-<blockquote>
-  <p>This is a blockquote following a header.</p>
-
-  <p>When something is important enough, you do it even if the odds are not in your favor.</p>
-</blockquote>
-
-<h3 id="header-3">Header 3</h3>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Javascript code with syntax highlighting.</span>
-<span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">lang</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">dateformat</span><span class="p">.</span><span class="nx">i18n</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'./lang/'</span> <span class="o">+</span> <span class="nx">l</span><span class="p">)</span>
-  <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Ruby code with syntax highlighting</span>
-<span class="no">GitHubPages</span><span class="o">::</span><span class="no">Dependencies</span><span class="p">.</span><span class="nf">gems</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">gem</span><span class="p">,</span> <span class="n">version</span><span class="o">|</span>
-  <span class="n">s</span><span class="p">.</span><span class="nf">add_dependency</span><span class="p">(</span><span class="n">gem</span><span class="p">,</span> <span class="s2">"= </span><span class="si">#{</span><span class="n">version</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="k">end</span>
-</code></pre></div></div>
-
-<h4 id="header-4">Header 4</h4>
+<p>The motivation of forming up such a problem comes from two key observations</p>
 
 <ul>
-  <li>This is an unordered list following a header.</li>
-  <li>This is an unordered list following a header.</li>
-  <li>This is an unordered list following a header.</li>
+  <li>
+    <p>(1) In examining animal and human behavior, the reward function is often unknown, especially in the case of multi-attribute reward functions (which is the common situation).</p>
+  </li>
+  <li>
+    <p>(2) When building up a intelligent agent, designers may have only a very rough idea of what the reward function should be like for the agent to behave successfully in some certain domain.</p>
+  </li>
 </ul>
 
-<h5 id="header-5">Header 5</h5>
+<p>As commonly used in other learning frameworks, one source of information can be obtained by imitating the behavior of some “expert” agents. However, it is believed that compared to learning the policies (actions <code class="MathJax_Preview">a_t</code><script type="math/tex">a_t</script>, current state <code class="MathJax_Preview">s_t</code><script type="math/tex">s_t</script> and next state <code class="MathJax_Preview">s_{t+1}</code><script type="math/tex">s_{t+1}</script>), the underlying reward function is a more robust definition of the task. Thus comes the idea of inverse reinforcement learning, that is, treats the observed “expert” actions as optimal behaviors to learn the underlying reward function in different tasks. Inverse optimal control or inverse optimal planning are also used to address this specific problem.</p>
 
-<ol>
-  <li>This is an ordered list following a header.</li>
-  <li>This is an ordered list following a header.</li>
-  <li>This is an ordered list following a header.</li>
-</ol>
+<h2 id="formulation">Formulation</h2>
 
-<h6 id="header-6">Header 6</h6>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: left">head1</th>
-      <th style="text-align: left">head two</th>
-      <th style="text-align: left">three</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good swedish fish</td>
-      <td style="text-align: left">nice</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">out of stock</td>
-      <td style="text-align: left">good and plenty</td>
-      <td style="text-align: left">nice</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good <code class="highlighter-rouge">oreos</code></td>
-      <td style="text-align: left">hmm</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">ok</td>
-      <td style="text-align: left">good <code class="highlighter-rouge">zoute</code> drop</td>
-      <td style="text-align: left">yumm</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="theres-a-horizontal-rule-below-this">There’s a horizontal rule below this.</h3>
-
-<hr />
-
-<h3 id="here-is-an-unordered-list">Here is an unordered list:</h3>
-
+<h3 id="1-markov-decision-process-mdp">1. Markov Decision Process (MDP)</h3>
+<p>A (finite) MDP is a tuple <code class="MathJax_Preview">(S,\ A,\ T,\ \gamma,\ R,\ D)</code><script type="math/tex">(S,\ A,\ T,\ \gamma,\ R,\ D)</script>, where</p>
 <ul>
-  <li>Item foo</li>
-  <li>Item bar</li>
-  <li>Item baz</li>
-  <li>Item zip</li>
+  <li>
+    <p><code class="MathJax_Preview">S</code><script type="math/tex">S</script> is a finite set of <code class="MathJax_Preview">N</code><script type="math/tex">N</script> <strong>states</strong>.</p>
+  </li>
+  <li>
+    <p><code class="MathJax_Preview">A = \{a_1, ..., a_k\}</code><script type="math/tex">A = \{a_1, ..., a_k\}</script> is a set of <code class="MathJax_Preview">k</code><script type="math/tex">k</script> <strong>actions</strong>.</p>
+  </li>
+  <li>
+    <p><code class="MathJax_Preview">T(s'\| s, a) = T(S_{t+1} = s' \| S_t = s, A_t = a)</code><script type="math/tex">T(s'\| s, a) = T(S_{t+1} = s' \| S_t = s, A_t = a)</script> is a <strong>state transition probabilities</strong> upon taking action <code class="MathJax_Preview">a</code><script type="math/tex">a</script> in state <code class="MathJax_Preview">s</code><script type="math/tex">s</script>.</p>
+  </li>
+  <li>
+    <p><code class="MathJax_Preview">R: S\to\mathbb{R}</code><script type="math/tex">R: S\to\mathbb{R}</script> is the <strong>reinforcement</strong> function or the <strong>reward function</strong>.</p>
+
+    <p>Normally we can define <code class="MathJax_Preview">R = R(s,a) = \mathbb{E}[R_{t+1}\|S_t=s, A_t=a]</code><script type="math/tex">R = R(s,a) = \mathbb{E}[R_{t+1}\|S_t=s, A_t=a]</script> or <code class="MathJax_Preview">R = R(s) = \mathbb{E}_a[R(s, a)]</code><script type="math/tex">R = R(s) = \mathbb{E}_a[R(s, a)]</script></p>
+  </li>
+  <li>
+    <p><code class="MathJax_Preview">\gamma \in [0, 1)</code><script type="math/tex">\gamma \in [0, 1)</script> which is the discount factor for taking future events into account.</p>
+  </li>
+  <li>
+    <p><code class="MathJax_Preview">D</code><script type="math/tex">D</script> indicates the initial distribution for starting state $s_0$</p>
+  </li>
 </ul>
 
-<h3 id="and-an-ordered-list">And an ordered list:</h3>
-
-<ol>
-  <li>Item one</li>
-  <li>Item two</li>
-  <li>Item three</li>
-  <li>Item four</li>
-</ol>
-
-<h3 id="and-a-nested-list">And a nested list:</h3>
-
-<ul>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item
-        <ul>
-          <li>level 3 item</li>
-          <li>level 3 item</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-    </ul>
-  </li>
-  <li>level 1 item
-    <ul>
-      <li>level 2 item</li>
-      <li>level 2 item</li>
-    </ul>
-  </li>
-  <li>level 1 item</li>
-</ul>
-
-<h3 id="small-image">Small image</h3>
-
-<p><img src="https://assets-cdn.github.com/images/icons/emoji/octocat.png" alt="" /></p>
-
-<h3 id="large-image">Large image</h3>
-
-<p><img src="https://guides.github.com/activities/hello-world/branching.png" alt="" /></p>
-
-<h3 id="definition-lists">Definition lists</h3>
-
-<dl>
-  <dt>Name</dt>
-  <dd>Godzilla</dd>
-  <dt>Born</dt>
-  <dd>1952</dd>
-  <dt>Birthplace</dt>
-  <dd>Japan</dd>
-  <dt>Color</dt>
-  <dd>Green</dd>
-</dl>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this. Or is it?
-</code></pre></div></div>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The final element.
-</code></pre></div></div>
-
-<h2 id="hydejack-exclusives">Hydejack Exclusives</h2>
-<p>Hydejack offers a few additional features to markup your markdown.
-Don’t worry, these are merely CSS classes added with kramdown’s <code class="highlighter-rouge">{:.my-class}</code> syntax,
-so that your posts remain compatible with other Jekyll themes.</p>
-
-<h3 id="message-boxes">Message Boxes</h3>
-<p class="message">You can add a message box by adding the <code class="highlighter-rouge">message</code> class to a paragraph.</p>
-
-<h3 id="faded-text">Faded text</h3>
-<p class="faded">You can add gray text by adding the <code class="highlighter-rouge">faded</code> class.</p>
-
-<h3 id="lead-paragraphs">Lead Paragraphs</h3>
-<p class="lead">You can add large text by adding the <code class="highlighter-rouge">lead</code> class to a paragraph.</p>
-
-<h3 id="lead-quotes">Lead Quotes</h3>
-<blockquote class="lead">
-  <p>You can make a quote “pop out” by adding the <code class="highlighter-rouge">lead</code> class to a quote.</p>
-</blockquote>
-
-<h3 id="lead-images">Lead Images</h3>
-<p>You can make an image span the full width by adding the <code class="highlighter-rouge">lead</code> class:</p>
-
-<p><img src="https://placehold.it/800x100" alt="Full-width image" class="lead" /></p>
-
-<h2 id="tables">Tables</h2>
-<p>Large (data) tables:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-    </tr>
-    <tr>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-    </tr>
-    <tr>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-    </tr>
-    <tr>
-      <td>Second body</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Second body</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Second body</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Second body</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-    <tr>
-      <td>2 line</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>2 line</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>2 line</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>2 line</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-    <tr>
-      <td>Footer row</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Footer row</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Footer row</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Footer row</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Prevent line breaks within cells by adding the <code class="highlighter-rouge">scroll-table</code> class to a table:</p>
-
-<table class="scroll-table">
-  <thead>
-    <tr>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-    </tr>
-    <tr>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-    </tr>
-    <tr>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-    </tr>
-    <tr>
-      <td>Second body</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Second body</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Second body</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Second body</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-    <tr>
-      <td>2 line</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>2 line</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>2 line</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>2 line</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-    <tr>
-      <td>Footer row</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Footer row</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Footer row</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-      <td>Footer row</td>
-      <td style="text-align: left"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: right"> </td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Flip the table by adding the <code class="highlighter-rouge">flip-table</code> class to a table:</p>
-
-<table class="flip-table">
-  <thead>
-    <tr>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-      <th>Default aligned</th>
-      <th style="text-align: left">Left aligned</th>
-      <th style="text-align: center">Center aligned</th>
-      <th style="text-align: right">Right aligned</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-      <td>First body part</td>
-      <td style="text-align: left">Second cell</td>
-      <td style="text-align: center">Third cell</td>
-      <td style="text-align: right">fourth cell</td>
-    </tr>
-    <tr>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-      <td>Second line</td>
-      <td style="text-align: left">foo</td>
-      <td style="text-align: center"><strong>strong</strong></td>
-      <td style="text-align: right">baz</td>
-    </tr>
-    <tr>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>Third line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-    </tr>
-    <tr>
-      <td>4th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>4th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>4th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>4th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-    </tr>
-    <tr>
-      <td>5th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>5th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>5th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>5th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-    </tr>
-    <tr>
-      <td>6th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>6th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>6th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>6th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-    </tr>
-    <tr>
-      <td>7th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>7th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>7th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>7th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-    </tr>
-    <tr>
-      <td>8th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>8th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>8th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>8th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-    </tr>
-    <tr>
-      <td>9th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>9th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>9th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>9th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-    </tr>
-    <tr>
-      <td>10th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>10th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>10th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-      <td>10th line</td>
-      <td style="text-align: left">quux</td>
-      <td style="text-align: center">baz</td>
-      <td style="text-align: right">bar</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="math">Math</h3>
-<p>Inline math <code class="MathJax_Preview">f(x) = x^2</code><script type="math/tex">f(x) = x^2</script> and math blocks:</p>
-
-<pre class="MathJax_Preview"><code>\begin{aligned}
-  \phi(x,y) &amp;= \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right) \\[2em]
-            &amp;= \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j)            \\[2em]
-            &amp;= (x_1, \ldots, x_n)
-               \left(\begin{array}{ccc}
-                 \phi(e_1, e_1)  &amp; \cdots &amp; \phi(e_1, e_n) \\
-                 \vdots          &amp; \ddots &amp; \vdots         \\
-                 \phi(e_n, e_1)  &amp; \cdots &amp; \phi(e_n, e_n)
-               \end{array}\right)
-               \left(\begin{array}{c}
-                 y_1    \\
-                 \vdots \\
-                 y_n
-               \end{array}\right)
-\end{aligned}</code></pre>
-<script type="math/tex; mode=display">% <![CDATA[
+<h4 id="2-policy-value-function-and-q-function">2. Policy, Value Function and Q-function</h4>
+<p>A <strong>policy</strong> <code class="MathJax_Preview">\pi: S \to A</code><script type="math/tex">\pi: S \to A</script> is a mapping from state space to action space, which is the basic guide of the decision making process. It is often defined as
+<code class="MathJax_Preview">\pi(a\|s) = Pr(A_t = a \| S_t = s)</code><script type="math/tex">\pi(a\|s) = Pr(A_t = a \| S_t = s)</script>
+With policy <code class="MathJax_Preview">\pi</code><script type="math/tex">\pi</script>, the <strong>value function</strong> <code class="MathJax_Preview">V^{\pi}(s)</code><script type="math/tex">V^{\pi}(s)</script> can be defined as
+<code class="MathJax_Preview">\begin{aligned}
+V^{\pi}(s_t) &amp; = \mathbb{E}_{(s_t, s_{t+1}, ...)}[G_t\ |\ S_t = s_t]\\
+&amp; = \mathbb{E}_{(s_t, s_{t+1}, ...)}[R(s_t) + \gamma R(s_{t+1}) + \gamma^2R(s_{t+2}) + ... | \pi]
+\end{aligned}</code><script type="math/tex">% <![CDATA[
 \begin{aligned}
-  \phi(x,y) &= \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right) \\[2em]
-            &= \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j)            \\[2em]
-            &= (x_1, \ldots, x_n)
-               \left(\begin{array}{ccc}
-                 \phi(e_1, e_1)  & \cdots & \phi(e_1, e_n) \\
-                 \vdots          & \ddots & \vdots         \\
-                 \phi(e_n, e_1)  & \cdots & \phi(e_n, e_n)
-               \end{array}\right)
-               \left(\begin{array}{c}
-                 y_1    \\
-                 \vdots \\
-                 y_n
-               \end{array}\right)
+V^{\pi}(s_t) & = \mathbb{E}_{(s_t, s_{t+1}, ...)}[G_t\ |\ S_t = s_t]\\
+& = \mathbb{E}_{(s_t, s_{t+1}, ...)}[R(s_t) + \gamma R(s_{t+1}) + \gamma^2R(s_{t+2}) + ... | \pi]
 \end{aligned} %]]></script>
+where <code class="MathJax_Preview">G_t = \sum_{k = 0}^{\infty} \gamma^kR(s_{t+k})</code><script type="math/tex">G_t = \sum_{k = 0}^{\infty} \gamma^kR(s_{t+k})</script> is the discounted reward from time <code class="MathJax_Preview">t</code><script type="math/tex">t</script>.
+We can also define the <strong>Q-function</strong> as follows
+<code class="MathJax_Preview">\begin{aligned}
+Q^{\pi}(s_t, a_t) &amp; = \mathbb{E}_{s_{t+1} \sim T(s_{t+1} | s_t, a_t)}[G_t | S_t = s_t, A_t = a_t]\\
+&amp; = R(s_t, a_t) + \gamma\mathbb{E}_{s_{t+1}\sim T(s_{t+1}|s_t, a_t)}[V^{\pi}(s_{t+1})]
+\end{aligned}</code><script type="math/tex">% <![CDATA[
+\begin{aligned}
+Q^{\pi}(s_t, a_t) & = \mathbb{E}_{s_{t+1} \sim T(s_{t+1} | s_t, a_t)}[G_t | S_t = s_t, A_t = a_t]\\
+& = R(s_t, a_t) + \gamma\mathbb{E}_{s_{t+1}\sim T(s_{t+1}|s_t, a_t)}[V^{\pi}(s_{t+1})]
+\end{aligned} %]]></script>
+While <strong>value function</strong> tries to evaluate the value of a state <code class="MathJax_Preview">s</code><script type="math/tex">s</script>, the <strong>Q-function</strong> tries to evaluate the value of certain action given a starting state <code class="MathJax_Preview">s</code><script type="math/tex">s</script> (use action <code class="MathJax_Preview">a</code><script type="math/tex">a</script> in this step and take action according to policy <code class="MathJax_Preview">\pi</code><script type="math/tex">\pi</script> in future steps). This two functions are related in the form shown below:
+<code class="MathJax_Preview">V^{\pi}(s_t) = \sum_{a_t}\pi(a_t|s_t)Q^{\pi}(s_t, a_t)</code><script type="math/tex">V^{\pi}(s_t) = \sum_{a_t}\pi(a_t|s_t)Q^{\pi}(s_t, a_t)</script></p>
+
+<p>The <strong>optimal value function</strong> and <strong>optimal Q-function</strong> can thus be defined as
+<code class="MathJax_Preview">\begin{aligned}
+    V^{*}(s)\ &amp; = sup_{\pi}\ V^{\pi}(s)\\
+    Q^{*}(s, a)\ &amp; = sup_{\pi}\ Q^{\pi}(s,a)
+\end{aligned}</code><script type="math/tex">% <![CDATA[
+\begin{aligned}
+    V^{*}(s)\ & = sup_{\pi}\ V^{\pi}(s)\\
+    Q^{*}(s, a)\ & = sup_{\pi}\ Q^{\pi}(s,a)
+\end{aligned} %]]></script>
+In the standard reinforcement learning problem, the goal is to find the <strong>optimal policy</strong> $\pi^<em>$ such that $V^{\pi^{</em>}}(s)$ is maximized for all $s\in S$.</p>
+
+<h4 id="3-bellman-equations-and-bellman-optimality">3. Bellman Equations and Bellman Optimality</h4>
+<p>In fact, we can have more precise definitions for both the <strong>value function</strong> and the <strong>Q-function</strong>. First, in the <strong>value function</strong>, we can use $V^{\pi}(s_{t+1})$ to substitute the infinite series:
+$$
+\begin{aligned}
+V^{\pi}(s_t) &amp; = \mathbb{E}<em>{(s_t, s</em>{t+1}, …)}[R(s_t) + \gamma R(s_{t+1}) + \gamma^2R(s_{t+2}) + … | \pi] \</p>
+
+<p>&amp; = \sum_{a_t\in A} \pi(a_t|s_t)\left(R(s_t, a_t) + \gamma \sum_{s_{t+1}\in S}T(s_{t+1}|s_t, a_t)V^{\pi}(s_{t+1})\right) <br />
+&amp; = R(s_t) + \gamma \sum_{a_t\in A}\sum_{s_{t+1}\in S}T(s_{t+1}|s_t, a_t)\pi(a_t|s_t)V^{\pi}(s_{t+1})<br />
+&amp; = \mathbb{E}<em>{(s_t, s</em>{t+1}, …)} [R(s_t) + \gamma V^{\pi}(s_{t+1})]
+\end{aligned}
+<code class="MathJax_Preview">Similarly, for **Q-function** we have</code><script type="math/tex">Similarly, for **Q-function** we have</script>
+\begin{aligned}
+Q^{\pi}(s_t, a_t)\ &amp; = R(s_t, a_t) + \mathbb{E}<em>{s</em>{t+1}\sim T(s_{t+1}|s_t, a_t)}[V^{\pi}(s_{t+1})]<br />
+&amp; = R(s_t, a_t) + \mathbb{E}<em>{s</em>{t+1}\sim T(s_{t+1}|s_t, a_t)}[R(s_{t+1}) + V^{\pi}(s_{t+2})]<br />
+&amp; = R(s_t, a_t) + \gamma \sum_{s_{t+1}\in S}T(s_{t+1}|s_t, a_t)\sum_{a_{t+1}\in A}\pi(a_{t+1}| s_{t+1})Q^{\pi}(s_{t+1}, a_{t+1})<br />
+&amp; = \mathbb{E}<em>{s</em>{t+1}\sim T(s_{t+1}|s_t, a_t)}[R(s_t, a_t) + \gamma Q^{\pi}(s_{t+1}, a_{t+1})]
+\end{aligned}
+$$</p>
+
+<p>To find the optimal policy $\pi^*$, we can either maximize over <strong>value function</strong> or <strong>Q-function</strong>
+<code class="MathJax_Preview">\begin{aligned}
+V^*(s_t) &amp; = \max_{a}{R(s_t, a) + \gamma\sum_{s_{t+1}\in S}T(s_{t+1} | s_t, a)V^{*}(s_{t+1})}\\
+&amp; = \max_{a} Q^*(s_t, a)
+\end{aligned}</code><script type="math/tex">% <![CDATA[
+\begin{aligned}
+V^*(s_t) & = \max_{a}{R(s_t, a) + \gamma\sum_{s_{t+1}\in S}T(s_{t+1} | s_t, a)V^{*}(s_{t+1})}\\
+& = \max_{a} Q^*(s_t, a)
+\end{aligned} %]]></script>
+The optimal policy can be acquired through
+<code class="MathJax_Preview">\begin{aligned}
+  \pi(a|s) = \begin{cases}
+      1, &amp; \text{if}\ a={\rm arg}\max Q^*(s, a) \\
+      0, &amp; \text{otherwise}
+    \end{cases}
+\end{aligned}</code><script type="math/tex">% <![CDATA[
+\begin{aligned}
+  \pi(a|s) = \begin{cases}
+      1, & \text{if}\ a={\rm arg}\max Q^*(s, a) \\
+      0, & \text{otherwise}
+    \end{cases}
+\end{aligned} %]]></script></p>
 
   
 </article>
@@ -954,6 +373,25 @@ so that your posts remain compatible with other Jekyll themes.</p>
 
 
 
+
+<aside class="related mb4" role="complementary">
+  <h2 class="hr">Related Posts</h2>
+
+  <ul class="related-posts">
+    
+      
+
+
+<li>
+  <a href="/2018/01/31/IRL/" class="h4 flip-title">
+    <span>From AlphaGo to AlphaGo Zero</span>
+  </a>
+  <time class="heading faded fine" datetime="2018-01-31T00:00:00-08:00">31 Jan 2018</time>
+</li>
+
+    
+  </ul>
+</aside>
 
 
   

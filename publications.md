@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: publication
 title: Publication
 order: 2
 ---

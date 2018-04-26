@@ -16,6 +16,8 @@
 // <<<<< INLINE
 .page {
   margin-bottom: 3em;
+  margin-left:-1em;
+  margin-right:-5em;
 
   li + li {
     margin-top: .25rem;
@@ -24,10 +26,12 @@
   > header {
     margin-bottom: 2rem;
   }
+
 }
 
 // Blog post or page title
-.page-title, .post-title { margin-top: 0; }
+.page-title, .post-title { 
+margin-top: 0; }
 
 // Meta data line below post title
 .post-date {
