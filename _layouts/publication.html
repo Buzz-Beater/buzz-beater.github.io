@@ -1,0 +1,89 @@
+---
+layout: page
+---
+{% assign strings = site.data.strings %}
+{% assign separator = page.content_separator | default:"<!--more-->" %}
+{% assign content_split = content | split:separator %}
+{% assign publications = site.data.resume.publications %}
+{% if site.posts.size > 1 %}
+<div class="section-container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="pitems">
+          {% for publication in publications %}
+            <!--cvpr 2018 scenesynthesis paper-->
+            <div class="item mix cpaper t_cv mix_all" data-year="2018.2" style="display: block;  opacity: 1;">
+              <div class="pubmain">
+                <div class="row">
+                  <div class="pubassets">
+                    {% if publication.website.size > 0 %}
+                    <a href="{{publication.website}}" class="tooltips" title="" data-original-title="Project Page">
+                      <i class="fa fa-expand"></i>
+                    </a>
+                    {% endif %}
+                    {% if publication.code.size > 0 %}
+                    <a href="{{publication.code}}" class="tooltips" title="" data-original-title="Code">
+                      <i class="fa fa-code"></i>
+                    </a>
+                    {% endif %}
+                    {% if publication.supplementary.size > 0 %}
+                    <a href="{{publication.supplementary}}" title="tooltips" data-original-title="Supplementary Download">
+                      <i class="fa fa-file-pdf-o"></i>
+                    </a>
+                    {% endif %}
+                    {% if publication.paper.size > 0 %}
+                    <a href="{{publication.paper}}" class="tooltips" title="" data-original-title="Paper Download">
+                      <i class="fa fa-file-pdf-o"></i>
+                    </a>
+                    {% endif %}
+                  </div>
+                  <div class="col-md-3" align="center">
+                    <img src="{{publication.img}}" class="thumbnail img-responsive" style="max-height:200px;">
+                  </div>
+                  <div class="col-md-9">
+                    <h4 class="pubtitle">{{publication.name}}</h4>
+                    <div class="pubauthor">
+                      {% for author in publication.authors %}
+                        {% if author.isme.size > 0 %}
+                          <strong>{{author.name}}</strong>
+                        {% else %}
+                          {% if author.website.size > 0 %}
+                            <a href="{{author.website}}">{{author.name}}</a>
+                          {% else %}
+                            <label>{{author.name}}</label>
+                          {% endif %}
+                        {% endif %}
+                        {% if forloop.last %}
+                          .
+                        {% else %}
+                          ,
+                        {% endif %}
+                      {% endfor %}
+                      <br>
+                    </div>
+                    <div class="pubcite">
+                      <i>{{publication.conference}}</i>
+                      <br>
+                      <span class="label label-success">{{publication.type}}</span>
+                      <span class="label label-primary">{{publication.theme}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% if publication.abstract.size > 0 %}
+              <div class="pubdetails" style="display: block;">
+                <h4>Abstract</h4>
+                <p align="justify">
+                  {{ publication.abstract }}
+                </p>
+              </div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{{ content_split[1] }}

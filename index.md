@@ -1,5 +1,5 @@
 ---
-layout: welcome
+layout: resume
 description: >
   Hello!
 selected_projects:
