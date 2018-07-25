@@ -141,96 +141,6 @@ layout: base
     {% endif %}
   </div>
   <div class="columns">
-      {% if resume.work.size > 0 %}
-        <section>
-        <h2 id="work" class="h3 faded hr">
-          {{ strings.resume.work | default:"Experience" }}
-          <span class="symbol {{ icons.work | default:'icon-briefcase' }}"></span>
-        </h2>
-        {% for work in resume.work %}
-          <header
-            class="{% unless forloop.first %}mt3{% endunless %}"
-            property="{% if work.endDate.size > 0 %}alumniOf{% else %}worksFor{% endif %}"
-            typeof="Organization"
-            >
-            {% if work.startDate.size > 0 %}
-              <p class="faded">
-                <time datetime="{{ work.startDate }}">{{ work.startDate | date:from_to_format }}</time>
-                {{ from_to_separator }}
-                {% if work.endDate.size > 0 %}
-                  <time datetime="{{ work.endDate }}">{{ work.endDate | date:from_to_format }}</time>
-                {% else %}
-                  <em>{{ present }}</em>
-                {% endif %}
-              </p>
-            {% endif %}
-            <h3 class="h4 faded">
-              <meta property="name" content="{{ work.company }}"/>
-              {% capture position %}<span class="bc">{{ work.position }}</span>{% endcapture %}
-              {% capture company_class %}{% if work.endDate.size > 0 %}{% else %}org p-org h-card{% endif %}{% endcapture %}
-              {% capture company %}{% include link.html title=work.company href=work.website class=company_class span_class="bc" property="sameAs" %}{% endcapture %}
-              {{ strings.resume.work_title
-                | default:"<!--position--> at <!--company-->"
-                | replace:"<!--position-->", position
-                | replace:"<!--company-->", company
-              }}
-            </h3>
-          </header>
-
-          {% include message.html text=work.summary alt="" %}
-
-          <h4 class="sr-only">{{ strings.resume.highlights | default:"Highlights" }}</h4>
-          <ul>
-            {% for highlight in work.highlights %}
-              <li>{{ highlight }}</li>
-            {% endfor %}
-          </ul>
-        {% endfor %}
-        </section>
-      {% endif %}
-
-      {% if resume.volunteer.size > 0 %}
-        <section>
-        <h2 id="volunteer" class="h3 faded hr">
-          {{ strings.resume.volunteer | default:"Volunteer" }}
-          <span class="symbol {{ icons.volunteer | default:'icon-earth' }}"></span>
-        </h2>
-        {% for vol in resume.volunteer %}
-          <header class="{% unless forloop.first %}mt3{% endunless %}">
-            {% if vol.startDate.size > 0 %}
-              <p class="faded">
-                <time datetime="{{ vol.startDate }}">{{ vol.startDate | date:from_to_format }}</time>
-                {{ from_to_separator }}
-                {% if vol.endDate.size > 0 %}
-                  <time datetime="{{ vol.endDate }}">{{ vol.endDate | date:from_to_format }}</time>
-                {% else %}
-                  <em>{{ present }}</em>
-                {% endif %}
-              </p>
-            {% endif %}
-            <h3 class="h4 faded">
-              {% capture position %}<span class="bc">{{ vol.position }}</span>{% endcapture %}
-              {% capture organization %}{% include link.html title=vol.organization href=vol.website span_class="bc" %}{% endcapture %}
-              {{ strings.resume.volunteer_title
-                | default:"<!--position--> at <!--organization-->"
-                | replace:"<!--position-->", position
-                | replace:"<!--organization-->", organization
-              }}
-            </h3>
-          </header>
-
-          {% include message.html text=vol.summary alt="" %}
-
-          <h4 class="sr-only">{{ strings.resume.highlights | default:"Highlights" }}</h4>
-          <ul>
-            {% for highlight in vol.highlights %}
-              <li>{{ highlight }}</li>
-            {% endfor %}
-          </ul>
-        {% endfor %}
-        </section>
-      {% endif %}
-
       {% if resume.education.size > 0 %}
         <section>
         <h2 id="education" class="h3 faded hr">
@@ -290,7 +200,95 @@ layout: base
         {% endfor %}
         </section>
       {% endif %}
+      {% if resume.volunteer.size > 0 %}
+        <section>
+        <h2 id="volunteer" class="h3 faded hr">
+          {{ strings.resume.volunteer | default:"Volunteer" }}
+          <span class="symbol {{ icons.volunteer | default:'icon-earth' }}"></span>
+        </h2>
+        {% for vol in resume.volunteer %}
+          <header class="{% unless forloop.first %}mt3{% endunless %}">
+            {% if vol.startDate.size > 0 %}
+              <p class="faded">
+                <time datetime="{{ vol.startDate }}">{{ vol.startDate | date:from_to_format }}</time>
+                {{ from_to_separator }}
+                {% if vol.endDate.size > 0 %}
+                  <time datetime="{{ vol.endDate }}">{{ vol.endDate | date:from_to_format }}</time>
+                {% else %}
+                  <em>{{ present }}</em>
+                {% endif %}
+              </p>
+            {% endif %}
+            <h3 class="h4 faded">
+              {% capture position %}<span class="bc">{{ vol.position }}</span>{% endcapture %}
+              {% capture organization %}{% include link.html title=vol.organization href=vol.website span_class="bc" %}{% endcapture %}
+              {{ strings.resume.volunteer_title
+                | default:"<!--position--> at <!--organization-->"
+                | replace:"<!--position-->", position
+                | replace:"<!--organization-->", organization
+              }}
+            </h3>
+          </header>
 
+          {% include message.html text=vol.summary alt="" %}
+
+          <h4 class="sr-only">{{ strings.resume.highlights | default:"Highlights" }}</h4>
+          <ul>
+            {% for highlight in vol.highlights %}
+              <li>{{ highlight }}</li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+        </section>
+      {% endif %}
+
+      {% if resume.work.size > 0 %}
+        <section>
+        <h2 id="work" class="h3 faded hr">
+          {{ strings.resume.work | default:"Experience" }}
+          <span class="symbol {{ icons.work | default:'icon-briefcase' }}"></span>
+        </h2>
+        {% for work in resume.work %}
+          <header
+            class="{% unless forloop.first %}mt3{% endunless %}"
+            property="{% if work.endDate.size > 0 %}alumniOf{% else %}worksFor{% endif %}"
+            typeof="Organization"
+            >
+            {% if work.startDate.size > 0 %}
+              <p class="faded">
+                <time datetime="{{ work.startDate }}">{{ work.startDate | date:from_to_format }}</time>
+                {{ from_to_separator }}
+                {% if work.endDate.size > 0 %}
+                  <time datetime="{{ work.endDate }}">{{ work.endDate | date:from_to_format }}</time>
+                {% else %}
+                  <em>{{ present }}</em>
+                {% endif %}
+              </p>
+            {% endif %}
+            <h3 class="h4 faded">
+              <meta property="name" content="{{ work.company }}"/>
+              {% capture position %}<span class="bc">{{ work.position }}</span>{% endcapture %}
+              {% capture company_class %}{% if work.endDate.size > 0 %}{% else %}org p-org h-card{% endif %}{% endcapture %}
+              {% capture company %}{% include link.html title=work.company href=work.website class=company_class span_class="bc" property="sameAs" %}{% endcapture %}
+              {{ strings.resume.work_title
+                | default:"<!--position--> at <!--company-->"
+                | replace:"<!--position-->", position
+                | replace:"<!--company-->", company
+              }}
+            </h3>
+          </header>
+
+          {% include message.html text=work.summary alt="" %}
+
+          <h4 class="sr-only">{{ strings.resume.highlights | default:"Highlights" }}</h4>
+          <ul>
+            {% for highlight in work.highlights %}
+              <li>{{ highlight }}</li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+        </section>
+      {% endif %}
       {% if resume.awards.size > 0 %}
         <section>
         <h2 id="awards" class="h3 faded hr">
@@ -335,7 +333,7 @@ layout: base
             {% endif %}
             <h3 class="h4 faded">
               {% capture name %}{% include link.html title=pub.name href=pub.website span_class="bc" %}{% endcapture %}
-              {% capture publisher %}<a href="">{{ pub.short }}</a>{% endcapture %}
+              {% capture publisher %}<span class="bc">{{ pub.short }}</span>{% endcapture %}
               {{ strings.resume.publications_title
                 | default:"<!--name--> in <!--publisher-->"
                 | replace:"<!--name-->", name

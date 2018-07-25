@@ -116,7 +116,7 @@ resume:
   awards:              Awards
   awards_title:        <!--title--> from <!--awarder-->
   publications:        Publications
-  publications_title:  <!--name--> by <!--publisher-->
+  publications_title:  <!--name--> in <!--publisher-->
   references:          References
   languages:           Languages
   fluency:             Fluency
