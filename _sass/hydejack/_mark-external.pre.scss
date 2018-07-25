@@ -16,7 +16,7 @@
 // <<< link
 @media screen {
   a[href*="//"]:not(.no-mark-external), , a.external:not(.no-mark-external), a.no-push-state:not(.no-mark-external) {
-    &::after {
+    /*&::after {
       content: "\00A0\ea7e";
       font-family: 'icomoon'!important;
       speak: none;
@@ -34,7 +34,7 @@
     &:hover::after, &:focus::after {
       opacity: 1;
       transition: opacity 100ms;
-    }
+    }*/
   }
 }
 // >>
