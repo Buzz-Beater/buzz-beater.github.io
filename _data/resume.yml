@@ -69,11 +69,11 @@ education:
     gpa: "4.0"
     courses:
     img: "/assets/icons/pku.png"
-awards:
-  - title: "Digital Compression Pioneer Award"
-    date: "2014-11-01"
-    awarder: "Techcrunch"
-    summary: "There is no spoon."
+# awards:
+#   - title: "Digital Compression Pioneer Award"
+#     date: "2014-11-01"
+#     awarder: "Techcrunch"
+#     summary: "There is no spoon."
 publications:
   - name: "Graph Parsing Neural Network"
     conference: "European Conference on Computer Vision (ECCV) 2018"
@@ -84,7 +84,8 @@ publications:
     code: ""
     paper: ""
     supplementary: ""
-    img: ""
+    img: "/assets/img/timg.jpeg"
+    short: "ECCV 2018"
     authors: 
       - name: Siyuan Qi
         website: "http://web.cs.ucla.edu/~syqi/"
@@ -94,6 +95,7 @@ publications:
         isme: 1
       - name: 
       - name: Song-chun Zhu
+        website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: "Generalized Earley Parser: Bridging Symbolic Grammars and Sequence Data for Future Prediction"
     conference: "International Conference on Machine Learning (ICML) 2018"
@@ -103,7 +105,8 @@ publications:
     code: ""
     paper: ""
     supplementary: ""
-    img: ""
+    img: "/assets/img/timg.jpeg"
+    short: "ICML 2018"
     authors:
       - name: Siyuan Qi
         website: "http://web.cs.ucla.edu/~syqi/"
@@ -113,7 +116,7 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: "Mining User Reviews for Mobile App Comparison"
-    conference: "IMWUT"
+    conference: "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)"
     type: "Journal Paper"
     theme: "Review Analysis and Recommandation Systems"
     website: ""
@@ -121,11 +124,14 @@ publications:
     code: ""
     paper: ""
     supplementary: ""
-    img: ""
+    img: "/assets/img/timg.jpeg"
+    short: "IMWUT 2017"
     authors: 
       - name: Yuanchun Li
+        website: "http://ylimit.github.io/"
       - name: Baoxiong Jia
       - name: Yao Guo
+        website: "http://sei.pku.edu.cn/~yaoguo/"
       - name: Xiangqun Chen
 # skills:
 #   - name: "Web Development"
@@ -148,8 +154,8 @@ publications:
 #     keywords:
 #       - "Ferrets"
 #       - "Unicorns"
-references:
-  - name: "Erlich Bachman"
-    reference: >
-      It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
-      Company proved that he will be a valuable addition to any company.
+# references:
+#   - name: "Erlich Bachman"
+#     reference: >
+#       It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
+#       Company proved that he will be a valuable addition to any company.

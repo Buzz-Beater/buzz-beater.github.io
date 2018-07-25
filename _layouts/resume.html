@@ -335,9 +335,9 @@ layout: base
             {% endif %}
             <h3 class="h4 faded">
               {% capture name %}{% include link.html title=pub.name href=pub.website span_class="bc" %}{% endcapture %}
-              {% capture publisher %}<span class="bc">{{ pub.publisher }}</span>{% endcapture %}
+              {% capture publisher %}<a href="">{{ pub.short }}</a>{% endcapture %}
               {{ strings.resume.publications_title
-                | default:"<!--name--> by <!--publisher-->"
+                | default:"<!--name--> in <!--publisher-->"
                 | replace:"<!--name-->", name
                 | replace:"<!--publisher-->", publisher
               }}
