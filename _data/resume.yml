@@ -75,7 +75,7 @@ awards:
     awarder: "Techcrunch"
     summary: "There is no spoon."
 publications:
-  - name: "Graph Parsing Neural Network"
+  - name: "Learning Human-Object Interactions by Graph Parsing Neural Networks"
     conference: "European Conference on Computer Vision (ECCV) 2018"
     type: "Conference Paper"
     theme: "Graph Parsing Neural Network"
