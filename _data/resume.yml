@@ -24,29 +24,29 @@ basics:
   #   - network: "LinkedIn"
   #     username: "Richard Hendricks"
   #     url: ""
-work:
-  - company: "Pied Piper"
-    position: "CEO/President"
-    website: "https://piedpiper.com"
-    startDate: "2013-12-01"
-    endDate: ""
-    summary: >
-      Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has
-      consistently fielded high Weisman Scores™ that are not merely competitive,
-      but approach the theoretical limit of lossless compression.
-    highlights:
-      - "Build an algorithm for artist to detect if their music was violating copy right infringement laws"
-      - "Successfully won Techcrunch Disrupt"
-      - "Optimized an algorithm that holds the current world record for Weisman Scores"
-volunteer:
-  - organization: "CoderDojo"
-    position: "Teacher"
-    website: "https://coderdojo.com/"
-    startDate: "2012-01-01"
-    endDate: "2013-01-01"
-    summary: "Global movement of free coding clubs for young people."
-    highlights:
-      - "Awarded 'Teacher of the Month'"
+# work:
+#   - company: "Pied Piper"
+#     position: "CEO/President"
+#     website: "https://piedpiper.com"
+#     startDate: "2013-12-01"
+#     endDate: ""
+#     summary: >
+#       Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has
+#       consistently fielded high Weisman Scores™ that are not merely competitive,
+#       but approach the theoretical limit of lossless compression.
+#     highlights:
+#       - "Build an algorithm for artist to detect if their music was violating copy right infringement laws"
+#       - "Successfully won Techcrunch Disrupt"
+#       - "Optimized an algorithm that holds the current world record for Weisman Scores"
+# volunteer:
+#   - organization: "CoderDojo"
+#     position: "Teacher"
+#     website: "https://coderdojo.com/"
+#     startDate: "2012-01-01"
+#     endDate: "2013-01-01"
+#     summary: "Global movement of free coding clubs for young people."
+#     highlights:
+#       - "Awarded 'Teacher of the Month'"
 education:
   - institution: 'University of California, Los Angeles'
     degree:
@@ -67,11 +67,21 @@ education:
     gpa: "4.0"
     courses:
     img: "/assets/icons/pku.png"
+    
 awards:
-  - title: "Digital Compression Pioneer Award"
-    date: "2014-11-01"
-    awarder: "Techcrunch"
-    summary: "There is no spoon."
+  - title: "Honor Graduate Student"
+    date: "2018-07"
+    awarder: "Peking University"
+  - title: "Award for Academic Excellence"
+    date: "2016-09"
+    awarder: "Peking University"
+  - title: "Kwang-Hua Scholarship"
+    date: "2015-09"
+    awarder: "Peking University"
+  - title: "Award for Community Contribution"
+    date: "2015-09"
+    awarder: "Peking University"
+
 publications:
   - name: "Learning Human-Object Interactions by Graph Parsing Neural Networks"
     conference: "European Conference on Computer Vision (ECCV) 2018"
@@ -131,29 +141,29 @@ publications:
       - name: Yao Guo
         website: "http://sei.pku.edu.cn/~yaoguo/"
       - name: Xiangqun Chen
-skills:
-  - name: "Web Development"
-    level: "Master"
-    keywords:
-      - "HTML"
-      - "CSS"
-      - "Javascript"
-  - name: "Compression"
-    level: "Master"
-    keywords:
-      - "Mpeg"
-      - "MP4"
-      - "GIF"
-languages:
-  - language: "English"
-    fluency: "Native speaker"
-interests:
-  - name: "Wildlife"
-    keywords:
-      - "Ferrets"
-      - "Unicorns"
-references:
-  - name: "Erlich Bachman"
-    reference: >
-      It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
-      Company proved that he will be a valuable addition to any company.
+# skills:
+#   - name: "Web Development"
+#     level: "Master"
+#     keywords:
+#       - "HTML"
+#       - "CSS"
+#       - "Javascript"
+#   - name: "Compression"
+#     level: "Master"
+#     keywords:
+#       - "Mpeg"
+#       - "MP4"
+#       - "GIF"
+# languages:
+#   - language: "English"
+#     fluency: "Native speaker"
+# interests:
+#   - name: "Wildlife"
+#     keywords:
+#       - "Ferrets"
+#       - "Unicorns"
+# references:
+#   - name: "Erlich Bachman"
+#     reference: >
+#       It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
+#       Company proved that he will be a valuable addition to any company.
