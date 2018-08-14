@@ -55,9 +55,7 @@ education:
     startDate: "2017-09"
     endDate: "2019-07 (Expected)"
     img: "/assets/icons/ucla.png"
-    # courses:
-    #   - "DB1101 - Basic SQL"
-    #   - "CS2011 - Java Introduction"
+
   - institution: "Peking University"
     degree:
       - area: "Computer Science"
@@ -84,12 +82,12 @@ publications:
     code: ""
     paper: ""
     supplementary: ""
-    img: "/assets/img/timg.jpeg"
+    img: "/assets/img/gpnn/overview.jpg"
     short: "ECCV 2018"
     authors: 
-      - name: Siyuan Qi
+      - name: Siyuan Qi*
         website: "http://web.cs.ucla.edu/~syqi/"
-      - name: Wenguan Wang
+      - name: Wenguan Wang*
         website: ""
       - name: Baoxiong Jia
         isme: 1
@@ -105,7 +103,7 @@ publications:
     code: "https://github.com/SiyuanQi/generalized-earley-parser"
     paper: "http://proceedings.mlr.press/v80/qi18a/qi18a.pdf"
     supplementary: ""
-    img: "/assets/img/timg.jpeg"
+    img: "/assets/img/generalized_earley/overview.jpg"
     short: "ICML 2018"
     authors:
       - name: Siyuan Qi
@@ -124,7 +122,7 @@ publications:
     code: ""
     paper: "http://ylimit.github.io/static/files/UbiComp2017_mining-user-reviews.pdf"
     supplementary: ""
-    img: "/assets/img/timg.jpeg"
+    img: "/assets/img/review_mining/overview.jpeg"
     short: "IMWUT 2017"
     authors: 
       - name: Yuanchun Li
