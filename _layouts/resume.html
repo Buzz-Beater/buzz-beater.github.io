@@ -37,109 +37,6 @@ layout: base
   </div>
   {% endif %}
 
-  {% include message.html text=page.description hide=page.hide_description alt="" %}
-
-  <div class="columns contact">
-    <dl class="column column-3-5">
-      {% assign location = basics.location %}
-      {% if
-        location.address.size > 0 or
-        location.postalCode.size > 0 or
-        location.city.size > 0 or
-        location.region.size > 0 or
-        location.countryCode.size > 0
-      %}
-        <dt class="faded">
-          <span class="{{ icons.location | default:'icon-location' }}" title="{{ strings.resume.location | default:'Location' }}"></span>
-          <span class="sr-only">{{ strings.resume.location | default:"Location" }}</span>
-        </dt>
-
-        {% assign sep = strings.resume.location_separator | default:"," %}
-        <dd class="bold adr p-adr h-adr" property="address" typeof="PostalAddress">
-          {% if location.address.size > 0 %}
-            <span class="street-address p-street-address" property="streetAddress">{{ location.address }}</span>{{ sep }}
-          {% endif %}
-
-          {% if location.postalCode.size > 0 %}
-            <span class="postal-code p-postal-code" property="postalCode">{{ location.postalCode }}</span>{{ sep }}
-          {% endif %}
-
-          {% if location.city.size > 0 %}
-            <span class="locality p-locality" property="addressLocality">{{ location.city }}</span>{{ sep }}
-          {% endif %}
-
-          {% if location.region.size > 0 %}
-            <span class="region p-region" property="addressRegion">{{ location.region }}</span>{{ sep }}
-          {% endif %}
-
-          {% if location.countryCode.size > 0 %}
-            {% assign countryCode = location.countryCode | upcase %}
-            {% assign country = site.data.countries | where:"code",countryCode | first %}
-            {% if country %}
-              <meta property="addressCountry" content="{{ location.countryCode }}"/>
-              <span class="country-name p-country-name">{{ country.name }}</span>
-            {% else %}
-              <span class="country-name p-country-name" property="addressCountry">{{ location.countryCode }}</span>
-            {% endif %}
-          {% endif %}
-        </dd>
-      {% endif %}
-
-      {% if basics.email.size > 0 %}
-        <dt class="faded">
-          <span class="{{ icons.email | default:'icon-envelop' }}" title="{{ strings.resume.email | default:'Email' }}"></span>
-          <span class="sr-only">{{ strings.resume.email | default:"Email" }}</span>
-        </dt>
-        <dd class="bold">
-          <meta property="email" content="{{ basics.email }}"/>
-          <a href="mailto:{{ basics.email }}" class="external email u-email">{{ basics.email }}</a>
-        </dd>
-      {% endif %}
-
-      {% if basics.phone.size > 0 %}
-        <dt class="faded">
-          <span class="{{ icons.phone | default:'icon-phone' }}" title="{{ strings.resume.phone | default:'Phone' }}"></span>
-          <span class="sr-only">{{ strings.resume.phone | default:"Phone" }}</span>
-        </dt>
-        <dd class="bold">
-          <meta property="telephone" content="{{ basics.phone }}"/>
-          <a href="tel:{{ basics.phone | replace:' ','' }}" class="external tel p-tel">{{ basics.phone }}</a>
-        </dd>
-      {% endif %}
-
-      {% if basics.website.size > 0 %}
-        <dt class="faded">
-          <span class="{{ icons.website | default:'icon-link' }}" title="{{ strings.resume.website | default:'Website' }}"></span>
-          <span class="sr-only">{{ strings.resume.website | default:"Website" }}</span>
-        </dt>
-        <dd class="bold">
-          <a href="{{ basics.website }}" class="url u-url" property="sameAs">{{ basics.website }}</a>
-        </dd>
-      {% endif %}
-    </dl>
-
-    {% if basics.profiles.size > 0 %}
-      <dl class="column column-2-5">
-        {% for pro in basics.profiles %}
-          {% assign platform = pro.network | downcase %}
-          {% assign = data_social = site.data.social[platform] %}
-          {% assign icon = data_social.icon %}
-          {% if data_social.name %}
-            {% assign name = data_social.name %}
-          {% else %}
-            {% assign name = pro.network %}
-          {% endif %}
-          <dt class="faded">
-            <span class="{{ icon | default:icons.website | default:'icon-link' }}" title="{{ name }}"></span>
-            <span class="sr-only">{{ name }}</span>
-          </dt>
-          <dd class="bold">
-            {% include link.html href=pro.url class="nickname p-nickname" title=pro.username property="sameAs" %}
-          </dd>
-        {% endfor %}
-      </dl>
-    {% endif %}
-  </div>
   <div class="columns">
       {% if resume.education.size > 0 %}
         <section>
@@ -313,37 +210,7 @@ layout: base
               }}
             </h3>
           </header>
-
-          {% include message.html text=awa.summary alt="" %}
-        {% endfor %}
-        </section>
-      {% endif %}
-
-      {% if resume.publications.size > 0 %}
-        <section>
-        <h2 id="publications" class="h3 faded hr">
-          {{ strings.resume.publications | default:"Publications" }}
-          <span class="symbol {{ icons.publications | default:'icon-book' }}"></span>
-        </h2>
-        {% for pub in resume.publications %}
-          <header class="{% unless forloop.first %}mt3{% endunless %}">
-            {% if pub.releaseDate.size > 0 %}
-              <p class="faded">
-                <time datetime="{{ pub.releaseDate }}">{{ pub.releaseDate | date:from_to_format }}</time>
-              </p>
-            {% endif %}
-            <h3 class="h4 faded">
-              {% capture name %}{% include link.html title=pub.name href=pub.website span_class="bc" %}{% endcapture %}
-              {% capture publisher %}<span class="bc">{{ pub.short }}</span>{% endcapture %}
-              {{ strings.resume.publications_title
-                | default:"<!--name--> in <!--publisher-->"
-                | replace:"<!--name-->", name
-                | replace:"<!--publisher-->", publisher
-              }}
-            </h3>
-          </header>
-
-          {% include message.html text=pub.summary alt="" %}
+          <!--{% include message.html text=awa.summary alt="" %}-->
         {% endfor %}
         </section>
       {% endif %}
