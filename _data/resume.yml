@@ -67,7 +67,7 @@ education:
     gpa: "4.0"
     courses:
     img: "/assets/icons/pku.png"
-    
+
 awards:
   - title: "Honor Graduate Student"
     date: "2018-07"
@@ -138,6 +138,7 @@ publications:
       - name: Yuanchun Li
         website: "http://ylimit.github.io/"
       - name: Baoxiong Jia
+        isme: 1
       - name: Yao Guo
         website: "http://sei.pku.edu.cn/~yaoguo/"
       - name: Xiangqun Chen
