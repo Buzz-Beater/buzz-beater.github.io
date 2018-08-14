@@ -95,7 +95,7 @@ publications:
     img: "/assets/img/gpnn/overview.jpg"
     short: "ECCV 2018"
     authors: 
-      - name: Siyuan Qi*
+      - name: Siyuan Qi**
         website: "http://web.cs.ucla.edu/~syqi/"
       - name: Wenguan Wang*
         website: ""
