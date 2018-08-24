@@ -69,7 +69,7 @@ education:
     img: "/assets/icons/pku.png"
 
 awards:
-  - title: "Honor Graduate Student"
+  - title: "Excellent College Graudate Award"
     date: "2018-07"
     awarder: "Peking University"
   - title: "Award for Academic Excellence"
@@ -130,7 +130,7 @@ publications:
     website: "https://dl.acm.org/citation.cfm?id=3130935"
     abstract: ""
     code: ""
-    paper: "http://ylimit.github.io/static/files/UbiComp2017_mining-user-reviews.pdf"
+    paper: "http://delivery.acm.org/10.1145/3140000/3130935/a75-li.pdf?ip=128.97.86.145&id=3130935&acc=ACTIVE%20SERVICE&key=CA367851C7E3CE77%2E79535EF926D6BC05%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1535128802_5386b1e62cdfe0163ba774a66256b471"
     supplementary: ""
     img: "/assets/img/review_mining/overview.jpeg"
     short: "IMWUT 2017"
