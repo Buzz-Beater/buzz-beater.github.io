@@ -64,6 +64,11 @@
 	margin-right: 0px;
 }
 
+.pubtheme .pubtype {
+	display: inline-block;
+	margin-top: 1em;
+}
+
 .pitems .pubmain .pubassets {
 	position: absolute;
 	bottom: 0;
@@ -71,6 +76,10 @@
 	background: #fafafa;
 	text-align: center;
 	border-top: 2px solid;
+}
+
+div.pubcite {
+	line-height: 250%;
 }
 
 .pitems .pubmain .pubassets a {

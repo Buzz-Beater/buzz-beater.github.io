@@ -85,11 +85,12 @@ awards:
 publications:
   - name: "Learning Human-Object Interactions by Graph Parsing Neural Networks"
     conference: "European Conference on Computer Vision (ECCV) 2018"
-    type: "Conference Paper"
-    theme: "Graph Parsing Neural Network"
+    label: "https://img.shields.io/badge/ECCV-2018-red.svg"
+    type: "https://img.shields.io/badge/-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/-Graph%20Parsing%20Neural%20Network-blue.svg"
     releaseDate: ""
     website: ""
-    code: ""
+    code: "https://github.com/SiyuanQi/gpnn"
     paper: ""
     supplementary: ""
     img: "/assets/img/gpnn/overview.jpg"
@@ -98,7 +99,7 @@ publications:
       - name: Siyuan Qi*
         website: "http://web.cs.ucla.edu/~syqi/"
       - name: Wenguan Wang*
-        website: ""
+        website: "https://sites.google.com/site/wenguanwangwwg/"
       - name: Baoxiong Jia
         isme: 1
       - name: Jianbin Shen
@@ -107,8 +108,9 @@ publications:
 
   - name: "Generalized Earley Parser: Bridging Symbolic Grammars and Sequence Data for Future Prediction"
     conference: "International Conference on Machine Learning (ICML) 2018"
-    type: "Conference Paper"
-    theme: "Grammar Parsing and Intention Prediction"
+    label: "https://img.shields.io/badge/ICML-2018-red.svg"
+    type: "https://img.shields.io/badge/-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/-Grammar%20Parsing%20and%20Intention%20Prediction-blue.svg"
     website: "http://proceedings.mlr.press/v80/qi18a.html"
     code: "https://github.com/SiyuanQi/generalized-earley-parser"
     paper: "http://proceedings.mlr.press/v80/qi18a/qi18a.pdf"
@@ -124,9 +126,10 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: "Mining User Reviews for Mobile App Comparison"
-    conference: "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)"
-    type: "Journal Paper"
-    theme: "Review Analysis and Recommandation Systems"
+    conference: "PACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)"
+    label: "https://img.shields.io/badge/UbiComp-2017-red.svg"
+    type: "https://img.shields.io/badge/-Journal%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/-Review%20Analysis%20and%20Recommandation%20Systems-blue.svg"
     website: "https://dl.acm.org/citation.cfm?id=3130935"
     abstract: ""
     code: ""
