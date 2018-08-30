@@ -47,13 +47,12 @@ layout: base
         {% for edu in resume.education %}
             <table class="education" border="0">
               <tbody>
-                <tr width="1%"></tr>
+                <tr width="1%" border="0"></tr>
                 <tr>
                   <header class="{% unless forloop.first %}mt3{% endunless %}">
                     <td class='education education-img'>
                     <img class = "school_avatar" src="{{edu.img}}">
                     </td>
-                     <td width="1%"></td>
                     <td class='education education-info'>
                     {% if edu.startDate.size > 0 %}
                       <p class="faded">
