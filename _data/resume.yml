@@ -91,7 +91,7 @@ publications:
     releaseDate: ""
     website: ""
     code: "https://github.com/SiyuanQi/gpnn"
-    paper: ""
+    paper: "http://openaccess.thecvf.com/content_ECCV_2018/papers/Siyuan_Qi_Learning_Human-Object_Interactions_ECCV_2018_paper.pdf"
     supplementary: ""
     img: "/assets/img/gpnn/overview.jpg"
     short: "ECCV 2018"
