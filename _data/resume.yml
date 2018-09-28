@@ -14,8 +14,12 @@ basics:
   #phone: "(912) 555-4321"
   #website: "https://piedpiper.com"
   summary: >
-    Hi! I'm Baoxiong, a senior year undergraduate student in the [Computer Science Department](http://eecs.pku.edu.cn/EN/) at Peking Univeristy. I'm enrolled in the integrated BS/MS program held by PKU and UCLA, so I'm spending most of my time at UCLA right now. Currently, I'm doing research on computer vision at [Center for Vision, Cognition, Learning, and Autonomy (VCLA)](http://vcla.stat.ucla.edu/) advised by [Prof. Song-chun Zhu](http://www.stat.ucla.edu/~sczhu/).
-    My research interest lies in computer vision, artificial intelligence and cognitive science, especially about human action understanding, task planning and intention prediction in multi-agent scenarios. You can download my CV [here](/assets/pdf/cv.pdf).
+    Hi! I'm Baoxiong, a first year graduate student in the integrated BS/MS program held by PKU and UCLA. Before coming to LA,
+    I spent four wonderful year in the [Computer Science Department](http://eecs.pku.edu.cn/EN/) of EECS, Peking Univeristy
+    and also getting a taste of research in the PKU Operating System lab.
+    Currently, I'm doing research at [Center for Vision, Cognition, Learning, and Autonomy (VCLA)](http://vcla.stat.ucla.edu/) 
+    advised by [Prof. Song-chun Zhu](http://www.stat.ucla.edu/~sczhu/). My research interest lies in computer vision, artificial intelligence and cognitive science, 
+    especially about human action understanding, task planning and intention prediction in multi-agent scenarios. You can download my CV [here](/assets/pdf/cv.pdf).
   location:
   # profiles:
   #   - network: "Twitter"
