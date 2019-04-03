@@ -97,7 +97,7 @@ publications:
     code: ""
     paper: ""
     supplementary: ""
-    img: ""
+    img: "/assets/img/iq2019cvpr/raven19cvpr.png"
     short: "CVPR 2019"
     authors:
         - name: Chi Zhang*
