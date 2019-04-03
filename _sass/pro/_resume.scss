@@ -111,9 +111,11 @@
 
   $pad: 2.5rem;
   .education {
-    margin-top: -1em;
+    margin-top: 0em;
+    margin-bottom: 0em;
     margin-left: $pad / 8;
     width: 100%;
+    overflow: hidden;
 
     background: #fff;
 

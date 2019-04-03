@@ -11,7 +11,7 @@ layout: page
       <div class="col-md-12">
         <div class="pitems">
           {% for publication in publications %}
-            <div class="item mix cpaper t_cv mix_all" data-year="2018" style="display: block;  opacity: 1;">
+            <div class="item mix cpaper t_cv mix_all" style="display: block;  opacity: 1;">
               <div class="pubmain">
                 <div class="row">
                   <div class="pubassets">
@@ -36,10 +36,10 @@ layout: page
                     </a>
                     {% endif %}
                   </div>
-                  <div class="col-md-3" align="center">
-                    <img src="{{publication.img}}" class="thumbnail img-responsive" style="max-height:1000px;">
+                  <div class="col-md-4" align="center">
+                    <img src="{{publication.img}}" class="thumbnail img-responsive" style="max-height:200px;">
                   </div>
-                  <div class="col-md-9">
+                  <div class="col-md-8">
                     <h4 class="pubtitle">{{publication.name}}</h4>
                     <div class="pubauthor">
                       {% for author in publication.authors %}
