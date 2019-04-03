@@ -160,7 +160,7 @@ publications:
     website: "https://dl.acm.org/citation.cfm?id=3130935"
     abstract: ""
     code: ""
-    paper: "http://delivery.acm.org/10.1145/3140000/3130935/a75-li.pdf?ip=131.179.124.75&id=3130935&acc=ACTIVE%20SERVICE&key=CA367851C7E3CE77%2E79535EF926D6BC05%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1554309926_54b00268e86f1605ba2d7d96e9e8155f"
+    paper: "assets/UbiComp2017_mining-user-reviews.pdf"
     supplementary: ""
     img: "/assets/img/review_mining/overview.jpeg"
     short: "IMWUT 2017"
