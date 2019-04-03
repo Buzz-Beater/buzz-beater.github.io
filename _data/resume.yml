@@ -87,6 +87,29 @@ awards:
     awarder: "Peking University"
 
 publications:
+  - name: "RAVEN: A Dataset for Relational and Analogical Visual rEasoNing"
+    conference: "International Conference on Computer Vision and Pattern Recognition (CVPR) 2019"
+    label: "https://img.shields.io/badge/CVPR-2019-red.svg"
+    type: "https://img.shields.io/badge/CVPR2019-Conference-green.svg"
+    theme: "https://img.shields.io/badge/-Relational%20Reasoning-blue.svg"
+    releaseDate: ""
+    website: ""
+    code: ""
+    paper: ""
+    supplementary: ""
+    img: ""
+    short: "CVPR 2019"
+    authors:
+        - name: Chi Zhang*
+          website: "http://wellyzhang.github.io/"
+        - name: Feng Gao*
+          website: "https://fen9.github.io/"
+        - name: Baoxiong Jia
+          isme: 1
+        - name: Yixin Zhu
+          website: "https://www.yzhu.io/"
+        - name: Song-chun Zhu
+          website: "http://www.stat.ucla.edu/~sczhu/"
   - name: "Learning Human-Object Interactions by Graph Parsing Neural Networks"
     conference: "European Conference on Computer Vision (ECCV) 2018"
     label: "https://img.shields.io/badge/ECCV-2018-red.svg"
