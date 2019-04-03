@@ -38,17 +38,17 @@
   }
 
   @media screen and (min-width: $break-point-2) {
-    max-width: 42rem;
+    max-width: 60rem;
   }
 
   @media screen and (min-width: $break-point-3) {
     margin-left: 22rem;
-    margin-right: 4rem;
-    padding-left: 1rem;
+    margin-right: 0rem;
+    padding-left: 5rem;
   }
 
   @media screen and (min-width: $break-point-5) {
-    max-width: 48rem;
+    max-width: 60rem;
   }
 
   @media screen and (min-width: $break-point-dynamic) {
