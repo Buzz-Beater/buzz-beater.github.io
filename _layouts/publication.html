@@ -16,22 +16,22 @@ layout: page
                 <div class="row">
                   <div class="pubassets">
                     {% if publication.website.size > 0 %}
-                    <a href="{{publication.website}}" class="tooltips" title="" data-original-title="Project Page">
+                    <a href="{{publication.website}}" title="Project Page">
                       <i class="fa fa-expand"></i>
                     </a>
                     {% endif %}
                     {% if publication.code.size > 0 %}
-                    <a href="{{publication.code}}" class="tooltips" title="" data-original-title="Code">
+                    <a href="{{publication.code}}" title="Code">
                       <i class="fa fa-code"></i>
                     </a>
                     {% endif %}
                     {% if publication.supplementary.size > 0 %}
-                    <a href="{{publication.supplementary}}" title="tooltips" data-original-title="Supplementary Download">
+                    <a href="{{publication.supplementary}}" title="Supplementary Download">
                       <i class="fa fa-file-pdf-o"></i>
                     </a>
                     {% endif %}
                     {% if publication.paper.size > 0 %}
-                    <a href="{{publication.paper}}" class="tooltips" title="" data-original-title="Paper Download">
+                    <a href="{{publication.paper}}" title="Paper Download">
                       <i class="fa fa-file-pdf-o"></i>
                     </a>
                     {% endif %}
