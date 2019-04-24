@@ -90,7 +90,7 @@ publications:
   - name: "RAVEN: A Dataset for Relational and Analogical Visual rEasoNing"
     conference: "International Conference on Computer Vision and Pattern Recognition (CVPR) 2019"
     label: "https://img.shields.io/badge/CVPR-2019-red.svg"
-    type: "https://img.shields.io/badge/CVPR2019-Conference-green.svg"
+    type: "https://img.shields.io/badge/CVPR2019-Conference%20Paper-green.svg"
     theme: "https://img.shields.io/badge/-Relational%20Reasoning-blue.svg"
     releaseDate: ""
     website: ""
