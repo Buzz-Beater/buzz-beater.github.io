@@ -14,12 +14,10 @@ basics:
   #phone: "(912) 555-4321"
   #website: "https://piedpiper.com"
   summary: >
-    Hi! I'm Baoxiong, a first year graduate student in the integrated BS/MS program held by PKU and UCLA. Before coming to LA,
-    I spent four wonderful year in the [Computer Science Department](http://eecs.pku.edu.cn/EN/) of EECS, Peking Univeristy
-    and also got a taste of research from PKU Operating System lab.
-    Currently, I'm doing research at [Center for Vision, Cognition, Learning, and Autonomy (VCLA)](http://vcla.stat.ucla.edu/) 
-    advised by [Prof. Song-chun Zhu](http://www.stat.ucla.edu/~sczhu/). My research interest lies in computer vision, artificial intelligence and cognitive science, 
-    especially about human action understanding, task planning and intention prediction in multi-agent scenarios. You can find my CV [here](/assets/pdf/cv.pdf).
+    Hi! I'm Baoxiong, a first year Ph.D. student in [VCLA@UCLA](http://vcla.stat.ucla.edu/) advised by [Prof. Song-chun Zhu](http://www.stat.ucla.edu/~sczhu/).
+    Before coming to LA, I got my B.S. of Science from Peking University in 2018 where I spent three wonderful year in the [Computer Science Department](http://eecs.pku.edu.cn/EN/)
+    of EECS and also got a taste of research from PKU Operating System lab. I also obtained my M.S. of Computer Science from UCLA in 2019. My research interest lies in 
+    computer vision, artificial intelligence and cognitive science, especially about human activity understanding, task planning and intention modeling/prediction. You can find my CV [here](/assets/pdf/cv.pdf).
   location:
   # profiles:
   #   - network: "Twitter"
@@ -55,9 +53,17 @@ education:
   - institution: 'University of California, Los Angeles'
     degree:
       - area: "Computer Science"
+        studyType: "Ph.D."
+    startDate: "2019-09"
+    endDate: "?"
+    img: "/assets/icons/ucla.png"
+
+  - institution: 'University of California, Los Angeles'
+    degree:
+      - area: "Computer Science"
         studyType: "Master of Science"
     startDate: "2017-09"
-    endDate: "2019-07 (Expected)"
+    endDate: "2019-07"
     img: "/assets/icons/ucla.png"
 
   - institution: "Peking University"
