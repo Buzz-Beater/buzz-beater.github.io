@@ -118,7 +118,7 @@ publications:
 
   - name: Learning Perceptual Inference by Contrasting
     conference: "Conference on Neural Information Processing Systems (NeurIPS) 2019"
-      - speical: "Spotlight"
+    speical: "Spotlight"
     label: "https://img.shields.io/badge/NeurIPS-2019-red.svg"
     type: "https://img.shields.io/badge/NeurIPS2019-Conference%20Paper-green"
     theme: "https://img.shields.io/badge/-Relational%20Reasoning-blue.svg"
