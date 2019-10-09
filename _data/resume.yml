@@ -116,18 +116,30 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: Learning Perceptual Inference by Contrasting
-    conference: "The 33rd Conference on Neural Information Processing Systems (Spotlight)"
+    conference: "The 33rd Conference on Neural Information Processing Systems (NeurIPS 2019)"
     label: "https://img.shields.io/badge/NeurIPS-2019-red.svg"
     type: "https://img.shields.io/badge/NeurIPS2019-Conference%20Spotlight-important"
     theme: "https://img.shields.io/badge/-Relational%20Reasoning-blue.svg"
     releaseDate: ""
-    website: ""
+    website: "http://wellyzhang.github.io/project/copinet.html"
     code: ""
     paper: ""
     supplementary: ""
     img: "/assets/img/timg.jpeg"
     short: "NeurIPS 2019"
-
+    authors:
+      - name: Chi Zhang
+        website: "http://wellyzhang.github.io/"
+      - name: Baoxiong Jia
+        isme: 1
+      - name: Feng Gao
+        website: "https://fen9.github.io/"
+      - name: Yixin Zhu
+        website: "https://www.yzhu.io/"
+      - name: Hongjing lu
+        website: "http://cvl.psych.ucla.edu/"
+      - name: Song-chun Zhu
+        website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: "RAVEN: A Dataset for Relational and Analogical Visual rEasoNing"
     conference: "The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019"
@@ -198,7 +210,7 @@ publications:
   - name: "Mining User Reviews for Mobile App Comparison"
     conference: "PACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)"
     label: "https://img.shields.io/badge/UbiComp-2017-red.svg"
-    type: "https://img.shields.io/badge/UbiComp2017-Journal-yellow"
+    type: "https://img.shields.io/badge/UbiComp2017-Journal%20-yellow"
     theme: "https://img.shields.io/badge/-Review%20Analysis%20and%20Recommandation%20Systems-blue.svg"
     website: "https://dl.acm.org/citation.cfm?id=3130935"
     code: ""
