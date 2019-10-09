@@ -54,7 +54,7 @@ education:
       - area: "Computer Science"
         studyType: "Ph.D."
     startDate: "2019-09"
-    endDate: "?"
+    endDate: "Present"
     img: "/assets/icons/ucla.png"
 
   - institution: 'University of California, Los Angeles'
@@ -92,6 +92,28 @@ awards:
     awarder: "Peking University"
 
 publications:
+  - name: "A Generalized Earley Parser for Human Activity Parsing and Prediction"
+    type: "https://img.shields.io/badge/Preprint-Journal%20Paper-important"
+    theme: "https://img.shields.io/badge/-Grammar%20Parsing%20and%20Intention%20Prediction-blue.svg"
+    releaseDate: ""
+    website: ""
+    code: ""
+    paper: ""
+    supplementary: ""
+    img: "/assets/img/timg.jpeg"
+    short: "Preprint"
+    authors:
+      - name: Siyuan Qi
+        website: "http://web.cs.ucla.edu/~syqi/"
+      - name: Baoxiong Jia
+        isme: 1
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+      - name: Ping Wei
+        website: "http://www.stat.ucla.edu/~pwei/"
+      - name: Song-chun Zhu
+        website: "http://www.stat.ucla.edu/~sczhu/"
+
   - name: "RAVEN: A Dataset for Relational and Analogical Visual rEasoNing"
     conference: "International Conference on Computer Vision and Pattern Recognition (CVPR) 2019"
     label: "https://img.shields.io/badge/CVPR-2019-red.svg"
@@ -115,6 +137,7 @@ publications:
           website: "https://www.yzhu.io/"
         - name: Song-chun Zhu
           website: "http://www.stat.ucla.edu/~sczhu/"
+  
   - name: "Learning Human-Object Interactions by Graph Parsing Neural Networks"
     conference: "European Conference on Computer Vision (ECCV) 2018"
     label: "https://img.shields.io/badge/ECCV-2018-red.svg"
@@ -160,12 +183,12 @@ publications:
   - name: "Mining User Reviews for Mobile App Comparison"
     conference: "PACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)"
     label: "https://img.shields.io/badge/UbiComp-2017-red.svg"
-    type: "https://img.shields.io/badge/UbiComp2017-Journal%20Paper-green.svg"
+    type: "https://img.shields.io/badge/UbiComp2017-Journal%20Paper-important"
     theme: "https://img.shields.io/badge/-Review%20Analysis%20and%20Recommandation%20Systems-blue.svg"
     website: "https://dl.acm.org/citation.cfm?id=3130935"
     abstract: ""
     code: ""
-    paper: "assets/UbiComp2017_mining-user-reviews.pdf"
+    paper: "https://img.shields.io/badge/UbiComp2017-Journal%20Paper-important"
     supplementary: ""
     img: "/assets/img/review_mining/overview.jpeg"
     short: "IMWUT 2017"
