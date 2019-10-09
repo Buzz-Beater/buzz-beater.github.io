@@ -116,9 +116,10 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: Learning Perceptual Inference by Contrasting
-    conference: "The 33rd Conference on Neural Information Processing Systems (NeurIPS 2019)"
+    conference: "The 33rd Conference on Neural Information Processing Systems (NeurIPS) 2019"
+      - speical: "Spotlight"
     label: "https://img.shields.io/badge/NeurIPS-2019-red.svg"
-    type: "https://img.shields.io/badge/NeurIPS2019-Conference%20Spotlight-important"
+    type: "https://img.shields.io/badge/NeurIPS2019-Conference%20Paper-green"
     theme: "https://img.shields.io/badge/-Relational%20Reasoning-blue.svg"
     releaseDate: ""
     website: "http://wellyzhang.github.io/project/copinet.html"
