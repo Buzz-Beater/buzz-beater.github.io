@@ -93,6 +93,7 @@ awards:
 
 publications:
   - name: "A Generalized Earley Parser for Human Activity Parsing and Prediction"
+    conference: "Under review"
     label: "https://img.shields.io/badge/Preprint-red.svg"
     type: "https://img.shields.io/badge/Preprint-Journal%20Paper-yellow"
     theme: "https://img.shields.io/badge/-Grammar%20Parsing%20and%20Intention%20Prediction-blue.svg"
@@ -116,7 +117,7 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: Learning Perceptual Inference by Contrasting
-    conference: "The 33rd Conference on Neural Information Processing Systems (NeurIPS) 2019"
+    conference: "Conference on Neural Information Processing Systems (NeurIPS) 2019"
       - speical: "Spotlight"
     label: "https://img.shields.io/badge/NeurIPS-2019-red.svg"
     type: "https://img.shields.io/badge/NeurIPS2019-Conference%20Paper-green"
@@ -143,7 +144,7 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: "RAVEN: A Dataset for Relational and Analogical Visual rEasoNing"
-    conference: "The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019"
+    conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019"
     label: "https://img.shields.io/badge/CVPR-2019-red.svg"
     type: "https://img.shields.io/badge/CVPR2019-Conference%20Paper-green.svg"
     theme: "https://img.shields.io/badge/-Relational%20Reasoning-blue.svg"
@@ -167,7 +168,7 @@ publications:
           website: "http://www.stat.ucla.edu/~sczhu/"
   
   - name: "Learning Human-Object Interactions by Graph Parsing Neural Networks"
-    conference: "The European Conference on Computer Vision (ECCV) 2018"
+    conference: "European Conference on Computer Vision (ECCV) 2018"
     label: "https://img.shields.io/badge/ECCV-2018-red.svg"
     type: "https://img.shields.io/badge/ECCV2018-Conference%20Paper-green.svg"
     theme: "https://img.shields.io/badge/-Graph%20Parsing%20Neural%20Network-blue.svg"
@@ -190,7 +191,7 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: "Generalized Earley Parser: Bridging Symbolic Grammars and Sequence Data for Future Prediction"
-    conference: "The 35th International Conference on Machine Learning (ICML) 2018"
+    conference: "International Conference on Machine Learning (ICML) 2018"
     label: "https://img.shields.io/badge/ICML-2018-red.svg"
     type: "https://img.shields.io/badge/ICML2018-Conference%20Paper-green.svg"
     theme: "https://img.shields.io/badge/-Grammar%20Parsing%20and%20Intention%20Prediction-blue.svg"
@@ -209,9 +210,9 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: "Mining User Reviews for Mobile App Comparison"
-    conference: "PACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)"
+    conference: "ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp) 2017"
     label: "https://img.shields.io/badge/UbiComp-2017-red.svg"
-    type: "https://img.shields.io/badge/UbiComp2017-Journal%20-yellow"
+    type: "https://img.shields.io/badge/IMWUT2017-Journal%20-yellow"
     theme: "https://img.shields.io/badge/-Review%20Analysis%20and%20Recommandation%20Systems-blue.svg"
     website: "https://dl.acm.org/citation.cfm?id=3130935"
     code: ""
