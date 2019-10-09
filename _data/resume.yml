@@ -212,7 +212,7 @@ publications:
   - name: "Mining User Reviews for Mobile App Comparison"
     conference: "ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp) 2017"
     label: "https://img.shields.io/badge/UbiComp-2017-red.svg"
-    type: "https://img.shields.io/badge/IMWUT2017-Journal%20-yellow"
+    type: "https://img.shields.io/badge/IMWUT2017-Journal%20Paper-yellow"
     theme: "https://img.shields.io/badge/-Review%20Analysis%20and%20Recommandation%20Systems-blue.svg"
     website: "https://dl.acm.org/citation.cfm?id=3130935"
     code: ""
