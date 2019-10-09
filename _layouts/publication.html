@@ -62,8 +62,8 @@ layout: page
                     </div>
                     <div class="pubcite">
                       <i>{{publication.conference}}</i>
-                      {% if publication.conference.special.size > 0 %}
-                        <i>(<strong><font color="red">{{publication.conference.special}}</font></strong>)</i>
+                      {% if publication.special.size > 0 %}
+                        <i>(<strong><font color="red">{{publication.special}}</font></strong>)</i>
                       {% endif %}
                       <br>
                       <label class="pubtype"><img src={{publication.type}}></label>
