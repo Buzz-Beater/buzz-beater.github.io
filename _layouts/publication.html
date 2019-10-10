@@ -44,12 +44,12 @@ layout: page
                     <div class="pubauthor">
                       {% for author in publication.authors %}
                         {% if author.isme.size > 0 %}
-                          <strong>{{author.name}}</strong>
+                          <font size="3"><strong>{{author.name}}</strong></font>
                         {% else %}
                           {% if author.website.size > 0 %}
                             <a href="{{author.website}}">{{author.name}}</a>
                           {% else %}
-                            <label>{{author.name}}</label>
+                            <font size="3"><label>{{author.name}}</label></font>
                           {% endif %}
                         {% endif %}
                         {% if forloop.last %}
