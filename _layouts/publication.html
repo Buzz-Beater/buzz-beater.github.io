@@ -44,12 +44,12 @@ layout: page
                     <div class="pubauthor">
                       {% for author in publication.authors %}
                         {% if author.isme.size > 0 %}
-                          <font size="3"><strong>{{author.name}}</strong></font>
+                          <strong>{{author.name}}</strong>
                         {% else %}
                           {% if author.website.size > 0 %}
                             <a href="{{author.website}}">{{author.name}}</a>
                           {% else %}
-                            <font size="3"><label>{{author.name}}</label></font>
+                            <label>{{author.name}}</label>
                           {% endif %}
                         {% endif %}
                         {% if forloop.last %}
@@ -61,9 +61,9 @@ layout: page
                       <br>
                     </div>
                     <div class="pubcite">
-                      <i><font size="3">{{publication.conference}}</font></i>
+                      <i>{{publication.conference}}</i>
                       {% if publication.special.size > 0 %}
-                        <i><font size="3">(<strong><font color="red">{{publication.special}}</font></strong>)</font></i>
+                        <i>(<strong><font size="3"><font color="red">{{publication.special}}</font></font></strong>)</i>
                       {% endif %}
                       <br>
                       <label class="pubtype"><img src={{publication.type}}></label>
