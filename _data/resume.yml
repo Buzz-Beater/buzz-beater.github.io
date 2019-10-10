@@ -219,8 +219,8 @@ publications:
     paper: "/assets/publications/2017_review_ubicomp/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2017_review_ubicomp/overview.jpg"
-    short: "IMWUT 2017
-"    authors: 
+    short: "IMWUT 2017"
+    authors: 
       - name: Yuanchun Li
         website: "http://ylimit.github.io/"
       - name: Baoxiong Jia
