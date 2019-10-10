@@ -151,9 +151,9 @@ publications:
     releaseDate: ""
     website: "http://wellyzhang.github.io/project/raven.html"
     code: "https://github.com/WellyZhang/RAVEN"
-    paper: "http://openaccess.thecvf.com/content_CVPR_2019/papers/Zhang_RAVEN_A_Dataset_for_Relational_and_Analogical_Visual_REasoNing_CVPR_2019_paper.pdf"
-    supplementary: "http://openaccess.thecvf.com/content_CVPR_2019/supplemental/Zhang_RAVEN_A_Dataset_CVPR_2019_supplemental.pdf"
-    img: "/assets/img/iq2019cvpr/raven19cvpr.png"
+    paper: "/assets/publications/2019_iq_cvpr/paper.pdf"
+    supplementary: "/assets/publications/2019_iq_cvpr/supp.pdf"
+    img: "/assets/publications/2019_iq_cvpr/overview.jpg"
     short: "CVPR 2019"
     authors:
         - name: Chi Zhang*
@@ -175,9 +175,9 @@ publications:
     releaseDate: ""
     website: ""
     code: "https://github.com/SiyuanQi/gpnn"
-    paper: "http://openaccess.thecvf.com/content_ECCV_2018/papers/Siyuan_Qi_Learning_Human-Object_Interactions_ECCV_2018_paper.pdf"
+    paper: "/assests/publications/2018_gpnn_eccv/paper.pdf"
     supplementary: ""
-    img: "/assets/img/gpnn/overview.jpg"
+    img: "/assests/publications/2018_gpnn_eccv/overview.jpg"
     short: "ECCV 2018"
     authors: 
       - name: Siyuan Qi*
@@ -197,9 +197,9 @@ publications:
     theme: "https://img.shields.io/badge/-Grammar%20Parsing%20and%20Intention%20Prediction-blue.svg"
     website: "http://proceedings.mlr.press/v80/qi18a.html"
     code: "https://github.com/SiyuanQi/generalized-earley-parser"
-    paper: "http://proceedings.mlr.press/v80/qi18a/qi18a.pdf"
-    supplementary: ""
-    img: "/assets/img/generalized_earley/overview.jpg"
+    paper: "/assets/publications/2018_gep_icml/paper.pdf"
+    supplementary: "/assets/publications/2018_gep_icml/supp.pdf"
+    img: "/assets/publications/2018_gep_icml/overview.jpg"
     short: "ICML 2018"
     authors:
       - name: Siyuan Qi
@@ -216,11 +216,11 @@ publications:
     theme: "https://img.shields.io/badge/-Review%20Analysis%20and%20Recommandation%20Systems-blue.svg"
     website: "https://dl.acm.org/citation.cfm?id=3130935"
     code: ""
-    paper: "assets/UbiComp2017_mining-user-reviews.pdf"
+    paper: "/assets/publications/2017_review_ubicomp/paper.pdf"
     supplementary: ""
-    img: "/assets/img/review_mining/overview.jpeg"
-    short: "IMWUT 2017"
-    authors: 
+    img: "/assets/publications/2017_review_ubicomp/overview.jpg"
+    short: "IMWUT 2017
+"    authors: 
       - name: Yuanchun Li
         website: "http://ylimit.github.io/"
       - name: Baoxiong Jia
