@@ -125,14 +125,14 @@ publications:
     releaseDate: ""
     website: "http://wellyzhang.github.io/project/copinet.html"
     code: ""
-    paper: ""
+    paper: "/assets/publications/2019_iq_nips/paper.pdf"
     supplementary: ""
-    img: "/assets/img/timg.jpeg"
+    img: "/assets/publications/2019_iq_nips/overview.jpg"
     short: "NeurIPS 2019"
     authors:
-      - name: Chi Zhang
+      - name: Chi Zhang*
         website: "http://wellyzhang.github.io/"
-      - name: Baoxiong Jia
+      - name: Baoxiong Jia*
         isme: 1
       - name: Feng Gao
         website: "https://fen9.github.io/"
