@@ -360,7 +360,8 @@ layout: base
           <span class="symbol {{ icons.publications | default:'icon-book' }}"></span>
         </h2>
         <dl class="publications">
-          {% for publication in resume.publications %}
+          <div class="pitems">
+          {% for publication in publications %}
             <div class="item mix cpaper t_cv mix_all" style="display: block;  opacity: 1;">
               <div class="pubmain">
                 <div class="row">
@@ -433,6 +434,7 @@ layout: base
               {% endif %}
             </div>
           {% endfor %}
+        </div>
         </dl>
         </section>
       {% endif %}
