@@ -102,34 +102,34 @@ news:
         - quote:
           content: I started my journey at UCLA.
 
-education:
-  - institution: 'University of California, Los Angeles'
-    degree:
-      - area: "Computer Science"
-        studyType: "Ph.D."
-    startDate: "2019-09"
-    endDate: "Present"
-    img: "/assets/icons/ucla.png"
+# education:
+#   - institution: 'University of California, Los Angeles'
+#     degree:
+#       - area: "Computer Science"
+#         studyType: "Ph.D."
+#     startDate: "2019-09"
+#     endDate: "Present"
+#     img: "/assets/icons/ucla.png"
 
-  - institution: 'University of California, Los Angeles'
-    degree:
-      - area: "Computer Science"
-        studyType: "Master of Science"
-    startDate: "2017-09"
-    endDate: "2019-07"
-    img: "/assets/icons/ucla.png"
+#   - institution: 'University of California, Los Angeles'
+#     degree:
+#       - area: "Computer Science"
+#         studyType: "Master of Science"
+#     startDate: "2017-09"
+#     endDate: "2019-07"
+#     img: "/assets/icons/ucla.png"
 
-  - institution: "Peking University"
-    degree:
-      - area: "Computer Science"
-        studyType: "Bachelor of Science"
-      - area: "Economy"
-        studyType: "Minor"
-    startDate: "2014-09"
-    endDate: "2018-07"
-    gpa: "4.0"
-    courses:
-    img: "/assets/icons/pku.png"
+#   - institution: "Peking University"
+#     degree:
+#       - area: "Computer Science"
+#         studyType: "Bachelor of Science"
+#       - area: "Economy"
+#         studyType: "Minor"
+#     startDate: "2014-09"
+#     endDate: "2018-07"
+#     gpa: "4.0"
+#     courses:
+#     img: "/assets/icons/pku.png"
 
 # awards:
 #   - title: "Excellent College Graudate Award"
