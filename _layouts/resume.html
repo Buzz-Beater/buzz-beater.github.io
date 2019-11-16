@@ -48,18 +48,18 @@ layout: base
           <!-- Implement news html here -->
           <li>
             {% if info.isnew.size > 0%}
-              <font color="red">{{ date }}</font>
+              <font color="red">{{ info.date }}</font>
             {% else %}
-              <a> {{ date }} </a>
+              <a> {{ info.date }} </a>
             {% endif %}
             {% for quote in info.content %}
               {% if quote.isbold %}
-              <strong>{{ quote }}</strong>
+              <strong>{{ quote.content }}</strong>
               {% else %}
                 {% if quote.isemphasize %}
-                <strong><font color="red"> {{ quote }} </font></strong>
+                <strong><font color="red"> {{ quote.content }} </font></strong>
                 {% else %}
-                <a>{{ quote }}</a>
+                <a>{{ quote.content }}</a>
                 {% endif%}
               {% endif %}
             {% endfor %}

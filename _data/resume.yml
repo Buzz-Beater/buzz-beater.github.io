@@ -50,37 +50,57 @@ basics:
 #       - "Awarded 'Teacher of the Month'"
 
 news:
-    - date: NEW
+    - info:
+      date: NEW
       isnew: 1
       content: 
-        - quote: One paper on
-        - quote: relational reasoning
+        - quote: 
+          content: One paper on
+        - quote: 
+          content: relational reasoning
           isbold: 1
-        - quote: accepted as 
-        - quote: Spotlight
+        - quote:
+          content: accepted as 
+        - quote: 
+          content: Spotlight
           isemphasize: 1
-        - quote: by NeurIPS 2019.
-    - date: 02/2019
+        - quote: 
+          content: by NeurIPS 2019.
+    - info:
+      date: 02/2019
       content: 
-        - quote: One paper on 
-        - quote: IQ
+        - quote:
+          content: One paper on 
+        - quote:
+          content: IQ
           isbold: 1
-        - quote: accepted by CVPR 2019.
-    - date: 07/2018
+        - quote:
+          content: accepted by CVPR 2019.
+    - info:
+      date: 07/2018
       content:
-        - quote: One paper on 
-        - quote: human object interaction
+        - quote:
+          content: One paper on 
+        - quote:
+          content: human object interaction
           isbold: 1
-        - quote: accepted by ECCV 2018.
-    - date: 05/2018
+        - quote:
+          content: accepted by ECCV 2018.
+    - info:
+      date: 05/2018
       content: 
-        - quote: One paper on
-        - quote: human intention prediction
+        - quote:
+          content: One paper on
+        - quote:
+          content: human intention prediction
           isbold: 1
-        - quote: accepted by ICML 2018.
-    - date: 09/2017
+        - quote:
+          content: accepted by ICML 2018.
+    - info:
+      date: 09/2017
       content:
-        - quote: I started my journey at UCLA.
+        - quote:
+          content: I started my journey at UCLA.
 
 # education:
 #   - institution: 'University of California, Los Angeles'
