@@ -132,6 +132,10 @@
     }
   }
 
+  .publicationsselected {
+    margin-top: 2em;
+  }
+
   .school-avatar {
     width: 100vw;
     height: 100vw;
@@ -140,7 +144,7 @@
   .columns {
     width: 100%;
 
-    margin-top: 1em;
+    margin-top: 2em;
 
     &::after {
       @include clearfix();
