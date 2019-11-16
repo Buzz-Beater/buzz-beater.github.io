@@ -15,10 +15,6 @@
 	  border: none;
 }
 
-h2#pselected {
-	margtin-top: 3em;
-}
-
 #pub-grid .mix {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
@@ -84,6 +80,10 @@ h2#pselected {
 
 div.pubcite {
 	line-height: 250%;
+}
+
+sec.pselected {
+	margin-top: 3em;
 }
 
 .pitems .pubmain .pubassets a {
