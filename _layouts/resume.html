@@ -56,10 +56,14 @@ layout: base
               {% if quote.isbold %}
               <strong>{{ quote.content }}</strong>
               {% else %}
-                {% if quote.isemphasize %}
+                {% if quote.isemphasize.size > 0 %}
                 <strong><font color="red"> {{ quote.content }} </font></strong>
                 {% else %}
-                <font color="black"> {{ quote.content }}</font>
+                  {% if quote.islink.size > 0 %}
+                    <a href="{{quote.link}}">{{ quote.content }}</a>
+                  {% else %}
+                    <font color="black"> {{ quote.content }}</font>
+                  {% endif %}
                 {% endif%}
               {% endif %}
             {% endfor %}
@@ -71,8 +75,8 @@ layout: base
 
       {% if resume.publications.size > 0 %}
         <section>
-        <h2 id="publications" class="h3 faded hr">
-          {{ "Publications" }}
+        <h2 id="publicationsselected" class="h3 faded hr">
+          {{ "Selected Publications" }}
           <span class="symbol {{ icons.publications | default:'icon-book' }}"></span>
         </h2>
         <dl class="publications">
@@ -154,7 +158,7 @@ layout: base
         </div>
         </dl>
         </section>
-      {% endif %} -->
+      {% endif %}
 
       {% if resume.education.size > 0 %}
         <section>
