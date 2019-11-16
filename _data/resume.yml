@@ -147,6 +147,7 @@ news:
 
 publications:
   - name: "A Generalized Earley Parser for Human Activity Parsing and Prediction"
+    isselected: 1
     conference: "Under review"
     label: "https://img.shields.io/badge/Preprint-red.svg"
     type: "https://img.shields.io/badge/Preprint-Journal%20Paper-yellow"
@@ -171,6 +172,7 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: Learning Perceptual Inference by Contrasting
+    isselected: 1
     conference: "Conference on Neural Information Processing Systems (NeurIPS) 2019"
     special: "Spotlight"
     label: "https://img.shields.io/badge/NeurIPS-2019-red.svg"
@@ -245,6 +247,7 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: "Generalized Earley Parser: Bridging Symbolic Grammars and Sequence Data for Future Prediction"
+    isselected: 1
     conference: "International Conference on Machine Learning (ICML) 2018"
     label: "https://img.shields.io/badge/ICML-2018-red.svg"
     type: "https://img.shields.io/badge/ICML2018-Conference%20Paper-green.svg"

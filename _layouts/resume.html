@@ -68,6 +68,94 @@ layout: base
         </section>
       {% endif %}
 
+
+      {% if resume.publications.size > 0 %}
+        <section>
+        <h2 id="publications" class="h3 faded hr">
+          {{ "Publications" }}
+          <span class="symbol {{ icons.publications | default:'icon-book' }}"></span>
+        </h2>
+        <dl class="publications">
+          <div class="pitems">
+          {% for publication in resume.publications %}
+            {% if publication.isselected.size > 0 %}
+            <div class="item mix cpaper t_cv mix_all" style="display: block;  opacity: 1;">
+              <div class="pubmain">
+                <div class="row">
+                  <div class="pubassets">
+                    {% if publication.website.size > 0 %}
+                    <a href="{{publication.website}}" title="Project Page">
+                      <i class="fa fa-expand"></i>
+                    </a>
+                    {% endif %}
+                    {% if publication.code.size > 0 %}
+                    <a href="{{publication.code}}" title="Code">
+                      <i class="fa fa-code"></i>
+                    </a>
+                    {% endif %}
+                    {% if publication.supplementary.size > 0 %}
+                    <a href="{{publication.supplementary}}" title="Supplementary Download">
+                      <i class="fa fa-file-pdf-o"></i>
+                    </a>
+                    {% endif %}
+                    {% if publication.paper.size > 0 %}
+                    <a href="{{publication.paper}}" title="Paper Download">
+                      <i class="fa fa-file-pdf-o"></i>
+                    </a>
+                    {% endif %}
+                  </div>
+                  <div class="col-md-4" align="center">
+                    <img src="{{publication.img}}" class="thumbnail img-responsive" style="max-height:200px;">
+                  </div>
+                  <div class="col-md-8">
+                    <h4 class="pubtitle">{{publication.name}}</h4>
+                    <div class="pubauthor">
+                      {% for author in publication.authors %}
+                        {% if author.isme.size > 0 %}
+                          <font size="3"><strong>{{author.name}}</strong></font>
+                        {% else %}
+                          {% if author.website.size > 0 %}
+                            <font size="3"><a href="{{author.website}}">{{author.name}}</a></font>
+                          {% else %}
+                            <font size="3"><label>{{author.name}}</label></font>
+                          {% endif %}
+                        {% endif %}
+                        {% if forloop.last %}
+                          .
+                        {% else %}
+                          ,
+                        {% endif %}
+                      {% endfor %}
+                      <br>
+                    </div>
+                    <div class="pubcite">
+                      <i><font size="3">{{publication.conference}}</font></i>
+                      {% if publication.special.size > 0 %}
+                        <i><font size="3">(<strong><font color="red">{{publication.special}}</font></strong>)</font></i>
+                      {% endif %}
+                      <br>
+                      <label class="pubtype"><img src={{publication.type}}></label>
+                      <label class="pubtype"><img src={{publication.theme}}></label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% if publication.abstract.size > 0 %}
+              <div class="pubdetails" style="display: block;">
+                <h4>Abstract</h4>
+                <p align="justify">
+                  {{ publication.abstract }}
+                </p>
+              </div>
+              {% endif %}
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        </dl>
+        </section>
+      {% endif %} -->
+
       {% if resume.education.size > 0 %}
         <section>
         <h2 id="education" class="h3 faded hr">
