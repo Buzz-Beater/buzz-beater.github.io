@@ -48,48 +48,82 @@ basics:
 #     summary: "Global movement of free coding clubs for young people."
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
-education:
-  - institution: 'University of California, Los Angeles'
-    degree:
-      - area: "Computer Science"
-        studyType: "Ph.D."
-    startDate: "2019-09"
-    endDate: "Present"
-    img: "/assets/icons/ucla.png"
 
-  - institution: 'University of California, Los Angeles'
-    degree:
-      - area: "Computer Science"
-        studyType: "Master of Science"
-    startDate: "2017-09"
-    endDate: "2019-07"
-    img: "/assets/icons/ucla.png"
+news:
+    - date: NEW
+      isnew: 1
+      content: 
+        - quote: One paper on
+        - quote: relational reasoning
+          isbold: 1
+        - quote: accepted as 
+        - quote: Spotlight
+          isemphasize: 1
+        - quote: by NeurIPS 2019.
+    - date: 02/2019
+      content: 
+        - quote: One paper on 
+        - quote: IQ
+          isbold: 1
+        - quote: accepted by CVPR 2019.
+    - date: 07/2018
+      content:
+        - quote: One paper on 
+        - quote: human object interaction
+          isbold: 1
+        - quote: accepted by ECCV 2018.
+    - date: 05/2018
+      content: 
+        - quote: One paper on
+        - quote: human intention prediction
+          isbold: 1
+        - quote: accepted by ICML 2018.
+    - date: 09/2017
+      content:
+        - quote: I started my journey at UCLA.
 
-  - institution: "Peking University"
-    degree:
-      - area: "Computer Science"
-        studyType: "Bachelor of Science"
-      - area: "Economy"
-        studyType: "Minor"
-    startDate: "2014-09"
-    endDate: "2018-07"
-    gpa: "4.0"
-    courses:
-    img: "/assets/icons/pku.png"
+# education:
+#   - institution: 'University of California, Los Angeles'
+#     degree:
+#       - area: "Computer Science"
+#         studyType: "Ph.D."
+#     startDate: "2019-09"
+#     endDate: "Present"
+#     img: "/assets/icons/ucla.png"
 
-awards:
-  - title: "Excellent College Graudate Award"
-    date: "2018-07"
-    awarder: "Peking University"
-  - title: "Award for Academic Excellence"
-    date: "2016-09"
-    awarder: "Peking University"
-  - title: "Kwang-Hua Scholarship"
-    date: "2015-09"
-    awarder: "Peking University"
-  - title: "Award for Community Contribution"
-    date: "2015-09"
-    awarder: "Peking University"
+#   - institution: 'University of California, Los Angeles'
+#     degree:
+#       - area: "Computer Science"
+#         studyType: "Master of Science"
+#     startDate: "2017-09"
+#     endDate: "2019-07"
+#     img: "/assets/icons/ucla.png"
+
+#   - institution: "Peking University"
+#     degree:
+#       - area: "Computer Science"
+#         studyType: "Bachelor of Science"
+#       - area: "Economy"
+#         studyType: "Minor"
+#     startDate: "2014-09"
+#     endDate: "2018-07"
+#     gpa: "4.0"
+#     courses:
+#     img: "/assets/icons/pku.png"
+
+# awards:
+#   - title: "Excellent College Graudate Award"
+#     date: "2018-07"
+#     awarder: "Peking University"
+#   - title: "Award for Academic Excellence"
+#     date: "2016-09"
+#     awarder: "Peking University"
+#   - title: "Kwang-Hua Scholarship"
+#     date: "2015-09"
+#     awarder: "Peking University"
+#   - title: "Award for Community Contribution"
+#     date: "2015-09"
+#     awarder: "Peking University"
 
 publications:
   - name: "A Generalized Earley Parser for Human Activity Parsing and Prediction"

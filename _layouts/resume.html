@@ -38,6 +38,36 @@ layout: base
   {% endif %}
 
   <div class="columns">
+      {% if resume.news.size > 0 %}
+        <section>
+        <h2 id="news" class="h3 faded hr">
+          {{ "News" }}
+          <span class="symbol {{ icons.news | default:'icon-earth' }}"></span>
+        </h2>
+        {% for info in resume.news %}
+          <!-- Implement news html here -->
+          <li>
+            {% if info.isnew.size > 0%}
+              <font color="red">{{ date }}</font>
+            {% else %}
+              <a> {{ date }} </a>
+            {% endif %}
+            {% for quote in info.content %}
+              {% if quote.isbold %}
+              <strong>{{ quote }}</strong>
+              {% else %}
+                {% if quote.isemphasize %}
+                <strong><font color="red"> {{ quote }} </font></strong>
+                {% else %}
+                <a>{{ quote }}</a>
+                {% endif%}
+              {% endif %}
+            {% endfor %}
+          </li>
+        {% endfor %}
+        </section>
+      {% endif %}
+
       {% if resume.education.size > 0 %}
         <section>
         <h2 id="education" class="h3 faded hr">
@@ -93,18 +123,6 @@ layout: base
             </tr>
           </tbody>
         </table>
-        {% endfor %}
-        </section>
-      {% endif %}
-
-      {% if resume.news.size > 0 %}
-        <section>
-        <h2 id="news" class="h3 faded hr">
-          {{ "News" }}
-          <span class="symbol {{ icons.news | default:'icon-earth' }}"></span>
-        </h2>
-        {% for info in resume.news %}
-          <!-- Implement news html here -->
         {% endfor %}
         </section>
       {% endif %}
