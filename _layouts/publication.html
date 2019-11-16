@@ -59,6 +59,9 @@ layout: page
                         {% endif %}
                       {% endfor %}
                       <br>
+                      {% if publication.supp.size > 0 %}
+                        <small>{{publication.supp}}</small>
+                      {% endif %}
                     </div>
                     <div class="pubcite">
                       <i><font size="3">{{publication.conference}}</font></i>

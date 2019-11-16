@@ -198,6 +198,7 @@ publications:
         website: "http://cvl.psych.ucla.edu/"
       - name: Song-chun Zhu
         website: "http://www.stat.ucla.edu/~sczhu/"
+    supp: (* indicates equal contribution.)
 
   - name: "RAVEN: A Dataset for Relational and Analogical Visual rEasoNing"
     conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019"
@@ -222,6 +223,7 @@ publications:
           website: "https://www.yzhu.io/"
         - name: Song-chun Zhu
           website: "http://www.stat.ucla.edu/~sczhu/"
+    supp: (* indicates equal contribution.)
   
   - name: "Learning Human-Object Interactions by Graph Parsing Neural Networks"
     conference: "European Conference on Computer Vision (ECCV) 2018"
@@ -245,6 +247,7 @@ publications:
       - name: Jianbin Shen
       - name: Song-chun Zhu
         website: "http://www.stat.ucla.edu/~sczhu/"
+    supp: (* indicates equal contribution.)
 
   - name: "Generalized Earley Parser: Bridging Symbolic Grammars and Sequence Data for Future Prediction"
     isselected: 1
