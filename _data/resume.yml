@@ -51,7 +51,7 @@ basics:
 
 news:
     - info:
-      date: NEW
+      date: New
       isnew: 1
       content: 
         - quote: 
