@@ -155,6 +155,16 @@ defaults:
     values:
       menu: true
       order: 2
+  # - scope:
+  #     path: blog.md
+  #   values:
+  #     menu: true
+  #     order: 3
+  # - scope:
+  #     path: gallery.md
+  #   values:
+  #     menu: true
+  #     order: 4
   
 
 # Collections
