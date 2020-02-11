@@ -53,6 +53,16 @@ news:
     - info:
       date: New
       isnew: 1
+      content:
+        - quote:
+          content: One paper on
+        - quote:
+          content: video parsing and prediction
+          isbold: 1
+        - quote:
+          content: accepted by TPAMI 2020.
+    - info:
+      date: 09/2019
       content: 
         - quote: 
           content: One paper on
@@ -148,17 +158,17 @@ news:
 publications:
   - name: "A Generalized Earley Parser for Human Activity Parsing and Prediction"
     isselected: 1
-    conference: "Under review"
-    label: "https://img.shields.io/badge/Preprint-red.svg"
-    type: "https://img.shields.io/badge/Preprint-Journal%20Paper-yellow"
+    conference: "Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2020"
+    label: "https://img.shields.io/badge/TPAMI2020-red.svg"
+    type: "https://img.shields.io/badge/TPAMI2020-Journal%20Paper-yellow"
     theme: "https://img.shields.io/badge/-Grammar%20Parsing%20and%20Intention%20Prediction-blue.svg"
     releaseDate: ""
     website: ""
     code: ""
-    paper: ""
+    paper: "/assets/publications/2020_gep_pami/paper.pdf"
     supplementary: ""
-    img: "/assets/img/timg.jpeg"
-    short: "Preprint"
+    img: "/assets/publications/2020_gep_pami/overview.jpg"
+    short: "TPAMI 2020"
     authors:
       - name: Siyuan Qi
         website: "http://web.cs.ucla.edu/~syqi/"
@@ -250,7 +260,6 @@ publications:
     supp: (* indicates equal contribution.)
 
   - name: "Generalized Earley Parser: Bridging Symbolic Grammars and Sequence Data for Future Prediction"
-    isselected: 1
     conference: "International Conference on Machine Learning (ICML) 2018"
     label: "https://img.shields.io/badge/ICML-2018-red.svg"
     type: "https://img.shields.io/badge/ICML2018-Conference%20Paper-green.svg"
