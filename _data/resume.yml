@@ -57,6 +57,17 @@ news:
         - quote:
           content: One paper on
         - quote:
+          content: Multi-agent Multi-task Activities
+          isbold: 1
+        - quote:
+          content: accepted by ECCV 2020.
+    - info:
+      date: 02/2020
+      isnew: 1
+      content:
+        - quote:
+          content: One paper on
+        - quote:
           content: video parsing and prediction
           isbold: 1
         - quote:
@@ -156,6 +167,31 @@ news:
 #     awarder: "Peking University"
 
 publications:
+  - name: "LEMMA: A Multi-view Dataset for Learning Multi-agent Multi-task Activities"
+    isselected: 1
+    conference: "European Conference on Computer Vision (ECCV) 2020"
+    label: "https://img.shields.io/badge/ECCV-2020-red.svg"
+    type: "https://img.shields.io/badge/ECCV2020-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Dataset-blue.svg"
+    releaseDate: ""
+    website: ""
+    code: ""
+    paper: "/assets/publications/2020_lemma_eccv/paper.pdf"
+    supplementary: ""
+    img: "/assets/publications/2020_lemma_eccv/overview.jpg"
+    short: "ECCV 2020"
+    authors: 
+      - name: Baoxiong Jia
+        isme: 1
+      - name: Yixin Chen
+        website: "https://yixchen.github.io/"
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+      - name: Yixin Zhu
+        website: "https://yzhu.io/"
+      - name: Song-chun Zhu
+        website: "http://www.stat.ucla.edu/~sczhu/"
+
   - name: "A Generalized Earley Parser for Human Activity Parsing and Prediction"
     isselected: 1
     conference: "Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2020"
