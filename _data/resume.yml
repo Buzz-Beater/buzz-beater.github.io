@@ -2,7 +2,7 @@
 # If you don't have a JSON Resume you can just edit this YAML file instead.
 # See also: <https://jsonresume.org/>.
 basics:
-  name: "Welcome"
+  name: "Hi!"
   picture: 
     path:            /assests/img/selfie.jpg
     # srcset is optional, but can be used to provide higher res versions for retina displays
@@ -14,10 +14,15 @@ basics:
   #phone: "(912) 555-4321"
   #website: "https://piedpiper.com"
   summary: >
-    Hi! I'm Baoxiong, a Ph.D. student in [VCLA@UCLA](http://vcla.stat.ucla.edu/) advised by [Prof. Song-chun Zhu](http://www.stat.ucla.edu/~sczhu/).
-    Before coming to LA and obtaining my M.S. of Computer Science in 2019, I got my B.S. from Peking University in 2018 where I spent three wonderful years in the computer science department
-    of EECS and PKU Operating System Lab. My research interest lies in computer vision, artificial intelligence and cognitive science, especially about human activity understanding, task planning and intention modeling/prediction. You can find my CV [here](/assets/cv.pdf).
-  location:
+    I'm Baoxiong, a Ph.D. candidate in [VCLA@UCLA](http://vcla.stat.ucla.edu/) advised by [Prof. Song-chun Zhu](http://www.stat.ucla.edu/~sczhu/). 
+    Before coming to LA, I got my B.S. in Computer Science from EECS, Peking University in 2018 and spent three wonderful years in the PKU Operating System Lab 
+    under the suppervision of [Prof. Yao Guo](http://sei.pku.edu.cn/~yaoguo). 
+    Prior to my Ph.D. study,  I joined the the PKU-UCLA Joint Research Institute ([PKU-UCLA JRI](https://pku-jri.ucla.edu/jri/article/150479)) 3+2 Program,
+    and obtained my M.S. in Computer Science at UCLA in 2019 under the supervision of [Prof. Song-chun Zhu](http://www.stat.ucla.edu/~sczhu/).
+    My research interest lies in computer vision, artificial intelligence and cognitive science, 
+    with an special focus in human activity understanding, task planning and intention modeling/prediction. 
+    You can find my CV [here](/assets/cv.pdf).
+  # location:
   # profiles:
   #   - network: "Twitter"
   #     username: "RHendricksCEO"
@@ -48,10 +53,9 @@ basics:
 #     summary: "Global movement of free coding clubs for young people."
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
-
-  news:
+news:
     - info:
-      date: New
+      date: New!
       isnew: 1
       content:
         - quote:
@@ -62,12 +66,22 @@ basics:
         - quote:
           content: accepted by CVPR 2021.
     - info:
-      date: New
+      date: New!
       isnew: 1
       content:
         - quote:
-          content: LEMMA project page released, find code and data from [here](https://sites.google.com/view/lemma-activity)!
-    
+          content: LEMMA
+        - quote:
+          islink: 1
+          content: project page
+          link: https://sites.google.com/view/lemma-Activity
+        - quote:
+          content: released, check out our code and data!
+    - info:
+      date: 12/2020
+      content:
+        - quote:
+          content: I advanced to candidacy! 
     - info:
       date: 07/2020
       content:
@@ -139,34 +153,34 @@ basics:
         - quote:
           content: I started my journey at UCLA.
 
-# education:
-#   - institution: 'University of California, Los Angeles'
-#     degree:
-#       - area: "Computer Science"
-#         studyType: "Ph.D."
-#     startDate: "2019-09"
-#     endDate: "Present"
-#     img: "/assets/icons/ucla.png"
+education:
+  - institution: 'University of California, Los Angeles'
+    degree:
+      - area: "Computer Science"
+        studyType: "Ph.D."
+    startDate: "2019-09"
+    endDate: "Present"
+    img: "/assets/icons/ucla.png"
 
-#   - institution: 'University of California, Los Angeles'
-#     degree:
-#       - area: "Computer Science"
-#         studyType: "Master of Science"
-#     startDate: "2017-09"
-#     endDate: "2019-07"
-#     img: "/assets/icons/ucla.png"
+  - institution: 'University of California, Los Angeles'
+    degree:
+      - area: "Computer Science"
+        studyType: "Master of Science"
+    startDate: "2017-09"
+    endDate: "2019-07"
+    img: "/assets/icons/ucla.png"
 
-#   - institution: "Peking University"
-#     degree:
-#       - area: "Computer Science"
-#         studyType: "Bachelor of Science"
-#       - area: "Economy"
-#         studyType: "Minor"
-#     startDate: "2014-09"
-#     endDate: "2018-07"
-#     gpa: "4.0"
-#     courses:
-#     img: "/assets/icons/pku.png"
+  - institution: "Peking University"
+    degree:
+      - area: "Computer Science"
+        studyType: "Bachelor of Science"
+      - area: "Economy"
+        studyType: "Minor"
+    startDate: "2014-09"
+    endDate: "2018-07"
+    gpa: "4.0"
+    courses:
+    img: "/assets/icons/pku.png"
 
 # awards:
 #   - title: "Excellent College Graudate Award"
@@ -206,12 +220,13 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
       - name: Yixin Zhu
         website: "https://yzhu.io/"
-
-- name: "Abstract Spatial-Temporal Reasoning via Probabilistic Abduction and Execution"
+        
+  - name: "Abstract Spatial-Temporal Reasoning via Probabilistic Abduction and Execution"
+    isselected: 1
     conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2021"
     label: "https://img.shields.io/badge/CVPR-2021-red.svg"
     type: "https://img.shields.io/badge/CVPR2021-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/-Abstract%20Spatial-Temporal%20Reasoning-blue.svg"
+    theme: "https://img.shields.io/badge/-Abstract%20Spatial--Temporal%20Reasoning-blue.svg"
     releaseDate: ""
     website: ""
     code: ""
@@ -229,6 +244,7 @@ publications:
       - name: Yixin Zhu
         website: "https://yzhu.io/"
     supp: (* indicates equal contribution.)
+
 
   - name: "LEMMA: A Multi-view Dataset for Learning Multi-agent Multi-task Activities"
     isselected: 1
