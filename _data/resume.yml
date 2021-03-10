@@ -50,23 +50,24 @@ basics:
 #       - "Awarded 'Teacher of the Month'"
 
 news:
-  - info:
-    date: New
-    isnew: 1
-    content:
-      - quote:
-        content: Two papers on
-      - quote:
-        content: Abstract Reasoning
-        isbold: 1
-      - quote:
-        content: accepted by CVPR 2021.
-  - info:
-    date: New
-    isnew: 1
-    content:
-      - quote:
-        content: LEMMA project page released, find code and data from [here](https://sites.google.com/view/lemma-activity)!
+    - info:
+      date: New
+      isnew: 1
+      content:
+        - quote:
+          content: Two papers on
+        - quote:
+          content: Abstract Reasoning
+          isbold: 1
+        - quote:
+          content: accepted by CVPR 2021.
+    - info:
+      date: New
+      isnew: 1
+      content:
+        - quote:
+          content: LEMMA project page released, find code and data from [here](https://sites.google.com/view/lemma-activity)!
+    
     - info:
       date: 07/2020
       content:
