@@ -49,7 +49,7 @@ basics:
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
 
-news:
+  news:
     - info:
       date: New
       isnew: 1
