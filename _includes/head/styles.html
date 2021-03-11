@@ -13,6 +13,9 @@
     {% elsif page.layout == "resume" %}
       {% capture include_to_scssify %}{% include styles/pro/resume.scss %}{% endcapture %}
       {{ include_to_scssify | scssify }}
+    {% elsif page.layout == "experience" %}
+      {% capture include_to_scssify %}{% include styles/pro/experience.scss %}{% endcapture %}
+      {{ include_to_scssify | scssify }}
     {% endif %}
   </style>
   <link id="_stylePreload" rel="preload" as="style" href="{{ style_url | relative_url }}">

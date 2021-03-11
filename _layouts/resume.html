@@ -164,65 +164,6 @@ layout: base
         <p></p>
         </section>
       {% endif %}
-
-      {% if resume.education.size > 0 %}
-        <section>
-        <h2 id="Education" class="h3 faded hr">
-          {{ strings.resume.education | default:"Experience" }}
-          <span class="symbol {{ icons.education | default:'icon-library' }}"></span>
-        </h2>
-        {% for edu in resume.education %}
-            <table class="education" border="0">
-              <tbody>
-                <tr width="1%" border="0"></tr>
-                <tr>
-                  <header class="{% unless forloop.first %}mt3{% endunless %}">
-                    <td class='education education-img'>
-                    <img class = "school_avatar" src="{{edu.img}}">
-                    </td>
-                    <td class='education education-info'>
-                    {% if edu.startDate.size > 0 %}
-                      <p class="faded">
-                        <time datetime="{{ edu.startDate }}">{{ edu.startDate | date:from_to_format }}</time>
-                        {{ from_to_separator }}
-                        {% if edu.endDate.size > 0 %}
-                          <time datetime="{{ edu.endDate }}">{{ edu.endDate | date:from_to_format }}</time>
-                        {% else %}
-                          <em>{{ present }}</em>
-                        {% endif %}
-                      </p>
-                    {% endif %}
-                    <h3 class="h4 faded" {% if edu.endDate.size > 0 %}property="alumniOf" typeof="EducationalOrganization"{% endif %}>
-                      {% for degree in edu.degree %}
-                        {% capture study_type %}<span class="bc">{{ degree.studyType }}</span>{% endcapture %}
-                        {% capture area %}<span class="bc">{{ degree.area }}</span>{% endcapture %}
-                        {% capture institution %}<span class="bc" {% if edu.endDate.size > 0 %}property="name"{% endif %}>{{ edu.institution }}</span>{% endcapture %}
-                        {% capture gpa %}<span class="bc">{{ edu.gpa }}</span>{% endcapture %}
-                        {{ strings.resume.education_title
-                          | default:"<!--study_type--> in <!--area--> from <!--institution--> with GPA of <!--gpa-->"
-                          | replace:"<!--study_type-->", study_type
-                          | replace:"<!--area-->", area
-                          | replace:"<!--institution-->", institution
-                          | replace:"<!--gpa-->", gpa
-                        }}
-                        <br>
-                      {% endfor %}
-                    </h3>
-                     <h4 class="sr-only">{{ strings.resume.courses | default:"Courses" }}</h4>
-                        <ul>
-                          {% for course in edu.courses %}
-                           <li>{{ course }}</li>
-                          {% endfor %}
-                        </ul>
-                    </h4>
-                    </td>
-                  </header>
-            </tr>
-          </tbody>
-        </table>
-        {% endfor %}
-        </section>
-      {% endif %}
       
       
       {% if resume.work.size > 0 %}

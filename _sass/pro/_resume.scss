@@ -110,33 +110,6 @@
   }
 
   $pad: 2.5rem;
-  .education {
-    margin-top: 0em;
-    margin-bottom: 0em;
-    margin-left: $pad / 8;
-    width: 100%;
-    overflow: hidden;
-
-    background: #fff;
-
-    boder-collapse: collapse;
-    border-style: hidden;
-
-    .education-img {
-      border-style: hidden;
-      width: 13%;
-    }
-    .education-info {
-      border-style: hidden;
-      width: 80%;
-    }
-  }
-  
-  .school-avatar {
-    width: 100vw;
-    height: 100vw;
-  }
-
   .columns {
     width: 100%;
 

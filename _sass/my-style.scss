@@ -108,3 +108,178 @@ h2#pselected.h3.faded.hr {
 .about-paragraph {
 	width: 95%;
 }
+
+$pad: 2.5rem;
+.education {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: $pad / 8;
+    width: 100%;
+    overflow: hidden;
+
+    background: #fff;
+
+    boder-collapse: collapse;
+    border-style: hidden;
+
+    .education-img {
+      border-style: hidden;
+      width: 13%;
+    }
+    .education-info {
+      border-style: hidden;
+      width: 80%;
+    }
+}
+  
+.school-avatar {
+    width: 1vw;
+    height: 1vw;
+}
+
+
+$pad: 0.1rem;
+.columns {
+  width: 100%;
+
+  margin-top: 3em;
+
+  &::after {
+	@include clearfix();
+  }
+
+  .message {
+	width: calc(100% + 2rem);
+	padding-right: 1rem;
+  }
+}
+
+.column {
+  float: left;
+  padding-left: $pad;
+  width: 100%;
+
+  .column-3-5 {
+	width: 100%;
+  }
+}
+
+@media screen and (min-width: $break-point-2) {
+  .columns { width: 100% }
+}
+
+@media screen and (min-width: $break-point-3) {
+  .columns { width: 100% }
+}
+
+@media screen and (min-width: 73.5em) {
+  .columns { width: 100% }
+}
+
+h1 {
+    display: inline-block;
+    margin-bottom: .25rem;
+  }
+
+  .avatar {
+    margin-top: .5rem;
+  }
+
+  header > p {
+    margin-bottom: 0;
+  }
+
+  .subline {
+    margin-top: 0;
+  }
+
+  .h4 {
+    margin-top: 0;
+    font-family: unset!important;
+    font-weight: $font-weight-bold;
+    width: 100%;
+  }
+
+  .bc {
+    color: $body-color;
+  }
+
+  .bold {
+    font-weight: $font-weight-bold;
+  }
+
+  .tags {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 -.625rem 1.5rem;
+    clear: right;
+  }
+
+  .tag {
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin: .25rem .125rem;
+    padding: .125rem .5rem;
+    color: $gray-text;
+    line-height: 1.4;
+  }
+
+  .help {
+    cursor: help;
+  }
+
+  .symbol {
+    float: right;
+    color: #ddd;
+    margin-top: 4px;
+    margin-left: .5rem;
+  }
+
+  .contact {
+    margin-top: 2.5rem;
+
+    dl:first-child {
+      margin-bottom: 0;
+    }
+
+    dt, dd {
+      margin-bottom: .5rem;
+    }
+
+    dt {
+      clear: both;
+      float: left;
+      width: 2rem;
+
+      [class*="icon-"] {
+        font-size: 1.17rem;
+        position: relative;
+        top: 2px;
+      }
+    }
+
+    dd {
+      float: left;
+      margin-left: 0;
+      width: calc(100% - 2rem);
+      padding-left: .25rem;
+    }
+  }
+
+  .reference {
+    margin-bottom: 1.5rem;
+
+    > footer {
+      margin-bottom: 0;
+    }
+  }
+
+  .skills {
+    dt {
+      margin-bottom: 0;
+    }
+
+    dd {
+      margin: 0;
+    }
+  }
