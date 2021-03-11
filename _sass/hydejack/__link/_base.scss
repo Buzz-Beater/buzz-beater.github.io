@@ -43,13 +43,13 @@ hy-push-state, hy-drawer {
 @media print { html { font-size: $root-font-size; } } 
 // Link styles
 hy-push-state a, .a {
-//   position: relative; 
-//   padding-bottom: .15rem; 
-//   border-bottom: 1px solid; 
+  position: relative; 
+  padding-bottom: .15rem; 
+  border-bottom: none; 
   transition: color 500ms, border-color 250ms; 
   
   &:hover {
-    text-decoration: none;
+    text-decoration: 1px solid;
     transition: color 500ms, border-color 50ms;
   }
 
