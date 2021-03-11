@@ -86,7 +86,7 @@ layout: base
                 <div class="row">
                   <div class="pubassets">
                     {% if publication.website.size > 0 %}
-                    <a href="{{publication.website}}" title="Project Page">
+                    <a href="{{publication.website}}" title="Project Page" data-toggle="tooltip">
                       <i class="fa fa-expand"></i>
                     </a>
                     {% endif %}
@@ -116,11 +116,13 @@ layout: base
                         {% if author.isme.size > 0 %}
                           <font size="3"><strong>{{author.name}}</strong></font>
                         {% else %}
+                          <span class="otherpubauthors">
                           {% if author.website.size > 0 %}
                             <font size="3"><a href="{{author.website}}">{{author.name}}</a></font>
                           {% else %}
                             <font size="3"><label>{{author.name}}</label></font>
                           {% endif %}
+                          </span>
                         {% endif %}
                         {% if forloop.last %}
                           .

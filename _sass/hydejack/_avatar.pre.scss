@@ -16,9 +16,9 @@
 .avatar {
   // <<< inline
   float: right;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 100%;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 30%;
   margin-left: 2rem;
   // >>>
   position: relative; // link
@@ -26,8 +26,8 @@
 
   // <<< inline
   @media screen and (min-width: $break-point-1) {
-    width: 11rem;
-    height: 11rem;
+    width: 13rem;
+    height: 13rem;
   }
   // >>>
 }

@@ -4,7 +4,7 @@ email:
   icon: icon-mail
 book:
   name: Google Scholar
-  icon: icon-book
+  icon: icon-google
   prepend: "https://scholar.google.com/citations?user=qIBUK6sAAAAJ&hl=en"
 amazon:
   name: Amazon
