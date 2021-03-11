@@ -55,9 +55,23 @@ html {
 hy-push-state a, .a {
   position: relative; 
   padding-bottom: .15rem; 
-  border-bottom: 1px; 
-//   transition: color 500ms, border-color 250ms; 
+  border-bottom: none; 
+  transition: color 500ms, border-color 250ms; 
   
+  &:hover {
+    text-decoration: 1px solid;
+    transition: color 500ms, border-color 50ms;
+  }
+
+  &.no-hover {
+    border-bottom: none;
+    padding-bottom: none;
+    transition: none;
+
+    &:hover {
+      transition: none;
+    }
+  }
 }
 
 .content .img {
