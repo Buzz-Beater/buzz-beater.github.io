@@ -55,11 +55,12 @@ html {
 hy-push-state a, .a {
   position: relative; 
   padding-bottom: .15rem; 
-  border-bottom: none; 
+  border-bottom: 1px; 
   transition: color 500ms, border-color 250ms; 
   
   &:hover {
-    text-decoration: 1px solid;
+    text-decoration: none;
+    border-bottom: 1px solid; 
     transition: color 500ms, border-color 50ms;
   }
 

@@ -25,19 +25,20 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 .avatar {
-  
+  // <<< inline
   float: right;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 100%;
-  margin-left: .5rem;
-  display: block;
-  
-//   position: relative; 
-//   z-index: 1; 
+  width: 15rem;
+  height: 15rem;
+  border-radius: 30%;
+  margin-left: 2rem;
+  // >>>
+  position: relative; // link
+  z-index: 1; // link
+
+  // <<< inline
   @media screen and (min-width: $break-point-1) {
-    width: 11rem;
-    height: 11rem;
+    width: 13rem;
+    height: 13rem;
   }
-  
+  // >>>
 }
