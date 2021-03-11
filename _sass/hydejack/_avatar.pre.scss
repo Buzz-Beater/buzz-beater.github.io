@@ -19,15 +19,19 @@
   width: 15rem;
   height: 15rem;
   border-radius: 30%;
-  margin-left: 2rem;
+  margin-left: 5%;
   // >>>
   position: relative; // link
   z-index: 1; // link
 
   // <<< inline
   @media screen and (min-width: $break-point-1) {
-    width: 12rem;
-    height: 12rem;
+    width: 22.5%;
+    height: auto;
+  }
+  @media screen and (max-width: $break-point-1) {
+    width: 22.5%;
+    height: auto;
   }
   // >>>
 }

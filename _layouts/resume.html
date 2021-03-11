@@ -19,9 +19,12 @@ layout: base
 
   {% if basics.summary.size > 0 %}
   <div class="about-paragraph" style="text-align: justify">
+    <avatarimg>
     {% if basics.picture.size > 0 %}
       {% include srcset-img.html class="avatar photo u-photo" img=basics.picture alt=basics.name property="image" %}
     {% endif %}
+    </avatarimg>
+    <summary>
     <p class="note p-note" property="description">
       {{ basics.summary | markdownify | replace:'<p>','' | replace:'</p>','' }}
     </p>
@@ -30,6 +33,7 @@ layout: base
         Info: <a href="mailto:baoxiongjia@g.ucla.edu">Email</a> / <a href="https://scholar.google.com/citations?user=qIBUK6sAAAAJ&hl=en&authuser=1">Google Scholar</a> / <a href="/assets/cv.pdf">CV</a>
       </span>
     </p>
+    </summary>
   </div>
   {% endif %}
   <div id="infopanel" class="columns">
