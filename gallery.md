@@ -3,6 +3,6 @@ layout: photos
 title: Photos
 permalink: /gallery
 description: "An example photo gallery."
-menu: true
+menu: false
 order: 4
 ---
