@@ -70,11 +70,7 @@ hy-push-state a, .a {
   &.no-hover {
     border-bottom: none;
     padding-bottom: none;
-    transition: none;
-
-    &:hover {
-      transition: none;
-    }
+    transition: none;   
   }
   // >>>
 }
