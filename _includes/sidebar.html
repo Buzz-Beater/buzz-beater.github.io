@@ -5,7 +5,7 @@
       {% capture bg_class %}sidebar-bg sidebar-overlay{% endcapture %}
     {% else %}
       {% capture bg_style %}background-image:url({% include smart-url url=image %}){% endcapture %}
-      {% capture bg_class %}sidebar-bg sidebar-overlay{% endcapture %}
+      {% capture bg_class %}sidebar-bg{% endcapture %}
     {% endif %}
     <div class="{{ bg_class }}" style="{{ bg_style }}"></div>
 
