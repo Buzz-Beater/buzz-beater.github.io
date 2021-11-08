@@ -164,7 +164,7 @@ defaults:
   #     path: blog.md
   #   values:
   #     menu: true
-  #     order: 3
+  #     order: 4
   # - scope:
   #     path: gallery.md
   #   values:
