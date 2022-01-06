@@ -4,11 +4,11 @@
 basics:
   name: "Hi!"
   picture: 
-    path:            /assets/img/selfies/selfie2.jpg
+    path:            /assets/img/selfies/selfie2_resize.jpg
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            /assets/img/selfies/selfie2.jpg
-      2x:            /assets/img/selfies/selfie2.jpg
+      1x:            /assets/img/selfies/selfie2_resize.jpg
+      2x:            /assets/img/selfies/selfie2_resize.jpg
 
   email:
   #phone: "(912) 555-4321"
