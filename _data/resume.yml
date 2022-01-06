@@ -217,7 +217,7 @@ publications:
     code: "https://github.com/WellyZhang/ACRE"
     paper: "/assets/publications/2021_acre_cvpr/paper.pdf"
     supplementary: "/assets/publications/2021_acre_cvpr/supp.pdf"
-    img: "/assets/publications/2021_acre_cvpr/overview.png"
+    img: "/assets/publications/2021_acre_cvpr/overview.jpg"
     short: "CVPR 2021"
     authors: 
       - name: Chi Zhang
