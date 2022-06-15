@@ -55,7 +55,7 @@ basics:
 news:
     - info:
       isnew: 1
-      date: New
+      date: New!
       # date: 05/2022
       content:
         - quote:
