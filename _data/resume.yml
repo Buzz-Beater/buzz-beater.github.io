@@ -54,6 +54,7 @@ basics:
 #       - "Awarded 'Teacher of the Month'"
 news:
     - info:
+      isnew: 1
       date: 05/2022
       content:
         - quote:
