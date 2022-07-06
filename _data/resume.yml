@@ -73,7 +73,7 @@ news:
         - quote:
           content: One paper on
         - quote:
-          content: latent-space energy-based model
+          content: latent diffusion energy-based model
           isbold: 1
         - quote:
           content: is accepted by ICML 2022.
