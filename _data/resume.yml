@@ -14,10 +14,10 @@ basics:
   #phone: "(912) 555-4321"
   #website: "https://piedpiper.com"
   summary: >
-    Hi! I'm Baoxiong, a Ph.D. candidate of Department of Computer Science, University of California, Los Angeles. I'm currently working at [VCLA@UCLA](http://vcla.stat.ucla.edu/) advised by [Prof. Song-chun Zhu](http://www.stat.ucla.edu/~sczhu/). 
+    Hi! I'm Baoxiong, a Ph.D. candidate of Department of Computer Science, University of California, Los Angeles. I'm currently working at [VCLA@UCLA](http://vcla.stat.ucla.edu/) advised by [Prof. Song-Chun Zhu](http://www.stat.ucla.edu/~sczhu/). 
     Before coming to LA, I got my B.S. in Computer Science from EECS, Peking University in 2018 after spending two wonderful years in the PKU Operating System Lab advised by [Prof. Yao Guo](http://sei.pku.edu.cn/~yaoguo). 
     Prior to my Ph.D. study,  I joined the PKU-UCLA Joint Research Institute ([PKU-UCLA JRI](https://pku-jri.ucla.edu/jri/article/150479)) 3+2 Program,
-    and obtained my M.S. in Computer Science at UCLA in 2019 under the supervision of [Prof. Song-chun Zhu](http://www.stat.ucla.edu/~sczhu/).
+    and obtained my M.S. in Computer Science at UCLA in 2019 under the supervision of [Prof. Song-Chun Zhu](http://www.stat.ucla.edu/~sczhu/).
     My research interest lies in the intersection of computer vision, artificial intelligence and cognitive science, 
     with an special focus on spatial-temporal learning/reasoning 
     and its application to understanding and planning tasks in both real world (scene/activity understanding, future prediction, etc.) and abstracted domains (Atari, RAVEN, etc.).
@@ -252,7 +252,7 @@ publications:
         isme: 1
       - name: Yixin Zhu
         website: "https://yzhu.io/"
-      - name: Song-chun Zhu
+      - name: Song-Chun Zhu
         website: "http://www.stat.ucla.edu/~sczhu/"
       - name: Ying Nian Wu
         website: "http://www.stat.ucla.edu/~ywu/"
@@ -283,7 +283,7 @@ publications:
         website: "https://ruiqigao.github.io/"
       - name: Yixin Zhu
         website: "https://yzhu.io/"
-      - name: Song-chun Zhu
+      - name: Song-Chun Zhu
         website: "http://www.stat.ucla.edu/~sczhu/"
       - name: Ying Nian Wu
         website: "http://www.stat.ucla.edu/~ywu/"
@@ -307,7 +307,7 @@ publications:
         isme: 1
       - name: Mark Edmonds
         website: "https://mjedmonds.com/"
-      - name: Song-chun Zhu
+      - name: Song-Chun Zhu
         website: "http://www.stat.ucla.edu/~sczhu/"
       - name: Yixin Zhu
         website: "https://yzhu.io/"
@@ -331,7 +331,7 @@ publications:
         website: "http://wellyzhang.github.io/"
       - name: Baoxiong Jia*
         isme: 1
-      - name: Song-chun Zhu
+      - name: Song-Chun Zhu
         website: "http://www.stat.ucla.edu/~sczhu/"
       - name: Yixin Zhu
         website: "https://yzhu.io/"
@@ -359,7 +359,7 @@ publications:
         website: "https://siyuanhuang.com/"
       - name: Yixin Zhu
         website: "https://yzhu.io/"
-      - name: Song-chun Zhu
+      - name: Song-Chun Zhu
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: "A Generalized Earley Parser for Human Activity Parsing and Prediction"
@@ -384,7 +384,7 @@ publications:
         website: "https://siyuanhuang.com/"
       - name: Ping Wei
         website: "http://www.stat.ucla.edu/~pwei/"
-      - name: Song-chun Zhu
+      - name: Song-Chun Zhu
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: Learning Perceptual Inference by Contrasting
@@ -412,7 +412,7 @@ publications:
         website: "https://www.yzhu.io/"
       - name: Hongjing lu
         website: "http://cvl.psych.ucla.edu/"
-      - name: Song-chun Zhu
+      - name: Song-Chun Zhu
         website: "http://www.stat.ucla.edu/~sczhu/"
     supp: (* indicates equal contribution.)
 
@@ -437,7 +437,7 @@ publications:
           isme: 1
         - name: Yixin Zhu
           website: "https://www.yzhu.io/"
-        - name: Song-chun Zhu
+        - name: Song-Chun Zhu
           website: "http://www.stat.ucla.edu/~sczhu/"
     supp: (* indicates equal contribution.)
   
@@ -461,7 +461,7 @@ publications:
       - name: Baoxiong Jia
         isme: 1
       - name: Jianbin Shen
-      - name: Song-chun Zhu
+      - name: Song-Chun Zhu
         website: "http://www.stat.ucla.edu/~sczhu/"
     supp: (* indicates equal contribution.)
 
@@ -481,7 +481,7 @@ publications:
         website: "http://web.cs.ucla.edu/~syqi/"
       - name: Baoxiong Jia
         isme: 1
-      - name: Song-chun Zhu
+      - name: Song-Chun Zhu
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: "Mining User Reviews for Mobile App Comparison"
