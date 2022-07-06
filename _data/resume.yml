@@ -61,6 +61,18 @@ news:
         - quote:
           content: One paper on
         - quote:
+          content: systematic generalization in RAVEN test
+          isbold: 1
+        - quote:
+          content: is accepted by ECCV 2022.
+    - info:
+      isnew: 1
+      date: New!
+      # date: 05/2022
+      content:
+        - quote:
+          content: One paper on
+        - quote:
           content: latent-space energy-based model
           isbold: 1
         - quote:
@@ -218,6 +230,63 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "Learning ALgebraic Representation for Systematic Generalization in Contextual Decision Processes"
+    conference: "European Conference on Computer Vision (ECCV) 2022"
+    label: "https://img.shields.io/badge/ECCV-2022-red.svg"
+    type: "https://img.shields.io/badge/ECCV2022-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/-Systematic%20Generalization-blue.svg"
+    releaseDate: ""
+    website: ""
+    code: ""
+    paper: ""
+    supplementary: ""
+    img: "/assets/img/time.jpeg"
+    short: "ECCV 2022"
+    authors: 
+      - name: Chi Zhang*
+        website: "https://wellyzhang.github.io/"
+      - name: Sirui Xie*
+        website: "https://siruixie.com/"
+      - name: Baoxiong Jia*
+        isme: 1
+      - name: Yixin Zhu
+        website: "https://yzhu.io/"
+      - name: Song-chun Zhu
+        website: "http://www.stat.ucla.edu/~sczhu/"
+      - name: Ying Nian Wu
+        website: "http://www.stat.ucla.edu/~ywu/"
+    supp: (* indicates equal contribution.)
+
+  - name: "Latent Diffusion Energy-Based MOdel for Interpretable Text Modeling"
+    conference: "International Conference on Machine Learning (ICML) 2022"
+    label: "https://img.shields.io/badge/ICML-2022-red.svg"
+    type: "https://img.shields.io/badge/ICML2022-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/-Diffusion%20Models%20and%20Latent%20EBM-blue.svg"
+    website: ""
+    code: "https://github.com/yuPeiyu98/LDEBM"
+    paper: "/assets/publications/2022_ldebm_icml/paper.pdf"
+    supplementary: ""
+    img: "/assets/publications/2022_ldebm_icml/overview.png"
+    short: "ICML 2022"
+    authors:
+      - name: Peiyu Yu
+        website: 
+      - name: Sirui Xie
+        website: "https://siruixie.com/"
+      - name: Xiaojian Ma
+        website: "https://web.cs.ucla.edu/~xm/"
+      - name: Baoxiong Jia
+        isme: 1
+      - name: Bo Pang
+      - name: Ruiqi Gao
+        website: "https://ruiqigao.github.io/"
+      - name: Yixin Zhu
+        website: "https://yzhu.io/"
+      - name: Song-chun Zhu
+        website: "http://www.stat.ucla.edu/~sczhu/"
+      - name: Ying Nian Wu
+        website: "http://www.stat.ucla.edu/~ywu/"
+
   - name: "ACRE: Abstract Causal REasoning Beyond Covariation"
     conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2021"
     label: "https://img.shields.io/badge/CVPR-2021-red.svg"
@@ -241,6 +310,7 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
       - name: Yixin Zhu
         website: "https://yzhu.io/"
+    supp: (* indicates equal contribution.)
         
   - name: "Abstract Spatial-Temporal Reasoning via Probabilistic Abduction and Execution"
     isselected: 1
@@ -265,7 +335,6 @@ publications:
       - name: Yixin Zhu
         website: "https://yzhu.io/"
     supp: (* indicates equal contribution.)
-
 
   - name: "LEMMA: A Multi-view Dataset for Learning Multi-agent Multi-task Activities"
     isselected: 1
