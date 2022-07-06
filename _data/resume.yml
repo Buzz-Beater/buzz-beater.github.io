@@ -231,6 +231,7 @@ education:
 
 publications:
   - name: "Learning ALgebraic Representation for Systematic Generalization in Contextual Decision Processes"
+    isselected: 1
     conference: "European Conference on Computer Vision (ECCV) 2022"
     label: "https://img.shields.io/badge/ECCV-2022-red.svg"
     type: "https://img.shields.io/badge/ECCV2022-Conference%20Paper-green.svg"
