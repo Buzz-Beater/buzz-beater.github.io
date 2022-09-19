@@ -260,7 +260,7 @@ publications:
       - name: Siyuan Huang
         website: "https://siyuanhuang.com/"
 
-  - name: "Learning ALgebraic Representation for Systematic Generalization in Contextual Decision Processes"
+  - name: "Learning Algebraic Representation for Systematic Generalization in Contextual Decision Processes"
     isselected: 1
     conference: "European Conference on Computer Vision (ECCV) 2022"
     label: "https://img.shields.io/badge/ECCV-2022-red.svg"
