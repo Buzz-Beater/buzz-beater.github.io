@@ -243,7 +243,7 @@ publications:
     conference: "Advances in Neural Information Processing System Datasets and Benchmarks (NeurIPS Track Datasets and Benchmarks) 2022"
     label: "https://img.shields.io/badge/NeurIPS-2022-red.svg"
     type: "https://img.shields.io/badge/NeurIPS2022-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/-Egocentric%20Goal-oriented%20Reasoning-blue.svg"
+    theme: "https://img.shields.io/badge/-Egocentric%20Goal--oriented%20Reasoning-blue.svg"
     releaseDate: ""
     website: ""
     code: ""
