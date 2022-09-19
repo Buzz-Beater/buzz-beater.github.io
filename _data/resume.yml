@@ -56,7 +56,16 @@ news:
     - info:
       isnew: 1
       date: New!
-      # date: 05/2022
+      content:
+        - quote:
+          content: One paper on
+        - quote:
+          content: egocentric goal-oriented reasoning
+          isbold: 1
+        - quote:
+          content: is accepted by NeurIPS 2022.
+    - info:
+      date: 05/2022
       content:
         - quote:
           content: One paper on
@@ -67,8 +76,7 @@ news:
           content: is accepted by ECCV 2022.
     - info:
       isnew: 1
-      date: New!
-      # date: 05/2022
+      date: 04/2022
       content:
         - quote:
           content: One paper on
@@ -230,6 +238,28 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "EgoTaskQA: Understanding Human Tasks in Egocentric Videos"
+    isselected: 1
+    conference: "Advances in Neural Information Processing System Datasets and Benchmarks (NeurIPS Track Datasets and Benchmarks) 2022"
+    label: "https://img.shields.io/badge/NeurIPS-2022-red.svg"
+    type: "https://img.shields.io/badge/NeurIPS2022-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/-Egocentric%20Goal-oriented%20Reasoning-blue.svg"
+    releaseDate: ""
+    website: ""
+    code: ""
+    paper: ""
+    supplementary: ""
+    img: "/assets/img/timg.jpeg"
+    short: "ECCV 2022"
+    authors: 
+      - name: Baoxiong Jia*
+        isme: 1
+      - name: Ting Lei
+      - name: Song-Chun Zhu
+        website: "http://www.stat.ucla.edu/~sczhu/"
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+        
   - name: "Learning ALgebraic Representation for Systematic Generalization in Contextual Decision Processes"
     isselected: 1
     conference: "European Conference on Computer Vision (ECCV) 2022"
