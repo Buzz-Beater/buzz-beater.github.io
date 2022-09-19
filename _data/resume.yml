@@ -239,7 +239,8 @@ education:
 publications:
   - name: "EgoTaskQA: Understanding Human Tasks in Egocentric Videos"
     isselected: 1
-    conference: "Advances in Neural Information Processing System Datasets and Benchmarks (NeurIPS Track Datasets and Benchmarks) 2022"
+    conference: "Advances in Neural Information Processing System (NeurIPS) 2022"
+    special: Track on Datasets and Benchmarks
     label: "https://img.shields.io/badge/NeurIPS-2022-red.svg"
     type: "https://img.shields.io/badge/NeurIPS2022-Conference%20Paper-green.svg"
     theme: "https://img.shields.io/badge/-Egocentric%20Goal--oriented%20Reasoning-blue.svg"
@@ -251,7 +252,7 @@ publications:
     img: "/assets/img/timg.jpeg"
     short: "ECCV 2022"
     authors: 
-      - name: Baoxiong Jia*
+      - name: Baoxiong Jia
         isme: 1
       - name: Ting Lei
       - name: Song-Chun Zhu
