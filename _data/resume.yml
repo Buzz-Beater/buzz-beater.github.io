@@ -259,7 +259,7 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
       - name: Siyuan Huang
         website: "https://siyuanhuang.com/"
-        
+
   - name: "Learning ALgebraic Representation for Systematic Generalization in Contextual Decision Processes"
     isselected: 1
     conference: "European Conference on Computer Vision (ECCV) 2022"
@@ -288,7 +288,7 @@ publications:
         website: "http://www.stat.ucla.edu/~ywu/"
     supp: (* indicates equal contribution.)
 
-  - name: "Latent Diffusion Energy-Based MOdel for Interpretable Text Modeling"
+  - name: "Latent Diffusion Energy-Based Model for Interpretable Text Modeling"
     conference: "International Conference on Machine Learning (ICML) 2022"
     label: "https://img.shields.io/badge/ICML-2022-red.svg"
     type: "https://img.shields.io/badge/ICML2022-Conference%20Paper-green.svg"
