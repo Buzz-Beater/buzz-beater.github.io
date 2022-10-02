@@ -249,7 +249,7 @@ publications:
     code: ""
     paper: ""
     supplementary: ""
-    img: "/assets/img/timg.jpeg"
+    img: "/assets/publications/2022_egotaskqa_nips/overview.png"
     short: "ECCV 2022"
     authors: 
       - name: Baoxiong Jia
@@ -267,10 +267,10 @@ publications:
     type: "https://img.shields.io/badge/ECCV2022-Conference%20Paper-green.svg"
     theme: "https://img.shields.io/badge/-Systematic%20Generalization-blue.svg"
     releaseDate: ""
-    website: ""
-    code: ""
-    paper: ""
-    supplementary: ""
+    website: "http://wellyzhang.github.io/project/alans.html"
+    code: "https://github.com/WellyZhang/ALANS"
+    paper: "/assets/publications/2022_alans_eccv/paper.pdf"
+    supplementary: "/assets/publications/2022_alans_eccv/supp.pdf"
     img: "/assets/img/timg.jpeg"
     short: "ECCV 2022"
     authors: 
