@@ -271,7 +271,7 @@ publications:
     code: "https://github.com/WellyZhang/ALANS"
     paper: "/assets/publications/2022_alans_eccv/paper.pdf"
     supplementary: "/assets/publications/2022_alans_eccv/supp.pdf"
-    img: "/assets/img/timg.jpeg"
+    img: "/assets/publications/2022_alans_eccv/overview.png"
     short: "ECCV 2022"
     authors: 
       - name: Chi Zhang*
