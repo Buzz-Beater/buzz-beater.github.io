@@ -245,12 +245,12 @@ publications:
     type: "https://img.shields.io/badge/NeurIPS2022-Conference%20Paper-green.svg"
     theme: "https://img.shields.io/badge/-Egocentric%20Goal--oriented%20Reasoning-blue.svg"
     releaseDate: ""
-    website: ""
+    website: "https://sites.google.com/view/egotaskqa"
     code: ""
-    paper: ""
+    paper: "/assets/publications/2022_egotaskqa_nips/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2022_egotaskqa_nips/overview.png"
-    short: "ECCV 2022"
+    short: "NeurIPS 2022"
     authors: 
       - name: Baoxiong Jia
         isme: 1
