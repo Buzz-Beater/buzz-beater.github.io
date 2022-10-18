@@ -58,6 +58,18 @@ news:
       date: New!
       content:
         - quote:
+          content: EgoTaskQA
+        - quote:
+          islink: 1
+          content: project page
+          link: https:sites.google.com/view/egotaskqa
+        - quote:
+          content: released, checkout our code and data!
+    - info:
+      isnew: 1
+      date: New!
+      content:
+        - quote:
           content: One paper on
         - quote:
           content: egocentric goal-oriented reasoning
