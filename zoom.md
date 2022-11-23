@@ -1,6 +1,6 @@
 ---
-layout: voov
+layout: zoom
 permalink: /zoom
-description: "VooV redirect"
+description: "Zoom redirect"
 menu: false
 ---
