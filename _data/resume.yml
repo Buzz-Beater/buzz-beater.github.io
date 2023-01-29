@@ -69,6 +69,22 @@ news:
       date: New!
       content:
         - quote:
+          content: One paper on
+        - quote:
+          content: language grounding for robot manipulation
+          isbold: 1
+        - quote:
+          content: is accepted as 
+        - quote:
+          content: spotlight
+          isbold: 1
+        - quote:
+          content: by LangRob@CoRL 2022. 
+    - info:
+      isnew: 1
+      date: New!
+      content:
+        - quote:
           content: EgoTaskQA
         - quote:
           islink: 1
@@ -286,6 +302,7 @@ publications:
   - name: "ARNOLD: A Benchmark for Language-Grounded Task Learning with Continuous States in Realistic Scenes"
     conference: "Workshop on Language and Robot Learning, Conference on Robot Learning (LangRob@CoRL 2022)"
     label: "https://img.shields.io/badge/LangRob@CoRL-2022-red.svg"
+    special: "Spotlight"
     type: "https://img.shields.io/badge/LangRob@CoRL2022-Workshop%20Paper-green.svg"
     theme: "https://img.shields.io/badge/Language%20Grounding%20in%20Robot%20Manipulation-blue.svg"
     releaseDate: ""
