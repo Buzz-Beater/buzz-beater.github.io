@@ -283,12 +283,12 @@ publications:
     type: "https://img.shields.io/badge/ICLR2023-Conference%20Paper-green.svg"
     theme: "https://img.shields.io/badge/Unsupervised%20Object--centric%20Learning-blue.svg"
     releaseDate: ""
-    website: ""
-    code: ""
-    paper: ""
+    website: "https://bo-qsa.github.io"
+    code: "https://github.com/YuLiu-LY/BO-QSA"
+    paper: "/assets/publications/2023_boqsa_iclr/paper.pdf"
     supplementary: ""
-    img: "/assets/img/timg.jpeg"
-    short: "ICLR 2022"
+    img: "/assets/publications/2023_boqsa_iclr/overview.gif"
+    short: "ICLR 2023"
     authors: 
       - name: Baoxiong Jia*
         isme: 1
