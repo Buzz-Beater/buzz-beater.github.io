@@ -60,10 +60,10 @@ news:
         - quote:
           content: One paper on
         - quote:
-          content: unsupervised object-centric learning
+          content: Diffusion Models for 3D
           isbold: 1
         - quote:
-          content: is accepted by ICLR 2023.
+          content: is accepted by CVPR 2023.
     - info:
       isnew: 1
       date: New!
@@ -71,7 +71,18 @@ news:
         - quote:
           content: One paper on
         - quote:
-          content: language grounding for robot manipulation
+          content: unsupervised object-centric learning
+          isbold: 1
+        - quote:
+          content: is accepted by ICLR 2023.
+    - info:
+      isnew: 1
+      date: 12/2022
+      content:
+        - quote:
+          content: One paper on
+        - quote:
+          content: language grounding for robots
           isbold: 1
         - quote:
           content: is accepted as 
@@ -81,8 +92,7 @@ news:
         - quote:
           content: by LangRob@CoRL 2022. 
     - info:
-      isnew: 1
-      date: New!
+      date: 10/2022
       content:
         - quote:
           content: EgoTaskQA
@@ -275,6 +285,38 @@ education:
 #     awarder: "Peking University"
 
 publications:
+
+  - name: "Diffusion-based Generation, Optimization, and Planning in 3D Scenes"
+    isselected: 1
+    conference: "Conference on Computer Vision and Pattern Recognition (CVPR) 2023"
+    label: "https://img.shields.io/badge/CVPR-2023-red.svg"
+    type: "https://img.shields.io/badge/CVPR2023-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Diffusion%20Models%20for%203D-blue.svg"
+    releaseDate: ""
+    website: "https://scenediffuser.github.io/"
+    code: "https://github.com/scenediffuser/Scene-Diffuser"
+    paper: "/assets/publications/2023_scenediffuser_cvpr/paper.pdf"
+    supplementary: ""
+    img: "/assets/publications/2023_scenediffuser_cvpr/overview.png"
+    short: "CVPR 2023"
+    authors: 
+      - name: Siyuan Huang*
+        website: "https://siyuanhuang.com/"
+      - name: Zan Wang*
+        website: "https://silvester.wang/"
+      - name: Puhao Li
+        website: "https://xiaoyao-li.github.io/"
+      - name: Baoxiong Jia
+        isme: 1
+      - name: Tengyu Liu
+        website: "https://tengyu.ai/"
+      - name: Yixin Zhu
+        website: "https://yzhu.io/"
+      - name: Wei Liang
+        website: "https://liangwei-bit.github.io/web/"
+      - name: Song-Chun Zhu
+        website: "http://www.stat.ucla.edu/~sczhu/"
+    supp: (* indicates equal contribution.)
 
   - name: "Improving Unsupervised Object-centric Learning with Query Optimization"
     isselected: 1
