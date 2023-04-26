@@ -14,7 +14,8 @@ basics:
   #phone: "(912) 555-4321"
   #website: "https://piedpiper.com"
   summary: >
-    Hi! I'm Baoxiong, a Ph.D. candidate of Department of Computer Science, University of California, Los Angeles. I'm currently working at [VCLA@UCLA](http://vcla.stat.ucla.edu/) advised by [Prof. Song-Chun Zhu](http://www.stat.ucla.edu/~sczhu/). 
+    Hi! I'm Baoxiong, a Ph.D. candidate of Department of Computer Science, University of California, Los Angeles. 
+    I'm currently working at [VCLA@UCLA](http://vcla.stat.ucla.edu/) advised by [Prof. Song-Chun Zhu](http://www.stat.ucla.edu/~sczhu/). 
     Before coming to LA, I got my B.S. in Computer Science from EECS, Peking University in 2018 after spending two wonderful years in the PKU Operating System Lab advised by [Prof. Yao Guo](http://sei.pku.edu.cn/~yaoguo). 
     Prior to my Ph.D. study,  I joined the PKU-UCLA Joint Research Institute ([PKU-UCLA JRI](https://pku-jri.ucla.edu/jri/article/150479)) 3+2 Program,
     and obtained my M.S. in Computer Science at UCLA in 2019 under the supervision of [Prof. Song-Chun Zhu](http://www.stat.ucla.edu/~sczhu/).
@@ -76,7 +77,6 @@ news:
         - quote:
           content: is accepted by ICLR 2023.
     - info:
-      isnew: 1
       date: 12/2022
       content:
         - quote:
