@@ -61,13 +61,23 @@ news:
         - quote:
           content: One paper on
         - quote:
-          content: Diffusion Models for 3D
+          content: temporal and causal transition of objects
+          isbold: 1
+        - quote:
+          content: is accepted by IROS 2023.
+    - info:
+      date: 06/2023
+      content:
+        - quote:
+          content: One paper on
+        - quote:
+          content: diffusion models for 3D
           isbold: 1
         - quote:
           content: is accepted by CVPR 2023.
     - info:
       isnew: 1
-      date: New!
+      date: 05/2023
       content:
         - quote:
           content: One paper on
@@ -285,6 +295,36 @@ education:
 #     awarder: "Peking University"
 
 publications:
+
+  - name: "Cut like a Chef: Learning and Planning with a Stochastic Grammar of Object Fragmentation"
+    isselected: 1
+    conference: "International Conference on Intelligent Robots and Systems (IROS) 2023"
+    label: "https://img.shields.io/badge/IROS-2023-red.svg"
+    type: "https://img.shields.io/badge/IROS2023-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Caual%20Transitions-blue.svg"
+    releaseDate: ""
+    website: ""
+    code: ""
+    paper: ""
+    supplementary: ""
+    img: "/assets/img/timg.jpeg"
+    short: "IROS 2023"
+    authors: 
+      - name: Zeyu Zhang*
+        website: "https://siyuanhuang.com/"
+      - name: Muzhi Han*
+        website: "https://sites.google.com/view/muzhihan/home"
+      - name: Baoxiong Jia
+        isme: 1
+      - name: Ziyuan Jiao
+        website: "https://tengyu.ai/"
+      - name: Yixin Zhu
+        website: "https://yzhu.io/"
+      - name: Song-Chun Zhu
+        website: "http://www.stat.ucla.edu/~sczhu/"
+      - name: Hangxin Liu
+        website: "https://liuhx111.github.io/"
+    supp: (* indicates equal contribution.)
 
   - name: "Diffusion-based Generation, Optimization, and Planning in 3D Scenes"
     isselected: 1
