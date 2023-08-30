@@ -318,10 +318,12 @@ education:
 publications:
   - name: "X-VoE: Measuring eXplanatory Violation of Expectation in Physical Events"
     conference: "International Conference on Computer Vision (ICCV) 2023"
+    special: Oral
     label: "https://img.shields.io/badge/ICCV-2023-red.svg"
     type: "https://img.shields.io/badge/ICCV2023-Conference%20Paper-green.svg"
     theme: "https://img.shields.io/badge/Explanatory%20Violation%20of%20Expectation-blue.svg"
     releaseDate: ""
+    paper: "/assets/publications/2023_xvoe_iccv/paper.pdf"
     img: "/assets/img/timg.jpeg"
     short: "ICCV 2023"
     authors:
@@ -371,7 +373,7 @@ publications:
         website: "https://siyuanhuang.com/"
     supp: LangRob@CoRL 2022 (* indicates equal contribution.)
 
-  - name: "Cut like a Chef: Learning and Planning with a Stochastic Grammar of Object Fragmentation"
+  - name: "Learning a Causal Transition Model for Object Cutting"
     conference: "International Conference on Intelligent Robots and Systems (IROS) 2023"
     label: "https://img.shields.io/badge/IROS-2023-red.svg"
     type: "https://img.shields.io/badge/IROS2023-Conference%20Paper-green.svg"
@@ -379,7 +381,7 @@ publications:
     releaseDate: ""
     website: ""
     code: ""
-    paper: ""
+    paper: "/assets/publications/2023_cut_iros/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2023_cut_iros/overview.png"
     short: "IROS 2023"
