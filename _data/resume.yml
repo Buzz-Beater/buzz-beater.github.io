@@ -55,30 +55,23 @@ basics:
 #       - "Awarded 'Teacher of the Month'"
 news:
     - info:
+      date: New
       isnew: 1
-      date: New!
       content:
         - quote:
           content: One paper on
         - quote:
-          content: grounded robot manipulation
+          content: procedural understanding in videos
           isbold: 1
         - quote:
-          content: is accepted by ICCV 2023.
+          content: is accepted by NeurIPS 2023.
     - info:
-      isnew: 1
-      date: New!
+      date: 2023/10
       content:
         - quote:
-          content: One paper on
-        - quote:
-          content: violation of expectation
-          isbold: 1
-        - quote:
-          content: is accepted by ICCV 2023.
+          content: Two papers accepted by ICCV 2023, congrats to the authors!
     - info:
-      isnew: 1
-      date: New!
+      date: 2023/10
       content:
         - quote:
           content: One paper on
@@ -316,6 +309,35 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "ProBio: A Protocol-guided Multimodal Dataset for Molecular Biology Lab"
+    isselected: 1
+    conference: "Advances in Neural Information Processing System (NeurIPS) 2023"
+    special: Track on Datasets and Benchmarks
+    label: "https://img.shields.io/badge/NeurIPS-2023-red.svg"
+    type: "https://img.shields.io/badge/NeurIPS2023-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/-Procedural%20Understanding-blue.svg"
+    releaseDate: ""
+    website: "https://probio-dataset.github.io/"
+    code: "https://github.com/jiemingcui/probio/"
+    paper: "/assets/publications/2023_probio_nips/paper.pdf"
+    supplementary: ""
+    img: "/assets/publications/2023_probio_nips/overview.png"
+    short: "NeurIPS 2022"
+    authors: 
+      - name: Jieming Cui*
+        website: "https://jiemingcui.github.io/"
+      - name: Ziren Gong*
+      - name: Baoxiong Jia*
+        isme: 1
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+      - name: Zilong Zheng
+        website: "https://zilongzheng.github.io/"
+      - name: Jianzhu Ma
+        website: "https://majianzhu.com/"
+      - name: Yixin Zhu
+        website: "https://yzhu.io/"
+
   - name: "X-VoE: Measuring eXplanatory Violation of Expectation in Physical Events"
     conference: "International Conference on Computer Vision (ICCV) 2023"
     special: Oral
