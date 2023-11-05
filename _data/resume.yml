@@ -14,14 +14,19 @@ basics:
   #phone: "(912) 555-4321"
   #website: "https://piedpiper.com"
   summary: >
-    Hi! I'm Baoxiong, a Ph.D. candidate of Department of Computer Science, University of California, Los Angeles. 
-    I'm currently working at [VCLA@UCLA](http://vcla.stat.ucla.edu/) advised by [Prof. Song-Chun Zhu](http://www.stat.ucla.edu/~sczhu/). 
-    Before coming to LA, I got my B.S. in Computer Science from EECS, Peking University in 2018 after spending two wonderful years in the PKU Operating System Lab advised by [Prof. Yao Guo](http://sei.pku.edu.cn/~yaoguo). 
-    Prior to my Ph.D. study,  I joined the PKU-UCLA Joint Research Institute ([PKU-UCLA JRI](https://pku-jri.ucla.edu/jri/article/150479)) 3+2 Program,
-    and obtained my M.S. in Computer Science at UCLA in 2019 under the supervision of [Prof. Song-Chun Zhu](http://www.stat.ucla.edu/~sczhu/).
-    My research interest lies in the intersection of computer vision, artificial intelligence and cognitive science, 
-    with an special focus on spatial-temporal learning/reasoning 
-    and its application to understanding and planning tasks in both real world (scene/activity understanding, future prediction, etc.) and abstracted domains (Atari, RAVEN, etc.).
+    Hi! I'm Baoxiong, a research scientist at BIGAI. I received my Ph.D in the Department of Computer Science, University of California, Los Angeles.
+    My research interests lie in the intersection of computer vision, artificial intelligence and cognitive science, with a special focus on 
+    spatial/temporal reasoning and its application to acting and planning in real world (scene/activity understanding, future prediction, grounded manipulation, etc.)
+
+    Previously, I obtained my M.S. from UCLA in 2019 and B.S. from Peking University in 2018.
+
+  # I'm currently working at [VCLA@UCLA](http://vcla.stat.ucla.edu/) advised by [Prof. Song-Chun Zhu](http://www.stat.ucla.edu/~sczhu/). 
+  # Before coming to LA, I got my B.S. in Computer Science from EECS, Peking University in 2018 after spending two wonderful years in the PKU Operating System Lab advised by [Prof. Yao Guo](http://sei.pku.edu.cn/~yaoguo). 
+  # Prior to my Ph.D. study,  I joined the PKU-UCLA Joint Research Institute ([PKU-UCLA JRI](https://pku-jri.ucla.edu/jri/article/150479)) 3+2 Program,
+  # and obtained my M.S. in Computer Science at UCLA in 2019 under the supervision of [Prof. Song-Chun Zhu](http://www.stat.ucla.edu/~sczhu/).
+  # My research interest lies in the intersection of computer vision, artificial intelligence and cognitive science, 
+  # with an special focus on spatial-temporal learning/reasoning 
+  # and its application to understanding and planning tasks in both real world (scene/activity understanding, future prediction, etc.) and abstracted domains (Atari, RAVEN, etc.).
   # location:
   # profiles:
   #   - network: "Twitter"
