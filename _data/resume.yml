@@ -18,7 +18,7 @@ basics:
     My research interests lie in the intersection of computer vision, artificial intelligence and cognitive science, with a special focus on 
     spatial/temporal reasoning and its application to acting and planning in real world (scene/activity understanding, future prediction, grounded manipulation, etc.).
 
-    
+
 
     Previously, I obtained my M.S. from UCLA in 2019 and B.S. from Peking University in 2018.
 
@@ -352,8 +352,10 @@ publications:
     type: "https://img.shields.io/badge/ICCV2023-Conference%20Paper-green.svg"
     theme: "https://img.shields.io/badge/Explanatory%20Violation%20of%20Expectation-blue.svg"
     releaseDate: ""
+    website: "https://sites.google.com/view/x-voe"
+    code: "https://github.com/daibopku/X-VoE"
     paper: "/assets/publications/2023_xvoe_iccv/paper.pdf"
-    img: "/assets/img/timg.jpeg"
+    img: "/assets/publications/2023_xvoe_iccv/overview.png"
     short: "ICCV 2023"
     authors:
       - name: Bo Dai*
