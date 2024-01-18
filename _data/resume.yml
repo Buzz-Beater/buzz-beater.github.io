@@ -66,6 +66,24 @@ news:
       isnew: 1
       content:
         - quote:
+          content: Announcing
+        - quote:
+          content: SceneVerse
+          isbold: 1
+        - quote:
+          content: for 3D-VL learning.
+        - quote:
+          content: Checkout our the
+        - quote: 
+          content: project page
+          islink: 1
+          link: https://scene-verse.github.io
+        - quote:
+          content: "!!!"
+    - info:
+      date: 2023/12
+      content:
+        - quote:
           content: One paper on
         - quote:
           content: procedural understanding in videos
@@ -163,64 +181,64 @@ news:
           isbold: 1
         - quote:
           content: is accepted by ICML 2022.
-    - info:
-      date: 09/2021
-      content:
-        - quote:
-          content: My internship on 
-        - quote:
-          isbold: 1 
-          content: grounded spatial-temporal reasoning
-        - quote:
-          content:  for videoQA
-        - quote:
-          content: at Amazon Alexa finished!
-    - info:
-      date: 02/2021
-      content:
-        - quote:
-          content: Two papers on
-        - quote:
-          content: abstract reasoning
-          isbold: 1
-        - quote:
-          content: are accepted by CVPR 2021.
-    - info:
-      date: 05/2020
-      content:
-        - quote:
-          content: LEMMA
-        - quote:
-          islink: 1
-          content: project page
-          link: https://sites.google.com/view/lemma-Activity
-        - quote:
-          content: released, check out our code and data!
-    - info:
-      date: 12/2020
-      content:
-        - quote:
-          content: I advanced to candidacy! 
-    - info:
-      date: 07/2020
-      content:
-        - quote:
-          content: One paper on
-        - quote:
-          content: multi-agent multi-task activities
-          isbold: 1
-        - quote:
-          content: is accepted by ECCV 2020.
-    - info:
-      date: 02/2020
-      content:
-        - quote:
-          content: One paper on
-        - quote:
-          content: video parsing and prediction
-          isbold: 1
-        - quote:
-          content: is accepted by TPAMI 2020.
+    # - info:
+    #   date: 09/2021
+    #   content:
+    #     - quote:
+    #       content: My internship on 
+    #     - quote:
+    #       isbold: 1 
+    #       content: grounded spatial-temporal reasoning
+    #     - quote:
+    #       content:  for videoQA
+    #     - quote:
+    #       content: at Amazon Alexa finished!
+    # - info:
+    #   date: 02/2021
+    #   content:
+    #     - quote:
+    #       content: Two papers on
+    #     - quote:
+    #       content: abstract reasoning
+    #       isbold: 1
+    #     - quote:
+    #       content: are accepted by CVPR 2021.
+    # - info:
+    #   date: 05/2020
+    #   content:
+    #     - quote:
+    #       content: LEMMA
+    #     - quote:
+    #       islink: 1
+    #       content: project page
+    #       link: https://sites.google.com/view/lemma-Activity
+    #     - quote:
+    #       content: released, check out our code and data!
+    # - info:
+    #   date: 12/2020
+    #   content:
+    #     - quote:
+    #       content: I advanced to candidacy! 
+    # - info:
+    #   date: 07/2020
+    #   content:
+    #     - quote:
+    #       content: One paper on
+    #     - quote:
+    #       content: multi-agent multi-task activities
+    #       isbold: 1
+    #     - quote:
+    #       content: is accepted by ECCV 2020.
+    # - info:
+    #   date: 02/2020
+    #   content:
+    #     - quote:
+    #       content: One paper on
+    #     - quote:
+    #       content: video parsing and prediction
+    #       isbold: 1
+    #     - quote:
+    #       content: is accepted by TPAMI 2020.
     # - info:
     #   date: 09/2019
     #   content: 
@@ -316,6 +334,37 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "SceneVerse: Scaling 3D Vision-Language Learning for Grounded Scene Understanding"
+    isselected: 1
+    conference: "Preprint"
+    label: "https://img.shields.io/badge/Preprint-red.svg"
+    type: "https://img.shields.io/badge/arXiv%20Preprint-green.svg"
+    theme: "https://img.shields.io/badge/-3D%20Vision%20Language-blue.svg"
+    releaseDate: ""
+    website: "https://scene-verse.github.io/"
+    code: "https://github.com/scene-verse/sceneverse"
+    paper: "/assets/publications/2024_sceneverse_cvpr/paper.pdf"
+    # supplementary: ""
+    img: "/assets/publications/2024_sceneverse_cvpr/overview.png"
+    # short: "NeurIPS 2022"
+    authors:
+      - name: Baoxiong Jia*
+        isme: 1
+      - name: Yixin Chen*
+        website: "yixchen.github.io/"
+      - name: Huangyue Yu
+        website: "https://scholar.google.com/citations?user=fKRgnIMAAAAJ"
+      - name: Yan Wang
+        website: "https://github.com/jetpackfirstme"
+      - name: Xuesong Niu
+        website: "https://nxsedson.github.io/"
+      - name: Tengyu Liu
+        website: "https://tengyu.ai/"
+      - name: Qing Li
+        website: "https://liqing-ustc.github.io/"
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+      
   - name: "ProBio: A Protocol-guided Multimodal Dataset for Molecular Biology Lab"
     isselected: 1
     conference: "Advances in Neural Information Processing System (NeurIPS) 2023"
@@ -380,6 +429,9 @@ publications:
     releaseDate: ""
     img: "/assets/publications/2023_arnold_iccv/arnold.gif"
     short: "ICCV 2023"
+    website: "https://arnold-benchmark.github.io/"
+    paper: "/assets/publications/2023_arnold_ccv/paper.pdf"
+    code: "https://github.com/arnold-benchmark/arnold"
     authors:
       - name: Ran Gong*
         website: "https://nikepupu.github.io/"
