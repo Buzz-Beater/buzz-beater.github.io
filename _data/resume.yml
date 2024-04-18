@@ -66,6 +66,72 @@ news:
       isnew: 1
       content:
         - quote:
+          content: I'm co-organizing the 
+        - quote:
+          content: MANGO workshop
+          islink: 1
+          link: https://mango-workshop.github.io/2024.html
+        - quote:
+          content: at CVPR 2024. See you in Seattle!
+    - info:
+      date: New
+      isnew: 1
+      content:
+        - quote:
+          content: SceneVerse data
+          isbold: 1
+        - quote:
+          content: is released !
+        - quote:
+          content: Find the download link and instructions at
+        - quote: 
+          content: this link
+          islink: 1
+          link: https://github.com/scene-verse/scene-verse
+        - quote:
+          content: "."
+    - info:
+      date: New
+      isnew: 1
+      content:
+        - quote:
+          content: Two papers on
+        - quote:
+          content: 3D motion
+          isbold: 1
+        - quote:
+          content: and
+        - quote:
+          content: scene generation
+          isbold: 1
+        - quote:
+          content: accepted by CVPR 2024 as 
+        - quote: 
+          content: Highlight
+          isemphasize: 1
+        - quote:
+          content: "."
+    - info:
+      date: New
+      isnew: 1
+      content:
+        - quote:
+          content: LEO code and data
+          isbold: 1
+        - quote:
+          content: is released !
+        - quote:
+          content: Find the download link and instruction at
+        - quote: 
+          content: this link
+          islink: 1
+          link: https://github.com/embodied-generalist/embodied-generalist
+        - quote:
+          content: "."
+    - info:
+      date: 2024/02
+      content:
+        - quote:
           content: Announcing
         - quote:
           content: SceneVerse
@@ -79,7 +145,7 @@ news:
           islink: 1
           link: https://scene-verse.github.io
         - quote:
-          content: "!!!"
+          content: "."
     - info:
       date: 2023/12
       content:
@@ -334,6 +400,68 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI"
+    isselected: 1
+    special: Highlight
+    conference: "Conference on Computer Vision and Pattern Recognition (CVPR) 2024"
+    label: "https://img.shields.io/badge/CVPR-2024-red.svg"
+    type: "https://img.shields.io/badge/CVPR2024-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Physics--Guided%20Scene%20Synthesis-blue.svg"
+    releaseDate: ""
+    website: "https://physcene.github.io/"
+    code: ""
+    paper: "/assets/publications/2024_physcene_cvpr/paper.pdf"
+    supplementary: ""
+    img: "/assets/publications/2024_physcene_cvpr/overview.gif"
+    short: "CVPR 2024"
+    authors: 
+      - name: Yandan Yang*
+        # website: "https://siyuanhuang.com/"
+      - name: Baoxiong Jia*
+        isme: 1
+      - name: Peiyuan Zhi
+        # website: "https://tengyu.ai/"
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+    supp: (* indicates equal contribution.)
+
+  - name: "Move as You Say, Interact as You Can: Language-guided Human Motion Generation with Scene Affordance"
+    isselected: 1
+    special: Highlight
+    conference: "Conference on Computer Vision and Pattern Recognition (CVPR) 2024"
+    label: "https://img.shields.io/badge/CVPR-2024-red.svg"
+    type: "https://img.shields.io/badge/CVPR2024-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Language--guided%20Motion%20Generation%20with%20Scene%20Affordance-blue.svg"
+    releaseDate: ""
+    website: "https://afford-motion.github.io/"
+    code: ""
+    paper: "/assets/publications/2024_movecan_cvpr/paper.pdf"
+    supplementary: ""
+    img: "/assets/publications/2024_movecan_cvpr/overview.gif"
+    short: "CVPR 2024"
+    authors: 
+      - name: Zan Wang
+        website: "https://silvester.wang/"
+      - name: Yixin Chen
+        website: "https://yixchen.github.io/"
+      - name: Baoxiong Jia
+        isme: 1
+      - name: Puhao Li
+        website: "https://xiaoyao-li.github.io/"
+      - name: Jinlu Zhang
+        website: "https://jinluzhang.site/"
+      - name: Jingze Zhang
+        # website: 
+      - name: Tengyu Liu
+        website: "https://tengyu.ai/"
+      - name: Yixin Zhu
+        website: "https://yzhu.io/"
+      - name: Wei Liang
+        website: "https://liangwei-bit.github.io/web/"
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+    supp: (* indicates equal contribution.)
+
   - name: "SceneVerse: Scaling 3D Vision-Language Learning for Grounded Scene Understanding"
     isselected: 1
     conference: "Preprint"
@@ -343,9 +471,9 @@ publications:
     releaseDate: ""
     website: "https://scene-verse.github.io/"
     code: "https://github.com/scene-verse/sceneverse"
-    paper: "/assets/publications/2024_sceneverse_cvpr/paper.pdf"
+    paper: "/assets/publications/2024_sceneverse_arxiv/paper.pdf"
     # supplementary: ""
-    img: "/assets/publications/2024_sceneverse_cvpr/overview.png"
+    img: "/assets/publications/2024_sceneverse_arxiv/overview.png"
     # short: "NeurIPS 2022"
     authors:
       - name: Baoxiong Jia*
