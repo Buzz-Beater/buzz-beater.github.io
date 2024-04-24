@@ -400,6 +400,29 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "Human-level Few-shot Concept Induction through Minimax Entropy Learning"
+    isselected: 1
+    conference: "Science Advances (SciAdv) 2024"
+    label: "https://img.shields.io/badge/SciAdv2024-red.svg"
+    type: "https://img.shields.io/badge/SciAdv2024-Journal%20Paper-yellow"
+    theme: "https://img.shields.io/badge/Few--shot%20Concept%20Learning-blue.svg"
+    releaseDate: ""
+    website: ""
+    code: ""
+    paper: "/assets/publications/2024_minimax_sciadv/paper.pdf"
+    supplementary: ""
+    img: "/assets/publications/2024_minimax_sciadv/overview.png"
+    short: "Science Advances 2024"
+    authors:
+      - name: Chi Zhang
+        website: "https://wellyzhang.github.io/"
+      - name: Baoxiong Jia
+        isme: 1
+      - name: Yixin Zhu
+        website: "https://yzhu.io/"
+      - name: Song-Chun Zhu
+        website: "http://www.stat.ucla.edu/~sczhu/"
+
   - name: "PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI"
     isselected: 1
     special: Highlight
