@@ -66,6 +66,23 @@ news:
       isnew: 1
       content:
         - quote:
+          content: Our
+        - quote:
+          content: embodied generalist LEO
+          isbold: 1
+        - quote:
+          content: is accepted by ICML 2024. Check out our code and data at
+        - quote: 
+          content: this link
+          islink: 1
+          link: https://github.com/embodied-generalist/embodied-generalist
+        - quote:
+          content: "."
+    - info:
+      date: New
+      isnew: 1
+      content:
+        - quote:
           content: I'm co-organizing the 
         - quote:
           content: MANGO workshop
@@ -112,8 +129,7 @@ news:
         - quote:
           content: "."
     - info:
-      date: New
-      isnew: 1
+      date: 2024/03
       content:
         - quote:
           content: LEO code and data
@@ -400,6 +416,41 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "An Embodied Generalist Agent in 3D World"
+    isselected: 1
+    conference: "International Conference on Machine Learning (ICML) 2024"
+    label: "https://img.shields.io/badge/ICML-2024-red.svg"
+    type: "https://img.shields.io/badge/ICML2024-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Embodied%20Generalist%20Agent-blue.svg"
+    releaseDate: ""
+    img: "/assets/publications/2024_leo_icml/overview.png"
+    short: "ICML 2024"
+    website: "https://embodied-generalist.github.io/"
+    paper: "/assets/publications/2024_leo_icml/paper.pdf"
+    code: "https://github.com/arnold-benchmark/arnold"
+    authors:
+      - name: Jiangyong Huang*
+        website: "https://huangjy-pku.github.io/"
+      - name: Silong Yong*
+        website: "https://silongyong.github.io/"
+      - name: Xiaojian Ma*
+        website: "https://jeasinema.github.io/"
+      - name: Xiongkun Linghu
+        website: "https://github.com/Germany321"
+      - name: Puhao Li
+        website: "https://xiaoyao-li.github.io/"
+      - name: Yan Wang
+        website: "https://github.com/jetpackfirstme"
+      - name: Qing Li
+        website: "https://liqing-ustc.github.io/"
+      - name: Song-Chun Zhu
+        website: "http://www.stat.ucla.edu/~sczhu/"
+      - name: Baoxiong Jia
+        isme: 1
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+    supp: GenAI4DM & AGI @ ICLR 2024 (* indicates equal contribution.)
+
   - name: "Human-level Few-shot Concept Induction through Minimax Entropy Learning"
     isselected: 1
     conference: "Science Advances (SciAdv) 2024"
@@ -483,7 +534,6 @@ publications:
         website: "https://liangwei-bit.github.io/web/"
       - name: Siyuan Huang
         website: "https://siyuanhuang.com/"
-    supp: (* indicates equal contribution.)
 
   - name: "SceneVerse: Scaling 3D Vision-Language Learning for Grounded Scene Understanding"
     isselected: 1
@@ -517,7 +567,6 @@ publications:
         website: "https://siyuanhuang.com/"
       
   - name: "ProBio: A Protocol-guided Multimodal Dataset for Molecular Biology Lab"
-    isselected: 1
     conference: "Advances in Neural Information Processing System (NeurIPS) 2023"
     special: Track on Datasets and Benchmarks
     label: "https://img.shields.io/badge/NeurIPS-2023-red.svg"
@@ -581,7 +630,7 @@ publications:
     img: "/assets/publications/2023_arnold_iccv/arnold.gif"
     short: "ICCV 2023"
     website: "https://arnold-benchmark.github.io/"
-    paper: "/assets/publications/2023_arnold_ccv/paper.pdf"
+    paper: "/assets/publications/2023_arnold_iccv/paper.pdf"
     code: "https://github.com/arnold-benchmark/arnold"
     authors:
       - name: Ran Gong*
@@ -605,7 +654,7 @@ publications:
         isme: 1
       - name: Siyuan Huang
         website: "https://siyuanhuang.com/"
-    supp: LangRob@CoRL 2022 (* indicates equal contribution.)
+    supp: LangRob @ CoRL 2022 (* indicates equal contribution.)
 
   - name: "Learning a Causal Transition Model for Object Cutting"
     conference: "International Conference on Intelligent Robots and Systems (IROS) 2023"
@@ -714,7 +763,6 @@ publications:
         website: "https://siyuanhuang.com/"
 
   - name: "Learning Algebraic Representation for Systematic Generalization in Contextual Decision Processes"
-    isselected: 1
     conference: "European Conference on Computer Vision (ECCV) 2022"
     label: "https://img.shields.io/badge/ECCV-2022-red.svg"
     type: "https://img.shields.io/badge/ECCV2022-Conference%20Paper-green.svg"
@@ -797,7 +845,6 @@ publications:
     supp: (* indicates equal contribution.)
         
   - name: "Abstract Spatial-Temporal Reasoning via Probabilistic Abduction and Execution"
-    isselected: 1
     conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2021"
     label: "https://img.shields.io/badge/CVPR-2021-red.svg"
     type: "https://img.shields.io/badge/CVPR2021-Conference%20Paper-green.svg"
@@ -821,7 +868,6 @@ publications:
     supp: (* indicates equal contribution.)
 
   - name: "LEMMA: A Multi-view Dataset for Learning Multi-agent Multi-task Activities"
-    isselected: 1
     conference: "European Conference on Computer Vision (ECCV) 2020"
     label: "https://img.shields.io/badge/ECCV-2020-red.svg"
     type: "https://img.shields.io/badge/ECCV2020-Conference%20Paper-green.svg"
@@ -846,7 +892,6 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: "A Generalized Earley Parser for Human Activity Parsing and Prediction"
-    isselected: 1
     conference: "Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2020"
     label: "https://img.shields.io/badge/TPAMI2020-red.svg"
     type: "https://img.shields.io/badge/TPAMI2020-Journal%20Paper-yellow"
@@ -871,7 +916,6 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: Learning Perceptual Inference by Contrasting
-    isselected: 1
     conference: "Conference on Neural Information Processing Systems (NeurIPS) 2019"
     special: "Spotlight"
     label: "https://img.shields.io/badge/NeurIPS-2019-red.svg"
