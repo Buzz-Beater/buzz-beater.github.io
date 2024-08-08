@@ -66,6 +66,24 @@ news:
       isnew: 1
       content:
         - quote:
+          content: I recently gave a talk on Embodied 3D Vision on 
+        - quote:
+          content: ZhiDX
+          islink: 1
+          link: https://zhidx.com/
+        - quote:
+          content: . Checkout the
+        - quote: 
+          content: slides
+          islink: 1
+          link: assets/slides/embodied3dvision.pdf
+        - quote:
+          content: "!"
+    - info:
+      date: New
+      isnew: 1
+      content:
+        - quote:
           content: SceneVerse
           isbold: 1
         - quote:
