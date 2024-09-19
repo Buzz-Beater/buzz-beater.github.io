@@ -470,9 +470,9 @@ publications:
     releaseDate: ""
     website: "https://scene-verse.github.io/"
     code: "https://github.com/scene-verse/sceneverse"
-    paper: "/assets/publications/2024_sceneverse_arxiv/paper.pdf"
-    # supplementary: ""
-    img: "/assets/publications/2024_sceneverse_arxiv/overview.png"
+    paper: "/assets/publications/2024_sceneverse_eccv/paper.pdf"
+    supplementary: "/assets/publications/2024_sceneverse_eccv/supp.pdf"
+    img: "/assets/publications/2024_sceneverse_eccv/overview.png"
     # short: "NeurIPS 2022"
     authors:
       - name: Baoxiong Jia*
@@ -499,11 +499,11 @@ publications:
     type: "https://img.shields.io/badge/ECCV2024-Conference%20Paper-green.svg"
     theme: "https://img.shields.io/badge/Unsupervised%203D%20Object--centric%20Learning-blue.svg"
     releaseDate: ""
-    website: ""
+    website: "https://slotlifter.github.io/"
     code: ""
-    paper: ""
+    paper: "/assets/publications/2024_slotlifter_eccv/paper.pdf"
     supplementary: ""
-    img: "/assets/img/timg.jpeg"
+    img: "/assets/publications/2024_slotlifter_eccv/overview.gif"
     short: "ICLR 2023"
     authors: 
       - name: Yu Liu*
@@ -524,9 +524,9 @@ publications:
     releaseDate: ""
     website: "https://pq3d.github.io/"
     code: "https://github.com/PQ3D/PQ3D"
-    paper: ""
+    paper: "/assets/publications/2024_pq3d_eccv/paper.pdf"
     # supplementary: ""
-    img: "/assets/img/timg.jpeg"
+    img: "/assets/publications/2024_pq3d_eccv/overview.png"
     # short: "NeurIPS 2022"
     authors:
       - name: Ziyu Zhu
