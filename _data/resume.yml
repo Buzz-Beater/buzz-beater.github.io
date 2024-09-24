@@ -66,6 +66,12 @@ news:
       isnew: 1
       content:
         - quote:
+          content: I will be attending ECCV 2024 this year, see you in Milan!
+    - info:
+      date: New
+      isnew: 1
+      content:
+        - quote:
           content: I recently gave a talk on Embodied 3D Vision on 
         - quote:
           content: ZhiDX
@@ -80,8 +86,7 @@ news:
         - quote:
           content: "!"
     - info:
-      date: New
-      isnew: 1
+      date: 2024/07
       content:
         - quote:
           content: SceneVerse
@@ -95,8 +100,7 @@ news:
         - quote:
           content: "!"
     - info:
-      date: New
-      isnew: 1
+      date: 2024/07
       content: 
         - quote:
           content: Three papers on
