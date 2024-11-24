@@ -66,10 +66,31 @@ news:
       isnew: 1
       content:
         - quote:
-          content: I will be attending ECCV 2024 this year, see you in Milan!
+          content: I recently gave a summary of our work at BIGAI at ChinaGraph 2024. Checktout the 
+        - quote:
+          content: slides
+          islink: 1
+          link: assets/slides/chinagraph2024.pdf
+        - quote:
+          content: "!"
     - info:
       date: New
       isnew: 1
+      content:
+        - quote:
+          content: One paper on
+        - quote:
+          content: Multi-modal 3D Situated Reasoning
+          isbold: 1
+        - quote:
+          content: is accepted by NeurIPS 2024.
+    - info:
+      date: 2024/10
+      content:
+        - quote:
+          content: I will be attending ECCV 2024 this year, see you in Milan!
+    - info:
+      date: 2024/07
       content:
         - quote:
           content: I recently gave a talk on Embodied 3D Vision on 
@@ -465,6 +486,33 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "MSR3D: Multi-modal Situated Reasoning in 3D Scenes"
+    isselected: 1
+    conference: "Advances in Neural Information Processing Systems (NeurIPS) 2024"
+    label: "https://img.shields.io/badge/neurips-2024-red.svg"
+    type: "https://img.shields.io/badge/NeurIPS2024-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Multi--modal Situated Reasoning"
+    releaseDate: ""
+    website: "https://msr3d.github.io/"
+    code: "https://github.com/MSR3D/MSR3D"
+    paper: ""
+    supplementary: ""
+    img: "/assets/img/timg.jpeg"
+    authors:
+      - name: Xiongkun Linghu*
+        website: "https://github.com/Germany321"
+      - name: Jiangyong Huang*
+        website: "https://huangjy-pku.github.io/"
+      - name: Xuesong Niu*
+        website: "https://nxsedson.github.io/"
+      - name: Xiaojian Ma
+        website: "https://jeasinema.github.io/"
+      - name: Baoxiong Jia#
+        isme: 1
+      - name: Siyuan Huang#
+        website: "https://siyuanhuang.com"
+    supp: "(* indicates equal contribution. # indicates corresponding author.)"
+
   - name: "SceneVerse: Scaling 3D Vision-Language Learning for Grounded Scene Understanding"
     isselected: 1
     conference: "European Conference on Computer Vision (ECCV) 2024"
@@ -495,6 +543,7 @@ publications:
         website: "https://liqing-ustc.github.io/"
       - name: Siyuan Huang
         website: "https://siyuanhuang.com/"
+    supp: OpenSUN3D @ ECCV 2024 (* indicates equal contribution)
   
   - name: "SlotLifter: Slot-guided Feature Lifting for Learning Object-centric Radiance Fields"
     isselected: 1
@@ -518,7 +567,7 @@ publications:
         website: "yixchen.github.io/"
       - name: Siyuan Huang
         website: "https://siyuanhuang.com/"
-    supp: (* indicates equal contribution.)
+    supp: Wild3D @ ECCV 2024 (* indicates equal contribution.)
   
   - name: "Unifying 3D Vision-Language Understanding via Promptable Queries"
     conference: "European Conference on Computer Vision (ECCV) 2024"
@@ -550,6 +599,7 @@ publications:
         website: "https://siyuanhuang.com/"
       - name: Qing Li
         website: "https://liqing-ustc.github.io/"
+    supp: OpenSUN3D @ ECCV 2024
 
   - name: "An Embodied Generalist Agent in 3D World"
     isselected: 1
@@ -587,7 +637,6 @@ publications:
     supp: GenAI4DM & AGI @ ICLR 2024 (* indicates equal contribution.)
 
   - name: "Human-level Few-shot Concept Induction through Minimax Entropy Learning"
-    isselected: 1
     conference: "Science Advances (SciAdv) 2024"
     label: "https://img.shields.io/badge/SciAdv2024-red.svg"
     type: "https://img.shields.io/badge/SciAdv2024-Journal%20Paper-yellow"
@@ -632,7 +681,7 @@ publications:
         # website: "https://tengyu.ai/"
       - name: Siyuan Huang
         website: "https://siyuanhuang.com/"
-    supp: (* indicates equal contribution.)
+    supp: AI3DG @ CVPR 2024 (* indicates equal contribution.)
 
   - name: "Move as You Say, Interact as You Can: Language-guided Human Motion Generation with Scene Affordance"
     isselected: 1
@@ -669,6 +718,7 @@ publications:
         website: "https://liangwei-bit.github.io/web/"
       - name: Siyuan Huang
         website: "https://siyuanhuang.com/"
+    supp: HuMoGen @ CVPR 2024
       
   - name: "ProBio: A Protocol-guided Multimodal Dataset for Molecular Biology Lab"
     conference: "Advances in Neural Information Processing System (NeurIPS) 2023"
@@ -697,6 +747,7 @@ publications:
         website: "https://majianzhu.com/"
       - name: Yixin Zhu
         website: "https://yzhu.io/"
+    supp: (* indicates equal contribution.)
 
   - name: "X-VoE: Measuring eXplanatory Violation of Expectation in Physical Events"
     conference: "International Conference on Computer Vision (ICCV) 2023"
@@ -711,8 +762,8 @@ publications:
     img: "/assets/publications/2023_xvoe_iccv/overview.png"
     short: "ICCV 2023"
     authors:
-      - name: Bo Dai*
-      - name: Linge Wang*
+      - name: Bo Dai
+      - name: Linge Wang
       - name: Baoxiong Jia
         isme: 1
       - name: Zeyu Zhang
@@ -754,11 +805,11 @@ publications:
         website: "https://www.cs.ucla.edu/~dt/"
       - name: Song-Chun Zhu
         website: "http://www.stat.ucla.edu/~sczhu/"
-      - name: Baoxiong Jia
+      - name: Baoxiong Jia#
         isme: 1
-      - name: Siyuan Huang
+      - name: Siyuan Huang#
         website: "https://siyuanhuang.com/"
-    supp: LangRob @ CoRL 2022 (* indicates equal contribution.)
+    supp: "LangRob @ CoRL 2022 (* indicates equal contribution. # indicates corresponding author.)"
 
   - name: "Learning a Causal Transition Model for Object Cutting"
     conference: "International Conference on Intelligent Robots and Systems (IROS) 2023"
@@ -844,7 +895,6 @@ publications:
     supp: (* indicates equal contribution.)
 
   - name: "EgoTaskQA: Understanding Human Tasks in Egocentric Videos"
-    isselected: 1
     conference: "Advances in Neural Information Processing System (NeurIPS) 2022"
     special: Track on Datasets and Benchmarks
     label: "https://img.shields.io/badge/NeurIPS-2022-red.svg"
