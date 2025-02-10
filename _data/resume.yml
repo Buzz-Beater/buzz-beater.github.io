@@ -66,13 +66,17 @@ news:
       isnew: 1
       content:
         - quote:
-          content: I recently gave a summary of our work at BIGAI at ChinaGraph 2024. Checktout the 
+          content: Two papers on
         - quote:
-          content: slides
-          islink: 1
-          link: assets/slides/chinagraph2024.pdf
+          content: Mobile Manipulation
+          isbold: 1
         - quote:
-          content: "!"
+          content: and
+        - quote:
+          content: Articulated Part Generation
+          isbold: 1
+        - quote:
+          content: are accepted by ICRA 2025!
     - info:
       date: New
       isnew: 1
@@ -80,10 +84,31 @@ news:
         - quote:
           content: One paper on
         - quote:
+          content: Articulated Object Reconstruction
+          isbold: 1
+        - quote:
+          content: is accepted by ICLR 2025!
+    - info:
+      date: 2024/12
+      content:
+        - quote:
+          content: One paper on
+        - quote:
           content: Multi-modal 3D Situated Reasoning
           isbold: 1
         - quote:
-          content: is accepted by NeurIPS 2024.
+          content: is accepted by NeurIPS 2024!
+    - info:
+      date: 2024/10
+      content:
+        - quote:
+          content: I recently gave a summary of our work at BIGAI at ChinaGraph 2024. Checktout the 
+        - quote:
+          content: slides
+          islink: 1
+          link: assets/slides/chinagraph2024.pdf
+        - quote:
+          content: "!"
     - info:
       date: 2024/10
       content:
@@ -232,51 +257,51 @@ news:
           link: https://scene-verse.github.io
         - quote:
           content: "."
-    - info:
-      date: 2023/12
-      content:
-        - quote:
-          content: One paper on
-        - quote:
-          content: procedural understanding in videos
-          isbold: 1
-        - quote:
-          content: is accepted by NeurIPS 2023.
-    - info:
-      date: 2023/10
-      content:
-        - quote:
-          content: Two papers accepted by ICCV 2023, congrats to the authors!
-    - info:
-      date: 2023/10
-      content:
-        - quote:
-          content: One paper on
-        - quote:
-          content: temporal and causal transition of objects
-          isbold: 1
-        - quote:
-          content: is accepted by IROS 2023.
-    - info:
-      date: 06/2023
-      content:
-        - quote:
-          content: One paper on
-        - quote:
-          content: diffusion models for 3D
-          isbold: 1
-        - quote:
-          content: is accepted by CVPR 2023.
-    - info:
-      date: 05/2023
-      content:
-        - quote:
-          content: One paper on
-        - quote:
-          content: unsupervised object-centric learning
-          isbold: 1
-        - quote:
-          content: is accepted by ICLR 2023.
+    # - info:
+    #   date: 2023/12
+    #   content:
+    #     - quote:
+    #       content: One paper on
+    #     - quote:
+    #       content: procedural understanding in videos
+    #       isbold: 1
+    #     - quote:
+    #       content: is accepted by NeurIPS 2023.
+    # - info:
+    #   date: 2023/10
+    #   content:
+    #     - quote:
+    #       content: Two papers accepted by ICCV 2023, congrats to the authors!
+    # - info:
+    #   date: 2023/10
+    #   content:
+    #     - quote:
+    #       content: One paper on
+    #     - quote:
+    #       content: temporal and causal transition of objects
+    #       isbold: 1
+    #     - quote:
+    #       content: is accepted by IROS 2023.
+    # - info:
+    #   date: 06/2023
+    #   content:
+    #     - quote:
+    #       content: One paper on
+    #     - quote:
+    #       content: diffusion models for 3D
+    #       isbold: 1
+    #     - quote:
+    #       content: is accepted by CVPR 2023.
+    # - info:
+    #   date: 05/2023
+    #   content:
+    #     - quote:
+    #       content: One paper on
+    #     - quote:
+    #       content: unsupervised object-centric learning
+    #       isbold: 1
+    #     - quote:
+    #       content: is accepted by ICLR 2023.
     # - info:
     #   date: 12/2022
     #   content:
@@ -486,18 +511,111 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "Buliding Interactable Replicas of Complex Articulated Objects via Gaussian Splatting"
+    isselected: 1
+    conference: "International Conference on Learning Representations (ICLR) 2025"
+    label: "https://img.shields.io/badge/iclr-2025-red.svg"
+    type: "https://img.shields.io/badge/ICLR2025-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Articulated%20Object%20Reconstruction-blue.svg"
+    releaseDate: ""
+    website: "https://articulate-gs.github.io/"
+    code: ""
+    paper: ""
+    supplementary: ""
+    img: "/assets/img/timg.jpeg"
+    short: "ICLR 2025"
+    authors: 
+      - name: Yu Liu*
+        website: "https://yuliu-ly.github.io/"
+      - name: Baoxiong Jia*
+        isme: 1
+      - name: Ruijie Lu
+        website: "https://scholar.google.com/citations?user=wxo8_VYAAAAJ"
+      - name: Junfeng Ni
+        website: "https://dali-jack.github.io/Junfeng-Ni/"
+      - name: Song-Chun Zhu
+        website: "https://zhusongchun.net/"
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+    supp: (* indicates equal contribution.)
+
+  - name: "Closed-Loop Open-Vocabulary Mobile Manipulation with GPT-4V"
+    isselected: 1
+    conference: "International Conference on Robotics and Automation (ICRA) 2025"
+    label: "https://img.shields.io/badge/iclr-2025-red.svg"
+    type: "https://img.shields.io/badge/ICRA2025-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Open--Vocabulary%20Mobile%20Manipulation-blue.svg"
+    releaseDate: ""
+    website: "https://come-robot.github.io/"
+    code: ""
+    paper: ""
+    supplementary: ""
+    img: "/assets/publications/2025_comerobot_icra/overview.png"
+    short: "ICRA 2025"
+    authors: 
+      - name: Peiyuan Zhi*
+        website: "https://scholar.google.com/citations?user=p1JGJNwAAAAJ"
+      - name: Zhiyuan Zhang*
+        website: "https://zhiyuan-zhang0206.github.io/"
+      - name: Yu Zhao
+        website: 
+      - name: Muzhi Han
+        website: "https://sites.google.com/view/muzhihan/home"
+      - name: Zeyu Zhang
+        website: "https://zeyuzhang.com/"
+      - name: Zhitian Li
+        website:
+      - name: Ziyuan Jiao
+        website: "https://sites.google.com/g.ucla.edu/zyjiao"
+      - name: Baoxiong Jia#
+        isme: 1
+      - name: Siyuan Huang#
+        website: "https://siyuanhuang.com/"
+    supp: "(* indicates equal contribution. # indicates corresponding author.)"
+
+  - name: "PhysPart: Physically Plausible Part Completion for Interactable Objects"
+    conference: "International Conference on Robotics and Automation (ICRA) 2025"
+    label: "https://img.shields.io/badge/iclr-2025-red.svg"
+    type: "https://img.shields.io/badge/ICRA2025-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Articulated%20Part%20Generation-blue.svg"
+    releaseDate: ""
+    website: ""
+    code: ""
+    paper: ""
+    supplementary: ""
+    img: "/assets/publications/2025_physpart_icra/overview.png"
+    short: "ICRA 2025"
+    authors: 
+      - name: Rundong Luo*
+        website: "https://red-fairy.github.io/"
+      - name: Haoran Geng*
+        website: "https://geng-haoran.github.io/"
+      - name: Congyue Deng
+        website: "https://cs.stanford.edu/~congyue/"
+      - name: Puhao Li
+        website: "https://xiaoyao-li.github.io/"
+      - name: Zan Wang
+        website: "https://silvester.wang/"
+      - name: Baoxiong Jia
+        isme: 1
+      - name: Leonidas Guibas
+        website: "https://geometry.stanford.edu/member/guibas/"
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+    supp: "(* indicates equal contribution.)"
+
   - name: "MSR3D: Multi-modal Situated Reasoning in 3D Scenes"
     isselected: 1
     conference: "Advances in Neural Information Processing Systems (NeurIPS) 2024"
     label: "https://img.shields.io/badge/neurips-2024-red.svg"
     type: "https://img.shields.io/badge/NeurIPS2024-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Multi--modal Situated Reasoning"
+    theme: "https://img.shields.io/badge/Multi--modal%20Situated%20Reasoning-blue.svg"
     releaseDate: ""
     website: "https://msr3d.github.io/"
     code: "https://github.com/MSR3D/MSR3D"
-    paper: ""
+    paper: "/assets/publications/2024_msr3d_neurips/paper.pdf"
     supplementary: ""
-    img: "/assets/img/timg.jpeg"
+    img: "/assets/publications/2024_msr3d_neurips/overview.png"
     authors:
       - name: Xiongkun Linghu*
         website: "https://github.com/Germany321"
@@ -722,7 +840,7 @@ publications:
       
   - name: "ProBio: A Protocol-guided Multimodal Dataset for Molecular Biology Lab"
     conference: "Advances in Neural Information Processing System (NeurIPS) 2023"
-    special: Track on Datasets and Benchmarks
+    # special: Track on Datasets and Benchmarks
     label: "https://img.shields.io/badge/NeurIPS-2023-red.svg"
     type: "https://img.shields.io/badge/NeurIPS2023-Conference%20Paper-green.svg"
     theme: "https://img.shields.io/badge/-Procedural%20Understanding-blue.svg"
@@ -896,7 +1014,7 @@ publications:
 
   - name: "EgoTaskQA: Understanding Human Tasks in Egocentric Videos"
     conference: "Advances in Neural Information Processing System (NeurIPS) 2022"
-    special: Track on Datasets and Benchmarks
+    # special: Track on Datasets and Benchmarks
     label: "https://img.shields.io/badge/NeurIPS-2022-red.svg"
     type: "https://img.shields.io/badge/NeurIPS2022-Conference%20Paper-green.svg"
     theme: "https://img.shields.io/badge/-Egocentric%20Goal--oriented%20Reasoning-blue.svg"
