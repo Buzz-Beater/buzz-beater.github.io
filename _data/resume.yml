@@ -520,9 +520,9 @@ publications:
     releaseDate: ""
     website: "https://articulate-gs.github.io/"
     code: ""
-    paper: ""
+    paper: "/assets/publications/2025_artgs_iclr/paper.pdf"
     supplementary: ""
-    img: "/assets/img/timg.jpeg"
+    img: "/assets/publications/2025_artgs_iclr/overview.gif"
     short: "ICLR 2025"
     authors: 
       - name: Yu Liu*
@@ -530,7 +530,7 @@ publications:
       - name: Baoxiong Jia*
         isme: 1
       - name: Ruijie Lu
-        website: "https://scholar.google.com/citations?user=wxo8_VYAAAAJ"
+        website: "https://jason-aplp.github.io/Ruijie-Lu/"
       - name: Junfeng Ni
         website: "https://dali-jack.github.io/Junfeng-Ni/"
       - name: Song-Chun Zhu

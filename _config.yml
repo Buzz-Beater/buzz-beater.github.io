@@ -21,6 +21,7 @@ baseurl:               '/'
 # You may also provide a location, e.g.: en-us, de_AT.
 lang:                  en
 
+
 # The title of your blog. Used in the sidebar and the browser tab.
 title:                 Baoxiong Jia @ BIGAI
 plain_title:           Baoxiong Jia
