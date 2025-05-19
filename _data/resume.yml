@@ -66,6 +66,62 @@ news:
       isnew: 1
       content:
         - quote:
+          content: I'm co-organizing the 
+        - quote:
+          content: 5th 3D Scene Understanding workshop
+          islink: 1
+          link: https://scene-understanding.com/
+        - quote:
+          content: at CVPR 2025. See you in Nashvile!
+    - info:
+      date: New
+      isnew: 1
+      content:
+        - quote:
+          content: I recently gave a summary of our work at BostonDynamics. Checktout the 
+        - quote:
+          content: slides
+          islink: 1
+          link: assets/slides/bostondynamics.pdf
+        - quote:
+          content: "!"
+    - info:
+      date: New
+      isnew: 1
+      content:
+        - quote:
+          isbold: 1
+          content: RoboVerse
+        - quote:
+          content: is accepted by RSS 2025! Go check it out
+        - quote: 
+          content: here
+          islink: 1
+          link: https://roboverseorg.github.io/
+        - quote:
+          content: "!"
+    - info:
+      date: New
+      isnew: 1
+      content:
+        - quote:
+          content: Four papers on
+        - quote:
+          content: 3D Scene Understanding
+          isbold: 1
+        - quote:
+          content: and
+        - quote:
+          content: Reconstruction
+          isbold: 1
+        - quote:
+          content: are accepted by CVPR 2025! A Bountiful Spring!
+    - info:
+      # date: 2025/01
+      date: New
+      isnew: 1
+      content:
+        - quote:
           content: Two papers on
         - quote:
           content: Mobile Manipulation
@@ -78,8 +134,7 @@ news:
         - quote:
           content: are accepted by ICRA 2025!
     - info:
-      date: New
-      isnew: 1
+      date: 2025/01
       content:
         - quote:
           content: One paper on
@@ -511,6 +566,220 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "MetaScenes: Towards Automated Replica Creation for Real-world 3D Scans"
+    isselected: 1
+    conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2025"
+    label: "https://img.shields.io/badge/cvpr-2025-red.svg"
+    type: "https://img.shields.io/badge/CVPR2025-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Digital%20Twin%20Creation-blue.svg"
+    releaseDate: ""
+    website: "https://meta-scenes.github.io/"
+    code: ""
+    paper: "assets/publications/2025_metascenes_cvpr/paper.pdf"
+    supplementary: ""
+    img: "/assets/publications/2025_metascenes_cvpr/overview.gif"
+    short: "CVPR 2025"
+    authors: 
+      - name: Huangyue Yu*
+        website: "https://jason-aplp.github.io/Ruijie-Lu/"
+      - name: Baoxiong Jia*
+        isme: 1
+      - name: Yixin Chen*
+        website: "https://yixchen.github.io"
+      - name: Yandan Yang
+        website: https://scholar.google.com/citations?user=H6OwSzsAAAAJ
+      - name: Puhao Li
+        website: "https://xiaoyao-li.github.io/"
+      - name: Rongpeng Su
+        website: https://scholar.google.com/citations?user=rY-Ndl0AAAAJ
+      - name: Jiaxin Li
+        website: https://gauleejx.github.io/
+      - name: Qing Li
+        website: "https://liqing-ustc.github.io/"
+      - name: Wei Liang
+        website: "https://liangwei-bit.github.io/web/"
+      - name: Song-Chun Zhu
+        website: "https://zhusongchun.net/"
+      - name: Tengyu Liu
+        website: "https://tengyu.ai/"
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+    supp: (* indicates equal contribution.)
+
+  - name: "Unveiling the Mist over 3D Vision-Language Understanding: Object-centric Evaluation with Chain-of-Analysis"
+    isselected: 1
+    conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2025"
+    label: "https://img.shields.io/badge/cvpr-2025-red.svg"
+    type: "https://img.shields.io/badge/CVPR2025-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/3D--VL%20Evaluation-blue.svg"
+    releaseDate: ""
+    img: "/assets/publications/2025_beacon3d_cvpr/overview.png"
+    short: "CVPR 2025"
+    website: "https://beacon-3d.github.io"
+    paper: "/assets/publications/2025_beacon3d_cvpr/paper.pdf"
+    code: "https://github.com/beacon-3d/beacon-3d"
+    authors:
+      - name: Jiangyong Huang*
+        website: "https://huangjy-pku.github.io/"
+      - name: Baoxiong Jia*
+        isme: 1
+      - name: Yan Wang
+        website: "https://github.com/jetpackfirstme"
+      - name: Ziyu Zhu
+        website: "https://scholar.google.com/citations?user=Zhh8nbQAAAAJ"
+      - name: Xiongkun Linghu
+        website: "https://github.com/Germany321"
+      - name: Qing Li
+        website: "https://liqing-ustc.github.io/"
+      - name: Song-Chun Zhu
+        website: "http://www.stat.ucla.edu/~sczhu/"
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+    supp: (* indicates equal contribution.)
+  
+  - name: "Masked Point-Entity Contrast for Open-Vocabulary 3D Scene Understanding"
+    isselected: 1
+    conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2025"
+    label: "https://img.shields.io/badge/cvpr-2025-red.svg"
+    type: "https://img.shields.io/badge/CVPR2025-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/3D--VL%20Pre--training-blue.svg"
+    releaseDate: ""
+    img: "/assets/publications/2025_mpec_cvpr/overview.png"
+    short: "CVPR 2025"
+    website: "https://mpec-3d.github.io/"
+    paper: "/assets/publications/2025_beacon3d_cvpr/paper.pdf"
+    code: ""
+    authors:
+      - name: Yan Wang*
+        website: "https://github.com/jetpackfirstme"
+      - name: Baoxiong Jia*
+        isme: 1
+      - name: Ziyu Zhu
+        website: "https://scholar.google.com/citations?user=Zhh8nbQAAAAJ"
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+    supp: (* indicates equal contribution.)
+
+  - name: "RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning"
+    isselected: 1
+    conference: "Robotics Science and Systems (RSS) 2025"
+    label: "https://img.shields.io/badge/rss-2025-red.svg"
+    type: "https://img.shields.io/badge/RSS2025-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Unified%20Simulation%20Platform-blue.svg"
+    releaseDate: ""
+    website: "https://roboverseorg.github.io/"
+    code: ""
+    paper: "assets/publications/2025_roboverse_rss/paper.pdf"
+    supplementary: ""
+    img: "/assets/publications/2025_roboverse_rss/overview.png"
+    short: "RSS 2025"
+    authors: 
+      - name: Haoran Geng*
+        website: https://geng-haoran.github.io/
+      - name: Feishi Wang*
+        website: https://fisher-wang.github.io/
+      - name: Songlin Wei*
+        website: 
+      - name: Yuyang Li*
+        website: https://yuyangli.com/
+      - name: Bangjun Wang*
+        website: https://www.bangjunwang.com/
+      - name: Boshi An*
+        website: https://boshi-an.github.io/
+      - name: Charlie Tianyue Cheng*
+        website: https://charlietcheng.github.io/
+      - name: Haozhe Lou
+        website: https://scholar.google.com/citations?user=BIPK9KEAAAAJ
+      - name: Peihao Li
+        website: https://www.linkedin.com/business-manager-api/bzmEnterpriseAccessCookie/in/peihao-li-555660225/
+      - name: Yen-Jen Wang
+        website: https://wangyenjen.github.io/
+      - name: Yutong Liang
+        website: https://www.lyt0112.com/
+      - name: Dylan Goetting
+        website: https://scholar.google.com/citations?user=JF9J8uUAAAAJ
+      - name: Chaoyi Xu
+        website: https://co1one.github.io/
+      - name: Haozhe Chen
+        website: https://blog.chenhaozhe.top/
+      - name: Yuxi Qian
+        website: https://scholar.google.com/citations?user=KmGNBSMAAAAJ
+      - name: Yiran Geng
+        website: https://gengyiran.github.io/
+      - name: Jiageng Mao
+        website: https://pointscoder.github.io/
+      - name: Weikang Wan
+        website: https://wkwan7.github.io/
+      - name: Mingtong Zhang
+        website: https://robo-alex.github.io/
+      - name: Jiangran Lyu
+        website: https://jiangranlv.github.io/
+      - name: Siheng Zhao
+        website: https://sihengz02.github.io/
+      - name: Jiazhao Zhang
+        website: https://jzhzhang.github.io/
+      - name: Jialiang Zhang
+        website: https://mzhmxzh.github.io/
+      - name: Chengyang Zhao
+        website: https://chengyzhao.github.io/
+      - name: Haoran Lu
+        website: https://luhr2003.github.io/
+      - name: Yufei Ding
+        website: https://selina2023.github.io/
+      - name: Ran Gong
+        website: https://nikepupu.github.io/
+      - name: Yuran Wang
+      - name: Yuxuan Kuang
+        website: https://yuxuank.com/
+      - name: Ruihai Wu
+        website: https://warshallrho.github.io/
+      - name: Baoxiong Jia
+        isme: 1
+      - name: Carlo Sferrazza
+        website: https://sferrazza.cc/
+      - name: Hao Dong
+        website: https://zsdonghao.github.io/
+      - name: Siyuan Huang#
+        website: "https://siyuanhuang.com/"
+      - name: Yue Wang#
+        website: https://people.eecs.berkeley.edu/~malik/
+      - name: Jitendra Malik#
+        website: https://people.eecs.berkeley.edu/~malik/
+      - name: Pieter Abbeel#
+        website: https://people.eecs.berkeley.edu/~pabbeel/
+    supp: (* indicates equal contribution.)
+
+  - name: "MOVIS: Enhancing Multi-Object Novel View Synthesis for Indoor Scenes"
+    conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2025"
+    label: "https://img.shields.io/badge/cvpr-2025-red.svg"
+    type: "https://img.shields.io/badge/CVPR2025-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Novel%20View%20Synthesis-blue.svg"
+    releaseDate: ""
+    website: ""
+    code: ""
+    paper: "assets/publications/2025_movis_cvpr/paper.pdf"
+    supplementary: ""
+    img: "/assets/publications/2025_movis_cvpr/overview.png"
+    short: "CVPR 2025"
+    authors: 
+      - name: Ruijie Lu*
+        website: "https://jason-aplp.github.io/Ruijie-Lu/"
+      - name: Yixin Chen*
+        website: "https://yixchen.github.io"
+      - name: Junfeng Ni
+        website: "https://dali-jack.github.io/Junfeng-Ni/"
+      - name: Baoxiong Jia
+        isme: 1
+      - name: Yu Liu
+        website: "https://yuliu-ly.github.io/"
+      - name: Diwen Wan
+        website: "https://scholar.google.com/citations?user=gWWaiWYAAAAJ"
+      - name: Gang Zeng
+        website: "https://www.cis.pku.edu.cn/info/1177/1378.htm"
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+    supp: (* indicates equal contribution.)
+  
   - name: "Buliding Interactable Replicas of Complex Articulated Objects via Gaussian Splatting"
     isselected: 1
     conference: "International Conference on Learning Representations (ICLR) 2025"
@@ -583,7 +852,7 @@ publications:
     code: ""
     paper: ""
     supplementary: ""
-    img: "/assets/publications/2025_physpart_icra/overview.png"
+    img: "/assets/publications/2025_physpart_icra/overview.gif"
     short: "ICRA 2025"
     authors: 
       - name: Rundong Luo*
@@ -792,7 +1061,7 @@ publications:
     short: "CVPR 2024"
     authors: 
       - name: Yandan Yang*
-        # website: "https://siyuanhuang.com/"
+        website: https://scholar.google.com/citations?user=H6OwSzsAAAAJ
       - name: Baoxiong Jia*
         isme: 1
       - name: Peiyuan Zhi
