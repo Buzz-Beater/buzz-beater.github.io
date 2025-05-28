@@ -587,7 +587,7 @@ publications:
       - name: Yixin Chen*
         website: "https://yixchen.github.io"
       - name: Yandan Yang
-        website: https://scholar.google.com/citations?user=H6OwSzsAAAAJ
+        website: "https://yandanyang.github.io"
       - name: Puhao Li
         website: "https://xiaoyao-li.github.io/"
       - name: Rongpeng Su
@@ -1061,7 +1061,7 @@ publications:
     short: "CVPR 2024"
     authors: 
       - name: Yandan Yang*
-        website: https://scholar.google.com/citations?user=H6OwSzsAAAAJ
+        website: "https://yandanyang.github.io"
       - name: Baoxiong Jia*
         isme: 1
       - name: Peiyuan Zhi
