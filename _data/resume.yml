@@ -61,466 +61,494 @@ basics:
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
 news:
-    - info:
-      date: New
-      isnew: 1
-      content:
-        - quote:
-          content: I'm co-organizing the 
-        - quote:
-          content: 5th 3D Scene Understanding workshop
-          islink: 1
-          link: https://scene-understanding.com/
-        - quote:
-          content: at CVPR 2025. See you in Nashvile!
-    - info:
-      date: New
-      isnew: 1
-      content:
-        - quote:
-          content: I recently gave a summary of our work at BostonDynamics. Checktout the 
-        - quote:
-          content: slides
-          islink: 1
-          link: assets/slides/bostondynamics.pdf
-        - quote:
-          content: "!"
-    - info:
-      date: New
-      isnew: 1
-      content:
-        - quote:
-          isbold: 1
-          content: RoboVerse
-        - quote:
-          content: is accepted by RSS 2025! Go check it out
-        - quote: 
-          content: here
-          islink: 1
-          link: https://roboverseorg.github.io/
-        - quote:
-          content: "!"
-    - info:
-      date: New
-      isnew: 1
-      content:
-        - quote:
-          content: Four papers on
-        - quote:
-          content: 3D Scene Understanding
-          isbold: 1
-        - quote:
-          content: and
-        - quote:
-          content: Reconstruction
-          isbold: 1
-        - quote:
-          content: are accepted by CVPR 2025!
-    - info:
-      # date: 2025/01
-      date: New
-      isnew: 1
-      content:
-        - quote:
-          content: Two papers on
-        - quote:
-          content: Mobile Manipulation
-          isbold: 1
-        - quote:
-          content: and
-        - quote:
-          content: Articulated Part Generation
-          isbold: 1
-        - quote:
-          content: are accepted by ICRA 2025!
-    - info:
-      date: 2025/01
-      content:
-        - quote:
-          content: One paper on
-        - quote:
-          content: Articulated Object Reconstruction
-          isbold: 1
-        - quote:
-          content: is accepted by ICLR 2025!
-    - info:
-      date: 2024/12
-      content:
-        - quote:
-          content: One paper on
-        - quote:
-          content: Multi-modal 3D Situated Reasoning
-          isbold: 1
-        - quote:
-          content: is accepted by NeurIPS 2024!
-    - info:
-      date: 2024/10
-      content:
-        - quote:
-          content: I recently gave a summary of our work at BIGAI at ChinaGraph 2024. Checktout the 
-        - quote:
-          content: slides
-          islink: 1
-          link: assets/slides/chinagraph2024.pdf
-        - quote:
-          content: "!"
-    - info:
-      date: 2024/10
-      content:
-        - quote:
-          content: I will be attending ECCV 2024 this year, see you in Milan!
-    - info:
-      date: 2024/07
-      content:
-        - quote:
-          content: I recently gave a talk on Embodied 3D Vision on 
-        - quote:
-          content: ZhiDX
-          islink: 1
-          link: https://zhidx.com/
-        - quote:
-          content: . Checkout the
-        - quote: 
-          content: slides
-          islink: 1
-          link: assets/slides/embodied3dvision.pdf
-        - quote:
-          content: "!"
-    - info:
-      date: 2024/07
-      content:
-        - quote:
-          content: SceneVerse
-          isbold: 1
-        - quote:
-          content: is accepted by ECCV 2024. Stay tuned for full data and model release at
-        - quote: 
-          content: this link
-          islink: 1
-          link: https://github.com/scene-verse/scene-verse
-        - quote:
-          content: "!"
-    - info:
-      date: 2024/07
-      content: 
-        - quote:
-          content: Three papers on
-        - quote:
-          content: 3D-VL
-          isbold: 1
-        - quote:
-          content: and
-        - quote:
-          content: Object-centric Learning
-          isbold: 1
-        - quote:
-          content: is accepted by ECCV 2024.
-    - info:
-      date: 2024/06
-      content:
-        - quote:
-          content: Our
-        - quote:
-          content: embodied generalist LEO
-          isbold: 1
-        - quote:
-          content: is accepted by ICML 2024. Check out our code and data at
-        - quote: 
-          content: this link
-          islink: 1
-          link: https://github.com/embodied-generalist/embodied-generalist
-        - quote:
-          content: "."
-    - info:
-      date: 2024/06
-      content:
-        - quote:
-          content: I'm co-organizing the 
-        - quote:
-          content: MANGO workshop
-          islink: 1
-          link: https://mango-workshop.github.io/2024.html
-        - quote:
-          content: at CVPR 2024. See you in Seattle!
-    - info:
-      date: 2024/06
-      content:
-        - quote:
-          content: SceneVerse data
-          isbold: 1
-        - quote:
-          content: is released !
-        - quote:
-          content: Find the download link and instructions at
-        - quote: 
-          content: this link
-          islink: 1
-          link: https://github.com/scene-verse/scene-verse
-        - quote:
-          content: "."
-    - info:
-      date: 2024/06
-      content:
-        - quote:
-          content: Two papers on
-        - quote:
-          content: 3D motion
-          isbold: 1
-        - quote:
-          content: and
-        - quote:
-          content: scene generation
-          isbold: 1
-        - quote:
-          content: accepted by CVPR 2024 as 
-        - quote: 
-          content: Highlight
-          isemphasize: 1
-        - quote:
-          content: "."
-    - info:
-      date: 2024/03
-      content:
-        - quote:
-          content: LEO code and data
-          isbold: 1
-        - quote:
-          content: is released !
-        - quote:
-          content: Find the download link and instruction at
-        - quote: 
-          content: this link
-          islink: 1
-          link: https://github.com/embodied-generalist/embodied-generalist
-        - quote:
-          content: "."
-    - info:
-      date: 2024/02
-      content:
-        - quote:
-          content: Announcing
-        - quote:
-          content: SceneVerse
-          isbold: 1
-        - quote:
-          content: for 3D-VL learning.
-        - quote:
-          content: Checkout our the
-        - quote: 
-          content: project page
-          islink: 1
-          link: https://scene-verse.github.io
-        - quote:
-          content: "."
-    # - info:
-    #   date: 2023/12
-    #   content:
-    #     - quote:
-    #       content: One paper on
-    #     - quote:
-    #       content: procedural understanding in videos
-    #       isbold: 1
-    #     - quote:
-    #       content: is accepted by NeurIPS 2023.
-    # - info:
-    #   date: 2023/10
-    #   content:
-    #     - quote:
-    #       content: Two papers accepted by ICCV 2023, congrats to the authors!
-    # - info:
-    #   date: 2023/10
-    #   content:
-    #     - quote:
-    #       content: One paper on
-    #     - quote:
-    #       content: temporal and causal transition of objects
-    #       isbold: 1
-    #     - quote:
-    #       content: is accepted by IROS 2023.
-    # - info:
-    #   date: 06/2023
-    #   content:
-    #     - quote:
-    #       content: One paper on
-    #     - quote:
-    #       content: diffusion models for 3D
-    #       isbold: 1
-    #     - quote:
-    #       content: is accepted by CVPR 2023.
-    # - info:
-    #   date: 05/2023
-    #   content:
-    #     - quote:
-    #       content: One paper on
-    #     - quote:
-    #       content: unsupervised object-centric learning
-    #       isbold: 1
-    #     - quote:
-    #       content: is accepted by ICLR 2023.
-    # - info:
-    #   date: 12/2022
-    #   content:
-    #     - quote:
-    #       content: One paper on
-    #     - quote:
-    #       content: language grounding for robots
-    #       isbold: 1
-    #     - quote:
-    #       content: is accepted as 
-    #     - quote:
-    #       content: spotlight
-    #       isbold: 1
-    #     - quote:
-    #       content: by LangRob@CoRL 2022. 
-    # - info:
-    #   date: 10/2022
-    #   content:
-    #     - quote:
-    #       content: EgoTaskQA
-    #     - quote:
-    #       islink: 1
-    #       content: project page
-    #       link: https://sites.google.com/view/egotaskqa
-    #     - quote:
-    #       content: released, checkout our code and data!
-    # - info:
-    #   date: 09/2022
-    #   content:
-    #     - quote:
-    #       content: One paper on
-    #     - quote:
-    #       content: egocentric goal-oriented reasoning
-    #       isbold: 1
-    #     - quote:
-    #       content: is accepted by NeurIPS 2022.
-    # - info:
-    #   date: 05/2022
-    #   content:
-    #     - quote:
-    #       content: One paper on
-    #     - quote:
-    #       content: systematic generalization in RAVEN test
-    #       isbold: 1
-    #     - quote:
-    #       content: is accepted by ECCV 2022.
-    # - info:
-    #   date: 04/2022
-    #   content:
-    #     - quote:
-    #       content: One paper on
-    #     - quote:
-    #       content: latent diffusion energy-based model
-    #       isbold: 1
-    #     - quote:
-    #       content: is accepted by ICML 2022.
-    # - info:
-    #   date: 09/2021
-    #   content:
-    #     - quote:
-    #       content: My internship on 
-    #     - quote:
-    #       isbold: 1 
-    #       content: grounded spatial-temporal reasoning
-    #     - quote:
-    #       content:  for videoQA
-    #     - quote:
-    #       content: at Amazon Alexa finished!
-    # - info:
-    #   date: 02/2021
-    #   content:
-    #     - quote:
-    #       content: Two papers on
-    #     - quote:
-    #       content: abstract reasoning
-    #       isbold: 1
-    #     - quote:
-    #       content: are accepted by CVPR 2021.
-    # - info:
-    #   date: 05/2020
-    #   content:
-    #     - quote:
-    #       content: LEMMA
-    #     - quote:
-    #       islink: 1
-    #       content: project page
-    #       link: https://sites.google.com/view/lemma-Activity
-    #     - quote:
-    #       content: released, check out our code and data!
-    # - info:
-    #   date: 12/2020
-    #   content:
-    #     - quote:
-    #       content: I advanced to candidacy! 
-    # - info:
-    #   date: 07/2020
-    #   content:
-    #     - quote:
-    #       content: One paper on
-    #     - quote:
-    #       content: multi-agent multi-task activities
-    #       isbold: 1
-    #     - quote:
-    #       content: is accepted by ECCV 2020.
-    # - info:
-    #   date: 02/2020
-    #   content:
-    #     - quote:
-    #       content: One paper on
-    #     - quote:
-    #       content: video parsing and prediction
-    #       isbold: 1
-    #     - quote:
-    #       content: is accepted by TPAMI 2020.
-    # - info:
-    #   date: 09/2019
-    #   content: 
-    #     - quote: 
-    #       content: One paper on
-    #     - quote: 
-    #       content: relational reasoning
-    #       isbold: 1
-    #     - quote:
-    #       content: accepted as 
-    #     - quote: 
-    #       content: Spotlight
-    #       isemphasize: 1
-    #     - quote: 
-    #       content: by NeurIPS 2019.
-    # - info:
-    #   date: 02/2019
-    #   content: 
-    #     - quote:
-    #       content: One paper on 
-    #     - quote:
-    #       content: IQ
-    #       isbold: 1
-    #     - quote:
-    #       content: accepted by CVPR 2019.
-    # - info:
-    #   date: 07/2018
-    #   content:
-    #     - quote:
-    #       content: One paper on 
-    #     - quote:
-    #       content: human object interaction
-    #       isbold: 1
-    #     - quote:
-    #       content: accepted by ECCV 2018.
-    # - info:
-    #   date: 05/2018
-    #   content: 
-    #     - quote:
-    #       content: One paper on
-    #     - quote:
-    #       content: human intention prediction
-    #       isbold: 1
-    #     - quote:
-    #       content: accepted by ICML 2018.
-    # - info:
-    #   date: 09/2017
-    #   content:
-    #     - quote:
-    #       content: I started my journey at UCLA.
+  - info:
+    date: New
+    # date: 2025/06
+    isnew: 1
+    content:
+      - quote:
+        content: One paper on
+      - quote:
+        content: Unified Force and Position Control
+        isbold: 1
+      - quote:
+        content: is accepted by CoRL 2025 as
+      - quote:
+        isemphasize: 1
+        content: Oral
+      - quote:
+        content: "!"
+  - info:
+    date: New
+    # date: 2025/06
+    isnew: 1
+    content:
+      - quote:
+        content: Two papers on
+      - quote:
+        content: 4D World Model
+        isbold: 1
+      - quote:
+        content: and
+      - quote:
+        content: Embodied Vision Language
+        isbold: 1
+      - quote:
+        content: are accepted by ICCV 2025!
+  - info:
+    date: 2025/06
+    content:
+      - quote:
+        content: I'm co-organizing the 
+      - quote:
+        content: 5th 3D Scene Understanding workshop
+        islink: 1
+        link: https://scene-understanding.com/
+      - quote:
+        content: at CVPR 2025. See you in Nashvile!
+  - info:
+    date: 2025/04
+    content:
+      - quote:
+        isbold: 1
+        content: RoboVerse
+      - quote:
+        content: is accepted by RSS 2025! Go check it out
+      - quote: 
+        content: here
+        islink: 1
+        link: https://roboverseorg.github.io/
+      - quote:
+        content: "!"
+  - info:
+    date: 2025/03
+    content:
+      - quote:
+        content: I recently gave a summary of our work at BostonDynamics. Checktout the 
+      - quote:
+        content: slides
+        islink: 1
+        link: assets/slides/bostondynamics.pdf
+      - quote:
+        content: "!"
+  - info:
+    date: 2025/02
+    content:
+      - quote:
+        content: Four papers on
+      - quote:
+        content: 3D Scene Understanding
+        isbold: 1
+      - quote:
+        content: and
+      - quote:
+        content: Reconstruction
+        isbold: 1
+      - quote:
+        content: are accepted by CVPR 2025!
+  - info:
+    date: 2025/01
+    content:
+      - quote:
+        content: Two papers on
+      - quote:
+        content: Mobile Manipulation
+        isbold: 1
+      - quote:
+        content: and
+      - quote:
+        content: Articulated Part Generation
+        isbold: 1
+      - quote:
+        content: are accepted by ICRA 2025!
+  - info:
+    date: 2025/01
+    content:
+      - quote:
+        content: One paper on
+      - quote:
+        content: Articulated Object Reconstruction
+        isbold: 1
+      - quote:
+        content: is accepted by ICLR 2025!
+  - info:
+    date: 2024/12
+    content:
+      - quote:
+        content: One paper on
+      - quote:
+        content: Multi-modal 3D Situated Reasoning
+        isbold: 1
+      - quote:
+        content: is accepted by NeurIPS 2024!
+  - info:
+    date: 2024/10
+    content:
+      - quote:
+        content: I recently gave a summary of our work at BIGAI at ChinaGraph 2024. Checktout the 
+      - quote:
+        content: slides
+        islink: 1
+        link: assets/slides/chinagraph2024.pdf
+      - quote:
+        content: "!"
+  - info:
+    date: 2024/10
+    content:
+      - quote:
+        content: I will be attending ECCV 2024 this year, see you in Milan!
+  - info:
+    date: 2024/07
+    content:
+      - quote:
+        content: I recently gave a talk on Embodied 3D Vision on 
+      - quote:
+        content: ZhiDX
+        islink: 1
+        link: https://zhidx.com/
+      - quote:
+        content: . Checkout the
+      - quote: 
+        content: slides
+        islink: 1
+        link: assets/slides/embodied3dvision.pdf
+      - quote:
+        content: "!"
+  - info:
+    date: 2024/07
+    content:
+      - quote:
+        content: SceneVerse
+        isbold: 1
+      - quote:
+        content: is accepted by ECCV 2024. Stay tuned for full data and model release at
+      - quote: 
+        content: this link
+        islink: 1
+        link: https://github.com/scene-verse/scene-verse
+      - quote:
+        content: "!"
+  - info:
+    date: 2024/07
+    content: 
+      - quote:
+        content: Three papers on
+      - quote:
+        content: 3D-VL
+        isbold: 1
+      - quote:
+        content: and
+      - quote:
+        content: Object-centric Learning
+        isbold: 1
+      - quote:
+        content: is accepted by ECCV 2024.
+  # - info:
+  #   date: 2024/06
+  #   content:
+  #     - quote:
+  #       content: Our
+  #     - quote:
+  #       content: embodied generalist LEO
+  #       isbold: 1
+  #     - quote:
+  #       content: is accepted by ICML 2024. Check out our code and data at
+  #     - quote: 
+  #       content: this link
+  #       islink: 1
+  #       link: https://github.com/embodied-generalist/embodied-generalist
+  #     - quote:
+  #       content: "."
+  # - info:
+  #   date: 2024/06
+  #   content:
+  #     - quote:
+  #       content: I'm co-organizing the 
+  #     - quote:
+  #       content: MANGO workshop
+  #       islink: 1
+  #       link: https://mango-workshop.github.io/2024.html
+  #     - quote:
+  #       content: at CVPR 2024. See you in Seattle!
+  # - info:
+  #   date: 2024/06
+  #   content:
+  #     - quote:
+  #       content: SceneVerse data
+  #       isbold: 1
+  #     - quote:
+  #       content: is released !
+  #     - quote:
+  #       content: Find the download link and instructions at
+  #     - quote: 
+  #       content: this link
+  #       islink: 1
+  #       link: https://github.com/scene-verse/scene-verse
+  #     - quote:
+  #       content: "."
+  # - info:
+  #   date: 2024/06
+  #   content:
+  #     - quote:
+  #       content: Two papers on
+  #     - quote:
+  #       content: 3D motion
+  #       isbold: 1
+  #     - quote:
+  #       content: and
+  #     - quote:
+  #       content: scene generation
+  #       isbold: 1
+  #     - quote:
+  #       content: accepted by CVPR 2024 as 
+  #     - quote: 
+  #       content: Highlight
+  #       isemphasize: 1
+  #     - quote:
+  #       content: "."
+  # - info:
+  #   date: 2024/03
+  #   content:
+  #     - quote:
+  #       content: LEO code and data
+  #       isbold: 1
+  #     - quote:
+  #       content: is released !
+  #     - quote:
+  #       content: Find the download link and instruction at
+  #     - quote: 
+  #       content: this link
+  #       islink: 1
+  #       link: https://github.com/embodied-generalist/embodied-generalist
+  #     - quote:
+  #       content: "."
+  # - info:
+  #   date: 2024/02
+  #   content:
+  #     - quote:
+  #       content: Announcing
+  #     - quote:
+  #       content: SceneVerse
+  #       isbold: 1
+  #     - quote:
+  #       content: for 3D-VL learning.
+  #     - quote:
+  #       content: Checkout our the
+  #     - quote: 
+  #       content: project page
+  #       islink: 1
+  #       link: https://scene-verse.github.io
+  #     - quote:
+  #       content: "."
+  # - info:
+  #   date: 2023/12
+  #   content:
+  #     - quote:
+  #       content: One paper on
+  #     - quote:
+  #       content: procedural understanding in videos
+  #       isbold: 1
+  #     - quote:
+  #       content: is accepted by NeurIPS 2023.
+  # - info:
+  #   date: 2023/10
+  #   content:
+  #     - quote:
+  #       content: Two papers accepted by ICCV 2023, congrats to the authors!
+  # - info:
+  #   date: 2023/10
+  #   content:
+  #     - quote:
+  #       content: One paper on
+  #     - quote:
+  #       content: temporal and causal transition of objects
+  #       isbold: 1
+  #     - quote:
+  #       content: is accepted by IROS 2023.
+  # - info:
+  #   date: 06/2023
+  #   content:
+  #     - quote:
+  #       content: One paper on
+  #     - quote:
+  #       content: diffusion models for 3D
+  #       isbold: 1
+  #     - quote:
+  #       content: is accepted by CVPR 2023.
+  # - info:
+  #   date: 05/2023
+  #   content:
+  #     - quote:
+  #       content: One paper on
+  #     - quote:
+  #       content: unsupervised object-centric learning
+  #       isbold: 1
+  #     - quote:
+  #       content: is accepted by ICLR 2023.
+  # - info:
+  #   date: 12/2022
+  #   content:
+  #     - quote:
+  #       content: One paper on
+  #     - quote:
+  #       content: language grounding for robots
+  #       isbold: 1
+  #     - quote:
+  #       content: is accepted as 
+  #     - quote:
+  #       content: spotlight
+  #       isbold: 1
+  #     - quote:
+  #       content: by LangRob@CoRL 2022. 
+  # - info:
+  #   date: 10/2022
+  #   content:
+  #     - quote:
+  #       content: EgoTaskQA
+  #     - quote:
+  #       islink: 1
+  #       content: project page
+  #       link: https://sites.google.com/view/egotaskqa
+  #     - quote:
+  #       content: released, checkout our code and data!
+  # - info:
+  #   date: 09/2022
+  #   content:
+  #     - quote:
+  #       content: One paper on
+  #     - quote:
+  #       content: egocentric goal-oriented reasoning
+  #       isbold: 1
+  #     - quote:
+  #       content: is accepted by NeurIPS 2022.
+  # - info:
+  #   date: 05/2022
+  #   content:
+  #     - quote:
+  #       content: One paper on
+  #     - quote:
+  #       content: systematic generalization in RAVEN test
+  #       isbold: 1
+  #     - quote:
+  #       content: is accepted by ECCV 2022.
+  # - info:
+  #   date: 04/2022
+  #   content:
+  #     - quote:
+  #       content: One paper on
+  #     - quote:
+  #       content: latent diffusion energy-based model
+  #       isbold: 1
+  #     - quote:
+  #       content: is accepted by ICML 2022.
+  # - info:
+  #   date: 09/2021
+  #   content:
+  #     - quote:
+  #       content: My internship on 
+  #     - quote:
+  #       isbold: 1 
+  #       content: grounded spatial-temporal reasoning
+  #     - quote:
+  #       content:  for videoQA
+  #     - quote:
+  #       content: at Amazon Alexa finished!
+  # - info:
+  #   date: 02/2021
+  #   content:
+  #     - quote:
+  #       content: Two papers on
+  #     - quote:
+  #       content: abstract reasoning
+  #       isbold: 1
+  #     - quote:
+  #       content: are accepted by CVPR 2021.
+  # - info:
+  #   date: 05/2020
+  #   content:
+  #     - quote:
+  #       content: LEMMA
+  #     - quote:
+  #       islink: 1
+  #       content: project page
+  #       link: https://sites.google.com/view/lemma-Activity
+  #     - quote:
+  #       content: released, check out our code and data!
+  # - info:
+  #   date: 12/2020
+  #   content:
+  #     - quote:
+  #       content: I advanced to candidacy! 
+  # - info:
+  #   date: 07/2020
+  #   content:
+  #     - quote:
+  #       content: One paper on
+  #     - quote:
+  #       content: multi-agent multi-task activities
+  #       isbold: 1
+  #     - quote:
+  #       content: is accepted by ECCV 2020.
+  # - info:
+  #   date: 02/2020
+  #   content:
+  #     - quote:
+  #       content: One paper on
+  #     - quote:
+  #       content: video parsing and prediction
+  #       isbold: 1
+  #     - quote:
+  #       content: is accepted by TPAMI 2020.
+  # - info:
+  #   date: 09/2019
+  #   content: 
+  #     - quote: 
+  #       content: One paper on
+  #     - quote: 
+  #       content: relational reasoning
+  #       isbold: 1
+  #     - quote:
+  #       content: accepted as 
+  #     - quote: 
+  #       content: Spotlight
+  #       isemphasize: 1
+  #     - quote: 
+  #       content: by NeurIPS 2019.
+  # - info:
+  #   date: 02/2019
+  #   content: 
+  #     - quote:
+  #       content: One paper on 
+  #     - quote:
+  #       content: IQ
+  #       isbold: 1
+  #     - quote:
+  #       content: accepted by CVPR 2019.
+  # - info:
+  #   date: 07/2018
+  #   content:
+  #     - quote:
+  #       content: One paper on 
+  #     - quote:
+  #       content: human object interaction
+  #       isbold: 1
+  #     - quote:
+  #       content: accepted by ECCV 2018.
+  # - info:
+  #   date: 05/2018
+  #   content: 
+  #     - quote:
+  #       content: One paper on
+  #     - quote:
+  #       content: human intention prediction
+  #       isbold: 1
+  #     - quote:
+  #       content: accepted by ICML 2018.
+  # - info:
+  #   date: 09/2017
+  #   content:
+  #     - quote:
+  #       content: I started my journey at UCLA.
 
 education:
   - institution: 'University of California, Los Angeles'
@@ -566,6 +594,101 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "Learning Unified Force and Position Control for Legged Loco-Manipulation"
+    isselected: 1
+    special: Oral
+    conference: "Conference on Robot Learning (CoRL) 2025"
+    label: "https://img.shields.io/badge/corl-2025-red.svg"
+    type: "https://img.shields.io/badge/CoRL2025-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Unified%20Force--Position%20Control-blue.svg"
+    releaseDate: ""
+    website: "https://unified-force.github.io/"
+    code: ""
+    paper: "/assets/publications/2025_unifp_corl/paper.pdf"
+    supplementary: ""
+    img: "/assets/publications/2025_unifp_corl/overview.gif"
+    short: "CoRL 2025"
+    authors: 
+      - name: Peiyuan Zhi*
+        website: "https://scholar.google.com/citations?user=p1JGJNwAAAAJ"
+      - name: Peiyang Li*
+        website: "https://scholar.google.com/citations?user=wVVxwm8AAAAJ"
+      - name: Jianqin Yin
+        website: "https://teacher.bupt.edu.cn/yinjianqin/zh_CN/index.htm"
+      - name: Baoxiong Jia#
+        isme: 1
+      - name: Siyuan Huang#
+        website: "https://siyuanhuang.com/"
+    supp: "(* indicates equal contribution. # indicates corresponding author.)"
+
+  - name: "GWM: Toward Scalable Gaussian World Models for Robotic Manipulation"
+    isselected: 1
+    conference: "International Conference on Computer Vision (ICCV) 2025"
+    label: "https://img.shields.io/badge/iccv-2025-red.svg"
+    type: "https://img.shields.io/badge/ICCV2025-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/-4D%20World%20Model-blue.svg"
+    releaseDate: ""
+    website: "https://gaussian-world-model.github.io/"
+    code: ""
+    paper: "assets/publications/2025_gwm_iccv/paper.pdf"
+    supplementary: ""
+    img: "/assets/publications/2025_gwm_iccv/overview.png"
+    short: "ICCV 2025"
+    authors: 
+      - name: Guanxing Lu*
+        website: "https://guanxinglu.github.io/"
+      - name: Baoxiong Jia*#
+        isme: 1
+      - name: Puhao Li*
+        website: "https://xiaoyao-li.github.io/"
+      - name: Yixin Chen
+        website: "https://yixchen.github.io"
+      - name: Ziwei Wang
+        website: "https://ziweiwangthu.github.io/"
+      - name: Yansong Tang#
+        website: "https://andytang15.github.io/"
+      - name: Siyuan Huang#
+        website: "https://siyuanhuang.com/"
+    supp: "(* indicates equal contribution. # indicates corresponding author.)"
+
+  - name: "Move to Understand a 3D Scene: Bridging Visual Grounding and Exploration for Efficient and Versatile Embodied Navigation"
+    conference: "International Conference on Computer Vision (ICCV) 2025"
+    label: "https://img.shields.io/badge/iccv-2025-red.svg"
+    type: "https://img.shields.io/badge/ICCV2025-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Embodied%20Vision%20Language-blue.svg"
+    releaseDate: ""
+    website: "https://mtu3d.github.io/"
+    code: "https://github.com/MTU3D/MTU3D"
+    paper: "/assets/publications/2025_mtu3d_iccv/paper.pdf"
+    supplementary: ""
+    img: "/assets/publications/2025_mtu3d_iccv/overview.png"
+    short: "ICCV 2025"
+    authors:
+      - name: Ziyu Zhu
+        website: "https://zhuziyu-edward.github.io/"
+      - name: Xilin Wang
+        website: "https://scholar.google.com/citations?user=NM-uHdUAAAAJ"
+      - name: Yixuan Li
+        website: "https://yixxuan-li.github.io/"
+      - name: Zhuofan Zhang
+        webiste: "https://tongclass.ac.cn/author/zhuofan-zhang/"
+      - name: Xiaojian Ma
+        website: "https://jeasinema.github.io/"
+      - name: Yixin Chen
+        website: "https://yixchen.github.io/"
+      - name: Baoxiong Jia
+        isme: 1
+      - name: Wei Liang
+        website: "https://pie-lab.cn/"
+      - name: Qian Yu
+        website: "https://yuqian1023.github.io/"
+      - name: Zhidong Deng
+      - name: Siyuan Huang
+        website: "https://siyuanhuang.com/"
+      - name: Qing Li
+        website: "https://liqing-ustc.github.io/"
+    supp: OpenSUN3D @ ECCV 2024
+
   - name: "MetaScenes: Towards Automated Replica Creation for Real-world 3D Scans"
     isselected: 1
     conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2025"
@@ -1163,7 +1286,6 @@ publications:
         website: "http://www.stat.ucla.edu/~sczhu/"
 
   - name: "ARNOLD: A Benchmark for Language-Grounded Task Learning with Continuous States in Realistic Scenes"
-    isselected: 1
     conference: "International Conference on Computer Vision (ICCV) 2023"
     label: "https://img.shields.io/badge/ICCV-2023-red.svg"
     type: "https://img.shields.io/badge/ICCV2023-Conference%20Paper-green.svg"
@@ -1228,7 +1350,6 @@ publications:
     supp: (* indicates equal contribution.)
 
   - name: "Diffusion-based Generation, Optimization, and Planning in 3D Scenes"
-    isselected: 1
     conference: "Conference on Computer Vision and Pattern Recognition (CVPR) 2023"
     label: "https://img.shields.io/badge/CVPR-2023-red.svg"
     type: "https://img.shields.io/badge/CVPR2023-Conference%20Paper-green.svg"
@@ -1260,7 +1381,6 @@ publications:
     supp: (* indicates equal contribution.)
 
   - name: "Improving Unsupervised Object-centric Learning with Query Optimization"
-    isselected: 1
     conference: "International Conference on Learning Represetnations (ICLR) 2023"
     label: "https://img.shields.io/badge/ICLR-2023-red.svg"
     type: "https://img.shields.io/badge/ICLR2023-Conference%20Paper-green.svg"
