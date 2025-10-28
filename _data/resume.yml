@@ -206,10 +206,10 @@ news:
       - quote:
         content: We won the 
       - quote:
+        content: of humanoid dancing 
+      - quote: 
         content: champion
         isemphasize: 1
-      - quote:
-        content: of humanoid dancing at the 1st
       - quote:
         content: World Humanoid Robot Games (WHRG)
         islink: 1
@@ -961,6 +961,7 @@ publications:
 
   - name: "RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning"
     isselected: 1
+    special: RoboGen@IROS2 2025 Best Open-source Award
     conference: "Robotics Science and Systems (RSS) 2025"
     label: "https://img.shields.io/badge/rss-2025-red.svg"
     type: "https://img.shields.io/badge/RSS2025-Conference%20Paper-green.svg"
