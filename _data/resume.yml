@@ -61,10 +61,163 @@ basics:
 #     highlights:
 #       - "Awarded 'Teacher of the Month'"
 news:
-  - info:
+  - info: New
     date: New
-    # date: 2025/06
+    # date: 2025/10
     isnew: 1
+    content:
+      - quote:
+        content: SceneWeaver
+        islink: 1
+        link: https://scene-weaver.github.io/
+      - quote:
+        content: receives the 
+      - quote:
+        content: Best Paper Award 
+        isemphasize: 1
+      - quote:
+        content: at 
+      - quote: 
+        content: RoboGen@IROS25
+        islink: 1
+        link: https://robogen-iros.github.io/
+      - quote:
+        content: ", checkout the"
+      - quote:
+        content: slides
+        islink: 1
+        link: assets/slides/sceneweaver.pdf
+      - quote:
+        content: and
+      - quote:
+        content: talk (EN)
+        islink: 1
+        link: https://youtu.be/ctnF06XPSv4
+      - quote:
+        content: "!"
+  - info: New
+    date: New
+    # date: 2025/10
+    isnew: 1
+    content:
+      - quote:
+        content: We won the
+      - quote:
+        content: first place
+        isemphasize: 1
+      - quote:
+        content: at the IROS 25 UniTree Dancing Challenge!
+  - info: New
+    date: New
+    # date: 2025/10
+    isnew: 1
+    content:
+      - quote:
+        content: RoboVerse
+        islink: 1
+        link: https://roboverseorg.github.io/
+      - quote:
+        content: receives the 
+      - quote:
+        content: Best Open-source Award
+        isemphasize: 1
+      - quote:
+        content: at
+      - quote: 
+        content: RoboGen@IROS25
+        islink: 1
+        link: https://robogen-iros.github.io/
+      - quote:
+        content: "!"
+  - info: New
+    date: New
+    # date: 2025/10
+    isnew: 1
+    content:
+      - quote:
+        content: Invited talk at HKU and
+      - quote:
+        content: 3DCVer
+        islink: 1
+        link: https://www.3dcver.com/page/2734639%3FnavIndex%3D3
+      - quote:
+        content: on 
+      - quote:
+        content: UniFP
+        islink: 1
+        link: "https://unified-force.github.io/"
+      - quote:
+        content: and
+      - quote:
+        content: COLA
+        islink: 1
+        link: "https://yushi-du.github.io/COLA/"
+      - quote:
+        content: ", checktout the"
+      - quote:
+        content: slides
+        islink: 1
+        link: assets/slides/force.pdf
+      - quote:
+        content: and
+      - quote:
+        content: talk (CN)
+        islink: 1
+        link: https://www.bilibili.com/video/BV1R8WnzdEgN
+      - quote:
+        content: "!"
+  - info: New
+    date: New
+    # date: 2025/09
+    isnew: 1
+    content:
+      - quote:
+        content: UniFP
+        islink: 1
+        link: "https://unified-force.github.io/"
+      - quote:
+        content: receives the
+      - quote:
+        isemphasize: 1
+        content: Best Paper Award
+      - quote:
+        content: at CoRL 2025!
+      - quote: 
+        content: Oral talk available
+      - quote:
+        content: here
+        link: https://www.youtube.com/watch?v=9lzFVQoc4Do&t=2652s
+        islink: 1
+      - quote:
+        content: "!"
+  - info: 
+    date: 2025/09
+    content:
+      - quote:
+        content: One paper on
+      - quote:
+        content: Agentic 3D Scene Generation
+        isbold: 1
+      - quote:
+        content: is accepted by NeurIPS 2025.
+  - info:
+    date: 2025/08
+    content:
+      - quote:
+        content: We won the 
+      - quote:
+        content: champion
+        isemphasize: 1
+      - quote:
+        content: of humanoid dancing at the 1st
+      - quote:
+        content: World Humanoid Robot Games (WHRG)
+        islink: 1
+        link: https://en.wikipedia.org/wiki/World_Humanoid_Robot_Games
+      - quote:
+        content: "!"
+  - info:
+    date: 2025/06
     content:
       - quote:
         content: One paper on
@@ -79,9 +232,7 @@ news:
       - quote:
         content: "!"
   - info:
-    date: New
-    # date: 2025/06
-    isnew: 1
+    date: 2025/06
     content:
       - quote:
         content: Two papers on
@@ -192,57 +343,57 @@ news:
         link: assets/slides/chinagraph2024.pdf
       - quote:
         content: "!"
-  - info:
-    date: 2024/10
-    content:
-      - quote:
-        content: I will be attending ECCV 2024 this year, see you in Milan!
-  - info:
-    date: 2024/07
-    content:
-      - quote:
-        content: I recently gave a talk on Embodied 3D Vision on 
-      - quote:
-        content: ZhiDX
-        islink: 1
-        link: https://zhidx.com/
-      - quote:
-        content: . Checkout the
-      - quote: 
-        content: slides
-        islink: 1
-        link: assets/slides/embodied3dvision.pdf
-      - quote:
-        content: "!"
-  - info:
-    date: 2024/07
-    content:
-      - quote:
-        content: SceneVerse
-        isbold: 1
-      - quote:
-        content: is accepted by ECCV 2024. Stay tuned for full data and model release at
-      - quote: 
-        content: this link
-        islink: 1
-        link: https://github.com/scene-verse/scene-verse
-      - quote:
-        content: "!"
-  - info:
-    date: 2024/07
-    content: 
-      - quote:
-        content: Three papers on
-      - quote:
-        content: 3D-VL
-        isbold: 1
-      - quote:
-        content: and
-      - quote:
-        content: Object-centric Learning
-        isbold: 1
-      - quote:
-        content: is accepted by ECCV 2024.
+  # - info:
+  #   date: 2024/10
+  #   content:
+  #     - quote:
+  #       content: I will be attending ECCV 2024 this year, see you in Milan!
+  # - info:
+  #   date: 2024/07
+  #   content:
+  #     - quote:
+  #       content: I recently gave a talk on Embodied 3D Vision on 
+  #     - quote:
+  #       content: ZhiDX
+  #       islink: 1
+  #       link: https://zhidx.com/
+  #     - quote:
+  #       content: . Checkout the
+  #     - quote: 
+  #       content: slides
+  #       islink: 1
+  #       link: assets/slides/embodied3dvision.pdf
+  #     - quote:
+  #       content: "!"
+  # - info:
+  #   date: 2024/07
+  #   content:
+  #     - quote:
+  #       content: SceneVerse
+  #       isbold: 1
+  #     - quote:
+  #       content: is accepted by ECCV 2024. Stay tuned for full data and model release at
+  #     - quote: 
+  #       content: this link
+  #       islink: 1
+  #       link: https://github.com/scene-verse/scene-verse
+  #     - quote:
+  #       content: "!"
+  # - info:
+  #   date: 2024/07
+  #   content: 
+  #     - quote:
+  #       content: Three papers on
+  #     - quote:
+  #       content: 3D-VL
+  #       isbold: 1
+  #     - quote:
+  #       content: and
+  #     - quote:
+  #       content: Object-centric Learning
+  #       isbold: 1
+  #     - quote:
+  #       content: is accepted by ECCV 2024.
   # - info:
   #   date: 2024/06
   #   content:
@@ -594,9 +745,34 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent"
+    isselected: 1
+    special: RoboGen@IROS 2025 Best Paper Award
+    conference: "Advances in Neural Information Processing Systems (NeurIPS) 2025"
+    label: "https://img.shields.io/badge/NeurIPS-2025-red.svg"
+    type: "https://img.shields.io/badge/NeurIPS2025-Conference%20Paper-green.svg"
+    theme: "https://img.shields.io/badge/Scene%20Generation%20Agent-blue.svg"
+    releaseDate: ""
+    website: "https://scene-weaver.github.io/"
+    code: "https://github.com/Scene-Weaver/SceneWeaver"
+    paper: "/assets/publications/2025_sceneweaver_neurips/paper.pdf"
+    supplementary: ""
+    img: "/assets/publications/2025_sceneweaver_neurips/overview.gif"
+    short: "NeurIPS 2025"
+    authors: 
+      - name: Yandan Yang*
+        website: "https://yandanyang.github.io"
+      - name: Baoxiong Jia*#
+        isme: 1
+      - name: Shujie Zhang
+        # website: "https://tengyu.ai/"
+      - name: Siyuan Huang#
+        website: "https://siyuanhuang.com/"
+    supp: "(* indicates equal contribution. # indicates corresponding author.)"
+
   - name: "Learning Unified Force and Position Control for Legged Loco-Manipulation"
     isselected: 1
-    special: Oral
+    special: Best Paper Award
     conference: "Conference on Robot Learning (CoRL) 2025"
     label: "https://img.shields.io/badge/corl-2025-red.svg"
     type: "https://img.shields.io/badge/CoRL2025-Conference%20Paper-green.svg"
