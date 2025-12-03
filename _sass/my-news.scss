@@ -1,0 +1,39 @@
+.news-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.news-item {
+  display: flex;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.news-date {
+  flex-shrink: 0;
+  width: 120px; /* Adjust as needed */
+  font-weight: bold;
+  text-align: center;
+}
+
+.news-content {
+  text-align: justify;
+}
+
+.news-content em {
+  color: red;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.news-date-new {
+  background-color: #d9534f;
+  color: white !important;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: bold;
+  white-space: nowrap;
+  display: inline-block;
+}
