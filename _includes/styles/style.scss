@@ -43,7 +43,7 @@
   @import "syntax";
   @import "spinner";
 
-  // @import "my-inline";
+  @import "my-news";
   @import "my-style";
 
   {% unless site.hydejack.no_google_fonts or site.no_google_fonts %}
@@ -91,6 +91,7 @@
   @import "syntax";
   @import "spinner";
 
+  @import "my-news";
   @import "my-inline";
   @import "my-style";
 

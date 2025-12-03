@@ -43,31 +43,36 @@ layout: base
          {{ "News" }}
           <span class="symbol {{ icons.news | default:'icon-earth' }}"></span>
         </h2>
+        <ul class="news-list">
         {% for info in resume.news %}
-          <!-- Implement news html here -->
-          <li>
-            {% if info.isnew.size > 0%}
-              <font color="red"><strong>&nbsp;&nbsp;{{ info.date }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></font>
-            {% else %}
-              <font color="black"> {{ info.date }} &nbsp;&nbsp;</font>
-            {% endif %}
-            {% for quote in info.content %}
-              {% if quote.isbold %}
-              <strong>{{ quote.content }}</strong>
+          <li class="news-item">
+            <span class="news-date">
+              {% if info.isnew.size > 0%}
+                <font color="red"><strong>{{ info.date }}</strong></font>
               {% else %}
-                {% if quote.isemphasize.size > 0 %}
-                <strong><font color="red"> {{ quote.content }} </font></strong>
-                {% else %}
-                  {% if quote.islink.size > 0 %}
-                    <a href="{{quote.link}}">{{ quote.content }}</a>
-                  {% else %}
-                    <font color="black"> {{ quote.content }}</font>
-                  {% endif %}
-                {% endif%}
+                <font color="black">{{ info.date }}</font>
               {% endif %}
-            {% endfor %}
+            </span>
+            <span class="news-content">
+              {% for quote in info.content %}
+                {% if quote.isbold %}
+                  <strong>{{ quote.content }}</strong>
+                {% else %}
+                  {% if quote.isemphasize.size > 0 %}
+                    <strong><font color="red"> {{ quote.content }} </font></strong>
+                  {% else %}
+                    {% if quote.islink.size > 0 %}
+                      <a href="{{quote.link}}">{{ quote.content }}</a>
+                    {% else %}
+                      <font color="black"> {{ quote.content }}</font>
+                    {% endif %}
+                  {% endif%}
+                {% endif %}
+              {% endfor %}
+            </span>
           </li>
         {% endfor %}
+        </ul>
         </section>
       {% endif %}
 
