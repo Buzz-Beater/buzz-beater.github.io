@@ -1,0 +1,20 @@
+# Conference name lookup
+# Key: short abbreviation (without year)
+# Usage in resume.yml: just specify short: "ICLR 2026"
+# The template will look up the full name and append the year automatically.
+# To add a new conference, just add a new entry here.
+
+ICLR: "International Conference on Learning Representations"
+NeurIPS: "Advances in Neural Information Processing Systems"
+CVPR: "IEEE Conference on Computer Vision and Pattern Recognition"
+ICCV: "International Conference on Computer Vision"
+ECCV: "European Conference on Computer Vision"
+ICML: "International Conference on Machine Learning"
+CoRL: "Conference on Robot Learning"
+RSS: "Robotics Science and Systems"
+ICRA: "International Conference on Robotics and Automation"
+IROS: "International Conference on Intelligent Robots and Systems"
+TPAMI: "Transactions on Pattern Analysis and Machine Intelligence"
+SciAdv: "Science Advances"
+IMWUT: "ACM International Joint Conference on Pervasive and Ubiquitous Computing"
+UbiComp: "ACM International Joint Conference on Pervasive and Ubiquitous Computing"

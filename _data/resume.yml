@@ -15,8 +15,9 @@ basics:
   #website: "https://piedpiper.com"
   summary: >
     Hi! I'm Baoxiong, a research scientist at BIGAI. I received my Ph.D in the Department of Computer Science, University of California, Los Angeles.
-    My research interests lie in the intersection of computer vision, artificial intelligence and cognitive science, with a special focus on 
+    My research interests lie in the intersection of computer vision, artificial intelligence, robotics and cognitive science, with a special focus on 
     spatial/temporal reasoning and its application to acting and planning in real world (scene/activity understanding, future prediction, grounded manipulation, etc.).
+    My recent works focuses on integrating all previous research into humanoid robots and make them helpful when I'm old :-)
 
 
 
@@ -63,6 +64,16 @@ basics:
 news:
   - info:
     date: New
+    # date: 2026/2
+    isnew: 1
+    content: Our paper [COLA](https://yushi-du.github.io/COLA/) on Human-Humanoid Collaboration is accepted by ICRA 2026, check it out!
+  - info:
+    date: New
+    # date: 2026/2
+    isnew: 1
+    content: Our paper [SceneCOT](https://scenecot.github.io/) on CoT-Reasoning in 3D scenes is accepted by ICLR 2026, check it out!
+  - info:
+    date: New
     # date: 2025/11
     isnew: 1
     content: "Invited tutorial at [EIS 2025](https://www.embedded-ai.org/2025/index.html?_t=1764730564815) hosted by ACM SIGEMBED China, checkout the [slides](assets/slides/SIGEMBED.pdf)!"
@@ -72,19 +83,13 @@ news:
     isnew: 1
     content: "Invited talk at [EAIRCon 2025](http://eaircon.zhidx.com/2025/) on 3D Gaussian World Models, checktout the [slides](assets/slides/GWM.pdf)!"
   - info:
-    date: New
-    # date: 2025/10
-    isnew: 1
+    date: 2025/10
     content: "[SceneWeaver](https://scene-weaver.github.io/) receives the *Best Paper* at [RoboGen@IROS25](https://robogen-iros.github.io/), checkout the [slides](assets/slides/sceneweaver.pdf) and [talk (EN)](https://youtu.be/ctnF06XPSv4)!"
   - info:
-    date: New
-    # date: 2025/10
-    isnew: 1
+    date: 2025/10
     content: "We won the *first place* at the IROS 25 UniTree Dancing Challenge!"
   - info:
-    date: New
-    # date: 2025/10
-    isnew: 1
+    date: 2025/10
     content: "[RoboVerse](https://roboverseorg.github.io/) receives the *Best Open-source Award* at [RoboGen@IROS25](https://robogen-iros.github.io/)!"
   - info: 
     date: 2025/10
@@ -97,7 +102,7 @@ news:
     content: "One paper on Agentic 3D Scene Generation is accepted by NeurIPS 2025."
   - info:
     date: 2025/08
-    content: "We won the of humanoid dancing *champion* at [World Humanoid Robot Games (WHRG)](https://en.wikipedia.org/wiki/World_Humanoid_Robot_Games)!"
+    content: "We won the *champion* of humanoid dancing at [World Humanoid Robot Games (WHRG)](https://en.wikipedia.org/wiki/World_Humanoid_Robot_Games)!"
   - info:
     date: 2025/06
     content: "One paper on Unified Force and Position Control is accepted by CoRL 2025 as *Oral*!"
@@ -266,13 +271,79 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "Lifting Unlabeled Internet-scale Data for 3D Scene Understanding"
+    short: CVPR 2026
+    theme: "Scaling 3D Scenes"
+    releaseDate: ""
+    website: ""
+    code: ""
+    paper: ""
+    supplementary: ""
+    img: "/assets/img/timg.jpeg"
+    authors:
+      - key: yixinchen
+      - key: yaoweizhang
+      - key: huangyueyu
+      - key: junchaohe
+      - key: yanwang
+      - key: jiangyonghuang
+      - key: hongyushen
+      - key: junfengni
+      - key: shaofeiwang
+      - key: baoxiongjia
+      - key: songchunzhu
+      - key: siyuanhuang
+
+  - name: "Learning Human-Humanoid Coordination for Collaborative Object Carrying"
+    isselected: 1
+    short: "ICRA 2026"
+    theme: "Human-Robot Collaboration"
+    releaseDate: ""
+    website: "https://yushi-du.github.io/COLA/"
+    code: ""
+    paper: ""
+    supplementary: ""
+    img: "/assets/img/timg.jpeg"
+    authors:
+      - key: yushidu
+        tags: [equal]
+      - key: yixuanli
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [equal, corresponding]
+      - key: yutanglin
+      - key: peizhou
+      - key: weiliang
+        tags: [corresponding]
+      - key: yanchaoyang
+        tags: [corresponding]
+      - key: siyuanhuang
+        tags: [corresponding]
+
+  - name: "SceneCOT: Eliciting Grounded Chain-of-Thought Reasoning in 3D Scenes"
+    isselected: 1
+    short: "ICLR 2026"
+    theme: "3D-CoT Reasoning"
+    releaseDate: ""
+    website: "https://scenecot.github.io/"
+    code: "https://github.com/SceneCOT/scenecot"
+    paper: ""
+    supplementary: ""
+    img: "/assets/img/timg.jpeg"
+    authors:
+      - key: xiongkunlinghu
+      - key: jiangyonghuang
+      - key: ziyuzhu
+      - key: baoxiongjia
+        tags: [corresponding]
+      - key: siyuanhuang
+        tags: [corresponding]
+
   - name: "SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent"
     isselected: 1
     special: RoboGen@IROS 2025 Best Paper Award
-    conference: "Advances in Neural Information Processing Systems (NeurIPS) 2025"
-    label: "https://img.shields.io/badge/NeurIPS-2025-red.svg"
-    type: "https://img.shields.io/badge/NeurIPS2025-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Scene%20Generation%20Agent-blue.svg"
+    short: "NeurIPS 2025"
+    theme: "Scene Generation Agent"
     releaseDate: ""
     website: "https://scene-weaver.github.io/"
     code: "https://github.com/Scene-Weaver/SceneWeaver"
@@ -281,23 +352,19 @@ publications:
     img: "/assets/publications/2025_sceneweaver_neurips/overview.gif"
     short: "NeurIPS 2025"
     authors: 
-      - name: Yandan Yang*
-        website: "https://yandanyang.github.io"
-      - name: Baoxiong Jia*#
-        isme: 1
-      - name: Shujie Zhang
-        # website: "https://tengyu.ai/"
-      - name: Siyuan Huang#
-        website: "https://siyuanhuang.com/"
-    supp: "(* indicates equal contribution. # indicates corresponding author.)"
+      - key: yandanyang
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [equal, corresponding]
+      - key: shujiezhang
+      - key: siyuanhuang
+        tags: [corresponding]
 
   - name: "Learning Unified Force and Position Control for Legged Loco-Manipulation"
     isselected: 1
     special: Best Paper Award
-    conference: "Conference on Robot Learning (CoRL) 2025"
-    label: "https://img.shields.io/badge/corl-2025-red.svg"
-    type: "https://img.shields.io/badge/CoRL2025-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Unified%20Force--Position%20Control-blue.svg"
+    short: "CoRL 2025"
+    theme: "Unified Force-Position Control"
     releaseDate: ""
     website: "https://unified-force.github.io/"
     code: ""
@@ -306,24 +373,20 @@ publications:
     img: "/assets/publications/2025_unifp_corl/overview.gif"
     short: "CoRL 2025"
     authors: 
-      - name: Peiyuan Zhi*
-        website: "https://scholar.google.com/citations?user=p1JGJNwAAAAJ"
-      - name: Peiyang Li*
-        website: "https://scholar.google.com/citations?user=wVVxwm8AAAAJ"
-      - name: Jianqin Yin
-        website: "https://teacher.bupt.edu.cn/yinjianqin/zh_CN/index.htm"
-      - name: Baoxiong Jia#
-        isme: 1
-      - name: Siyuan Huang#
-        website: "https://siyuanhuang.com/"
-    supp: "(* indicates equal contribution. # indicates corresponding author.)"
+      - key: peiyuanzhi
+        tags: [equal]
+      - key: peiyangle
+        tags: [equal]
+      - key: jianqinyin
+      - key: baoxiongjia
+        tags: [corresponding]
+      - key: siyuanhuang
+        tags: [corresponding]
 
   - name: "GWM: Toward Scalable Gaussian World Models for Robotic Manipulation"
     isselected: 1
-    conference: "International Conference on Computer Vision (ICCV) 2025"
-    label: "https://img.shields.io/badge/iccv-2025-red.svg"
-    type: "https://img.shields.io/badge/ICCV2025-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/-4D%20World%20Model-blue.svg"
+    short: "ICCV 2025"
+    theme: "4D World Model"
     releaseDate: ""
     website: "https://gaussian-world-model.github.io/"
     code: ""
@@ -332,27 +395,22 @@ publications:
     img: "/assets/publications/2025_gwm_iccv/overview.png"
     short: "ICCV 2025"
     authors: 
-      - name: Guanxing Lu*
-        website: "https://guanxinglu.github.io/"
-      - name: Baoxiong Jia*#
-        isme: 1
-      - name: Puhao Li*
-        website: "https://xiaoyao-li.github.io/"
-      - name: Yixin Chen
-        website: "https://yixchen.github.io"
-      - name: Ziwei Wang
-        website: "https://ziweiwangthu.github.io/"
-      - name: Yansong Tang#
-        website: "https://andytang15.github.io/"
-      - name: Siyuan Huang#
-        website: "https://siyuanhuang.com/"
-    supp: "(* indicates equal contribution. # indicates corresponding author.)"
+      - key: guanxinglu
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [equal, corresponding]
+      - key: puhaoli
+        tags: [equal]
+      - key: yixinchen
+      - key: ziweiwang
+      - key: yansongtang
+        tags: [corresponding]
+      - key: siyuanhuang
+        tags: [corresponding]
 
   - name: "Move to Understand a 3D Scene: Bridging Visual Grounding and Exploration for Efficient and Versatile Embodied Navigation"
-    conference: "International Conference on Computer Vision (ICCV) 2025"
-    label: "https://img.shields.io/badge/iccv-2025-red.svg"
-    type: "https://img.shields.io/badge/ICCV2025-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Embodied%20Vision%20Language-blue.svg"
+    short: "ICCV 2025"
+    theme: "Embodied Vision Language"
     releaseDate: ""
     website: "https://mtu3d.github.io/"
     code: "https://github.com/MTU3D/MTU3D"
@@ -361,37 +419,24 @@ publications:
     img: "/assets/publications/2025_mtu3d_iccv/overview.png"
     short: "ICCV 2025"
     authors:
-      - name: Ziyu Zhu
-        website: "https://zhuziyu-edward.github.io/"
-      - name: Xilin Wang
-        website: "https://scholar.google.com/citations?user=NM-uHdUAAAAJ"
-      - name: Yixuan Li
-        website: "https://yixxuan-li.github.io/"
-      - name: Zhuofan Zhang
-        webiste: "https://tongclass.ac.cn/author/zhuofan-zhang/"
-      - name: Xiaojian Ma
-        website: "https://jeasinema.github.io/"
-      - name: Yixin Chen
-        website: "https://yixchen.github.io/"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Wei Liang
-        website: "https://pie-lab.cn/"
-      - name: Qian Yu
-        website: "https://yuqian1023.github.io/"
-      - name: Zhidong Deng
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-      - name: Qing Li
-        website: "https://liqing-ustc.github.io/"
+      - key: ziyuzhu
+      - key: xilinwang
+      - key: yixuanli
+      - key: zhuofanzhang
+      - key: xiaojianma
+      - key: yixinchen
+      - key: baoxiongjia
+      - key: weiliang2
+      - key: qianyu
+      - key: zhidongdeng
+      - key: siyuanhuang
+      - key: qingli
     supp: OpenSUN3D @ ECCV 2024
 
   - name: "MetaScenes: Towards Automated Replica Creation for Real-world 3D Scans"
     isselected: 1
-    conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2025"
-    label: "https://img.shields.io/badge/cvpr-2025-red.svg"
-    type: "https://img.shields.io/badge/CVPR2025-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Digital%20Twin%20Creation-blue.svg"
+    short: "CVPR 2025"
+    theme: "Digital Twin Creation"
     releaseDate: ""
     website: "https://meta-scenes.github.io/"
     code: ""
@@ -400,38 +445,26 @@ publications:
     img: "/assets/publications/2025_metascenes_cvpr/overview.gif"
     short: "CVPR 2025"
     authors: 
-      - name: Huangyue Yu*
-        website: "https://jason-aplp.github.io/Ruijie-Lu/"
-      - name: Baoxiong Jia*
-        isme: 1
-      - name: Yixin Chen*
-        website: "https://yixchen.github.io"
-      - name: Yandan Yang
-        website: "https://yandanyang.github.io"
-      - name: Puhao Li
-        website: "https://xiaoyao-li.github.io/"
-      - name: Rongpeng Su
-        website: https://scholar.google.com/citations?user=rY-Ndl0AAAAJ
-      - name: Jiaxin Li
-        website: https://gauleejx.github.io/
-      - name: Qing Li
-        website: "https://liqing-ustc.github.io/"
-      - name: Wei Liang
-        website: "https://liangwei-bit.github.io/web/"
-      - name: Song-Chun Zhu
-        website: "https://zhusongchun.net/"
-      - name: Tengyu Liu
-        website: "https://tengyu.ai/"
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-    supp: (* indicates equal contribution.)
+      - key: huangyueyu
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [equal]
+      - key: yixinchen
+        tags: [equal]
+      - key: yandanyang
+      - key: puhaoli
+      - key: rongpengsu
+      - key: jiaxinli
+      - key: qingli
+      - key: weiliang2
+      - key: songchunzhu
+      - key: tengyuliu
+      - key: siyuanhuang
 
   - name: "Unveiling the Mist over 3D Vision-Language Understanding: Object-centric Evaluation with Chain-of-Analysis"
     isselected: 1
-    conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2025"
-    label: "https://img.shields.io/badge/cvpr-2025-red.svg"
-    type: "https://img.shields.io/badge/CVPR2025-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/3D--VL%20Evaluation-blue.svg"
+    short: "CVPR 2025"
+    theme: "3D-VL Evaluation"
     releaseDate: ""
     img: "/assets/publications/2025_beacon3d_cvpr/overview.png"
     short: "CVPR 2025"
@@ -439,30 +472,21 @@ publications:
     paper: "/assets/publications/2025_beacon3d_cvpr/paper.pdf"
     code: "https://github.com/beacon-3d/beacon-3d"
     authors:
-      - name: Jiangyong Huang*
-        website: "https://huangjy-pku.github.io/"
-      - name: Baoxiong Jia*
-        isme: 1
-      - name: Yan Wang
-        website: "https://github.com/jetpackfirstme"
-      - name: Ziyu Zhu
-        website: "https://scholar.google.com/citations?user=Zhh8nbQAAAAJ"
-      - name: Xiongkun Linghu
-        website: "https://github.com/Germany321"
-      - name: Qing Li
-        website: "https://liqing-ustc.github.io/"
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-    supp: (* indicates equal contribution.)
+      - key: jiangyonghuang
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [equal]
+      - key: yanwang
+      - key: ziyuzhu
+      - key: xiongkunlinghu
+      - key: qingli
+      - key: songchunzhu
+      - key: siyuanhuang
   
   - name: "Masked Point-Entity Contrast for Open-Vocabulary 3D Scene Understanding"
     isselected: 1
-    conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2025"
-    label: "https://img.shields.io/badge/cvpr-2025-red.svg"
-    type: "https://img.shields.io/badge/CVPR2025-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/3D--VL%20Pre--training-blue.svg"
+    short: "CVPR 2025"
+    theme: "3D-VL Pre-training"
     releaseDate: ""
     img: "/assets/publications/2025_mpec_cvpr/overview.png"
     short: "CVPR 2025"
@@ -470,23 +494,18 @@ publications:
     paper: "/assets/publications/2025_beacon3d_cvpr/paper.pdf"
     code: ""
     authors:
-      - name: Yan Wang*
-        website: "https://github.com/jetpackfirstme"
-      - name: Baoxiong Jia*
-        isme: 1
-      - name: Ziyu Zhu
-        website: "https://scholar.google.com/citations?user=Zhh8nbQAAAAJ"
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-    supp: (* indicates equal contribution.)
+      - key: yanwang
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [equal]
+      - key: ziyuzhu
+      - key: siyuanhuang
 
   - name: "RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning"
     isselected: 1
     special: RoboGen@IROS2 2025 Best Open-source Award
-    conference: "Robotics Science and Systems (RSS) 2025"
-    label: "https://img.shields.io/badge/rss-2025-red.svg"
-    type: "https://img.shields.io/badge/RSS2025-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Unified%20Simulation%20Platform-blue.svg"
+    short: "RSS 2025"
+    theme: "Unified Simulation Platform"
     releaseDate: ""
     website: "https://roboverseorg.github.io/"
     code: ""
@@ -495,86 +514,58 @@ publications:
     img: "/assets/publications/2025_roboverse_rss/overview.png"
     short: "RSS 2025"
     authors: 
-      - name: Haoran Geng*
-        website: https://geng-haoran.github.io/
-      - name: Feishi Wang*
-        website: https://fisher-wang.github.io/
-      - name: Songlin Wei*
-        website: 
-      - name: Yuyang Li*
-        website: https://yuyangli.com/
-      - name: Bangjun Wang*
-        website: https://www.bangjunwang.com/
-      - name: Boshi An*
-        website: https://boshi-an.github.io/
-      - name: Charlie Tianyue Cheng*
-        website: https://charlietcheng.github.io/
-      - name: Haozhe Lou
-        website: https://scholar.google.com/citations?user=BIPK9KEAAAAJ
-      - name: Peihao Li
-        website: https://www.linkedin.com/business-manager-api/bzmEnterpriseAccessCookie/in/peihao-li-555660225/
-      - name: Yen-Jen Wang
-        website: https://wangyenjen.github.io/
-      - name: Yutong Liang
-        website: https://www.lyt0112.com/
-      - name: Dylan Goetting
-        website: https://scholar.google.com/citations?user=JF9J8uUAAAAJ
-      - name: Chaoyi Xu
-        website: https://co1one.github.io/
-      - name: Haozhe Chen
-        website: https://blog.chenhaozhe.top/
-      - name: Yuxi Qian
-        website: https://scholar.google.com/citations?user=KmGNBSMAAAAJ
-      - name: Yiran Geng
-        website: https://gengyiran.github.io/
-      - name: Jiageng Mao
-        website: https://pointscoder.github.io/
-      - name: Weikang Wan
-        website: https://wkwan7.github.io/
-      - name: Mingtong Zhang
-        website: https://robo-alex.github.io/
-      - name: Jiangran Lyu
-        website: https://jiangranlv.github.io/
-      - name: Siheng Zhao
-        website: https://sihengz02.github.io/
-      - name: Jiazhao Zhang
-        website: https://jzhzhang.github.io/
-      - name: Jialiang Zhang
-        website: https://mzhmxzh.github.io/
-      - name: Chengyang Zhao
-        website: https://chengyzhao.github.io/
-      - name: Haoran Lu
-        website: https://luhr2003.github.io/
-      - name: Yufei Ding
-        website: https://selina2023.github.io/
-      - name: Ran Gong
-        website: https://nikepupu.github.io/
-      - name: Yuran Wang
-      - name: Yuxuan Kuang
-        website: https://yuxuank.com/
-      - name: Ruihai Wu
-        website: https://warshallrho.github.io/
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Carlo Sferrazza
-        website: https://sferrazza.cc/
-      - name: Hao Dong
-        website: https://zsdonghao.github.io/
-      - name: Siyuan Huang#
-        website: "https://siyuanhuang.com/"
-      - name: Yue Wang#
-        website: https://people.eecs.berkeley.edu/~malik/
-      - name: Jitendra Malik#
-        website: https://people.eecs.berkeley.edu/~malik/
-      - name: Pieter Abbeel#
-        website: https://people.eecs.berkeley.edu/~pabbeel/
-    supp: (* indicates equal contribution.)
+      - key: haorangeng
+        tags: [equal]
+      - key: feishiwang
+        tags: [equal]
+      - key: songlinwei
+        tags: [equal]
+      - key: yuyangli
+        tags: [equal]
+      - key: bangjunwang
+        tags: [equal]
+      - key: boshian
+        tags: [equal]
+      - key: charliecheng
+        tags: [equal]
+      - key: haozelou
+      - key: peihaoli
+      - key: yenjenwang
+      - key: yutongliang
+      - key: dylangoetting
+      - key: chaoyixu
+      - key: haozhechen
+      - key: yuxiqian
+      - key: yirangeng
+      - key: jiagengmao
+      - key: weikangwan
+      - key: mingtongzhang
+      - key: jiangranlyu
+      - key: sihengzhao
+      - key: jiazhaozhang
+      - key: jialiangzhang
+      - key: chengyangzhao
+      - key: haoranlu
+      - key: yufeiding
+      - key: rangong
+      - key: yuranwang
+      - key: yuxuankuang
+      - key: ruihaiwu
+      - key: baoxiongjia
+      - key: carlosferrazza
+      - key: haodong
+      - key: siyuanhuang
+        tags: [corresponding]
+      - key: yuewang
+        tags: [corresponding]
+      - key: jitendramalik
+        tags: [corresponding]
+      - key: pieterabbeel
+        tags: [corresponding]
 
   - name: "MOVIS: Enhancing Multi-Object Novel View Synthesis for Indoor Scenes"
-    conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2025"
-    label: "https://img.shields.io/badge/cvpr-2025-red.svg"
-    type: "https://img.shields.io/badge/CVPR2025-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Novel%20View%20Synthesis-blue.svg"
+    short: "CVPR 2025"
+    theme: "Novel View Synthesis"
     releaseDate: ""
     website: ""
     code: ""
@@ -583,30 +574,21 @@ publications:
     img: "/assets/publications/2025_movis_cvpr/overview.png"
     short: "CVPR 2025"
     authors: 
-      - name: Ruijie Lu*
-        website: "https://jason-aplp.github.io/Ruijie-Lu/"
-      - name: Yixin Chen*
-        website: "https://yixchen.github.io"
-      - name: Junfeng Ni
-        website: "https://dali-jack.github.io/Junfeng-Ni/"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Yu Liu
-        website: "https://yuliu-ly.github.io/"
-      - name: Diwen Wan
-        website: "https://scholar.google.com/citations?user=gWWaiWYAAAAJ"
-      - name: Gang Zeng
-        website: "https://www.cis.pku.edu.cn/info/1177/1378.htm"
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-    supp: (* indicates equal contribution.)
+      - key: ruijielu
+        tags: [equal]
+      - key: yixinchen
+        tags: [equal]
+      - key: junfengni
+      - key: baoxiongjia
+      - key: yuliu
+      - key: diwenwan
+      - key: gangzeng
+      - key: siyuanhuang
   
   - name: "Buliding Interactable Replicas of Complex Articulated Objects via Gaussian Splatting"
     isselected: 1
-    conference: "International Conference on Learning Representations (ICLR) 2025"
-    label: "https://img.shields.io/badge/iclr-2025-red.svg"
-    type: "https://img.shields.io/badge/ICLR2025-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Articulated%20Object%20Reconstruction-blue.svg"
+    short: "ICLR 2025"
+    theme: "Articulated Object Reconstruction"
     releaseDate: ""
     website: "https://articulate-gs.github.io/"
     code: ""
@@ -615,26 +597,19 @@ publications:
     img: "/assets/publications/2025_artgs_iclr/overview.gif"
     short: "ICLR 2025"
     authors: 
-      - name: Yu Liu*
-        website: "https://yuliu-ly.github.io/"
-      - name: Baoxiong Jia*
-        isme: 1
-      - name: Ruijie Lu
-        website: "https://jason-aplp.github.io/Ruijie-Lu/"
-      - name: Junfeng Ni
-        website: "https://dali-jack.github.io/Junfeng-Ni/"
-      - name: Song-Chun Zhu
-        website: "https://zhusongchun.net/"
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-    supp: (* indicates equal contribution.)
+      - key: yuliu
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [equal]
+      - key: ruijielu
+      - key: junfengni
+      - key: songchunzhu
+      - key: siyuanhuang
 
   - name: "Closed-Loop Open-Vocabulary Mobile Manipulation with GPT-4V"
     isselected: 1
-    conference: "International Conference on Robotics and Automation (ICRA) 2025"
-    label: "https://img.shields.io/badge/iclr-2025-red.svg"
-    type: "https://img.shields.io/badge/ICRA2025-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Open--Vocabulary%20Mobile%20Manipulation-blue.svg"
+    short: "ICRA 2025"
+    theme: "Open-Vocabulary Mobile Manipulation"
     releaseDate: ""
     website: "https://come-robot.github.io/"
     code: ""
@@ -643,31 +618,23 @@ publications:
     img: "/assets/publications/2025_comerobot_icra/overview.png"
     short: "ICRA 2025"
     authors: 
-      - name: Peiyuan Zhi*
-        website: "https://scholar.google.com/citations?user=p1JGJNwAAAAJ"
-      - name: Zhiyuan Zhang*
-        website: "https://zhiyuan-zhang0206.github.io/"
-      - name: Yu Zhao
-        website: 
-      - name: Muzhi Han
-        website: "https://sites.google.com/view/muzhihan/home"
-      - name: Zeyu Zhang
-        website: "https://zeyuzhang.com/"
-      - name: Zhitian Li
-        website:
-      - name: Ziyuan Jiao
-        website: "https://sites.google.com/g.ucla.edu/zyjiao"
-      - name: Baoxiong Jia#
-        isme: 1
-      - name: Siyuan Huang#
-        website: "https://siyuanhuang.com/"
-    supp: "(* indicates equal contribution. # indicates corresponding author.)"
+      - key: peiyuanzhi
+        tags: [equal]
+      - key: zhiyuanzhang
+        tags: [equal]
+      - key: yuzhao
+      - key: muzhihan
+      - key: zeyuzhang
+      - key: zhitianli
+      - key: ziyuanjiao
+      - key: baoxiongjia
+        tags: [corresponding]
+      - key: siyuanhuang
+        tags: [corresponding]
 
   - name: "PhysPart: Physically Plausible Part Completion for Interactable Objects"
-    conference: "International Conference on Robotics and Automation (ICRA) 2025"
-    label: "https://img.shields.io/badge/iclr-2025-red.svg"
-    type: "https://img.shields.io/badge/ICRA2025-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Articulated%20Part%20Generation-blue.svg"
+    short: "ICRA 2025"
+    theme: "Articulated Part Generation"
     releaseDate: ""
     website: ""
     code: ""
@@ -676,30 +643,21 @@ publications:
     img: "/assets/publications/2025_physpart_icra/overview.gif"
     short: "ICRA 2025"
     authors: 
-      - name: Rundong Luo*
-        website: "https://red-fairy.github.io/"
-      - name: Haoran Geng*
-        website: "https://geng-haoran.github.io/"
-      - name: Congyue Deng
-        website: "https://cs.stanford.edu/~congyue/"
-      - name: Puhao Li
-        website: "https://xiaoyao-li.github.io/"
-      - name: Zan Wang
-        website: "https://silvester.wang/"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Leonidas Guibas
-        website: "https://geometry.stanford.edu/member/guibas/"
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-    supp: "(* indicates equal contribution.)"
+      - key: rundongluo
+        tags: [equal]
+      - key: haorangeng
+        tags: [equal]
+      - key: congyuedeng
+      - key: puhaoli
+      - key: zanwang
+      - key: baoxiongjia
+      - key: leonidasguibas
+      - key: siyuanhuang
 
   - name: "MSR3D: Multi-modal Situated Reasoning in 3D Scenes"
     isselected: 1
-    conference: "Advances in Neural Information Processing Systems (NeurIPS) 2024"
-    label: "https://img.shields.io/badge/neurips-2024-red.svg"
-    type: "https://img.shields.io/badge/NeurIPS2024-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Multi--modal%20Situated%20Reasoning-blue.svg"
+    short: "NeurIPS 2024"
+    theme: "Multi-modal Situated Reasoning"
     releaseDate: ""
     website: "https://msr3d.github.io/"
     code: "https://github.com/MSR3D/MSR3D"
@@ -707,26 +665,22 @@ publications:
     supplementary: ""
     img: "/assets/publications/2024_msr3d_neurips/overview.png"
     authors:
-      - name: Xiongkun Linghu*
-        website: "https://github.com/Germany321"
-      - name: Jiangyong Huang*
-        website: "https://huangjy-pku.github.io/"
-      - name: Xuesong Niu*
-        website: "https://nxsedson.github.io/"
-      - name: Xiaojian Ma
-        website: "https://jeasinema.github.io/"
-      - name: Baoxiong Jia#
-        isme: 1
-      - name: Siyuan Huang#
-        website: "https://siyuanhuang.com"
-    supp: "(* indicates equal contribution. # indicates corresponding author.)"
+      - key: xiongkunlinghu
+        tags: [equal]
+      - key: jiangyonghuang
+        tags: [equal]
+      - key: xuesongniu
+        tags: [equal]
+      - key: xiaojianma
+      - key: baoxiongjia
+        tags: [corresponding]
+      - key: siyuanhuang
+        tags: [corresponding]
 
   - name: "SceneVerse: Scaling 3D Vision-Language Learning for Grounded Scene Understanding"
     isselected: 1
-    conference: "European Conference on Computer Vision (ECCV) 2024"
-    label: "https://img.shields.io/badge/eccv-2024-red.svg"
-    type: "https://img.shields.io/badge/ECCV2024-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/-3D%20Vision%20Language-blue.svg"
+    short: "ECCV 2024"
+    theme: "3D Vision Language"
     releaseDate: ""
     website: "https://scene-verse.github.io/"
     code: "https://github.com/scene-verse/sceneverse"
@@ -735,30 +689,22 @@ publications:
     img: "/assets/publications/2024_sceneverse_eccv/overview.png"
     # short: "NeurIPS 2022"
     authors:
-      - name: Baoxiong Jia*
-        isme: 1
-      - name: Yixin Chen*
-        website: "yixchen.github.io/"
-      - name: Huangyue Yu
-        website: "https://scholar.google.com/citations?user=fKRgnIMAAAAJ"
-      - name: Yan Wang
-        website: "https://github.com/jetpackfirstme"
-      - name: Xuesong Niu
-        website: "https://nxsedson.github.io/"
-      - name: Tengyu Liu
-        website: "https://tengyu.ai/"
-      - name: Qing Li
-        website: "https://liqing-ustc.github.io/"
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-    supp: OpenSUN3D @ ECCV 2024 (* indicates equal contribution)
+      - key: baoxiongjia
+        tags: [equal]
+      - key: yixinchen
+        tags: [equal]
+      - key: huangyueyu
+      - key: yanwang
+      - key: xuesongniu
+      - key: tengyuliu
+      - key: qingli
+      - key: siyuanhuang
+    supp: "OpenSUN3D @ ECCV 2024"
   
   - name: "SlotLifter: Slot-guided Feature Lifting for Learning Object-centric Radiance Fields"
     isselected: 1
-    conference: "European Conference on Computer Vision (ECCV) 2024"
-    label: "https://img.shields.io/badge/eccv-2024-red.svg"
-    type: "https://img.shields.io/badge/ECCV2024-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Unsupervised%203D%20Object--centric%20Learning-blue.svg"
+    short: "ECCV 2024"
+    theme: "Unsupervised 3D Object-centric Learning"
     releaseDate: ""
     website: "https://slotlifter.github.io/"
     code: ""
@@ -767,21 +713,17 @@ publications:
     img: "/assets/publications/2024_slotlifter_eccv/overview.gif"
     short: "ICLR 2023"
     authors: 
-      - name: Yu Liu*
-        website: "https://yuliu-ly.github.io/"
-      - name: Baoxiong Jia*
-        isme: 1
-      - name: Yixin Chen
-        website: "yixchen.github.io/"
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-    supp: Wild3D @ ECCV 2024 (* indicates equal contribution.)
+      - key: yuliu
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [equal]
+      - key: yixinchen
+      - key: siyuanhuang
+    supp: "Wild3D @ ECCV 2024"
   
   - name: "Unifying 3D Vision-Language Understanding via Promptable Queries"
-    conference: "European Conference on Computer Vision (ECCV) 2024"
-    label: "https://img.shields.io/badge/eccv-2024-red.svg"
-    type: "https://img.shields.io/badge/ECCV2024-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/-3D%20Vision%20Language-blue.svg"
+    short: "ECCV 2024"
+    theme: "3D Vision Language"
     releaseDate: ""
     website: "https://pq3d.github.io/"
     code: "https://github.com/PQ3D/PQ3D"
@@ -790,31 +732,21 @@ publications:
     img: "/assets/publications/2024_pq3d_eccv/overview.png"
     # short: "NeurIPS 2022"
     authors:
-      - name: Ziyu Zhu
-        website: "https://zhuziyu-edward.github.io/"
-      - name: Zhuofan Zhang
-        webiste: "https://tongclass.ac.cn/author/zhuofan-zhang/"
-      - name: Xiaojian Ma
-        website: "https://jeasinema.github.io/"
-      - name: Xuesong Niu
-        website: "https://nxsedson.github.io/"
-      - name: Yixin Chen
-        website: "yixchen.github.io/"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Zhidong Deng
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-      - name: Qing Li
-        website: "https://liqing-ustc.github.io/"
+      - key: ziyuzhu
+      - key: zhuofanzhang
+      - key: xiaojianma
+      - key: xuesongniu
+      - key: yixinchen
+      - key: baoxiongjia
+      - key: zhidongdeng
+      - key: siyuanhuang
+      - key: qingli
     supp: OpenSUN3D @ ECCV 2024
 
   - name: "An Embodied Generalist Agent in 3D World"
     isselected: 1
-    conference: "International Conference on Machine Learning (ICML) 2024"
-    label: "https://img.shields.io/badge/ICML-2024-red.svg"
-    type: "https://img.shields.io/badge/ICML2024-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Embodied%20Generalist%20Agent-blue.svg"
+    short: "ICML 2024"
+    theme: "Embodied Generalist Agent"
     releaseDate: ""
     img: "/assets/publications/2024_leo_icml/overview.png"
     short: "ICML 2024"
@@ -822,33 +754,25 @@ publications:
     paper: "/assets/publications/2024_leo_icml/paper.pdf"
     code: "https://github.com/embodied-generalist/embodied-generalist"
     authors:
-      - name: Jiangyong Huang*
-        website: "https://huangjy-pku.github.io/"
-      - name: Silong Yong*
-        website: "https://silongyong.github.io/"
-      - name: Xiaojian Ma*
-        website: "https://jeasinema.github.io/"
-      - name: Xiongkun Linghu
-        website: "https://github.com/Germany321"
-      - name: Puhao Li
-        website: "https://xiaoyao-li.github.io/"
-      - name: Yan Wang
-        website: "https://github.com/jetpackfirstme"
-      - name: Qing Li
-        website: "https://liqing-ustc.github.io/"
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-    supp: GenAI4DM & AGI @ ICLR 2024 (* indicates equal contribution.)
+      - key: jiangyonghuang
+        tags: [equal]
+      - key: silongyong
+        tags: [equal]
+      - key: xiaojianma
+        tags: [equal]
+      - key: xiongkunlinghu
+      - key: puhaoli
+      - key: yanwang
+      - key: qingli
+      - key: songchunzhu
+      - key: baoxiongjia
+      - key: siyuanhuang
+    supp: "GenAI4DM & AGI @ ICLR 2024"
 
   - name: "Human-level Few-shot Concept Induction through Minimax Entropy Learning"
-    conference: "Science Advances (SciAdv) 2024"
-    label: "https://img.shields.io/badge/SciAdv2024-red.svg"
-    type: "https://img.shields.io/badge/SciAdv2024-Journal%20Paper-yellow"
-    theme: "https://img.shields.io/badge/Few--shot%20Concept%20Learning-blue.svg"
+    short: "SciAdv 2024"
+    pubkind: journal
+    theme: "Few-shot Concept Learning"
     releaseDate: ""
     website: ""
     code: ""
@@ -857,22 +781,15 @@ publications:
     img: "/assets/publications/2024_minimax_sciadv/overview.png"
     short: "Science Advances 2024"
     authors:
-      - name: Chi Zhang
-        website: "https://wellyzhang.github.io/"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Yixin Zhu
-        website: "https://yzhu.io/"
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-
+      - key: chizhang
+      - key: baoxiongjia
+      - key: yixinzhu
+      - key: songchunzhu
   - name: "PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI"
     isselected: 1
     special: Highlight
-    conference: "Conference on Computer Vision and Pattern Recognition (CVPR) 2024"
-    label: "https://img.shields.io/badge/CVPR-2024-red.svg"
-    type: "https://img.shields.io/badge/CVPR2024-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Physics--Guided%20Scene%20Synthesis-blue.svg"
+    short: "CVPR 2024"
+    theme: "Physics-Guided Scene Synthesis"
     releaseDate: ""
     website: "https://physcene.github.io/"
     code: "https://github.com/PhyScene/PhyScene"
@@ -881,23 +798,19 @@ publications:
     img: "/assets/publications/2024_physcene_cvpr/overview.gif"
     short: "CVPR 2024"
     authors: 
-      - name: Yandan Yang*
-        website: "https://yandanyang.github.io"
-      - name: Baoxiong Jia*
-        isme: 1
-      - name: Peiyuan Zhi
-        # website: "https://tengyu.ai/"
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-    supp: AI3DG @ CVPR 2024 (* indicates equal contribution.)
+      - key: yandanyang
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [equal]
+      - key: peiyuanzhi
+      - key: siyuanhuang
+    supp: "AI3DG @ CVPR 2024"
 
   - name: "Move as You Say, Interact as You Can: Language-guided Human Motion Generation with Scene Affordance"
     isselected: 1
     special: Highlight
-    conference: "Conference on Computer Vision and Pattern Recognition (CVPR) 2024"
-    label: "https://img.shields.io/badge/CVPR-2024-red.svg"
-    type: "https://img.shields.io/badge/CVPR2024-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Language--guided%20Motion%20Generation%20with%20Scene%20Affordance-blue.svg"
+    short: "CVPR 2024"
+    theme: "Language-guided Motion Generation with Scene Affordance"
     releaseDate: ""
     website: "https://afford-motion.github.io/"
     code: "https://github.com/afford-motion/afford-motion"
@@ -906,34 +819,22 @@ publications:
     img: "/assets/publications/2024_movecan_cvpr/overview.gif"
     short: "CVPR 2024"
     authors: 
-      - name: Zan Wang
-        website: "https://silvester.wang/"
-      - name: Yixin Chen
-        website: "https://yixchen.github.io/"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Puhao Li
-        website: "https://xiaoyao-li.github.io/"
-      - name: Jinlu Zhang
-        website: "https://jinluzhang.site/"
-      - name: Jingze Zhang
-        # website: 
-      - name: Tengyu Liu
-        website: "https://tengyu.ai/"
-      - name: Yixin Zhu
-        website: "https://yzhu.io/"
-      - name: Wei Liang
-        website: "https://liangwei-bit.github.io/web/"
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
+      - key: zanwang
+      - key: yixinchen
+      - key: baoxiongjia
+      - key: puhaoli
+      - key: jinluzhang
+      - key: jingzezhang
+      - key: tengyuliu
+      - key: yixinzhu
+      - key: weiliang2
+      - key: siyuanhuang
     supp: HuMoGen @ CVPR 2024
       
   - name: "ProBio: A Protocol-guided Multimodal Dataset for Molecular Biology Lab"
-    conference: "Advances in Neural Information Processing System (NeurIPS) 2023"
     # special: Track on Datasets and Benchmarks
-    label: "https://img.shields.io/badge/NeurIPS-2023-red.svg"
-    type: "https://img.shields.io/badge/NeurIPS2023-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/-Procedural%20Understanding-blue.svg"
+    short: "NeurIPS 2023"
+    theme: "Procedural Understanding"
     releaseDate: ""
     website: "https://probio-dataset.github.io/"
     code: "https://github.com/jiemingcui/probio/"
@@ -942,27 +843,21 @@ publications:
     img: "/assets/publications/2023_probio_nips/overview.png"
     short: "NeurIPS 2022"
     authors: 
-      - name: Jieming Cui*
-        website: "https://jiemingcui.github.io/"
-      - name: Ziren Gong*
-      - name: Baoxiong Jia*
-        isme: 1
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-      - name: Zilong Zheng
-        website: "https://zilongzheng.github.io/"
-      - name: Jianzhu Ma
-        website: "https://majianzhu.com/"
-      - name: Yixin Zhu
-        website: "https://yzhu.io/"
-    supp: (* indicates equal contribution.)
+      - key: jiemingcui
+        tags: [equal]
+      - key: zirongong
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [equal]
+      - key: siyuanhuang
+      - key: zilongzheng
+      - key: jianzhuma
+      - key: yixinzhu
 
   - name: "X-VoE: Measuring eXplanatory Violation of Expectation in Physical Events"
-    conference: "International Conference on Computer Vision (ICCV) 2023"
     special: Oral
-    label: "https://img.shields.io/badge/ICCV-2023-red.svg"
-    type: "https://img.shields.io/badge/ICCV2023-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Explanatory%20Violation%20of%20Expectation-blue.svg"
+    short: "ICCV 2023"
+    theme: "Explanatory Violation of Expectation"
     releaseDate: ""
     website: "https://sites.google.com/view/x-voe"
     code: "https://github.com/daibopku/X-VoE"
@@ -970,24 +865,16 @@ publications:
     img: "/assets/publications/2023_xvoe_iccv/overview.png"
     short: "ICCV 2023"
     authors:
-      - name: Bo Dai
-      - name: Linge Wang
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Zeyu Zhang
-        website: "https://zeyuzhang.com/"
-      - name: Chi Zhang
-        website: "https://wellyzhang.github.io/"
-      - name: Yixin Zhu
-        website: "https://yzhu.io/"
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-
+      - key: bodai
+      - key: lingewang
+      - key: baoxiongjia
+      - key: zeyuzhang
+      - key: chizhang
+      - key: yixinzhu
+      - key: songchunzhu
   - name: "ARNOLD: A Benchmark for Language-Grounded Task Learning with Continuous States in Realistic Scenes"
-    conference: "International Conference on Computer Vision (ICCV) 2023"
-    label: "https://img.shields.io/badge/ICCV-2023-red.svg"
-    type: "https://img.shields.io/badge/ICCV2023-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Language%20Grounding%20in%20Robot%20Manipulation-blue.svg"
+    short: "ICCV 2023"
+    theme: "Language Grounding in Robot Manipulation"
     releaseDate: ""
     img: "/assets/publications/2023_arnold_iccv/arnold.gif"
     short: "ICCV 2023"
@@ -995,34 +882,27 @@ publications:
     paper: "/assets/publications/2023_arnold_iccv/paper.pdf"
     code: "https://github.com/arnold-benchmark/arnold"
     authors:
-      - name: Ran Gong*
-        website: "https://nikepupu.github.io/"
-      - name: Jiangyong Huang*
-        website: "https://huangjy-pku.github.io/"
-      - name: Yizhou Zhao
-        website: "https://www.zyz.lol/app/aboutme/aboutme.html"
-      - name: Haoran Geng
-        website: "https://geng-haoran.github.io/"
-      - name: Xiaofeng Gao
-        website: "https://xfgao.github.io/"
-      - name: Qingyang Wu
-      - name: Wensi Ai
-      - name: Ziheng Zhou
-      - name: Demetri Terzopoulos
-        website: "https://www.cs.ucla.edu/~dt/"
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-      - name: Baoxiong Jia#
-        isme: 1
-      - name: Siyuan Huang#
-        website: "https://siyuanhuang.com/"
-    supp: "LangRob @ CoRL 2022 (* indicates equal contribution. # indicates corresponding author.)"
+      - key: rangong
+        tags: [equal]
+      - key: jiangyonghuang
+        tags: [equal]
+      - key: yizhouzhao
+      - key: haorangeng
+      - key: xiaofenggao
+      - key: qingyangwu
+      - key: wensiai
+      - key: zihengzhou
+      - key: demetriterzopoulos
+      - key: songchunzhu
+      - key: baoxiongjia
+        tags: [corresponding]
+      - key: siyuanhuang
+        tags: [corresponding]
+    supp: "LangRob @ CoRL 2022"
 
   - name: "Learning a Causal Transition Model for Object Cutting"
-    conference: "International Conference on Intelligent Robots and Systems (IROS) 2023"
-    label: "https://img.shields.io/badge/IROS-2023-red.svg"
-    type: "https://img.shields.io/badge/IROS2023-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Caual%20Transitions-blue.svg"
+    short: "IROS 2023"
+    theme: "Caual Transitions"
     releaseDate: ""
     website: ""
     code: ""
@@ -1031,27 +911,19 @@ publications:
     img: "/assets/publications/2023_cut_iros/overview.png"
     short: "IROS 2023"
     authors: 
-      - name: Zeyu Zhang*
-        website: "https://zeyuzhang.com/"
-      - name: Muzhi Han*
-        website: "https://sites.google.com/view/muzhihan/home"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Ziyuan Jiao
-        website: "https://sites.google.com/g.ucla.edu/zyjiao"
-      - name: Yixin Zhu
-        website: "https://yzhu.io/"
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-      - name: Hangxin Liu
-        website: "https://liuhx111.github.io/"
-    supp: (* indicates equal contribution.)
+      - key: zeyuzhang
+        tags: [equal]
+      - key: muzhihan
+        tags: [equal]
+      - key: baoxiongjia
+      - key: ziyuanjiao
+      - key: yixinzhu
+      - key: songchunzhu
+      - key: hangxinliu
 
   - name: "Diffusion-based Generation, Optimization, and Planning in 3D Scenes"
-    conference: "Conference on Computer Vision and Pattern Recognition (CVPR) 2023"
-    label: "https://img.shields.io/badge/CVPR-2023-red.svg"
-    type: "https://img.shields.io/badge/CVPR2023-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Diffusion%20Models%20for%203D-blue.svg"
+    short: "CVPR 2023"
+    theme: "Diffusion Models for 3D"
     releaseDate: ""
     website: "https://scenediffuser.github.io/"
     code: "https://github.com/scenediffuser/Scene-Diffuser"
@@ -1060,29 +932,20 @@ publications:
     img: "/assets/publications/2023_scenediffuser_cvpr/overview.png"
     short: "CVPR 2023"
     authors: 
-      - name: Siyuan Huang*
-        website: "https://siyuanhuang.com/"
-      - name: Zan Wang*
-        website: "https://silvester.wang/"
-      - name: Puhao Li
-        website: "https://xiaoyao-li.github.io/"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Tengyu Liu
-        website: "https://tengyu.ai/"
-      - name: Yixin Zhu
-        website: "https://yzhu.io/"
-      - name: Wei Liang
-        website: "https://liangwei-bit.github.io/web/"
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-    supp: (* indicates equal contribution.)
+      - key: siyuanhuang
+        tags: [equal]
+      - key: zanwang
+        tags: [equal]
+      - key: puhaoli
+      - key: baoxiongjia
+      - key: tengyuliu
+      - key: yixinzhu
+      - key: weiliang2
+      - key: songchunzhu
 
   - name: "Improving Unsupervised Object-centric Learning with Query Optimization"
-    conference: "International Conference on Learning Represetnations (ICLR) 2023"
-    label: "https://img.shields.io/badge/ICLR-2023-red.svg"
-    type: "https://img.shields.io/badge/ICLR2023-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Unsupervised%20Object--centric%20Learning-blue.svg"
+    short: "ICLR 2023"
+    theme: "Unsupervised Object-centric Learning"
     releaseDate: ""
     website: "https://bo-qsa.github.io"
     code: "https://github.com/YuLiu-LY/BO-QSA"
@@ -1091,20 +954,16 @@ publications:
     img: "/assets/publications/2023_boqsa_iclr/overview.gif"
     short: "ICLR 2023"
     authors: 
-      - name: Baoxiong Jia*
-        isme: 1
-      - name: Yu Liu*
-        website: "https://yuliu-ly.github.io/"
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-    supp: (* indicates equal contribution.)
+      - key: baoxiongjia
+        tags: [equal]
+      - key: yuliu
+        tags: [equal]
+      - key: siyuanhuang
 
   - name: "EgoTaskQA: Understanding Human Tasks in Egocentric Videos"
-    conference: "Advances in Neural Information Processing System (NeurIPS) 2022"
     # special: Track on Datasets and Benchmarks
-    label: "https://img.shields.io/badge/NeurIPS-2022-red.svg"
-    type: "https://img.shields.io/badge/NeurIPS2022-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/-Egocentric%20Goal--oriented%20Reasoning-blue.svg"
+    short: "NeurIPS 2022"
+    theme: "Egocentric Goal-oriented Reasoning"
     releaseDate: ""
     website: "https://sites.google.com/view/egotaskqa"
     code: "https://github.com/Buzz-Beater/EgoTaskQA"
@@ -1113,19 +972,13 @@ publications:
     img: "/assets/publications/2022_egotaskqa_nips/overview.png"
     short: "NeurIPS 2022"
     authors: 
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Ting Lei
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-
+      - key: baoxiongjia
+      - key: tinglei
+      - key: songchunzhu
+      - key: siyuanhuang
   - name: "Learning Algebraic Representation for Systematic Generalization in Contextual Decision Processes"
-    conference: "European Conference on Computer Vision (ECCV) 2022"
-    label: "https://img.shields.io/badge/ECCV-2022-red.svg"
-    type: "https://img.shields.io/badge/ECCV2022-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/-Systematic%20Generalization-blue.svg"
+    short: "ECCV 2022"
+    theme: "Systematic Generalization"
     releaseDate: ""
     website: "http://wellyzhang.github.io/project/alans.html"
     code: "https://github.com/WellyZhang/ALANS"
@@ -1134,25 +987,19 @@ publications:
     img: "/assets/publications/2022_alans_eccv/overview.png"
     short: "ECCV 2022"
     authors: 
-      - name: Chi Zhang*
-        website: "https://wellyzhang.github.io/"
-      - name: Sirui Xie*
-        website: "https://siruixie.com/"
-      - name: Baoxiong Jia*
-        isme: 1
-      - name: Yixin Zhu
-        website: "https://yzhu.io/"
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-      - name: Ying Nian Wu
-        website: "http://www.stat.ucla.edu/~ywu/"
-    supp: (* indicates equal contribution.)
+      - key: chizhang
+        tags: [equal]
+      - key: siruixie
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [equal]
+      - key: yixinzhu
+      - key: songchunzhu
+      - key: yingnianwu
 
   - name: "Latent Diffusion Energy-Based Model for Interpretable Text Modeling"
-    conference: "International Conference on Machine Learning (ICML) 2022"
-    label: "https://img.shields.io/badge/ICML-2022-red.svg"
-    type: "https://img.shields.io/badge/ICML2022-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/-Diffusion%20Models%20and%20Latent%20EBM-blue.svg"
+    short: "ICML 2022"
+    theme: "Diffusion Models and Latent EBM"
     website: ""
     code: "https://github.com/yuPeiyu98/LDEBM"
     paper: "/assets/publications/2022_ldebm_icml/paper.pdf"
@@ -1160,29 +1007,18 @@ publications:
     img: "/assets/publications/2022_ldebm_icml/overview.png"
     short: "ICML 2022"
     authors:
-      - name: Peiyu Yu
-        website: 
-      - name: Sirui Xie
-        website: "https://siruixie.com/"
-      - name: Xiaojian Ma
-        website: "https://web.cs.ucla.edu/~xm/"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Bo Pang
-      - name: Ruiqi Gao
-        website: "https://ruiqigao.github.io/"
-      - name: Yixin Zhu
-        website: "https://yzhu.io/"
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-      - name: Ying Nian Wu
-        website: "http://www.stat.ucla.edu/~ywu/"
-
+      - key: peiyuyu
+      - key: siruixie
+      - key: xiaojianma
+      - key: baoxiongjia
+      - key: bopang
+      - key: ruiqigao
+      - key: yixinzhu
+      - key: songchunzhu
+      - key: yingnianwu
   - name: "ACRE: Abstract Causal REasoning Beyond Covariation"
-    conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2021"
-    label: "https://img.shields.io/badge/CVPR-2021-red.svg"
-    type: "https://img.shields.io/badge/CVPR2021-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/-Abstract%20Causal%20Reasoning-blue.svg"
+    short: "CVPR 2021"
+    theme: "Abstract Causal Reasoning"
     releaseDate: ""
     website: "http://wellyzhang.github.io/project/acre.html"
     code: "https://github.com/WellyZhang/ACRE"
@@ -1191,23 +1027,15 @@ publications:
     img: "/assets/publications/2021_acre_cvpr/overview.jpg"
     short: "CVPR 2021"
     authors: 
-      - name: Chi Zhang
-        website: "http://wellyzhang.github.io/"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Mark Edmonds
-        website: "https://mjedmonds.com/"
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-      - name: Yixin Zhu
-        website: "https://yzhu.io/"
-    supp: (* indicates equal contribution.)
+      - key: chizhang
+      - key: baoxiongjia
+      - key: markedmonds
+      - key: songchunzhu
+      - key: yixinzhu
         
   - name: "Abstract Spatial-Temporal Reasoning via Probabilistic Abduction and Execution"
-    conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2021"
-    label: "https://img.shields.io/badge/CVPR-2021-red.svg"
-    type: "https://img.shields.io/badge/CVPR2021-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/-Abstract%20Spatial--Temporal%20Reasoning-blue.svg"
+    short: "CVPR 2021"
+    theme: "Abstract Spatial-Temporal Reasoning"
     releaseDate: ""
     website: "http://wellyzhang.github.io/project/prae.html"
     code: "https://github.com/WellyZhang/PrAE"
@@ -1216,21 +1044,16 @@ publications:
     img: "/assets/publications/2021_prae_cvpr/overview.png"
     short: "CVPR 2021"
     authors: 
-      - name: Chi Zhang*
-        website: "http://wellyzhang.github.io/"
-      - name: Baoxiong Jia*
-        isme: 1
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-      - name: Yixin Zhu
-        website: "https://yzhu.io/"
-    supp: (* indicates equal contribution.)
+      - key: chizhang
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [equal]
+      - key: songchunzhu
+      - key: yixinzhu
 
   - name: "LEMMA: A Multi-view Dataset for Learning Multi-agent Multi-task Activities"
-    conference: "European Conference on Computer Vision (ECCV) 2020"
-    label: "https://img.shields.io/badge/ECCV-2020-red.svg"
-    type: "https://img.shields.io/badge/ECCV2020-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/Dataset-blue.svg"
+    short: "ECCV 2020"
+    theme: "Dataset"
     releaseDate: ""
     website: "https://sites.google.com/view/lemma-activity"
     code: "https://github.com/Buzz-Beater/LEMMA"
@@ -1239,22 +1062,15 @@ publications:
     img: "/assets/publications/2020_lemma_eccv/overview.jpg"
     short: "ECCV 2020"
     authors: 
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Yixin Chen
-        website: "https://yixchen.github.io/"
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-      - name: Yixin Zhu
-        website: "https://yzhu.io/"
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-
+      - key: baoxiongjia
+      - key: yixinchen
+      - key: siyuanhuang
+      - key: yixinzhu
+      - key: songchunzhu
   - name: "A Generalized Earley Parser for Human Activity Parsing and Prediction"
-    conference: "Transactions on Pattern Analysis and Machine Intelligence (TPAMI) 2020"
-    label: "https://img.shields.io/badge/TPAMI2020-red.svg"
-    type: "https://img.shields.io/badge/TPAMI2020-Journal%20Paper-yellow"
-    theme: "https://img.shields.io/badge/-Grammar%20Parsing%20and%20Intention%20Prediction-blue.svg"
+    short: "TPAMI 2020"
+    pubkind: journal
+    theme: "Grammar Parsing and Intention Prediction"
     releaseDate: ""
     website: ""
     code: "https://github.com/Buzz-Beater/GEP_PAMI"
@@ -1263,23 +1079,15 @@ publications:
     img: "/assets/publications/2020_gep_pami/overview.jpg"
     short: "TPAMI 2020"
     authors:
-      - name: Siyuan Qi
-        website: "http://web.cs.ucla.edu/~syqi/"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Siyuan Huang
-        website: "https://siyuanhuang.com/"
-      - name: Ping Wei
-        website: "http://www.stat.ucla.edu/~pwei/"
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-
+      - key: siyuanqi
+      - key: baoxiongjia
+      - key: siyuanhuang
+      - key: pingwei
+      - key: songchunzhu
   - name: Learning Perceptual Inference by Contrasting
-    conference: "Conference on Neural Information Processing Systems (NeurIPS) 2019"
     special: "Spotlight"
-    label: "https://img.shields.io/badge/NeurIPS-2019-red.svg"
-    type: "https://img.shields.io/badge/NeurIPS2019-Conference%20Paper-green"
-    theme: "https://img.shields.io/badge/-Relational%20Reasoning-blue.svg"
+    short: "NeurIPS 2019"
+    theme: "Relational Reasoning"
     releaseDate: ""
     website: "http://wellyzhang.github.io/project/copinet.html"
     code: "https://github.com/WellyZhang/CoPINet"
@@ -1288,25 +1096,19 @@ publications:
     img: "/assets/publications/2019_iq_nips/overview.jpg"
     short: "NeurIPS 2019"
     authors:
-      - name: Chi Zhang*
-        website: "http://wellyzhang.github.io/"
-      - name: Baoxiong Jia*
-        isme: 1
-      - name: Feng Gao
-        website: "https://fen9.github.io/"
-      - name: Yixin Zhu
-        website: "https://www.yzhu.io/"
+      - key: chizhang
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [equal]
+      - key: fenggao
+      - key: yixinzhu
       - name: Hongjing lu
         website: "http://cvl.psych.ucla.edu/"
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-    supp: (* indicates equal contribution.)
+      - key: songchunzhu
 
   - name: "RAVEN: A Dataset for Relational and Analogical Visual rEasoNing"
-    conference: "IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2019"
-    label: "https://img.shields.io/badge/CVPR-2019-red.svg"
-    type: "https://img.shields.io/badge/CVPR2019-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/-Relational%20Reasoning-blue.svg"
+    short: "CVPR 2019"
+    theme: "Relational Reasoning"
     releaseDate: ""
     website: "http://wellyzhang.github.io/project/raven.html"
     code: "https://github.com/WellyZhang/RAVEN"
@@ -1315,23 +1117,17 @@ publications:
     img: "/assets/publications/2019_iq_cvpr/overview.jpg"
     short: "CVPR 2019"
     authors:
-        - name: Chi Zhang*
-          website: "http://wellyzhang.github.io/"
-        - name: Feng Gao*
-          website: "https://fen9.github.io/"
-        - name: Baoxiong Jia
-          isme: 1
-        - name: Yixin Zhu
-          website: "https://www.yzhu.io/"
-        - name: Song-Chun Zhu
-          website: "http://www.stat.ucla.edu/~sczhu/"
-    supp: (* indicates equal contribution.)
+        - key: chizhang
+          tags: [equal]
+        - key: fenggao
+          tags: [equal]
+        - key: baoxiongjia
+        - key: yixinzhu
+        - key: songchunzhu
   
   - name: "Learning Human-Object Interactions by Graph Parsing Neural Networks"
-    conference: "European Conference on Computer Vision (ECCV) 2018"
-    label: "https://img.shields.io/badge/ECCV-2018-red.svg"
-    type: "https://img.shields.io/badge/ECCV2018-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/-Graph%20Parsing%20Neural%20Network-blue.svg"
+    short: "ECCV 2018"
+    theme: "Graph Parsing Neural Network"
     releaseDate: ""
     website: ""
     code: "https://github.com/SiyuanQi/gpnn"
@@ -1340,22 +1136,17 @@ publications:
     img: "/assets/publications/2018_gpnn_eccv/overview.jpg"
     short: "ECCV 2018"
     authors: 
-      - name: Siyuan Qi*
-        website: "http://web.cs.ucla.edu/~syqi/"
-      - name: Wenguan Wang*
-        website: "https://sites.google.com/site/wenguanwangwwg/"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Jianbin Shen
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-    supp: (* indicates equal contribution.)
+      - key: siyuanqi
+        tags: [equal]
+      - key: wenguanwang
+        tags: [equal]
+      - key: baoxiongjia
+      - key: jianbinshen
+      - key: songchunzhu
 
   - name: "Generalized Earley Parser: Bridging Symbolic Grammars and Sequence Data for Future Prediction"
-    conference: "International Conference on Machine Learning (ICML) 2018"
-    label: "https://img.shields.io/badge/ICML-2018-red.svg"
-    type: "https://img.shields.io/badge/ICML2018-Conference%20Paper-green.svg"
-    theme: "https://img.shields.io/badge/-Grammar%20Parsing%20and%20Intention%20Prediction-blue.svg"
+    short: "ICML 2018"
+    theme: "Grammar Parsing and Intention Prediction"
     website: "http://proceedings.mlr.press/v80/qi18a.html"
     code: "https://github.com/SiyuanQi/generalized-earley-parser"
     paper: "/assets/publications/2018_gep_icml/paper.pdf"
@@ -1363,18 +1154,13 @@ publications:
     img: "/assets/publications/2018_gep_icml/overview.jpg"
     short: "ICML 2018"
     authors:
-      - name: Siyuan Qi
-        website: "http://web.cs.ucla.edu/~syqi/"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Song-Chun Zhu
-        website: "http://www.stat.ucla.edu/~sczhu/"
-
+      - key: siyuanqi
+      - key: baoxiongjia
+      - key: songchunzhu
   - name: "Mining User Reviews for Mobile App Comparison"
-    conference: "ACM International Joint Conference on Pervasive and Ubiquitous Computing (UbiComp) 2017"
-    label: "https://img.shields.io/badge/UbiComp-2017-red.svg"
-    type: "https://img.shields.io/badge/IMWUT2017-Journal%20Paper-yellow"
-    theme: "https://img.shields.io/badge/-Review%20Analysis%20and%20Recommandation%20Systems-blue.svg"
+    short: "IMWUT 2017"
+    pubkind: journal
+    theme: "Review Analysis and Recommandation Systems"
     website: "https://dl.acm.org/citation.cfm?id=3130935"
     code: ""
     paper: "/assets/publications/2017_review_ubicomp/paper.pdf"
@@ -1382,36 +1168,7 @@ publications:
     img: "/assets/publications/2017_review_ubicomp/overview.jpg"
     short: "IMWUT 2017"
     authors: 
-      - name: Yuanchun Li
-        website: "http://ylimit.github.io/"
-      - name: Baoxiong Jia
-        isme: 1
-      - name: Yao Guo
-        website: "http://sei.pku.edu.cn/~yaoguo/"
-      - name: Xiangqun Chen
-# skills:
-#   - name: "Web Development"
-#     level: "Master"
-#     keywords:
-#       - "HTML"
-#       - "CSS"
-#       - "Javascript"
-#   - name: "Compression"
-#     level: "Master"
-#     keywords:
-#       - "Mpeg"
-#       - "MP4"
-#       - "GIF"
-# languages:
-#   - language: "English"
-#     fluency: "Native speaker"
-# interests:
-#   - name: "Wildlife"
-#     keywords:
-#       - "Ferrets"
-#       - "Unicorns"
-# references:
-#   - name: "Erlich Bachman"
-#     reference: >
-#       It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
-#       Company proved that he will be a valuable addition to any company.
+      - key: yuanchunli
+      - key: baoxiongjia
+      - key: yaoguo
+      - key: xiangqunchen

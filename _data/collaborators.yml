@@ -1,0 +1,480 @@
+# Collaborator directory for publications
+# Keys are full firstname-lastname (all lowercase, no spaces)
+# Usage in resume.yml:
+#   authors:
+#     - key: siyuanhuang            # looks up name & website from here
+#     - key: siyuanhuang
+#       suffix: "#"                 # renders as "Siyuan Huang#"
+#     - key: baoxiongjia
+#       suffix: "*"
+#     - name: New Person            # inline still works for one-off authors
+#       website: "https://..."
+
+# ===== Self =====
+baoxiongjia:
+  name: Baoxiong Jia
+  isme: 1
+
+# ===== Frequent Collaborators =====
+siyuanhuang:
+  name: Siyuan Huang
+  website: "https://siyuanhuang.com/"
+
+songchunzhu:
+  name: Song-Chun Zhu
+  website: "http://www.stat.ucla.edu/~sczhu/"
+
+yixinzhu:
+  name: Yixin Zhu
+  website: "https://yzhu.io/"
+
+yixinchen:
+  name: Yixin Chen
+  website: "https://yixchen.github.io/"
+
+qingli:
+  name: Qing Li
+  website: "https://liqing-ustc.github.io/"
+
+puhaoli:
+  name: Puhao Li
+  website: "https://xiaoyao-li.github.io/"
+
+ziyuzhu:
+  name: Ziyu Zhu
+  website: "https://zhuziyu-edward.github.io/"
+
+xiaojianma:
+  name: Xiaojian Ma
+  website: "https://jeasinema.github.io/"
+
+tengyuliu:
+  name: Tengyu Liu
+  website: "https://tengyu.ai/"
+
+jiangyonghuang:
+  name: Jiangyong Huang
+  website: "https://huangjy-pku.github.io/"
+
+xiongkunlinghu:
+  name: Xiongkun Linghu
+  website: "https://github.com/Germany321"
+
+chizhang:
+  name: Chi Zhang
+  website: "https://wellyzhang.github.io/"
+
+yuliu:
+  name: Yu Liu
+  website: "https://yuliu-ly.github.io/"
+
+yanwang:
+  name: Yan Wang
+  website: "https://github.com/jetpackfirstme"
+
+yandanyang:
+  name: Yandan Yang
+  website: "https://yandanyang.github.io"
+
+peiyuanzhi:
+  name: Peiyuan Zhi
+  website: "https://scholar.google.com/citations?user=p1JGJNwAAAAJ"
+
+haorangeng:
+  name: Haoran Geng
+  website: "https://geng-haoran.github.io/"
+
+zanwang:
+  name: Zan Wang
+  website: "https://silvester.wang/"
+
+xuesongniu:
+  name: Xuesong Niu
+  website: "https://nxsedson.github.io/"
+
+zhuofanzhang:
+  name: Zhuofan Zhang
+  website: "https://tongclass.ac.cn/author/zhuofan-zhang/"
+
+zhidongdeng:
+  name: Zhidong Deng
+
+zeyuzhang:
+  name: Zeyu Zhang
+  website: "https://zeyuzhang.com/"
+
+ziyuanjiao:
+  name: Ziyuan Jiao
+  website: "https://sites.google.com/g.ucla.edu/zyjiao"
+
+yingnianwu:
+  name: Ying Nian Wu
+  website: "http://www.stat.ucla.edu/~ywu/"
+
+junfengni:
+  name: Junfeng Ni
+  website: "https://dali-jack.github.io/Junfeng-Ni/"
+
+ruijielu:
+  name: Ruijie Lu
+  website: "https://jason-aplp.github.io/Ruijie-Lu/"
+
+siyuanqi:
+  name: Siyuan Qi
+  website: "http://web.cs.ucla.edu/~syqi/"
+
+muzhihan:
+  name: Muzhi Han
+  website: "https://sites.google.com/view/muzhihan/home"
+
+siruixie:
+  name: Sirui Xie
+  website: "https://siruixie.com/"
+
+rangong:
+  name: Ran Gong
+  website: "https://nikepupu.github.io/"
+
+huangyueyu:
+  name: Huangyue Yu
+  website: "https://scholar.google.com/citations?user=fKRgnIMAAAAJ"
+
+jiemingcui:
+  name: Jieming Cui
+  website: "https://jiemingcui.github.io/"
+
+zilongzheng:
+  name: Zilong Zheng
+  website: "https://zilongzheng.github.io/"
+
+jianzhuma:
+  name: Jianzhu Ma
+  website: "https://majianzhu.com/"
+
+ziweiwang:
+  name: Ziwei Wang
+  website: "https://ziweiwangthu.github.io/"
+
+yansongtang:
+  name: Yansong Tang
+  website: "https://andytang15.github.io/"
+
+guanxinglu:
+  name: Guanxing Lu
+  website: "https://guanxinglu.github.io/"
+
+yixuanli:
+  name: Yixuan Li
+  website: "https://yixxuan-li.github.io/"
+
+xilinwang:
+  name: Xilin Wang
+  website: "https://scholar.google.com/citations?user=NM-uHdUAAAAJ"
+
+qianyu:
+  name: Qian Yu
+  website: "https://yuqian1023.github.io/"
+
+weiliang:
+  name: Wei Liang
+  website: "https://pie-lab.cn/"
+
+rongpengsu:
+  name: Rongpeng Su
+  website: "https://scholar.google.com/citations?user=rY-Ndl0AAAAJ"
+
+jiaxinli:
+  name: Jiaxin Li
+  website: "https://gauleejx.github.io/"
+
+rundongluo:
+  name: Rundong Luo
+  website: "https://red-fairy.github.io/"
+
+congyuedeng:
+  name: Congyue Deng
+  website: "https://cs.stanford.edu/~congyue/"
+
+leonidasguibas:
+  name: Leonidas Guibas
+  website: "https://geometry.stanford.edu/member/guibas/"
+
+hangxinliu:
+  name: Hangxin Liu
+  website: "https://liuhx111.github.io/"
+
+demetriterzopoulos:
+  name: Demetri Terzopoulos
+  website: "https://www.cs.ucla.edu/~dt/"
+
+jinluzhang:
+  name: Jinlu Zhang
+  website: "https://jinluzhang.site/"
+
+fenggao:
+  name: Feng Gao
+  website: "https://fen9.github.io/"
+
+hongjinglu:
+  name: Hongjing Lu
+  website: "http://cvl.psych.ucla.edu/"
+
+pingwei:
+  name: Ping Wei
+  website: "http://www.stat.ucla.edu/~pwei/"
+
+yuanchunli:
+  name: Yuanchun Li
+  website: "http://ylimit.github.io/"
+
+yaoguo:
+  name: Yao Guo
+  website: "http://sei.pku.edu.cn/~yaoguo/"
+
+xiangqunchen:
+  name: Xiangqun Chen
+
+wenguanwang:
+  name: Wenguan Wang
+  website: "https://sites.google.com/site/wenguanwangwwg/"
+
+zhiyuanzhang:
+  name: Zhiyuan Zhang
+  website: "https://zhiyuan-zhang0206.github.io/"
+
+zhitianli:
+  name: Zhitian Li
+
+peiyangle:
+  name: Peiyang Li
+  website: "https://scholar.google.com/citations?user=wVVxwm8AAAAJ"
+
+jianqinyin:
+  name: Jianqin Yin
+  website: "https://teacher.bupt.edu.cn/yinjianqin/zh_CN/index.htm"
+
+shujiezhang:
+  name: Shujie Zhang
+
+peiyuyu:
+  name: Peiyu Yu
+
+bopang:
+  name: Bo Pang
+
+ruiqigao:
+  name: Ruiqi Gao
+  website: "https://ruiqigao.github.io/"
+
+markedmonds:
+  name: Mark Edmonds
+  website: "https://mjedmonds.com/"
+
+bodai:
+  name: Bo Dai
+
+lingewang:
+  name: Linge Wang
+
+tinglei:
+  name: Ting Lei
+
+yizhouzhao:
+  name: Yizhou Zhao
+  website: "https://www.zyz.lol/app/aboutme/aboutme.html"
+
+xiaofenggao:
+  name: Xiaofeng Gao
+  website: "https://xfgao.github.io/"
+
+qingyangwu:
+  name: Qingyang Wu
+
+wensiai:
+  name: Wensi Ai
+
+zihengzhou:
+  name: Ziheng Zhou
+
+jingzezhang:
+  name: Jingze Zhang
+
+zirongong:
+  name: Ziren Gong
+
+silongyong:
+  name: Silong Yong
+  website: "https://silongyong.github.io/"
+
+jianbinshen:
+  name: Jianbin Shen
+
+# ===== RoboVerse large author list =====
+feishiwang:
+  name: Feishi Wang
+  website: "https://fisher-wang.github.io/"
+
+songlinwei:
+  name: Songlin Wei
+
+yuyangli:
+  name: Yuyang Li
+  website: "https://yuyangli.com/"
+
+bangjunwang:
+  name: Bangjun Wang
+  website: "https://www.bangjunwang.com/"
+
+boshian:
+  name: Boshi An
+  website: "https://boshi-an.github.io/"
+
+charliecheng:
+  name: Charlie Tianyue Cheng
+  website: "https://charlietcheng.github.io/"
+
+haozelou:
+  name: Haozhe Lou
+  website: "https://scholar.google.com/citations?user=BIPK9KEAAAAJ"
+
+peihaoli:
+  name: Peihao Li
+  website: "https://www.linkedin.com/business-manager-api/bzmEnterpriseAccessCookie/in/peihao-li-555660225/"
+
+yenjenwang:
+  name: Yen-Jen Wang
+  website: "https://wangyenjen.github.io/"
+
+yutongliang:
+  name: Yutong Liang
+  website: "https://www.lyt0112.com/"
+
+dylangoetting:
+  name: Dylan Goetting
+  website: "https://scholar.google.com/citations?user=JF9J8uUAAAAJ"
+
+chaoyixu:
+  name: Chaoyi Xu
+  website: "https://co1one.github.io/"
+
+haozhechen:
+  name: Haozhe Chen
+  website: "https://blog.chenhaozhe.top/"
+
+yuxiqian:
+  name: Yuxi Qian
+  website: "https://scholar.google.com/citations?user=KmGNBSMAAAAJ"
+
+yirangeng:
+  name: Yiran Geng
+  website: "https://gengyiran.github.io/"
+
+jiagengmao:
+  name: Jiageng Mao
+  website: "https://pointscoder.github.io/"
+
+weikangwan:
+  name: Weikang Wan
+  website: "https://wkwan7.github.io/"
+
+mingtongzhang:
+  name: Mingtong Zhang
+  website: "https://robo-alex.github.io/"
+
+jiangranlyu:
+  name: Jiangran Lyu
+  website: "https://jiangranlv.github.io/"
+
+sihengzhao:
+  name: Siheng Zhao
+  website: "https://sihengz02.github.io/"
+
+jiazhaozhang:
+  name: Jiazhao Zhang
+  website: "https://jzhzhang.github.io/"
+
+jialiangzhang:
+  name: Jialiang Zhang
+  website: "https://mzhmxzh.github.io/"
+
+chengyangzhao:
+  name: Chengyang Zhao
+  website: "https://chengyzhao.github.io/"
+
+haoranlu:
+  name: Haoran Lu
+  website: "https://luhr2003.github.io/"
+
+yufeiding:
+  name: Yufei Ding
+  website: "https://selina2023.github.io/"
+
+yuranwang:
+  name: Yuran Wang
+
+yuxuankuang:
+  name: Yuxuan Kuang
+  website: "https://yuxuank.com/"
+
+ruihaiwu:
+  name: Ruihai Wu
+  website: "https://warshallrho.github.io/"
+
+carlosferrazza:
+  name: Carlo Sferrazza
+  website: "https://sferrazza.cc/"
+
+haodong:
+  name: Hao Dong
+  website: "https://zsdonghao.github.io/"
+
+yuewang:
+  name: Yue Wang
+  website: "https://people.eecs.berkeley.edu/~malik/"
+
+jitendramalik:
+  name: Jitendra Malik
+  website: "https://people.eecs.berkeley.edu/~malik/"
+
+pieterabbeel:
+  name: Pieter Abbeel
+  website: "https://people.eecs.berkeley.edu/~pabbeel/"
+
+yuzhao:
+  name: Yu Zhao
+
+gangzeng:
+  name: Gang Zeng
+  website: "https://www.cis.pku.edu.cn/info/1177/1378.htm"
+
+diwenwan:
+  name: Diwen Wan
+  website: "https://scholar.google.com/citations?user=gWWaiWYAAAAJ"
+
+yushidu:
+  name: Yushi Du
+  website: "https://yushi-du.github.io/"
+
+yanchaoyang:
+  name: Yanchao Yang
+  website: "https://yanchaoyang.github.io/"
+
+peizhou:
+  name: Pei Zhou
+  website: "https://github.com/PeiZhou26"
+
+yaoweizhang:
+  name: Yaowei Zhang
+  website: "https://github.com/vvcatstar"
+
+junchaohe:
+  name: Junchao He
+  website: "https://github.com/hejunchao233"
+
+hongyushen:
+  name: Hongyu Shen
+  website: "https://scholar.google.com/citations?user=5ywFeAIAAAAJ&hl=en"
+
+shaofeiwang:
+  name: Shaofei Wang
+  website: "https://taconite.github.io/"

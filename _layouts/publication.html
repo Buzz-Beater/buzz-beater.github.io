@@ -7,95 +7,162 @@ layout: page
 {% assign publications = site.data.resume.publications %}
 {% if site.posts.size > 1 %}
 <div class="section-container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="pitems">
-          {% for publication in publications %}
-            <div class="item mix cpaper t_cv mix_all" style="display: block;  opacity: 1;">
-              <div class="pubmain">
-                <div class="row">
-                  <div class="pubassets">
-                    {% if publication.website.size > 0 %}
-                    <a href="{{publication.website}}" title="Project Page">
-                      <i class="fa fa-expand"></i>
-                      <span class="atext">Project</span>
-                    </a>
-                    {% endif %}
-                    {% if publication.code.size > 0 %}
-                    <a href="{{publication.code}}" title="Code">
-                      <i class="fa fa-code"></i>
-                      <span class="atext">Code</span>
-                    </a>
-                    {% endif %}
-                    {% if publication.supplementary.size > 0 %}
-                    <a href="{{publication.supplementary}}" title="Supplementary Download">
-                      <i class="fa fa-file-pdf-o"></i>
-                      <span class="atext">Supp</span>
-                    </a>
-                    {% endif %}
-                    {% if publication.paper.size > 0 %}
-                    <a href="{{publication.paper}}" title="Paper Download">
-                      <i class="fa fa-file-pdf-o"></i>
-                      <span class="atext">Paper</span>
-                    </a>
-                    {% endif %}
-                  </div>
-                  <div class="col-md-4" align="center">
-                    <img src="{{publication.img}}" class="thumbnail img-responsive" style="max-height:200px;">
-                  </div>
-                  <div class="col-md-8">
-                    <h4 class="pubtitle">{{publication.name}}</h4>
-                    <div class="pubauthor">
-                      {% for author in publication.authors %}
-                        {% if author.isme.size > 0 %}
-                          <font size="3"><strong>{{author.name}}</strong></font>
-                        {% else %}
-                          {% if author.website.size > 0 %}
-                            <font size="3"><a href="{{author.website}}">{{author.name}}</a></font>
-                          {% else %}
-                            <font size="3"><label>{{author.name}}</label></font>
-                          {% endif %}
-                        {% endif %}
-                        {% if forloop.last %}
-                          .
-                        {% else %}
-                          ,
-                        {% endif %}
-                      {% endfor %}
-                      <br>
-                    </div>
-                    <div class="pubcite">
-                      <i><font size="3">{{publication.conference}}</font></i>
-                      {% if publication.special.size > 0 %}
-                        <i>(<font size="3"><strong><font color="red">{{publication.special}}</font></strong></font>)</i>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="pitems">
+        {% for publication in publications %}
+        <div class="item mix cpaper t_cv mix_all" style="display: block;  opacity: 1;">
+          <div class="pubmain">
+            <div class="row">
+              <div class="pubassets">
+                {% if publication.website.size > 0 %}
+                <a href="{{publication.website}}" title="Project Page">
+                  <i class="fa fa-expand"></i>
+                  <span class="atext">Project</span>
+                </a>
+                {% endif %}
+                {% if publication.code.size > 0 %}
+                <a href="{{publication.code}}" title="Code">
+                  <i class="fa fa-code"></i>
+                  <span class="atext">Code</span>
+                </a>
+                {% endif %}
+                {% if publication.supplementary.size > 0 %}
+                <a href="{{publication.supplementary}}" title="Supplementary Download">
+                  <i class="fa fa-file-pdf-o"></i>
+                  <span class="atext">Supp</span>
+                </a>
+                {% endif %}
+                {% if publication.paper.size > 0 %}
+                <a href="{{publication.paper}}" title="Paper Download">
+                  <i class="fa fa-file-pdf-o"></i>
+                  <span class="atext">Paper</span>
+                </a>
+                {% endif %}
+              </div>
+              <div class="col-md-4" align="center">
+                <img src="{{publication.img}}" class="thumbnail img-responsive" style="max-height:200px;">
+              </div>
+              <div class="col-md-8">
+                <h4 class="pubtitle">{{publication.name}}</h4>
+                <div class="pubauthor">
+                  {% assign has_equal = false %}
+                  {% assign has_corresponding = false %}
+                  {% assign has_lead = false %}
+                  {% for author in publication.authors %}
+                  {% if author.key %}
+                  {% assign collab = site.data.collaborators[author.key] %}
+                  {% assign a_name = collab.name %}
+                  {% assign a_website = collab.website %}
+                  {% assign a_isme = author.isme | default: collab.isme %}
+                  {% else %}
+                  {% assign a_name = author.name %}
+                  {% assign a_website = author.website %}
+                  {% assign a_isme = author.isme %}
+                  {% endif %}
+                  {% assign a_suffix = "" %}
+                  {% if author.tags %}
+                  {% for tag in author.tags %}
+                  {% if tag == "equal" %}{% assign a_suffix = a_suffix | append: "★" %}{% assign has_equal = true %}{%
+                  endif %}
+                  {% if tag == "corresponding" %}{% assign a_suffix = a_suffix | append: "✉" %}{% assign
+                  has_corresponding = true %}{% endif %}
+                  {% if tag == "lead" %}{% assign a_suffix = a_suffix | append: "†" %}{% assign has_lead = true %}{%
+                  endif %}
+                  {% endfor %}
+                  {% endif %}
+                  {% if author.suffix %}{% assign a_suffix = author.suffix %}{% endif %}
+                  {% if a_isme.size > 0 %}
+                  <font size="3"><strong>{{a_name}}{% if a_suffix.size > 0 %}<sup>{{a_suffix}}</sup>{% endif %}</strong>
+                  </font>
+                  {% else %}
+                  {% if a_website.size > 0 %}
+                  <font size="3"><a href="{{a_website}}">{{a_name}}{% if a_suffix.size > 0 %}<sup>{{a_suffix}}</sup>{%
+                      endif %}</a></font>
+                  {% else %}
+                  <font size="3"><label>{{a_name}}{% if a_suffix.size > 0 %}<sup>{{a_suffix}}</sup>{% endif %}</label>
+                  </font>
+                  {% endif %}
+                  {% endif %}
+                  {% if forloop.last %}
+                  .
+                  {% else %}
+                  ,
+                  {% endif %}
+                  {% endfor %}
+                  <br>
+                </div>
+                <div class="pubcite">
+                  <i>
+                    <font size="3">
+                      {% if publication.short.size > 0 %}
+                      {% assign short_parts = publication.short | split: " " %}
+                      {% assign conf_abbr = short_parts[0] %}
+                      {% assign conf_year = short_parts[1] %}
+                      {% assign conf_full = site.data.conferences[conf_abbr] %}
+                      {% if conf_full %}
+                      {{ conf_full }} ({{ conf_abbr }}) {{ conf_year }}
+                      {% else %}
+                      {{ publication.conference | default: publication.short }}
                       {% endif %}
-                      <br>
-                      {% if publication.supp.size > 0 %}
-                        {{publication.supp}}
+                      {% else %}
+                      {{ publication.conference }}
                       {% endif %}
-                      <br>
-                      <label class="pubtype"><img src={{publication.type}}></label>
-                      <label class="pubtype"><img src={{publication.theme}}></label>
-                      <!-- abcabc -->
-                      <!-- <label class="pubtype"><img src={{publication.label}}></label> -->
-                    </div>
-                  </div>
+                    </font>
+                  </i>
+                  {% if publication.special.size > 0 %}
+                  <i>(<font size="3"><strong>
+                        <font color="red">{{publication.special}}</font>
+                      </strong></font>)</i>
+                  {% endif %}
+                  <br>
+                  {% if publication.supp.size > 0 %}
+                  {{publication.supp}}
+                  {% endif %}
+                  {% assign notes = "" %}
+                  {% if has_equal %}{% assign notes = notes | append: "★ indicates equal contribution. " %}{% endif %}
+                  {% if has_corresponding %}{% assign notes = notes | append: "✉ indicates corresponding author. " %}{%
+                  endif %}
+                  {% if has_lead %}{% assign notes = notes | append: "† indicates project lead. " %}{% endif %}
+                  {% if notes.size > 0 %}
+                  ({{ notes | strip }})
+                  {% endif %}
+                  <br>
+                  {% if publication.short.size > 0 %}
+                  {% assign badge_conf = publication.short | remove: " " %}
+                  {% if publication.pubkind == "journal" %}
+                  {% assign badge_type_url = "https://img.shields.io/badge/" | append: badge_conf | append:
+                  "-Journal%20Paper-yellow" %}
+                  {% else %}
+                  {% assign badge_type_url = "https://img.shields.io/badge/" | append: badge_conf | append:
+                  "-Conference%20Paper-green.svg" %}
+                  {% endif %}
+                  <label class="pubtype"><img src={{badge_type_url}}></label>
+                  {% endif %}
+                  {% if publication.theme.size > 0 %}
+                  {% assign badge_theme = publication.theme | replace: "-", "--" | replace: " ", "%20" %}
+                  {% assign badge_theme_url = "https://img.shields.io/badge/" | append: badge_theme | append:
+                  "-blue.svg" %}
+                  <label class="pubtype"><img src={{badge_theme_url}}></label>
+                  {% endif %}
                 </div>
               </div>
-              {% if publication.abstract.size > 0 %}
-              <div class="pubdetails" style="display: block;">
-                <h4>Abstract</h4>
-                <p align="justify">
-                  {{ publication.abstract }}
-                </p>
-              </div>
-              {% endif %}
             </div>
-          {% endfor %}
+          </div>
+          {% if publication.abstract.size > 0 %}
+          <div class="pubdetails" style="display: block;">
+            <h4>Abstract</h4>
+            <p align="justify">
+              {{ publication.abstract }}
+            </p>
+          </div>
+          {% endif %}
         </div>
+        {% endfor %}
       </div>
     </div>
   </div>
+</div>
 {% endif %}
 
 {{ content_split[1] }}
