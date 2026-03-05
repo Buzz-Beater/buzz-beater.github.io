@@ -63,11 +63,14 @@ layout: page
                   {% assign a_suffix = "" %}
                   {% if author.tags %}
                   {% for tag in author.tags %}
-                  {% if tag == "equal" %}{% assign a_suffix = a_suffix | append: "★" %}{% assign has_equal = true %}{%
+                  {% if tag == "equal" %}{% if a_suffix.size > 0 %}{% assign a_suffix = a_suffix | append: "," %}{%
+                  endif %}{% assign a_suffix = a_suffix | append: "*" %}{% assign has_equal = true %}{%
                   endif %}
-                  {% if tag == "corresponding" %}{% assign a_suffix = a_suffix | append: "✉" %}{% assign
+                  {% if tag == "corresponding" %}{% if a_suffix.size > 0 %}{% assign a_suffix = a_suffix | append: ","
+                  %}{% endif %}{% assign a_suffix = a_suffix | append: "✉" %}{% assign
                   has_corresponding = true %}{% endif %}
-                  {% if tag == "lead" %}{% assign a_suffix = a_suffix | append: "†" %}{% assign has_lead = true %}{%
+                  {% if tag == "lead" %}{% if a_suffix.size > 0 %}{% assign a_suffix = a_suffix | append: "," %}{% endif
+                  %}{% assign a_suffix = a_suffix | append: "†" %}{% assign has_lead = true %}{%
                   endif %}
                   {% endfor %}
                   {% endif %}
@@ -76,13 +79,15 @@ layout: page
                   <font size="3"><strong>{{a_name}}{% if a_suffix.size > 0 %}<sup>{{a_suffix}}</sup>{% endif %}</strong>
                   </font>
                   {% else %}
-                  {% if a_website.size > 0 %}
-                  <font size="3"><a href="{{a_website}}">{{a_name}}{% if a_suffix.size > 0 %}<sup>{{a_suffix}}</sup>{%
-                      endif %}</a></font>
-                  {% else %}
-                  <font size="3"><label>{{a_name}}{% if a_suffix.size > 0 %}<sup>{{a_suffix}}</sup>{% endif %}</label>
-                  </font>
-                  {% endif %}
+                  <span class="otherpubauthors">
+                    {% if a_website.size > 0 %}
+                    <font size="3"><a href="{{a_website}}">{{a_name}}{% if a_suffix.size > 0 %}<sup>{{a_suffix}}</sup>{%
+                        endif %}</a></font>
+                    {% else %}
+                    <font size="3"><label>{{a_name}}{% if a_suffix.size > 0 %}<sup>{{a_suffix}}</sup>{% endif %}</label>
+                    </font>
+                    {% endif %}
+                  </span>
                   {% endif %}
                   {% if forloop.last %}
                   .
@@ -120,7 +125,7 @@ layout: page
                   {{publication.supp}}
                   {% endif %}
                   {% assign notes = "" %}
-                  {% if has_equal %}{% assign notes = notes | append: "★ indicates equal contribution. " %}{% endif %}
+                  {% if has_equal %}{% assign notes = notes | append: "* indicates equal contribution. " %}{% endif %}
                   {% if has_corresponding %}{% assign notes = notes | append: "✉ indicates corresponding author. " %}{%
                   endif %}
                   {% if has_lead %}{% assign notes = notes | append: "† indicates project lead. " %}{% endif %}
