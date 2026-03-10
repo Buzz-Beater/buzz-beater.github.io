@@ -426,7 +426,7 @@ publications:
       - key: xiaojianma
       - key: yixinchen
       - key: baoxiongjia
-      - key: weiliang2
+      - key: weiliang
       - key: qianyu
       - key: zhidongdeng
       - key: siyuanhuang
@@ -440,7 +440,7 @@ publications:
     releaseDate: ""
     website: "https://meta-scenes.github.io/"
     code: ""
-    paper: "assets/publications/2025_metascenes_cvpr/paper.pdf"
+    paper: "/assets/publications/2025_metascenes_cvpr/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2025_metascenes_cvpr/overview.gif"
     short: "CVPR 2025"
@@ -456,7 +456,7 @@ publications:
       - key: rongpengsu
       - key: jiaxinli
       - key: qingli
-      - key: weiliang2
+      - key: weiliang
       - key: songchunzhu
       - key: tengyuliu
       - key: siyuanhuang
@@ -827,7 +827,7 @@ publications:
       - key: jingzezhang
       - key: tengyuliu
       - key: yixinzhu
-      - key: weiliang2
+      - key: weiliang
       - key: siyuanhuang
     supp: HuMoGen @ CVPR 2024
       
@@ -940,7 +940,7 @@ publications:
       - key: baoxiongjia
       - key: tengyuliu
       - key: yixinzhu
-      - key: weiliang2
+      - key: weiliang
       - key: songchunzhu
 
   - name: "Improving Unsupervised Object-centric Learning with Query Optimization"
