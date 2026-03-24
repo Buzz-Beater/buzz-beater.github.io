@@ -34,12 +34,12 @@ layout: base
         <span class="icon-location" title="Info">
           Info: <a href="mailto:baoxiongjia@g.ucla.edu">Email</a> / <a
             href="https://scholar.google.com/citations?user=qIBUK6sAAAAJ&hl=en&authuser=1">Google Scholar</a> / <a
-            href="/assets/cv.pdf">CV</a> / <a href="https://x.com/BaoxiongJ"><svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24" fill="currentColor" style="width:0.85em;height:0.85em;vertical-align:-0.05em;">
+            href="/assets/cv.pdf">CV</a> / <a href="https://x.com/BaoxiongJ" target="_blank" rel="noopener"
+            style="display:inline-flex;align-items:center;gap:4px;background:#000;color:#fff;border-radius:20px;padding:4px 12px 4px 10px;font-size:13px;font-weight:500;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;text-decoration:none;line-height:1;vertical-align:middle;"><svg
+              xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" style="width:14px;height:14px;">
               <path
                 d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-            </svg> @BaoxiongJ</a>
-        </span>
+            </svg>Follow @BaoxiongJ</a>
       </p>
     </summary>
   </div>
@@ -53,13 +53,9 @@ layout: base
       </h2>
       <ul class="news-list">
         {% for info in resume.news %}
-        <li class="news-item">
+        <li class="news-item{% if forloop.index > 15 %} news-hidden{% endif %}">
           <span class="news-date">
-            {% if info.isnew.size > 0 %}
-            <span class="news-date-new">{{ info.date }}</span>
-            {% else %}
-            {{ info.date }}
-            {% endif %}
+            {% if info.isnew.size > 0 %}<span class="news-tag-new">New</span>{% endif %}{{ info.date }}
           </span>
           <span class="news-content">
             {{ info.content | markdownify | remove: '<p>' | remove: '</p>' }}
@@ -67,6 +63,26 @@ layout: base
         </li>
         {% endfor %}
       </ul>
+      {% if resume.news.size > 15 %}
+      <a href="javascript:void(0)" id="news-toggle" onclick="toggleNews()"
+        style="font-size:14px;color:#1b67e0;cursor:pointer;">Show more news...</a>
+      <script>
+        function toggleNews() {
+          var items = document.querySelectorAll('.news-item.news-hidden');
+          var toggle = document.getElementById('news-toggle');
+          var isHidden = items[0].style.display === '' || items[0].style.display === 'none';
+          for (var i = 0; i < items.length; i++) {
+            items[i].style.display = isHidden ? 'flex' : 'none';
+          }
+          toggle.textContent = isHidden ? 'Show less' : 'Show more news...';
+        }
+      </script>
+      <style>
+        .news-item.news-hidden {
+          display: none;
+        }
+      </style>
+      {% endif %}
     </section>
     {% endif %}
 

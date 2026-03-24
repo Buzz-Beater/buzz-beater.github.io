@@ -17,7 +17,7 @@ basics:
     Hi! I'm Baoxiong, a research scientist at BIGAI. I received my Ph.D in the Department of Computer Science, University of California, Los Angeles.
     My research interests lie in the intersection of computer vision, artificial intelligence, robotics and cognitive science, with a special focus on 
     spatial/temporal reasoning and its application to acting and planning in real world (scene/activity understanding, future prediction, grounded manipulation, etc.).
-    My recent works focuses on integrating all previous research into humanoid robots and make them helpful when I'm old :-)
+    My recent works focus on integrating all my previous research into humanoid robots and make them helpful when I'm old :-)
 
 
 
@@ -63,23 +63,19 @@ basics:
 #       - "Awarded 'Teacher of the Month'"
 news:
   - info:
-    date: New
-    # date: 2026/2
+    date: 2026/02
     isnew: 1
     content: Our paper [COLA](https://yushi-du.github.io/COLA/) on Human-Humanoid Collaboration is accepted by ICRA 2026, check it out!
   - info:
-    date: New
-    # date: 2026/2
+    date: 2026/02
     isnew: 1
     content: Our paper [SceneCOT](https://scenecot.github.io/) on CoT-Reasoning in 3D scenes is accepted by ICLR 2026, check it out!
   - info:
-    date: New
-    # date: 2025/11
+    date: 2025/11
     isnew: 1
     content: "Invited tutorial at [EIS 2025](https://www.embedded-ai.org/2025/index.html?_t=1764730564815) hosted by ACM SIGEMBED China, checkout the [slides](assets/slides/SIGEMBED.pdf)!"
   - info:
-    date: New
-    # date: 2025/11
+    date: 2025/11
     isnew: 1
     content: "Invited talk at [EAIRCon 2025](http://eaircon.zhidx.com/2025/) on 3D Gaussian World Models, checktout the [slides](assets/slides/GWM.pdf)!"
   - info:
@@ -127,42 +123,42 @@ news:
   - info:
     date: 2025/01
     content: "One paper on Articulated Object Reconstruction is accepted by ICLR 2025!"
-  # - info:
-  #   date: 2024/12
-  #   content: "One paper on **Multi-modal 3D Situated Reasoning** is accepted by NeurIPS 2024!"
-  # - info:
-  #   date: 2024/10
-  #   content: "I recently gave a summary of our work at BIGAI at ChinaGraph 2024. Checktout the [slides](assets/slides/chinagraph2024.pdf)!"
-  # - info:
-  #   date: 2024/10
-  #   content: "I will be attending ECCV 2024 this year, see you in Milan!"
-  # - info:
-  #   date: 2024/07
-  #   content: "I recently gave a talk on Embodied 3D Vision on [ZhiDX](https://zhidx.com/). Checkout the [slides](assets/slides/embodied3dvision.pdf)!"
-  # - info:
-  #   date: 2024/07
-  #   content: "**SceneVerse** is accepted by ECCV 2024. Stay tuned for full data and model release at [this link](https://github.com/scene-verse/scene-verse)!"
-  # - info:
-  #   date: 2024/07
-  #   content: "Three papers on **3D-VL** and **Object-centric Learning** is accepted by ECCV 2024."
-  # - info:
-  #   date: 2024/06
-  #   content: "Our **embodied generalist LEO** is accepted by ICML 2024. Check out our code and data at [this link](https://github.com/embodied-generalist/embodied-generalist)."
-  # - info:
-  #   date: 2024/06
-  #   content: "I'm co-organizing the [MANGO workshop](https://mango-workshop.github.io/2024.html) at CVPR 2024. See you in Seattle!"
-  # - info:
-  #   date: 2024/06
-  #   content: "**SceneVerse data** is released ! Find the download link and instructions at [this link](https://github.com/scene-verse/scene-verse)."
-  # - info:
-  #   date: 2024/06
-  #   content: "Two papers on **3D motion** and **scene generation** accepted by CVPR 2024 as *Highlight*."
-  # - info:
-  #   date: 2024/03
-  #   content: "**LEO code and data** is released ! Find the download link and instruction at [this link](https://github.com/embodied-generalist/embodied-generalist)."
-  # - info:
-  #   date: 2024/02
-  #   content: "Announcing **SceneVerse** for 3D-VL learning. Checkout our the [project page](https://scene-verse.github.io)."
+  - info:
+    date: 2024/12
+    content: "One paper on **Multi-modal 3D Situated Reasoning** is accepted by NeurIPS 2024!"
+  - info:
+    date: 2024/10
+    content: "I recently gave a summary of our work at BIGAI at ChinaGraph 2024. Checktout the [slides](assets/slides/chinagraph2024.pdf)!"
+  - info:
+    date: 2024/10
+    content: "I will be attending ECCV 2024 this year, see you in Milan!"
+  - info:
+    date: 2024/07
+    content: "I recently gave a talk on Embodied 3D Vision on [ZhiDX](https://zhidx.com/). Checkout the [slides](assets/slides/embodied3dvision.pdf)!"
+  - info:
+    date: 2024/07
+    content: "**SceneVerse** is accepted by ECCV 2024. Stay tuned for full data and model release at [this link](https://github.com/scene-verse/scene-verse)!"
+  - info:
+    date: 2024/07
+    content: "Three papers on **3D-VL** and **Object-centric Learning** is accepted by ECCV 2024."
+  - info:
+    date: 2024/06
+    content: "Our **embodied generalist LEO** is accepted by ICML 2024. Check out our code and data at [this link](https://github.com/embodied-generalist/embodied-generalist)."
+  - info:
+    date: 2024/06
+    content: "I'm co-organizing the [MANGO workshop](https://mango-workshop.github.io/2024.html) at CVPR 2024. See you in Seattle!"
+  - info:
+    date: 2024/06
+    content: "**SceneVerse data** is released ! Find the download link and instructions at [this link](https://github.com/scene-verse/scene-verse)."
+  - info:
+    date: 2024/06
+    content: "Two papers on **3D motion** and **scene generation** accepted by CVPR 2024 as *Highlight*."
+  - info:
+    date: 2024/03
+    content: "**LEO code and data** is released ! Find the download link and instruction at [this link](https://github.com/embodied-generalist/embodied-generalist)."
+  - info:
+    date: 2024/02
+    content: "Announcing **SceneVerse** for 3D-VL learning. Checkout our the [project page](https://scene-verse.github.io)."
   # - info:
   #   date: 2023/12
   #   content: "One paper on **procedural understanding in videos** is accepted by NeurIPS 2023."

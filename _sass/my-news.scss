@@ -5,35 +5,42 @@
 
 .news-item {
   display: flex;
-  margin-bottom: 0.5rem;
-  align-items: center;
+  margin-bottom: 0.4rem;
+  align-items: baseline;
 }
 
 .news-date {
   flex-shrink: 0;
-  width: 120px; /* Adjust as needed */
+  width: 110px;
   font-weight: bold;
-  text-align: center;
+  text-align: right;
+  margin-right: 16px;
+  font-size: 17px;
+  color: #555;
+  white-space: nowrap;
+}
+
+.news-tag-new {
+  background-color: #d9534f;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 2px;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  vertical-align: 1px;
+  margin-right: 4px;
 }
 
 .news-content {
   text-align: justify;
+  flex: 1;
 }
 
 .news-content em {
   color: red;
   font-style: normal;
   font-weight: bold;
-}
-
-.news-date-new {
-  background-color: #d9534f;
-  color: white !important;
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 14px;
-  line-height: 1.2;
-  font-weight: bold;
-  white-space: nowrap;
-  display: inline-block;
 }
