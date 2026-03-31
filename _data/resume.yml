@@ -346,7 +346,6 @@ publications:
     paper: "/assets/publications/2025_sceneweaver_neurips/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2025_sceneweaver_neurips/overview.gif"
-    short: "NeurIPS 2025"
     authors: 
       - key: yandanyang
         tags: [equal]
@@ -367,7 +366,6 @@ publications:
     paper: "/assets/publications/2025_unifp_corl/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2025_unifp_corl/overview.gif"
-    short: "CoRL 2025"
     authors: 
       - key: peiyuanzhi
         tags: [equal]
@@ -389,7 +387,6 @@ publications:
     paper: "assets/publications/2025_gwm_iccv/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2025_gwm_iccv/overview.png"
-    short: "ICCV 2025"
     authors: 
       - key: guanxinglu
         tags: [equal]
@@ -413,7 +410,6 @@ publications:
     paper: "/assets/publications/2025_mtu3d_iccv/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2025_mtu3d_iccv/overview.png"
-    short: "ICCV 2025"
     authors:
       - key: ziyuzhu
       - key: xilinwang
@@ -439,7 +435,6 @@ publications:
     paper: "/assets/publications/2025_metascenes_cvpr/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2025_metascenes_cvpr/overview.gif"
-    short: "CVPR 2025"
     authors: 
       - key: huangyueyu
         tags: [equal]
@@ -463,7 +458,6 @@ publications:
     theme: "3D-VL Evaluation"
     releaseDate: ""
     img: "/assets/publications/2025_beacon3d_cvpr/overview.png"
-    short: "CVPR 2025"
     website: "https://beacon-3d.github.io"
     paper: "/assets/publications/2025_beacon3d_cvpr/paper.pdf"
     code: "https://github.com/beacon-3d/beacon-3d"
@@ -485,7 +479,6 @@ publications:
     theme: "3D-VL Pre-training"
     releaseDate: ""
     img: "/assets/publications/2025_mpec_cvpr/overview.png"
-    short: "CVPR 2025"
     website: "https://mpec-3d.github.io/"
     paper: "/assets/publications/2025_beacon3d_cvpr/paper.pdf"
     code: ""
@@ -508,7 +501,6 @@ publications:
     paper: "assets/publications/2025_roboverse_rss/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2025_roboverse_rss/overview.png"
-    short: "RSS 2025"
     authors: 
       - key: haorangeng
         tags: [equal]
@@ -568,7 +560,6 @@ publications:
     paper: "assets/publications/2025_movis_cvpr/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2025_movis_cvpr/overview.png"
-    short: "CVPR 2025"
     authors: 
       - key: ruijielu
         tags: [equal]
@@ -591,7 +582,6 @@ publications:
     paper: "/assets/publications/2025_artgs_iclr/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2025_artgs_iclr/overview.gif"
-    short: "ICLR 2025"
     authors: 
       - key: yuliu
         tags: [equal]
@@ -612,7 +602,6 @@ publications:
     paper: ""
     supplementary: ""
     img: "/assets/publications/2025_comerobot_icra/overview.png"
-    short: "ICRA 2025"
     authors: 
       - key: peiyuanzhi
         tags: [equal]
@@ -637,7 +626,6 @@ publications:
     paper: ""
     supplementary: ""
     img: "/assets/publications/2025_physpart_icra/overview.gif"
-    short: "ICRA 2025"
     authors: 
       - key: rundongluo
         tags: [equal]
@@ -707,7 +695,6 @@ publications:
     paper: "/assets/publications/2024_slotlifter_eccv/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2024_slotlifter_eccv/overview.gif"
-    short: "ICLR 2023"
     authors: 
       - key: yuliu
         tags: [equal]
@@ -745,7 +732,6 @@ publications:
     theme: "Embodied Generalist Agent"
     releaseDate: ""
     img: "/assets/publications/2024_leo_icml/overview.png"
-    short: "ICML 2024"
     website: "https://embodied-generalist.github.io/"
     paper: "/assets/publications/2024_leo_icml/paper.pdf"
     code: "https://github.com/embodied-generalist/embodied-generalist"
@@ -775,7 +761,6 @@ publications:
     paper: "/assets/publications/2024_minimax_sciadv/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2024_minimax_sciadv/overview.png"
-    short: "Science Advances 2024"
     authors:
       - key: chizhang
       - key: baoxiongjia
@@ -792,7 +777,6 @@ publications:
     paper: "/assets/publications/2024_physcene_cvpr/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2024_physcene_cvpr/overview.gif"
-    short: "CVPR 2024"
     authors: 
       - key: yandanyang
         tags: [equal]
@@ -813,7 +797,6 @@ publications:
     paper: "/assets/publications/2024_movecan_cvpr/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2024_movecan_cvpr/overview.gif"
-    short: "CVPR 2024"
     authors: 
       - key: zanwang
       - key: yixinchen
@@ -837,7 +820,6 @@ publications:
     paper: "/assets/publications/2023_probio_nips/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2023_probio_nips/overview.png"
-    short: "NeurIPS 2022"
     authors: 
       - key: jiemingcui
         tags: [equal]
@@ -859,7 +841,6 @@ publications:
     code: "https://github.com/daibopku/X-VoE"
     paper: "/assets/publications/2023_xvoe_iccv/paper.pdf"
     img: "/assets/publications/2023_xvoe_iccv/overview.png"
-    short: "ICCV 2023"
     authors:
       - key: bodai
       - key: lingewang
@@ -873,7 +854,6 @@ publications:
     theme: "Language Grounding in Robot Manipulation"
     releaseDate: ""
     img: "/assets/publications/2023_arnold_iccv/arnold.gif"
-    short: "ICCV 2023"
     website: "https://arnold-benchmark.github.io/"
     paper: "/assets/publications/2023_arnold_iccv/paper.pdf"
     code: "https://github.com/arnold-benchmark/arnold"
@@ -905,7 +885,6 @@ publications:
     paper: "/assets/publications/2023_cut_iros/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2023_cut_iros/overview.png"
-    short: "IROS 2023"
     authors: 
       - key: zeyuzhang
         tags: [equal]
@@ -926,7 +905,6 @@ publications:
     paper: "/assets/publications/2023_scenediffuser_cvpr/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2023_scenediffuser_cvpr/overview.png"
-    short: "CVPR 2023"
     authors: 
       - key: siyuanhuang
         tags: [equal]
@@ -948,7 +926,6 @@ publications:
     paper: "/assets/publications/2023_boqsa_iclr/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2023_boqsa_iclr/overview.gif"
-    short: "ICLR 2023"
     authors: 
       - key: baoxiongjia
         tags: [equal]
@@ -966,7 +943,6 @@ publications:
     paper: "/assets/publications/2022_egotaskqa_nips/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2022_egotaskqa_nips/overview.png"
-    short: "NeurIPS 2022"
     authors: 
       - key: baoxiongjia
       - key: tinglei
@@ -981,7 +957,6 @@ publications:
     paper: "/assets/publications/2022_alans_eccv/paper.pdf"
     supplementary: "/assets/publications/2022_alans_eccv/supp.pdf"
     img: "/assets/publications/2022_alans_eccv/overview.png"
-    short: "ECCV 2022"
     authors: 
       - key: chizhang
         tags: [equal]
@@ -1001,7 +976,6 @@ publications:
     paper: "/assets/publications/2022_ldebm_icml/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2022_ldebm_icml/overview.png"
-    short: "ICML 2022"
     authors:
       - key: peiyuyu
       - key: siruixie
@@ -1021,7 +995,6 @@ publications:
     paper: "/assets/publications/2021_acre_cvpr/paper.pdf"
     supplementary: "/assets/publications/2021_acre_cvpr/supp.pdf"
     img: "/assets/publications/2021_acre_cvpr/overview.jpg"
-    short: "CVPR 2021"
     authors: 
       - key: chizhang
       - key: baoxiongjia
@@ -1038,7 +1011,6 @@ publications:
     paper: "/assets/publications/2021_prae_cvpr/paper.pdf"
     supplementary: "/assets/publications/2021_prae_cvpr/supp.pdf"
     img: "/assets/publications/2021_prae_cvpr/overview.png"
-    short: "CVPR 2021"
     authors: 
       - key: chizhang
         tags: [equal]
@@ -1056,7 +1028,6 @@ publications:
     paper: "/assets/publications/2020_lemma_eccv/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2020_lemma_eccv/overview.jpg"
-    short: "ECCV 2020"
     authors: 
       - key: baoxiongjia
       - key: yixinchen
@@ -1073,7 +1044,6 @@ publications:
     paper: "/assets/publications/2020_gep_pami/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2020_gep_pami/overview.jpg"
-    short: "TPAMI 2020"
     authors:
       - key: siyuanqi
       - key: baoxiongjia
@@ -1090,7 +1060,6 @@ publications:
     paper: "/assets/publications/2019_iq_nips/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2019_iq_nips/overview.jpg"
-    short: "NeurIPS 2019"
     authors:
       - key: chizhang
         tags: [equal]
@@ -1111,7 +1080,6 @@ publications:
     paper: "/assets/publications/2019_iq_cvpr/paper.pdf"
     supplementary: "/assets/publications/2019_iq_cvpr/supp.pdf"
     img: "/assets/publications/2019_iq_cvpr/overview.jpg"
-    short: "CVPR 2019"
     authors:
         - key: chizhang
           tags: [equal]
@@ -1130,7 +1098,6 @@ publications:
     paper: "/assets/publications/2018_gpnn_eccv/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2018_gpnn_eccv/overview.jpg"
-    short: "ECCV 2018"
     authors: 
       - key: siyuanqi
         tags: [equal]
@@ -1148,7 +1115,6 @@ publications:
     paper: "/assets/publications/2018_gep_icml/paper.pdf"
     supplementary: "/assets/publications/2018_gep_icml/supp.pdf"
     img: "/assets/publications/2018_gep_icml/overview.jpg"
-    short: "ICML 2018"
     authors:
       - key: siyuanqi
       - key: baoxiongjia
@@ -1162,7 +1128,6 @@ publications:
     paper: "/assets/publications/2017_review_ubicomp/paper.pdf"
     supplementary: ""
     img: "/assets/publications/2017_review_ubicomp/overview.jpg"
-    short: "IMWUT 2017"
     authors: 
       - key: yuanchunli
       - key: baoxiongjia
