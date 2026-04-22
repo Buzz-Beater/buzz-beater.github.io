@@ -63,6 +63,22 @@ basics:
 #       - "Awarded 'Teacher of the Month'"
 news:
   - info:
+    date: 2026/04
+    isnew: 1
+    content: "Invited talk at [China3DV 2026](http://china3dv.csig.org.cn/index.html) Youth Forum."
+  - info:
+    date: 2026/04
+    isnew: 1
+    content: "I'm co-organizing the [6th 3D Scene Understanding workshop](https://scene-understanding.com/) at CVPR 2026. See you in Denver!"
+  - info:
+    date: 2026/04
+    isnew: 1
+    content: The newest work of our [SceneVerse](https://scene-verse.github.io/) is accepted by CVPR 2026, check out the [ScenVerse++](https://sv-pp.github.io/) project!
+  - info:
+    date: 2026/03
+    isnew: 1
+    content: "[UniFP](https://unified-force.github.io/) has been selected as one of the Top-10 breakthroughs of 2025 by [EAI-100](https://modelscope.cn/brand/view/EAI-100)"
+  - info:
     date: 2026/02
     isnew: 1
     content: Our paper [COLA](https://yushi-du.github.io/COLA/) on Human-Humanoid Collaboration is accepted by ICRA 2026, check it out!
@@ -72,11 +88,9 @@ news:
     content: Our paper [SceneCOT](https://scenecot.github.io/) on CoT-Reasoning in 3D scenes is accepted by ICLR 2026, check it out!
   - info:
     date: 2025/11
-    isnew: 1
     content: "Invited tutorial at [EIS 2025](https://www.embedded-ai.org/2025/index.html?_t=1764730564815) hosted by ACM SIGEMBED China, checkout the [slides](assets/slides/SIGEMBED.pdf)!"
   - info:
     date: 2025/11
-    isnew: 1
     content: "Invited talk at [EAIRCon 2025](http://eaircon.zhidx.com/2025/) on 3D Gaussian World Models, checktout the [slides](assets/slides/GWM.pdf)!"
   - info:
     date: 2025/10
