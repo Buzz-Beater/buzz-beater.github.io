@@ -112,21 +112,39 @@ layout: base
                     <span class="atext">Code</span>
                   </a>
                   {% endif %}
-                  {% if publication.supplementary.size > 0 %}
+                  {% if publication.folder.size > 0 and publication.supplementary.size > 0 %}
+                  <a href="/assets/publications/{{publication.folder}}/{{publication.supplementary}}" title="Supplementary Download">
+                  {% elsif publication.supplementary.size > 0 %}
                   <a href="{{publication.supplementary}}" title="Supplementary Download">
+                  {% endif %}
+                  {% if publication.supplementary.size > 0 %}
                     <i class="fa fa-file-pdf-o"></i>
                     <span class="atext">Supp</span>
                   </a>
                   {% endif %}
-                  {% if publication.paper.size > 0 %}
+                  {% if publication.folder.size > 0 and publication.paper.size > 0 %}
+                  <a href="/assets/publications/{{publication.folder}}/{{publication.paper}}" title="Paper Download">
+                  {% elsif publication.paper.size > 0 %}
                   <a href="{{publication.paper}}" title="Paper Download">
+                  {% endif %}
+                  {% if publication.paper.size > 0 %}
                     <i class="fa fa-file-pdf-o"></i>
                     <span class="atext">Paper</span>
                   </a>
                   {% endif %}
                 </div>
                 <div class="col-md-4" align="center">
+                  {% if publication.folder.size > 0 %}
+                    {% if publication.img %}
+                    <img src="/assets/publications/{{publication.folder}}/{{publication.img}}" class="thumbnail img-responsive" style="max-height:200px;">
+                    {% else %}
+                    <img src="/assets/publications/{{publication.folder}}/timg.jpeg" class="thumbnail img-responsive" style="max-height:200px;">
+                    {% endif %}
+                  {% elsif publication.img %}
                   <img src="{{publication.img}}" class="thumbnail img-responsive" style="max-height:200px;">
+                  {% else %}
+                  <img src="/assets/img/timg.jpeg" class="thumbnail img-responsive" style="max-height:200px;">
+                  {% endif %}
                 </div>
                 <div class="col-md-8">
                   <h4 class="pubtitle">{{publication.name}}</h4>
@@ -488,7 +506,11 @@ layout: base
                     {% endif %}
                   </div>
                   <div class="col-md-4" align="center">
+                    {% if publication.img %}
                     <img src="{{publication.img}}" class="thumbnail img-responsive" style="max-height:200px;">
+                    {% elsif publication.folder %}
+                    <img src="/assets/publications/{{publication.folder}}/timg.jpeg" class="thumbnail img-responsive" style="max-height:200px;">
+                    {% endif %}
                   </div>
                   <div class="col-md-8">
                     <h4 class="pubtitle">{{publication.name}}</h4>

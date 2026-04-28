@@ -65,6 +65,10 @@ news:
   - info:
     date: 2026/04
     isnew: 1
+    content: Our generalist motion tracker [OmniXtreme](https://extreme-humanoid.github.io/) is accepted by RSS 2026, check it out!
+  - info:
+    date: 2026/04
+    isnew: 1
     content: "Invited talk at [China3DV 2026](http://china3dv.csig.org.cn/index.html) Youth Forum."
   - info:
     date: 2026/04
@@ -281,6 +285,33 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "OmniXtreme: Breaking the Generality Barrier in High-Dynamic Humanoid Control"
+    isselected: 1
+    short: RSS 2026
+    theme: "Generalist Humanoid Control"
+    releaseDate: ""
+    website: "https://extreme-humanoid.github.io/"
+    code: "https://github.com/Perkins729/OmniXtreme"
+    paper: ""
+    supplementary: ""
+    folder: "2026_omnixtreme_rss"
+    img: "overview.gif"
+    authors:
+      - key: yunshenwang
+        tags: [equal]
+      - key: shaohangzhu
+        tags: [equal]
+      - key: peiyuanzhi
+      - key: yuhanli
+      - key: jiaxinli
+      - key: yongluli
+      - key: yuchenxiao
+      - key: xingxingwang
+      - key: baoxiongjia
+        tags: [corresponding]
+      - key: siyuanhuang
+        tags: [corresponding]
+
   - name: "Lifting Unlabeled Internet-scale Data for 3D Scene Understanding"
     short: CVPR 2026
     theme: "Scaling 3D Scenes"
@@ -289,7 +320,7 @@ publications:
     code: ""
     paper: ""
     supplementary: ""
-    img: "/assets/img/timg.jpeg"
+    folder: ""
     authors:
       - key: yixinchen
       - key: yaoweizhang
@@ -310,10 +341,11 @@ publications:
     theme: "Human-Robot Collaboration"
     releaseDate: ""
     website: "https://yushi-du.github.io/COLA/"
-    code: ""
-    paper: ""
+    code: "https://github.com/Yushi-Du/COLA_Code"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/img/timg.jpeg"
+    folder: "2026_cola_icra"
+    img: "overview.gif"
     authors:
       - key: yushidu
         tags: [equal]
@@ -337,9 +369,10 @@ publications:
     releaseDate: ""
     website: "https://scenecot.github.io/"
     code: "https://github.com/SceneCOT/scenecot"
-    paper: ""
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/img/timg.jpeg"
+    folder: "2026_scenecot_iclr"
+    img: "overview.png"
     authors:
       - key: xiongkunlinghu
       - key: jiangyonghuang
@@ -357,9 +390,10 @@ publications:
     releaseDate: ""
     website: "https://scene-weaver.github.io/"
     code: "https://github.com/Scene-Weaver/SceneWeaver"
-    paper: "/assets/publications/2025_sceneweaver_neurips/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2025_sceneweaver_neurips/overview.gif"
+    folder: "2025_sceneweaver_neurips"
+    img: "overview.gif"
     authors: 
       - key: yandanyang
         tags: [equal]
@@ -377,9 +411,10 @@ publications:
     releaseDate: ""
     website: "https://unified-force.github.io/"
     code: ""
-    paper: "/assets/publications/2025_unifp_corl/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2025_unifp_corl/overview.gif"
+    folder: "2025_unifp_corl"
+    img: "overview.gif"
     authors: 
       - key: peiyuanzhi
         tags: [equal]
@@ -398,9 +433,10 @@ publications:
     releaseDate: ""
     website: "https://gaussian-world-model.github.io/"
     code: ""
-    paper: "assets/publications/2025_gwm_iccv/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2025_gwm_iccv/overview.png"
+    folder: "2025_gwm_iccv"
+    img: "overview.png"
     authors: 
       - key: guanxinglu
         tags: [equal]
@@ -421,9 +457,10 @@ publications:
     releaseDate: ""
     website: "https://mtu3d.github.io/"
     code: "https://github.com/MTU3D/MTU3D"
-    paper: "/assets/publications/2025_mtu3d_iccv/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2025_mtu3d_iccv/overview.png"
+    folder: "2025_mtu3d_iccv"
+    img: "overview.png"
     authors:
       - key: ziyuzhu
       - key: xilinwang
@@ -446,9 +483,10 @@ publications:
     releaseDate: ""
     website: "https://meta-scenes.github.io/"
     code: ""
-    paper: "/assets/publications/2025_metascenes_cvpr/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2025_metascenes_cvpr/overview.gif"
+    folder: "2025_metascenes_cvpr"
+    img: "overview.gif"
     authors: 
       - key: huangyueyu
         tags: [equal]
@@ -471,9 +509,10 @@ publications:
     short: "CVPR 2025"
     theme: "3D-VL Evaluation"
     releaseDate: ""
-    img: "/assets/publications/2025_beacon3d_cvpr/overview.png"
+    folder: "2025_beacon3d_cvpr"
+    img: "overview.png"
     website: "https://beacon-3d.github.io"
-    paper: "/assets/publications/2025_beacon3d_cvpr/paper.pdf"
+    paper: "paper.pdf"
     code: "https://github.com/beacon-3d/beacon-3d"
     authors:
       - key: jiangyonghuang
@@ -492,9 +531,10 @@ publications:
     short: "CVPR 2025"
     theme: "3D-VL Pre-training"
     releaseDate: ""
-    img: "/assets/publications/2025_mpec_cvpr/overview.png"
+    folder: "2025_mpec_cvpr"
+    img: "overview.png"
     website: "https://mpec-3d.github.io/"
-    paper: "/assets/publications/2025_beacon3d_cvpr/paper.pdf"
+    paper: "paper.pdf"
     code: ""
     authors:
       - key: yanwang
@@ -502,6 +542,28 @@ publications:
       - key: baoxiongjia
         tags: [equal]
       - key: ziyuzhu
+      - key: siyuanhuang
+
+  - name: "MOVIS: Enhancing Multi-Object Novel View Synthesis for Indoor Scenes"
+    short: "CVPR 2025"
+    theme: "Novel View Synthesis"
+    releaseDate: ""
+    website: ""
+    code: ""
+    paper: "paper.pdf"
+    supplementary: ""
+    folder: "2025_movis_cvpr"
+    img: "overview.png"
+    authors: 
+      - key: ruijielu
+        tags: [equal]
+      - key: yixinchen
+        tags: [equal]
+      - key: junfengni
+      - key: baoxiongjia
+      - key: yuliu
+      - key: diwenwan
+      - key: gangzeng
       - key: siyuanhuang
 
   - name: "RoboVerse: Towards a Unified Platform, Dataset and Benchmark for Scalable and Generalizable Robot Learning"
@@ -512,9 +574,10 @@ publications:
     releaseDate: ""
     website: "https://roboverseorg.github.io/"
     code: ""
-    paper: "assets/publications/2025_roboverse_rss/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2025_roboverse_rss/overview.png"
+    folder: "2025_roboverse_rss"
+    img: "overview.png"
     authors: 
       - key: haorangeng
         tags: [equal]
@@ -564,27 +627,6 @@ publications:
         tags: [corresponding]
       - key: pieterabbeel
         tags: [corresponding]
-
-  - name: "MOVIS: Enhancing Multi-Object Novel View Synthesis for Indoor Scenes"
-    short: "CVPR 2025"
-    theme: "Novel View Synthesis"
-    releaseDate: ""
-    website: ""
-    code: ""
-    paper: "assets/publications/2025_movis_cvpr/paper.pdf"
-    supplementary: ""
-    img: "/assets/publications/2025_movis_cvpr/overview.png"
-    authors: 
-      - key: ruijielu
-        tags: [equal]
-      - key: yixinchen
-        tags: [equal]
-      - key: junfengni
-      - key: baoxiongjia
-      - key: yuliu
-      - key: diwenwan
-      - key: gangzeng
-      - key: siyuanhuang
   
   - name: "Buliding Interactable Replicas of Complex Articulated Objects via Gaussian Splatting"
     isselected: 1
@@ -593,9 +635,10 @@ publications:
     releaseDate: ""
     website: "https://articulate-gs.github.io/"
     code: ""
-    paper: "/assets/publications/2025_artgs_iclr/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2025_artgs_iclr/overview.gif"
+    folder: "2025_artgs_iclr"
+    img: "overview.gif"
     authors: 
       - key: yuliu
         tags: [equal]
@@ -615,7 +658,8 @@ publications:
     code: ""
     paper: ""
     supplementary: ""
-    img: "/assets/publications/2025_comerobot_icra/overview.png"
+    folder: "2025_comerobot_icra"
+    img: "overview.png"
     authors: 
       - key: peiyuanzhi
         tags: [equal]
@@ -639,7 +683,8 @@ publications:
     code: ""
     paper: ""
     supplementary: ""
-    img: "/assets/publications/2025_physpart_icra/overview.gif"
+    folder: "2025_physpart_icra"
+    img: "overview.gif"
     authors: 
       - key: rundongluo
         tags: [equal]
@@ -659,9 +704,10 @@ publications:
     releaseDate: ""
     website: "https://msr3d.github.io/"
     code: "https://github.com/MSR3D/MSR3D"
-    paper: "/assets/publications/2024_msr3d_neurips/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2024_msr3d_neurips/overview.png"
+    folder: "2024_msr3d_neurips"
+    img: "overview.png"
     authors:
       - key: xiongkunlinghu
         tags: [equal]
@@ -682,9 +728,10 @@ publications:
     releaseDate: ""
     website: "https://scene-verse.github.io/"
     code: "https://github.com/scene-verse/sceneverse"
-    paper: "/assets/publications/2024_sceneverse_eccv/paper.pdf"
-    supplementary: "/assets/publications/2024_sceneverse_eccv/supp.pdf"
-    img: "/assets/publications/2024_sceneverse_eccv/overview.png"
+    paper: "paper.pdf"
+    supplementary: "supp.pdf"
+    folder: "2024_sceneverse_eccv"
+    img: "overview.png"
     # short: "NeurIPS 2022"
     authors:
       - key: baoxiongjia
@@ -706,9 +753,10 @@ publications:
     releaseDate: ""
     website: "https://slotlifter.github.io/"
     code: ""
-    paper: "/assets/publications/2024_slotlifter_eccv/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2024_slotlifter_eccv/overview.gif"
+    folder: "2024_slotlifter_eccv"
+    img: "overview.gif"
     authors: 
       - key: yuliu
         tags: [equal]
@@ -724,9 +772,10 @@ publications:
     releaseDate: ""
     website: "https://pq3d.github.io/"
     code: "https://github.com/PQ3D/PQ3D"
-    paper: "/assets/publications/2024_pq3d_eccv/paper.pdf"
+    paper: "paper.pdf"
     # supplementary: ""
-    img: "/assets/publications/2024_pq3d_eccv/overview.png"
+    folder: "2024_pq3d_eccv"
+    img: "overview.png"
     # short: "NeurIPS 2022"
     authors:
       - key: ziyuzhu
@@ -745,9 +794,10 @@ publications:
     short: "ICML 2024"
     theme: "Embodied Generalist Agent"
     releaseDate: ""
-    img: "/assets/publications/2024_leo_icml/overview.png"
+    folder: "2024_leo_icml"
+    img: "overview.png"
     website: "https://embodied-generalist.github.io/"
-    paper: "/assets/publications/2024_leo_icml/paper.pdf"
+    paper: "paper.pdf"
     code: "https://github.com/embodied-generalist/embodied-generalist"
     authors:
       - key: jiangyonghuang
@@ -772,9 +822,10 @@ publications:
     releaseDate: ""
     website: ""
     code: ""
-    paper: "/assets/publications/2024_minimax_sciadv/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2024_minimax_sciadv/overview.png"
+    folder: "2024_minimax_sciadv"
+    img: "overview.png"
     authors:
       - key: chizhang
       - key: baoxiongjia
@@ -788,9 +839,10 @@ publications:
     releaseDate: ""
     website: "https://physcene.github.io/"
     code: "https://github.com/PhyScene/PhyScene"
-    paper: "/assets/publications/2024_physcene_cvpr/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2024_physcene_cvpr/overview.gif"
+    folder: "2024_physcene_cvpr"
+    img: "overview.gif"
     authors: 
       - key: yandanyang
         tags: [equal]
@@ -808,9 +860,10 @@ publications:
     releaseDate: ""
     website: "https://afford-motion.github.io/"
     code: "https://github.com/afford-motion/afford-motion"
-    paper: "/assets/publications/2024_movecan_cvpr/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2024_movecan_cvpr/overview.gif"
+    folder: "2024_movecan_cvpr"
+    img: "overview.gif"
     authors: 
       - key: zanwang
       - key: yixinchen
@@ -831,9 +884,10 @@ publications:
     releaseDate: ""
     website: "https://probio-dataset.github.io/"
     code: "https://github.com/jiemingcui/probio/"
-    paper: "/assets/publications/2023_probio_nips/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2023_probio_nips/overview.png"
+    folder: "2023_probio_nips"
+    img: "overview.png"
     authors: 
       - key: jiemingcui
         tags: [equal]
@@ -853,8 +907,9 @@ publications:
     releaseDate: ""
     website: "https://sites.google.com/view/x-voe"
     code: "https://github.com/daibopku/X-VoE"
-    paper: "/assets/publications/2023_xvoe_iccv/paper.pdf"
-    img: "/assets/publications/2023_xvoe_iccv/overview.png"
+    paper: "paper.pdf"
+    folder: "2023_xvoe_iccv"
+    img: "overview.png"
     authors:
       - key: bodai
       - key: lingewang
@@ -867,9 +922,10 @@ publications:
     short: "ICCV 2023"
     theme: "Language Grounding in Robot Manipulation"
     releaseDate: ""
-    img: "/assets/publications/2023_arnold_iccv/arnold.gif"
+    folder: "2023_arnold_iccv"
+    img: "arnold.gif"
     website: "https://arnold-benchmark.github.io/"
-    paper: "/assets/publications/2023_arnold_iccv/paper.pdf"
+    paper: "paper.pdf"
     code: "https://github.com/arnold-benchmark/arnold"
     authors:
       - key: rangong
@@ -896,9 +952,10 @@ publications:
     releaseDate: ""
     website: ""
     code: ""
-    paper: "/assets/publications/2023_cut_iros/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2023_cut_iros/overview.png"
+    folder: "2023_cut_iros"
+    img: "overview.png"
     authors: 
       - key: zeyuzhang
         tags: [equal]
@@ -916,9 +973,10 @@ publications:
     releaseDate: ""
     website: "https://scenediffuser.github.io/"
     code: "https://github.com/scenediffuser/Scene-Diffuser"
-    paper: "/assets/publications/2023_scenediffuser_cvpr/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2023_scenediffuser_cvpr/overview.png"
+    folder: "2023_scenediffuser_cvpr"
+    img: "overview.png"
     authors: 
       - key: siyuanhuang
         tags: [equal]
@@ -937,9 +995,10 @@ publications:
     releaseDate: ""
     website: "https://bo-qsa.github.io"
     code: "https://github.com/YuLiu-LY/BO-QSA"
-    paper: "/assets/publications/2023_boqsa_iclr/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2023_boqsa_iclr/overview.gif"
+    folder: "2023_boqsa_iclr"
+    img: "overview.gif"
     authors: 
       - key: baoxiongjia
         tags: [equal]
@@ -954,9 +1013,10 @@ publications:
     releaseDate: ""
     website: "https://sites.google.com/view/egotaskqa"
     code: "https://github.com/Buzz-Beater/EgoTaskQA"
-    paper: "/assets/publications/2022_egotaskqa_nips/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2022_egotaskqa_nips/overview.png"
+    folder: "2022_egotaskqa_nips"
+    img: "overview.png"
     authors: 
       - key: baoxiongjia
       - key: tinglei
@@ -968,9 +1028,10 @@ publications:
     releaseDate: ""
     website: "http://wellyzhang.github.io/project/alans.html"
     code: "https://github.com/WellyZhang/ALANS"
-    paper: "/assets/publications/2022_alans_eccv/paper.pdf"
-    supplementary: "/assets/publications/2022_alans_eccv/supp.pdf"
-    img: "/assets/publications/2022_alans_eccv/overview.png"
+    paper: "paper.pdf"
+    supplementary: "supp.pdf"
+    folder: "2022_alans_eccv"
+    img: "overview.png"
     authors: 
       - key: chizhang
         tags: [equal]
@@ -987,9 +1048,10 @@ publications:
     theme: "Diffusion Models and Latent EBM"
     website: ""
     code: "https://github.com/yuPeiyu98/LDEBM"
-    paper: "/assets/publications/2022_ldebm_icml/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2022_ldebm_icml/overview.png"
+    folder: "2022_ldebm_icml"
+    img: "overview.png"
     authors:
       - key: peiyuyu
       - key: siruixie
@@ -1006,9 +1068,10 @@ publications:
     releaseDate: ""
     website: "http://wellyzhang.github.io/project/acre.html"
     code: "https://github.com/WellyZhang/ACRE"
-    paper: "/assets/publications/2021_acre_cvpr/paper.pdf"
-    supplementary: "/assets/publications/2021_acre_cvpr/supp.pdf"
-    img: "/assets/publications/2021_acre_cvpr/overview.jpg"
+    paper: "paper.pdf"
+    supplementary: "supp.pdf"
+    folder: "2021_acre_cvpr"
+    img: "overview.jpg"
     authors: 
       - key: chizhang
       - key: baoxiongjia
@@ -1022,9 +1085,10 @@ publications:
     releaseDate: ""
     website: "http://wellyzhang.github.io/project/prae.html"
     code: "https://github.com/WellyZhang/PrAE"
-    paper: "/assets/publications/2021_prae_cvpr/paper.pdf"
-    supplementary: "/assets/publications/2021_prae_cvpr/supp.pdf"
-    img: "/assets/publications/2021_prae_cvpr/overview.png"
+    paper: "paper.pdf"
+    supplementary: "supp.pdf"
+    folder: "2021_prae_cvpr"
+    img: "overview.png"
     authors: 
       - key: chizhang
         tags: [equal]
@@ -1039,9 +1103,10 @@ publications:
     releaseDate: ""
     website: "https://sites.google.com/view/lemma-activity"
     code: "https://github.com/Buzz-Beater/LEMMA"
-    paper: "/assets/publications/2020_lemma_eccv/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2020_lemma_eccv/overview.jpg"
+    folder: "2020_lemma_eccv"
+    img: "overview.jpg"
     authors: 
       - key: baoxiongjia
       - key: yixinchen
@@ -1055,9 +1120,10 @@ publications:
     releaseDate: ""
     website: ""
     code: "https://github.com/Buzz-Beater/GEP_PAMI"
-    paper: "/assets/publications/2020_gep_pami/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2020_gep_pami/overview.jpg"
+    folder: "2020_gep_pami"
+    img: "overview.jpg"
     authors:
       - key: siyuanqi
       - key: baoxiongjia
@@ -1071,9 +1137,10 @@ publications:
     releaseDate: ""
     website: "http://wellyzhang.github.io/project/copinet.html"
     code: "https://github.com/WellyZhang/CoPINet"
-    paper: "/assets/publications/2019_iq_nips/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2019_iq_nips/overview.jpg"
+    folder: "2019_iq_nips"
+    img: "overview.jpg"
     authors:
       - key: chizhang
         tags: [equal]
@@ -1091,9 +1158,10 @@ publications:
     releaseDate: ""
     website: "http://wellyzhang.github.io/project/raven.html"
     code: "https://github.com/WellyZhang/RAVEN"
-    paper: "/assets/publications/2019_iq_cvpr/paper.pdf"
-    supplementary: "/assets/publications/2019_iq_cvpr/supp.pdf"
-    img: "/assets/publications/2019_iq_cvpr/overview.jpg"
+    paper: "paper.pdf"
+    supplementary: "supp.pdf"
+    folder: "2019_iq_cvpr"
+    img: "overview.jpg"
     authors:
         - key: chizhang
           tags: [equal]
@@ -1109,9 +1177,10 @@ publications:
     releaseDate: ""
     website: ""
     code: "https://github.com/SiyuanQi/gpnn"
-    paper: "/assets/publications/2018_gpnn_eccv/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2018_gpnn_eccv/overview.jpg"
+    folder: "2018_gpnn_eccv"
+    img: "overview.jpg"
     authors: 
       - key: siyuanqi
         tags: [equal]
@@ -1126,9 +1195,10 @@ publications:
     theme: "Grammar Parsing and Intention Prediction"
     website: "http://proceedings.mlr.press/v80/qi18a.html"
     code: "https://github.com/SiyuanQi/generalized-earley-parser"
-    paper: "/assets/publications/2018_gep_icml/paper.pdf"
-    supplementary: "/assets/publications/2018_gep_icml/supp.pdf"
-    img: "/assets/publications/2018_gep_icml/overview.jpg"
+    paper: "paper.pdf"
+    supplementary: "supp.pdf"
+    folder: "2018_gep_icml"
+    img: "overview.jpg"
     authors:
       - key: siyuanqi
       - key: baoxiongjia
@@ -1139,9 +1209,10 @@ publications:
     theme: "Review Analysis and Recommandation Systems"
     website: "https://dl.acm.org/citation.cfm?id=3130935"
     code: ""
-    paper: "/assets/publications/2017_review_ubicomp/paper.pdf"
+    paper: "paper.pdf"
     supplementary: ""
-    img: "/assets/publications/2017_review_ubicomp/overview.jpg"
+    folder: "2017_review_ubicomp"
+    img: "overview.jpg"
     authors: 
       - key: yuanchunli
       - key: baoxiongjia
