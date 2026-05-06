@@ -11,6 +11,7 @@ basics:
       2x:            /assets/img/selfies/selfie2_resize.jpg
 
   email:
+  cv_date: "May 2026"
   #phone: "(912) 555-4321"
   #website: "https://piedpiper.com"
   summary: >
@@ -304,7 +305,7 @@ publications:
       - key: mengyaliu
         tags: [equal]
       - key: baoxiongjia
-        tags: [equal, corresponding]
+        tags: [equal, corresponding, lead]
       - key: jiangyonghuang
       - key: jingzezhang
       - key: siyuanhuang
@@ -443,7 +444,7 @@ publications:
       - key: yandanyang
         tags: [equal]
       - key: baoxiongjia
-        tags: [equal, corresponding]
+        tags: [equal, corresponding, lead]
       - key: shujiezhang
       - key: siyuanhuang
         tags: [corresponding]
@@ -467,7 +468,7 @@ publications:
         tags: [equal]
       - key: jianqinyin
       - key: baoxiongjia
-        tags: [corresponding]
+        tags: [corresponding, lead]
       - key: siyuanhuang
         tags: [corresponding]
 
@@ -486,7 +487,7 @@ publications:
       - key: guanxinglu
         tags: [equal]
       - key: baoxiongjia
-        tags: [equal, corresponding]
+        tags: [equal, corresponding, lead]
       - key: puhaoli
         tags: [equal]
       - key: yixinchen
@@ -536,7 +537,7 @@ publications:
       - key: huangyueyu
         tags: [equal]
       - key: baoxiongjia
-        tags: [equal]
+        tags: [equal, lead]
       - key: yixinchen
         tags: [equal]
       - key: yandanyang
@@ -563,7 +564,7 @@ publications:
       - key: jiangyonghuang
         tags: [equal]
       - key: baoxiongjia
-        tags: [equal]
+        tags: [equal, lead]
       - key: yanwang
       - key: ziyuzhu
       - key: xiongkunlinghu
@@ -585,7 +586,7 @@ publications:
       - key: yanwang
         tags: [equal]
       - key: baoxiongjia
-        tags: [equal]
+        tags: [equal, lead]
       - key: ziyuzhu
       - key: siyuanhuang
 
@@ -688,7 +689,7 @@ publications:
       - key: yuliu
         tags: [equal]
       - key: baoxiongjia
-        tags: [equal]
+        tags: [equal, lead]
       - key: ruijielu
       - key: junfengni
       - key: songchunzhu
@@ -716,7 +717,7 @@ publications:
       - key: zhitianli
       - key: ziyuanjiao
       - key: baoxiongjia
-        tags: [corresponding]
+        tags: [corresponding, lead]
       - key: siyuanhuang
         tags: [corresponding]
 
@@ -780,7 +781,7 @@ publications:
     # short: "NeurIPS 2022"
     authors:
       - key: baoxiongjia
-        tags: [equal]
+        tags: [equal, lead]
       - key: yixinchen
         tags: [equal]
       - key: huangyueyu
@@ -806,7 +807,7 @@ publications:
       - key: yuliu
         tags: [equal]
       - key: baoxiongjia
-        tags: [equal]
+        tags: [equal, lead]
       - key: yixinchen
       - key: siyuanhuang
     supp: "Wild3D @ ECCV 2024"
@@ -876,6 +877,7 @@ publications:
       - key: baoxiongjia
       - key: yixinzhu
       - key: songchunzhu
+
   - name: "PhyScene: Physically Interactable 3D Scene Synthesis for Embodied AI"
     isselected: 1
     special: Highlight
@@ -892,7 +894,7 @@ publications:
       - key: yandanyang
         tags: [equal]
       - key: baoxiongjia
-        tags: [equal]
+        tags: [equal, lead]
       - key: peiyuanzhi
       - key: siyuanhuang
     supp: "AI3DG @ CVPR 2024"
@@ -963,6 +965,7 @@ publications:
       - key: chizhang
       - key: yixinzhu
       - key: songchunzhu
+
   - name: "ARNOLD: A Benchmark for Language-Grounded Task Learning with Continuous States in Realistic Scenes"
     short: "ICCV 2023"
     theme: "Language Grounding in Robot Manipulation"
@@ -1046,7 +1049,7 @@ publications:
     img: "overview.gif"
     authors: 
       - key: baoxiongjia
-        tags: [equal]
+        tags: [equal, lead]
       - key: yuliu
         tags: [equal]
       - key: siyuanhuang
@@ -1067,6 +1070,7 @@ publications:
       - key: tinglei
       - key: songchunzhu
       - key: siyuanhuang
+
   - name: "Learning Algebraic Representation for Systematic Generalization in Contextual Decision Processes"
     short: "ECCV 2022"
     theme: "Systematic Generalization"
@@ -1107,6 +1111,7 @@ publications:
       - key: yixinzhu
       - key: songchunzhu
       - key: yingnianwu
+
   - name: "ACRE: Abstract Causal REasoning Beyond Covariation"
     short: "CVPR 2021"
     theme: "Abstract Causal Reasoning"
@@ -1158,6 +1163,7 @@ publications:
       - key: siyuanhuang
       - key: yixinzhu
       - key: songchunzhu
+
   - name: "A Generalized Earley Parser for Human Activity Parsing and Prediction"
     short: "TPAMI 2020"
     pubkind: journal
@@ -1175,6 +1181,7 @@ publications:
       - key: siyuanhuang
       - key: pingwei
       - key: songchunzhu
+
   - name: Learning Perceptual Inference by Contrasting
     special: "Spotlight"
     short: "NeurIPS 2019"
@@ -1248,6 +1255,7 @@ publications:
       - key: siyuanqi
       - key: baoxiongjia
       - key: songchunzhu
+      
   - name: "Mining User Reviews for Mobile App Comparison"
     short: "IMWUT 2017"
     pubkind: journal
