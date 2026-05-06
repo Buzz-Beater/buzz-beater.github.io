@@ -63,6 +63,10 @@ basics:
 #       - "Awarded 'Teacher of the Month'"
 news:
   - info:
+    date: 2026/05
+    isnew: 1
+    content: Two papers on latent aciton for VLA (LARA) and RL post-training for 3D-VLM (3D-RFT) are accepted by ICML 2026.
+  - info:
     date: 2026/04
     isnew: 1
     content: Our generalist motion tracker [OmniXtreme](https://extreme-humanoid.github.io/) is accepted by RSS 2026, check it out!
@@ -81,7 +85,7 @@ news:
   - info:
     date: 2026/03
     isnew: 1
-    content: "[UniFP](https://unified-force.github.io/) has been selected as one of the Top-10 breakthroughs of 2025 by [EAI-100](https://modelscope.cn/brand/view/EAI-100)"
+    content: "[UniFP](https://unified-force.github.io/) has been selected as one of the Top-10 breakthroughs of 2025 by [EAI-100](https://modelscope.cn/brand/view/EAI-100)."
   - info:
     date: 2026/02
     isnew: 1
@@ -285,6 +289,47 @@ education:
 #     awarder: "Peking University"
 
 publications:
+  - name: "LARA: Latent Action Representation Alignment for Vision-Language-Action Models"
+    isselected: 1
+    short: "ICML 2026"
+    theme: "Latent Actions for VLA"
+    releaseDate: ""
+    website: ""
+    code: ""
+    paper: ""
+    supplementary: ""
+    folder: ""
+    # img: ""
+    authors:
+      - key: mengyaliu
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [equal, corresponding]
+      - key: jiangyonghuang
+      - key: jingzezhang
+      - key: siyuanhuang
+
+  - name: "3D-RFT: Reinforcement Fine-Tuning for Video-based 3D Scene Understanding"
+    isselected: 1
+    short: "ICML 2026"
+    theme: "3D Vision-Language Learning"
+    releaseDate: ""
+    website: "https://3d-rft.github.io/"
+    code: "https://github.com/3D-RFT/3D-RFT"
+    paper: ""
+    supplementary: ""
+    folder: ""
+    # img: ""
+    authors:
+      - key: xiongkunlinghu
+        tags: [equal]
+      - key: jiangyonghuang
+        tags: [equal]
+      - key: baoxiongjia
+        tags: [corresponding]
+      - key: siyuanhuang
+        tags: [corresponding]
+
   - name: "OmniXtreme: Breaking the Generality Barrier in High-Dynamic Humanoid Control"
     isselected: 1
     short: RSS 2026
@@ -316,11 +361,11 @@ publications:
     short: CVPR 2026
     theme: "Scaling 3D Scenes"
     releaseDate: ""
-    website: ""
-    code: ""
-    paper: ""
+    website: "https://sv-pp.github.io/"
+    code: "https://github.com/sv-pp/SceneVersepp"
+    paper: "paper.pdf"
     supplementary: ""
-    folder: ""
+    folder: "2026_svpp_cvpr"
     authors:
       - key: yixinchen
       - key: yaoweizhang
