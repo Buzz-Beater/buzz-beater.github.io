@@ -319,8 +319,8 @@ publications:
     code: "https://github.com/3D-RFT/3D-RFT"
     paper: ""
     supplementary: ""
-    folder: ""
-    # img: ""
+    folder: "2026_3drft_icml"
+    img: "overview.png"
     authors:
       - key: xiongkunlinghu
         tags: [equal]
@@ -367,6 +367,7 @@ publications:
     paper: "paper.pdf"
     supplementary: ""
     folder: "2026_svpp_cvpr"
+    # img: "overview.jpeg"
     authors:
       - key: yixinchen
       - key: yaoweizhang
@@ -1255,7 +1256,7 @@ publications:
       - key: siyuanqi
       - key: baoxiongjia
       - key: songchunzhu
-      
+
   - name: "Mining User Reviews for Mobile App Comparison"
     short: "IMWUT 2017"
     pubkind: journal
