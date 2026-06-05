@@ -64,6 +64,10 @@ basics:
 #       - "Awarded 'Teacher of the Month'"
 news:
   - info:
+    date: 2026/06
+    isnew: 1
+    content: Invited keynote talk at CVPR 2026 [H2R Workshop](https://agents-in-interactions.github.io/), you can find the slides [here](assets/slides/H2R@CVPR26.pdf). 
+  - info:
     date: 2026/05
     isnew: 1
     content: Two papers on latent aciton for VLA (LARA) and RL post-training for 3D-VLM (3D-RFT) are accepted by ICML 2026.
