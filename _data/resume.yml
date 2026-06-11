@@ -371,7 +371,7 @@ publications:
     paper: "paper.pdf"
     supplementary: ""
     folder: "2026_svpp_cvpr"
-    # img: "overview.jpeg"
+    img: "overview.png"
     authors:
       - key: yixinchen
       - key: yaoweizhang
